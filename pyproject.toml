@@ -1,0 +1,22 @@
+[project]
+name = "our-ark-muse"
+version = "0.1.0"
+description = "Muse runtime provider for Enoch (MuseEnoch PoC): async mailbox bridge"
+readme = "README.md"
+requires-python = ">=3.10"
+# NOTE: our-ark-provider-kit is not published; it is consumed from the
+# Enoch source tree (libraries/provider-kit/src) via PYTHONPATH / sys.path
+# in tests. Declared here so the contract dependency is explicit.
+dependencies = ["our-ark-provider-kit"]
+
+[project.entry-points."our_ark.providers"]
+# Route A: entry-point registration, active once this package is installed.
+# Enoch's registry discovers "runtime.muse" via importlib.metadata.
+"runtime.muse" = "our_ark_muse:create_provider"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
