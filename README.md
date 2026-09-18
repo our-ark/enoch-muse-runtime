@@ -22,6 +22,53 @@ or SDK — so the mailbox *is* the machine form of Muse's interface:
 files + a scheduled pickup. If Muse ever gains a real API, the provider
 interior can become one HTTP call without touching the contract.)
 
+## Deploying an Enoch instance inside Muse
+
+One prompt is enough. Give Muse an **instance prompt** — the agent's name,
+who it is, its mission, and any seed memories — and point it at
+[`prompts/deploy-enoch.md`](prompts/deploy-enoch.md). Muse acts as the
+deploy agent and hands back a working instance ready to talk.
+
+Example instance prompt:
+
+> Deploy an Enoch instance named **Scout** — a curious research
+> assistant (Generation 4, descendant of Enoch). Mission: watch for new
+> papers on persistent AI agents and summarize the interesting ones
+> every morning. Seed memories: the user prefers replies in Chinese;
+> the user's timezone is America/Los_Angeles.
+
+What the deploy does, concretely:
+
+1. Creates a dedicated agent root with real `enoch init` (never hand-made
+   JSON), e.g. `~/workspace/muse-enoch-<slug>/`.
+2. Installs the `our_ark_muse` package so entry points `runtime.muse` and
+   `chat.muse` resolve through Enoch's real provider registry.
+3. Gives the instance its **own mailbox directory** (`inbox/`, `outbox/`,
+   `chat_inbox/`, `chat_outbox/`, `chat_cursor.txt`) — never shared
+   between instances.
+4. Seeds memories through Enoch's real memory API (`remember_memory`),
+   not by editing JSON.
+5. Runs one real end-to-end smoke turn: a `chat.muse` message in
+   `chat_inbox` → `scripts/chat_turn.py` (real identity, real
+   `memory_for_prompt`, real `run_conversation` with journal, real
+   `runtime.muse`) → reply in `chat_outbox`.
+6. Wires the bidirectional consumer (`muse-enoch-mailbox-consumer` cron
+   or an equivalent loop) at the instance's mailbox so it keeps serving.
+
+To talk to the instance afterwards: send `@<name> <text>` in Muse chat.
+The operator appends your literal text to `chat_inbox` and delivers the
+instance's `chat_outbox` reply verbatim — it never answers as the
+instance itself (the anti-roleplay guarantee).
+
+Constraints worth knowing: `mailbox/` is live traffic and gitignored;
+one mailbox and one cursor per instance, never two consumers on the same
+mailbox. `scripts/chat_turn.py` mirrors the daemon's command dispatch —
+user-issued slash commands (`/help`, `/status`, `/do`, …) are executed
+through Enoch's real registered-command table
+(`EnochApplication._dispatch_registered_command`, the same dispatch as
+`_dispatch_chat_event`); still PoC-only are inbox receipts, daemon epochs,
+effect-fence authorization, and lifecycle/task workers.
+
 ## Repo layout
 
 ```
@@ -105,53 +152,6 @@ The consumer interval dominates round-trip latency: one chat message can
 trigger up to 7 sequential provider calls, so a 2-minute consumer cadence
 keeps a full turn comfortably inside the provider's 30-minute
 self-imposed deadline.
-
-## Deploying an Enoch instance inside Muse
-
-One prompt is enough. Give Muse an **instance prompt** — the agent's name,
-who it is, its mission, and any seed memories — and point it at
-[`prompts/deploy-enoch.md`](prompts/deploy-enoch.md). Muse acts as the
-deploy agent and hands back a working instance ready to talk.
-
-Example instance prompt:
-
-> Deploy an Enoch instance named **Scout** — a curious research
-> assistant (Generation 4, descendant of Enoch). Mission: watch for new
-> papers on persistent AI agents and summarize the interesting ones
-> every morning. Seed memories: the user prefers replies in Chinese;
-> the user's timezone is America/Los_Angeles.
-
-What the deploy does, concretely:
-
-1. Creates a dedicated agent root with real `enoch init` (never hand-made
-   JSON), e.g. `~/workspace/muse-enoch-<slug>/`.
-2. Installs the `our_ark_muse` package so entry points `runtime.muse` and
-   `chat.muse` resolve through Enoch's real provider registry.
-3. Gives the instance its **own mailbox directory** (`inbox/`, `outbox/`,
-   `chat_inbox/`, `chat_outbox/`, `chat_cursor.txt`) — never shared
-   between instances.
-4. Seeds memories through Enoch's real memory API (`remember_memory`),
-   not by editing JSON.
-5. Runs one real end-to-end smoke turn: a `chat.muse` message in
-   `chat_inbox` → `scripts/chat_turn.py` (real identity, real
-   `memory_for_prompt`, real `run_conversation` with journal, real
-   `runtime.muse`) → reply in `chat_outbox`.
-6. Wires the bidirectional consumer (`muse-enoch-mailbox-consumer` cron
-   or an equivalent loop) at the instance's mailbox so it keeps serving.
-
-To talk to the instance afterwards: send `@<name> <text>` in Muse chat.
-The operator appends your literal text to `chat_inbox` and delivers the
-instance's `chat_outbox` reply verbatim — it never answers as the
-instance itself (the anti-roleplay guarantee).
-
-Constraints worth knowing: `mailbox/` is live traffic and gitignored;
-one mailbox and one cursor per instance, never two consumers on the same
-mailbox. `scripts/chat_turn.py` mirrors the daemon's command dispatch —
-user-issued slash commands (`/help`, `/status`, `/do`, …) are executed
-through Enoch's real registered-command table
-(`EnochApplication._dispatch_registered_command`, the same dispatch as
-`_dispatch_chat_event`); still PoC-only are inbox receipts, daemon epochs,
-effect-fence authorization, and lifecycle/task workers.
 
 ## End-to-end verification (2026-09-18)
 
