@@ -28,8 +28,12 @@ src/our_ark_muse/
   core.py       MuseRuntime: AgentRuntime contract over the mailbox
 scripts/
   mailbox_consumer_stub.py   documents the external-side protocol (stub only)
+  mailbox_pending.py         lists inbox requests with no outbox reply yet
+  e2e_live_respond.py        live end-to-end: loads runtime.muse via Enoch's
+                             registry and runs one blocking respond() turn
 tests/
   test_roundtrip.py          round-trip / pre-cancel / timeout tests
+.gitignore                   excludes mailbox/ (live traffic, never committed)
 ```
 
 ## Registration
@@ -71,6 +75,38 @@ contracts from the local source tree
 (`~/workspace/enoch-experiment/libraries/provider-kit/src`) — read-only;
 nothing in the Enoch checkout is modified.
 
+## Live consumer
+
+The live loop is a scheduled job (cron id `muse-enoch-mailbox-consumer`,
+every 2 minutes) that scans `mailbox/inbox/` for requests with no
+`outbox/<request_id>.json` reply, reasons over each prompt as Muse, and
+atomic-writes the reply (`{"request_id", "text", "replied_at"}`, tmp +
+rename, 0600). Empty inbox: the job does nothing and stays silent.
+
+The consumer interval dominates round-trip latency: one chat message can
+trigger up to 7 sequential provider calls, so a 2-minute consumer cadence
+keeps a full turn comfortably inside the provider's 30-minute
+self-imposed deadline.
+
+## End-to-end verification (2026-09-18)
+
+`scripts/e2e_live_respond.py` loads the provider through Enoch's **real**
+registry (`load_provider("runtime", name="muse")`, entry point
+`runtime.muse`) and runs one blocking `respond()` turn:
+
+```
+available runtime providers: ('codex', 'muse')
+loaded: our_ark_muse.core.MuseRuntime
+health: ProviderHealth(... passed=True ...)
+respond() returned.
+session_id: 53030fbb2f1a406e84cae50b0b30f7e0
+final_text: Mailbox bridge live: consumer received request ... and answered. Round-trip OK.
+```
+
+Provider → `inbox/<id>.json` → consumer → `outbox/<id>.json` →
+`respond()` returns the reply text. Full loop verified against the real
+Enoch provider contract.
+
 ## PoC status and known limits
 
 - [x] `MuseRuntime` satisfies the `AgentRuntime` Protocol (duck-typed;
@@ -84,26 +120,29 @@ nothing in the Enoch checkout is modified.
       the epoch monitor is honored via `raise_if_stopped()` each iteration.
 - [x] Atomic request writes (tmp + rename, 0600); unique request ids from
       `control.request_id` when the harness supplies one.
+- [x] Live consumer: scheduled job `muse-enoch-mailbox-consumer` scans
+      `inbox/` every 2 minutes and atomic-writes replies to `outbox/`;
+      verified end to end with `scripts/e2e_live_respond.py` (2026-09-18).
 - [ ] **Latency multiplication**: one chat message can trigger up to 7
       sequential provider calls (`MAX_ACTIONS = 6`); each is a full
-      mailbox round-trip.
+      mailbox round-trip (mitigated by the 2-minute consumer cadence).
 - [ ] Conversational turns run synchronously and **block the daemon's
       poll loop** while waiting; task turns are thread-isolated and safe.
 - [ ] The mailbox replaces only the **runtime** provider. A separate
       **chat** provider is still needed if the surface `S` should also be
       Muse chat (the `@enoch` idea) — the two axes are replaced
       independently.
-- [ ] No live consumer yet: `scripts/mailbox_consumer_stub.py` documents
+- [x] ~~No live consumer yet: `scripts/mailbox_consumer_stub.py` documents
       the protocol; the scheduled pickup loop that hands prompts to the
-      Muse operator is the next step (not built here).
+      Muse operator is the next step (not built here).~~ **Done
+      2026-09-18** — cron `muse-enoch-mailbox-consumer` (2 min) +
+      `scripts/mailbox_pending.py`; e2e verified.
 
 ## What's next
 
-1. Build the live consumer: a scheduled job that scans `inbox/`, keeps
-   one Muse-side thread per `session_key`, and atomic-writes replies to
-   `outbox/`.
-2. Point an Enoch checkout at the provider
-   (`ENOCH_RUNTIME_PROVIDER=muse`) and run one real `respond()` turn
-   end to end.
+1. ~~Build the live consumer~~ — done (cron `muse-enoch-mailbox-consumer`).
+2. ~~Point an Enoch checkout at the provider and run one real
+   `respond()` turn end to end~~ — done 2026-09-18
+   (`scripts/e2e_live_respond.py`, via the real registry).
 3. Optionally, implement the companion **chat** provider for the
    Muse-chat surface.

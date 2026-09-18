@@ -1,0 +1,6 @@
+# Runtime state: the live file mailbox (inbox/outbox traffic).
+# Never commit live requests/replies.
+mailbox/
+__pycache__/
+
+*.egg-info/
