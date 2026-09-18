@@ -55,11 +55,6 @@ What the deploy does, concretely:
 6. Wires the bidirectional consumer (`muse-enoch-mailbox-consumer` cron
    or an equivalent loop) at the instance's mailbox so it keeps serving.
 
-To talk to the instance afterwards: send `@<name> <text>` in Muse chat.
-The operator appends your literal text to `chat_inbox` and delivers the
-instance's `chat_outbox` reply verbatim — it never answers as the
-instance itself (the anti-roleplay guarantee).
-
 Constraints worth knowing: `mailbox/` is live traffic and gitignored;
 one mailbox and one cursor per instance, never two consumers on the same
 mailbox. `scripts/chat_turn.py` mirrors the daemon's command dispatch —
@@ -68,6 +63,17 @@ through Enoch's real registered-command table
 (`EnochApplication._dispatch_registered_command`, the same dispatch as
 `_dispatch_chat_event`); still PoC-only are inbox receipts, daemon epochs,
 effect-fence authorization, and lifecycle/task workers.
+
+## Using Enoch in Muse
+
+**Chat:** send `@<name> <text>` in Muse chat. The operator appends your
+literal text to the instance's `chat_inbox` and delivers its
+`chat_outbox` reply verbatim — it never answers as the instance itself
+(the anti-roleplay guarantee).
+
+**Slash commands** (`/help`, `/status`, `/do`, …) are executed through
+Enoch's real registered-command table, the same dispatch the daemon
+uses. Unknown `/commands` fall through to normal conversation.
 
 ## Repo layout
 
