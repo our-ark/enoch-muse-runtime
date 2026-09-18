@@ -14,10 +14,13 @@ machinery against a real agent root (real P):
   extract_memory_requests()    -- real memory-write path via remember_memory
   chat.muse send_message()     -- real reply into chat_outbox
 
-What it does NOT do (daemon-only duties, out of PoC scope): inbox
+What it does NOT do (daemon-only duties, out of scope): inbox
 receipts (begin/complete_event), daemon epochs, effect-fence
-authorization, registered command execution (actions are reported, not
-executed), lifecycle/task workers.
+authorization, lifecycle/task workers. Model-issued [ENOCH_ACTION]
+blocks inside a conversational turn are reported, not executed;
+user-issued slash commands (/help, /status, /do, ...) ARE dispatched
+through Enoch's real registered-command table via
+EnochApplication._dispatch_registered_command.
 
 Usage:
     ENOCH_MUSE_MAILBOX=~/workspace/muse-enoch/mailbox \\
@@ -41,6 +44,12 @@ from enoch.app.conversation import (
     ConversationJournal,
     run_conversation,
 )
+from enoch.app.core import (
+    EnochApplication,
+    _chat_provider_name,
+    _with_replied_text_context,
+)
+from enoch.app.parsing import parse_chat_command
 from enoch.identity import identity_file_path, load_body_identity
 from enoch.memory.prompt import memory_for_prompt
 from enoch.memory.store import remember_memory
@@ -84,6 +93,40 @@ def main() -> int:
     request_id = uuid.uuid4().hex
     session_key = f"muse-chat:{event.conversation_id}"
     runtime = load_provider("runtime", name="muse")
+
+    # Real slash-command dispatch (mirrors
+    # EnochApplication._dispatch_chat_event): a registered command
+    # (/help, /status, /do, ...) is executed by Enoch's real command
+    # table instead of being treated as chat text. Unknown commands
+    # fall through to the conversational turn, exactly like the daemon.
+    command, argument = parse_chat_command(event.text)
+    if command:
+        app = EnochApplication(
+            identity=identity, root=root, client=chat, runtime=runtime
+        )
+        work_text = _with_replied_text_context(
+            event.text,
+            event.replied_text,
+            provider_name=_chat_provider_name(chat),
+        )
+        command_reply = app._dispatch_registered_command(
+            event, command, argument, event.text, work_text
+        )
+        if command_reply is not None:
+            message_id = chat.send_message(event.conversation_id, command_reply)
+            print(
+                f"registered command {command} executed by real Enoch dispatch "
+                f"(message_id={message_id}).",
+                flush=True,
+            )
+            print(f"processed_cursor={event.cursor}", flush=True)
+            print("---- reply ----", flush=True)
+            print(command_reply[:2000], flush=True)
+            return 0
+        print(
+            f"unknown command {command}; falling through to conversational turn.",
+            flush=True,
+        )
 
     memory_context = memory_for_prompt(
         root, identity=identity, identity_path=identity_path
