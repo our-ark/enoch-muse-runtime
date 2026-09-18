@@ -1,8 +1,10 @@
 # enoch-muse-runtime
 
 A `muse` **runtime provider** for [Enoch](https://github.com/our-ark/enoch)
-(`our-ark/enoch`) — the proof of concept for running Enoch natively with
-**Muse as the reasoner (R)**.
+(`our-ark/enoch`) — the proof of concept for running Enoch on Muse's
+execution substrate: **Muse as the reasoner (R)**, **Muse chat as the
+surface (S)**, the async mailbox bridge plus consumer loop as the
+**harness (H)** glue, all **hosted (D)** in the Muse environment.
 
 ## RIPA framing
 
