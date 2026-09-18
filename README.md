@@ -113,6 +113,14 @@ who it is, its mission, and any seed memories — and point it at
 [`prompts/deploy-enoch.md`](prompts/deploy-enoch.md). Muse acts as the
 deploy agent and hands back a working instance ready to talk.
 
+Example instance prompt:
+
+> Deploy an Enoch instance named **Scout** — a curious research
+> assistant (Generation 4, descendant of Enoch). Mission: watch for new
+> papers on persistent AI agents and summarize the interesting ones
+> every morning. Seed memories: the user prefers replies in Chinese;
+> the user's timezone is America/Los_Angeles.
+
 What the deploy does, concretely:
 
 1. Creates a dedicated agent root with real `enoch init` (never hand-made
@@ -164,74 +172,24 @@ Provider → `inbox/<id>.json` → consumer → `outbox/<id>.json` →
 `respond()` returns the reply text. Full loop verified against the real
 Enoch provider contract.
 
-## PoC status and known limits
+## Known limits
 
-- [x] `MuseRuntime` satisfies the `AgentRuntime` Protocol (duck-typed;
-      `respond` / `act_in_session` / `model_summary` / `model_options` /
-      `reset_usage` / `health`, `provider_kind == "runtime"`).
-- [x] Conformance-critical behavior: `execution.raise_if_stopped()` is
-      called **first**, so pre-cancelled / timed-out executions raise
-      `AgentRuntimeCancelled` / `AgentRuntimeTimedOut` without touching
-      the mailbox.
-- [x] Progress emission (`stage="mailbox-wait"`) every ~60s while polling;
-      the epoch monitor is honored via `raise_if_stopped()` each iteration.
-- [x] Atomic request writes (tmp + rename, 0600); unique request ids from
-      `control.request_id` when the harness supplies one.
-- [x] Live consumer: scheduled job `muse-enoch-mailbox-consumer` scans
-      `inbox/` every 2 minutes and atomic-writes replies to `outbox/`;
-      verified end to end with `scripts/e2e_live_respond.py` (2026-09-18).
-- [x] `MuseChatClient` satisfies the `ChatProvider` Protocol
-      (`receive` / `send_message` / `edit_message` / `send_read_ack`,
-      `provider_kind == "chat"`); registered as entry point `chat.muse`
-      and in `OUR_ARK_PROVIDERS`; verified via Enoch's real registry
-      `load_provider("chat", name="muse")` (2026-09-18).
-- [x] `@enoch` turn driver `scripts/chat_turn.py`: one genuine Enoch
-      conversation turn per muse-chat message — real identity
-      (`load_body_identity`), real memory (`memory_for_prompt` +
-      `remember_memory` via the memory API), real `run_conversation`
-      with journal, real `runtime.muse`; verified end to end against a
-      real `enoch init` agent root (2026-09-18).
-- [x] Consumer cron is now a bidirectional bridge: R direction answers
-      runtime requests; S direction drives chat turns and delivers
-      `chat_outbox/` replies back into Muse chat verbatim.
-      Anti-roleplay rule: the chat operator never answers `@enoch`
-      content itself; it only appends to `chat_inbox/` and delivers
-      `chat_outbox/` replies.
-- [ ] **Latency multiplication**: one chat message can trigger up to 7
-      sequential provider calls (`MAX_ACTIONS = 6`); each is a full
-      mailbox round-trip (mitigated by the 2-minute consumer cadence).
-- [ ] Conversational turns run synchronously and **block the daemon's
-      poll loop** while waiting; task turns are thread-isolated and safe.
-- [x] ~~The mailbox replaces only the **runtime** provider. A separate
-      **chat** provider is still needed if the surface `S` should also be
-      Muse chat (the `@enoch` idea) — the two axes are replaced
-      independently.~~ **Done 2026-09-18** — `chat.muse` provider +
-      `chat_turn.py` + bidirectional consumer cron.
-- [x] ~~No live consumer yet: `scripts/mailbox_consumer_stub.py` documents
-      the protocol; the scheduled pickup loop that hands prompts to the
-      Muse operator is the next step (not built here).~~ **Done
-      2026-09-18** — cron `muse-enoch-mailbox-consumer` (2 min) +
-      `scripts/mailbox_pending.py`; e2e verified.
+- **Latency multiplication**: one chat message can trigger up to 7
+  sequential provider calls (`MAX_ACTIONS = 6`); each is a full mailbox
+  round-trip (mitigated by the 2-minute consumer cadence).
+- Conversational turns run synchronously and **block the daemon's
+  poll loop** while waiting; task turns are thread-isolated and safe.
 
 ## What's next
 
-1. ~~Build the live consumer~~ — done (cron `muse-enoch-mailbox-consumer`).
-2. ~~Point an Enoch checkout at the provider and run one real
-   `respond()` turn end to end~~ — done 2026-09-18
-   (`scripts/e2e_live_respond.py`, via the real registry).
-3. ~~Implement the companion **chat** provider for the Muse-chat
-   surface~~ — done 2026-09-18 (`chat.muse` + `chat_turn.py` +
-   bidirectional cron; `@enoch` routes to real P).
-4. Harden: per-`session_key` Muse-side continuity, daemon threading for
-   conversational turns, cross-host mailbox.
+- Per-`session_key` Muse-side continuity.
+- Daemon threading for conversational turns (stop blocking the poll loop).
+- Cross-host mailbox (beyond one VM).
 
-## Pushing (vault-backed)
+## Pushing
 
-This repo is pushed with the `github` workspace skill
-(`~/workspace/skills/github/bin/github-push`), which authenticates through
-the vault-stored GitHub credential instead of a pasted token:
+Pushes go through the `github` workspace skill (vault-backed, no pasted
+token), which mirrors local commits via the git-database API with
+identical SHAs:
 
     ~/workspace/skills/github/bin/github-push --repo . --branch main
-
-It mirrors local commits via the git-database REST API with identical
-trees/messages/authors/dates, so local and remote SHAs stay in sync.
