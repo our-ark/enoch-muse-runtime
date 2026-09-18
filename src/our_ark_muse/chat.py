@@ -190,6 +190,11 @@ class MuseChatClient:
                     attachments=(),
                 )
             )
+        if not events:
+            # Idle pacing: Enoch's daemon calls receive() in a hot poll loop
+            # with no sleep of its own. A short pause here sets the idle
+            # cadence instead of spinning on directory scans.
+            time.sleep(2)
         return events
 
     def send_message(
