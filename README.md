@@ -6,7 +6,7 @@ execution substrate: **Muse as the reasoner (R)**, **Muse chat as the
 surface (S)**, the async mailbox bridge plus consumer loop as the
 **harness (H)** glue, all **hosted (D)** in the Muse environment.
 
-## RIPA framing
+## RIPA framing ([paper](https://arxiv.org/abs/2609.00546))
 
 Under RIPA, an agent is its persistent substrate `P = (I, M, B)` —
 identity, memory, body revision — while the execution substrate
