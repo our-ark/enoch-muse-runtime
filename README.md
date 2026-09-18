@@ -146,3 +146,14 @@ Enoch provider contract.
    (`scripts/e2e_live_respond.py`, via the real registry).
 3. Optionally, implement the companion **chat** provider for the
    Muse-chat surface.
+
+## Pushing (vault-backed)
+
+This repo is pushed with the `github` workspace skill
+(`~/workspace/skills/github/bin/github-push`), which authenticates through
+the vault-stored GitHub credential instead of a pasted token:
+
+    ~/workspace/skills/github/bin/github-push --repo . --branch main
+
+It mirrors local commits via the git-database REST API with identical
+trees/messages/authors/dates, so local and remote SHAs stay in sync.
