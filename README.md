@@ -136,8 +136,12 @@ instance itself (the anti-roleplay guarantee).
 
 Constraints worth knowing: `mailbox/` is live traffic and gitignored;
 one mailbox and one cursor per instance, never two consumers on the same
-mailbox; `chat_turn.py` is a PoC stand-in for the daemon poll loop, not
-the full `EnochApplication.handle_event()`.
+mailbox. `scripts/chat_turn.py` mirrors the daemon's command dispatch —
+user-issued slash commands (`/help`, `/status`, `/do`, …) are executed
+through Enoch's real registered-command table
+(`EnochApplication._dispatch_registered_command`, the same dispatch as
+`_dispatch_chat_event`); still PoC-only are inbox receipts, daemon epochs,
+effect-fence authorization, and lifecycle/task workers.
 
 ## End-to-end verification (2026-09-18)
 

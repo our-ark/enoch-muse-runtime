@@ -84,10 +84,12 @@ what you chose. Do not interrogate them.
   `@<name> <text>`: write their literal text to `chat_inbox`, ack briefly,
   and forward the instance's `chat_outbox` reply verbatim, clearly labeled.
   You are the deployer/operator, not the agent.
-- `chat_turn.py` is a PoC stand-in for the daemon poll loop, not the full
-  `EnochApplication.handle_event()` — say so if asked about production
-  readiness. Do not claim daemon features (receipts, epochs, effect fences)
-  that are not wired.
+- `chat_turn.py` mirrors the daemon's command dispatch (user-issued
+  slash commands go through Enoch's real registered-command table), but
+  it is still a PoC stand-in for the full `EnochApplication.handle_event()`
+  — say so if asked about production readiness. Do not claim daemon
+  features (receipts, epochs, effect fences, lifecycle workers) that are
+  not wired.
 - One mailbox per instance. One cursor per instance. Never point two
   consumers at the same mailbox.
 - Git: author `Muse <noreply@local>`; push only through the workspace
