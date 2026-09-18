@@ -24,15 +24,20 @@ interior can become one HTTP call without touching the contract.)
 
 ```
 src/our_ark_muse/
-  __init__.py   factory + OUR_ARK_PROVIDERS descriptor (route B)
-  core.py       MuseRuntime: AgentRuntime contract over the mailbox
+  __init__.py   factories + OUR_ARK_PROVIDERS descriptor (route B)
+  core.py       MuseRuntime: AgentRuntime contract over the mailbox (R axis)
+  chat.py       MuseChatClient: ChatProvider contract over the mailbox (S axis)
 scripts/
   mailbox_consumer_stub.py   documents the external-side protocol (stub only)
   mailbox_pending.py         lists inbox requests with no outbox reply yet
   e2e_live_respond.py        live end-to-end: loads runtime.muse via Enoch's
                              registry and runs one blocking respond() turn
+  chat_turn.py               drives ONE genuine Enoch conversation turn for a
+                             muse-chat message: real P (identity+memory),
+                             run_conversation, runtime.muse, chat.muse
 tests/
   test_roundtrip.py          round-trip / pre-cancel / timeout tests
+  test_chat_roundtrip.py     chat provider receive/send/cursor tests
 .gitignore                   excludes mailbox/ (live traffic, never committed)
 ```
 
@@ -41,7 +46,8 @@ tests/
 **Route A — entry point (active once installed):**
 `pyproject.toml` declares
 `[project.entry-points."our_ark.providers"] "runtime.muse" =
-"our_ark_muse:create_provider"`, discovered via `importlib.metadata`.
+"our_ark_muse:create_provider"` and `"chat.muse" =
+"our_ark_muse.chat:create_provider"`, discovered via `importlib.metadata`.
 
 **Route B — no install needed:** `OUR_ARK_PROVIDERS` in
 `src/our_ark_muse/__init__.py` is picked up when `our_ark_muse` is listed
@@ -75,13 +81,23 @@ contracts from the local source tree
 (`~/workspace/enoch-experiment/libraries/provider-kit/src`) — read-only;
 nothing in the Enoch checkout is modified.
 
-## Live consumer
+## Live consumer (bidirectional bridge)
 
 The live loop is a scheduled job (cron id `muse-enoch-mailbox-consumer`,
-every 2 minutes) that scans `mailbox/inbox/` for requests with no
+every 2 minutes) that works both directions:
+
+**R direction (reasoner):** scans `mailbox/inbox/` for requests with no
 `outbox/<request_id>.json` reply, reasons over each prompt as Muse, and
 atomic-writes the reply (`{"request_id", "text", "replied_at"}`, tmp +
 rename, 0600). Empty inbox: the job does nothing and stays silent.
+
+**S direction (surface):** `@enoch` messages from Muse chat are appended
+by the chat operator to `mailbox/chat_inbox/<seq>.json` (never answered
+by the operator itself — the anti-roleplay guarantee). The job drives one
+genuine Enoch turn per new message via `scripts/chat_turn.py` (real P:
+identity + memory + `run_conversation` + `runtime.muse`), tracks progress
+in `mailbox/chat_cursor.txt`, and delivers `mailbox/chat_outbox/` replies
+back into Muse chat verbatim (marked with `<id>.delivered`).
 
 The consumer interval dominates round-trip latency: one chat message can
 trigger up to 7 sequential provider calls, so a 2-minute consumer cadence
@@ -123,15 +139,33 @@ Enoch provider contract.
 - [x] Live consumer: scheduled job `muse-enoch-mailbox-consumer` scans
       `inbox/` every 2 minutes and atomic-writes replies to `outbox/`;
       verified end to end with `scripts/e2e_live_respond.py` (2026-09-18).
+- [x] `MuseChatClient` satisfies the `ChatProvider` Protocol
+      (`receive` / `send_message` / `edit_message` / `send_read_ack`,
+      `provider_kind == "chat"`); registered as entry point `chat.muse`
+      and in `OUR_ARK_PROVIDERS`; verified via Enoch's real registry
+      `load_provider("chat", name="muse")` (2026-09-18).
+- [x] `@enoch` turn driver `scripts/chat_turn.py`: one genuine Enoch
+      conversation turn per muse-chat message — real identity
+      (`load_body_identity`), real memory (`memory_for_prompt` +
+      `remember_memory` via the memory API), real `run_conversation`
+      with journal, real `runtime.muse`; verified end to end against a
+      real `enoch init` agent root (2026-09-18).
+- [x] Consumer cron is now a bidirectional bridge: R direction answers
+      runtime requests; S direction drives chat turns and delivers
+      `chat_outbox/` replies back into Muse chat verbatim.
+      Anti-roleplay rule: the chat operator never answers `@enoch`
+      content itself; it only appends to `chat_inbox/` and delivers
+      `chat_outbox/` replies.
 - [ ] **Latency multiplication**: one chat message can trigger up to 7
       sequential provider calls (`MAX_ACTIONS = 6`); each is a full
       mailbox round-trip (mitigated by the 2-minute consumer cadence).
 - [ ] Conversational turns run synchronously and **block the daemon's
       poll loop** while waiting; task turns are thread-isolated and safe.
-- [ ] The mailbox replaces only the **runtime** provider. A separate
+- [x] ~~The mailbox replaces only the **runtime** provider. A separate
       **chat** provider is still needed if the surface `S` should also be
       Muse chat (the `@enoch` idea) — the two axes are replaced
-      independently.
+      independently.~~ **Done 2026-09-18** — `chat.muse` provider +
+      `chat_turn.py` + bidirectional consumer cron.
 - [x] ~~No live consumer yet: `scripts/mailbox_consumer_stub.py` documents
       the protocol; the scheduled pickup loop that hands prompts to the
       Muse operator is the next step (not built here).~~ **Done
@@ -144,8 +178,11 @@ Enoch provider contract.
 2. ~~Point an Enoch checkout at the provider and run one real
    `respond()` turn end to end~~ — done 2026-09-18
    (`scripts/e2e_live_respond.py`, via the real registry).
-3. Optionally, implement the companion **chat** provider for the
-   Muse-chat surface.
+3. ~~Implement the companion **chat** provider for the Muse-chat
+   surface~~ — done 2026-09-18 (`chat.muse` + `chat_turn.py` +
+   bidirectional cron; `@enoch` routes to real P).
+4. Harden: per-`session_key` Muse-side continuity, daemon threading for
+   conversational turns, cross-host mailbox.
 
 ## Pushing (vault-backed)
 

@@ -10,6 +10,13 @@ entry point ``runtime.muse = our_ark_muse:create_provider`` in
 ``pyproject.toml``.
 """
 
+from our_ark_muse.chat import (
+    CONVERSATION_ID,
+    MuseChatClient,
+    drop_chat_message,
+    mailbox_chat_configured,
+)
+from our_ark_muse.chat import create_provider as create_chat_provider
 from our_ark_muse.core import MuseRuntime, create_provider, mailbox_configured
 
 OUR_ARK_PROVIDERS = (
@@ -19,11 +26,22 @@ OUR_ARK_PROVIDERS = (
         "factory": create_provider,
         "supports": mailbox_configured,
     },
+    {
+        "kind": "chat",
+        "name": "muse",
+        "factory": create_chat_provider,
+        "supports": mailbox_chat_configured,
+    },
 )
 
 __all__ = [
     "MuseRuntime",
+    "MuseChatClient",
+    "CONVERSATION_ID",
     "create_provider",
+    "create_chat_provider",
+    "drop_chat_message",
     "mailbox_configured",
+    "mailbox_chat_configured",
     "OUR_ARK_PROVIDERS",
 ]
