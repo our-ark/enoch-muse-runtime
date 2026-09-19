@@ -23,23 +23,45 @@ import sys
 from pathlib import Path
 
 
-def _has_reply(inbox: Path, outbox: Path, request_id: str) -> bool:
-    """A request counts as answered only when the outbox reply echoes the
-    inbox request's live attempt nonce (a stale-attempt reply from a
-    previous reuse of the same request_id does not count)."""
+def _classify(inbox: Path, outbox: Path, request_id: str) -> str:
+    """Classify a request as "answered", "pending", or "legacy".
+
+    - Current protocol (inbox carries an ``attempt`` nonce): answered only
+      when the outbox reply echoes that attempt with non-empty text (a
+      stale-attempt reply from a previous reuse of the same request_id
+      does not count).
+    - Legacy protocol (no ``attempt`` in the inbox): no valid reply can
+      ever be written for it (there is nothing to echo, and mailbox_reply
+      refuses attempt-less writes), so it is never "pending". When an
+      old-protocol reply with non-empty text exists it counts as
+      "answered"; otherwise it is "legacy" (inert, unanswerable)."""
     try:
         request = json.loads((inbox / f"{request_id}.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return "legacy"
+    if not isinstance(request, dict):
+        return "legacy"
+    try:
         payload = json.loads((outbox / f"{request_id}.json").read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return False
-    if not isinstance(request, dict) or not isinstance(payload, dict):
-        return False
-    return (
-        bool(request.get("attempt"))
-        and payload.get("attempt") == request.get("attempt")
-        and isinstance(payload.get("text"), str)
-        and bool(payload["text"].strip())
+        payload = None
+    reply_text = (
+        payload.get("text", "") if isinstance(payload, dict) else ""
     )
+    has_text = isinstance(reply_text, str) and bool(reply_text.strip())
+    if request.get("attempt"):
+        if (
+            isinstance(payload, dict)
+            and payload.get("attempt") == request.get("attempt")
+            and has_text
+        ):
+            return "answered"
+        return "pending"
+    return "answered" if has_text else "legacy"
+
+
+def _has_reply(inbox: Path, outbox: Path, request_id: str) -> bool:
+    return _classify(inbox, outbox, request_id) == "answered"
 
 
 def main() -> int:
@@ -52,9 +74,14 @@ def main() -> int:
     outbox = base / "outbox"
     if not inbox.is_dir():
         return 0
+    legacy = 0
     for path in sorted(inbox.glob("*.json")):
         request_id = path.stem
-        if _has_reply(inbox, outbox, request_id):
+        status = _classify(inbox, outbox, request_id)
+        if status == "legacy":
+            legacy += 1
+            continue
+        if status == "answered":
             continue
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
@@ -70,6 +97,13 @@ def main() -> int:
             stamp = "?"
         preview = str(payload.get("message", "")).replace("\n", " ")[:120]
         print(f"{request_id} {kind} {stamp} {preview}", flush=True)
+    if legacy:
+        print(
+            f"# {legacy} legacy pre-attempt request(s) skipped "
+            "(no attempt nonce; inert, unanswerable)",
+            file=sys.stderr,
+            flush=True,
+        )
     return 0
 
 
