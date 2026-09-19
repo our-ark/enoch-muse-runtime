@@ -1,14 +1,103 @@
 # enoch-muse-runtime
 
-A `muse` **runtime provider** for [Enoch](https://github.com/our-ark/enoch)
-(`our-ark/enoch`) — the proof of concept for running Enoch on Muse's
-execution substrate: **Muse as the reasoner (R)**, **Muse chat as the
-surface (S)**, the async mailbox bridge plus consumer loop as the
-**harness (H)** glue, all **hosted (D)** in the Muse environment.
+**Run a persistent [Enoch](https://github.com/our-ark/enoch) agent inside Muse,
+and talk to it with `@Enoch`.** Enoch keeps its own installed identity, memory
+and executable body; Muse supplies the reasoning and chat environment.
+
+> **Based on the RIPA paper:**
+> [*Runtime-Independent Persistent Agents: Preserving Identity, Memory, and Code Across Models, Harnesses, and Servers*](https://arxiv.org/abs/2609.00546).
+>
+> RIPA separates the persistent agent from its replaceable runtime and
+> interaction bindings. This repository implements the Muse binding and
+> includes evidence from supervised Codex–Muse–Codex migration studies.
+
+**[Install in Muse](#how-to-install-in-muse)** ·
+[Talk to Enoch](#using-enoch-in-muse) ·
+[RIPA architecture](#ripa-framing-paper) ·
+[Research artifacts](#research-artifacts) ·
+[Developer checks](#quick-start-offline-checks)
 
 Licensed under [Apache-2.0](LICENSE). This repository provides the adapter and
 its synthetic research artifacts; Muse itself remains an external service.
 The live studies use a supervised Muse mailbox consumer, not an unattended API.
+
+## How to install in Muse
+
+Deployment runs **inside Muse's cloud workspace**. Your computer is the chat
+client; it does not need to host Enoch or run these commands locally.
+
+**Prerequisites:** Muse must be able to access the GitHub repositories, run Git
+and Python 3.11+ on a POSIX host, and maintain a scheduled mailbox consumer or
+equivalent loop. This repository supplies the adapter and deployment procedure;
+Muse access and the consumer's live reasoning service are external requirements.
+
+### 1. Paste this into Muse
+
+```text
+Install https://github.com/our-ark/enoch-muse-runtime in your cloud workspace
+and deploy a dedicated Enoch instance there.
+
+Read and follow the deployment guide:
+https://github.com/our-ark/enoch-muse-runtime/blob/main/prompts/deploy-enoch.md
+
+Use the compatible Enoch body from https://github.com/our-ark/enoch at revision
+66781e209962bcce6d5254e50d05f000ac914668.
+
+Instance name: Enoch
+Mission: Be my persistent assistant, retaining useful memories and unfinished
+work across conversations.
+Seed memory: I prefer replies in Chinese.
+
+Create a dedicated agent root and mailbox. If an instance already exists,
+inspect and report it before creating another; do not overwrite its state.
+Configure both the Muse runtime and chat providers, start Enoch's native
+daemon, and connect one mailbox consumer for this instance.
+
+Route my @Enoch messages to that daemon and forward its replies verbatim.
+Before reporting success, complete a real end-to-end chat turn. Show me the
+instance name, agent root, mailbox, provider check, and Enoch's actual reply.
+If this Muse environment lacks a required capability, report what is missing.
+```
+
+Change the name, mission and seed memory to suit your instance. The
+[deployment guide](prompts/deploy-enoch.md) specifies the complete procedure;
+the [operations guide](docs/operations.md) provides the underlying commands.
+
+### 2. Verify the deployment
+
+Muse should report a dedicated root and mailbox, successful resolution of both
+`runtime.muse` and `chat.muse`, a running native Enoch daemon, and a real reply
+in `chat_outbox` from its smoke-test message. A cloned repository or a response
+written by the Muse operator is not a completed deployment. Keep the mailbox
+consumer serving requests after setup; otherwise Enoch will wait for replies.
+
+### 3. Talk to your agent
+
+Send these messages in Muse chat after setup:
+
+```text
+@Enoch 你是谁？你现在运行在哪里？
+@Enoch 请记住：我们把这个项目叫作「青舟」。
+@Enoch 我们给这个项目起了什么名字？
+@Enoch /status
+```
+
+The first message asks the installed agent to describe itself. The next two
+are a simple memory interaction, and `/status` exercises native command
+routing. Inspect Enoch's stored memory through its memory API when checking
+persistence; an immediate recall answer alone can come from conversation
+context. With another instance name, use its configured `@<name>` route.
+
+## Using Enoch in Muse
+
+**Chat:** send `@<name> <text>` in Muse chat. The operator appends your
+literal text to the instance's `chat_inbox` and delivers its
+`chat_outbox` reply verbatim. The operator must not answer as the instance;
+this is an operating rule, not independently enforced host attestation.
+
+**Slash commands** (`/help`, `/status`, `/do`, …) are executed through
+Enoch's real registered-command table, the same dispatch the daemon
+uses. Unknown `/commands` fall through to normal conversation.
 
 ## Quick start: offline checks
 
@@ -59,11 +148,24 @@ are replaceable under the continuity and authority checks. An authorized
 reasoner replacement can preserve the installed agent's lineage; it does not
 imply identical behavior or capability.
 
-MuseEnoch is exactly that substitution: `R = Muse`, reached through an
+This adapter realizes that substitution: `R = Muse`, reached through an
 async file **mailbox**, while Enoch's daemon loop, leases, audit
 artifacts, and `[ENOCH_ACTION]` text-protocol parsing run natively.
 The evaluated deployment used no synchronous Muse API. Its consumer read and
 answered actual mailbox requests through a live Muse operator conversation.
+
+| RIPA component | In this deployment |
+|---|---|
+| Persistent substrate `P = (I, M, B)` | Enoch's installed identity, durable memory and versioned executable body |
+| Reasoner `R` | Muse |
+| Harness `H` | Enoch's daemon/runtime integration plus the mailbox bridge and consumer |
+| Host `D` | Muse's cloud environment |
+| Interaction surface `S` | Muse chat, routed through `@Enoch` |
+
+See the [paper](https://arxiv.org/abs/2609.00546) for the lifecycle contract,
+six continuity invariants and migration protocol, and the
+[artifact guide](docs/research-artifacts.md) for the tested bindings and
+evidence boundaries.
 
 ## Deploying an Enoch instance inside Muse
 
@@ -114,17 +216,6 @@ one-shot driver: model-issued `[ENOCH_ACTION]` blocks are now
 **executed for real** under `DaemonEffectFence` (previously
 report-only), and `[ENOCH_MEMORY_REQUEST]` is persisted to Enoch's
 real memory.
-
-## Using Enoch in Muse
-
-**Chat:** send `@<name> <text>` in Muse chat. The operator appends your
-literal text to the instance's `chat_inbox` and delivers its
-`chat_outbox` reply verbatim. The operator must not answer as the instance;
-this is an operating rule, not independently enforced host attestation.
-
-**Slash commands** (`/help`, `/status`, `/do`, …) are executed through
-Enoch's real registered-command table, the same dispatch the daemon
-uses. Unknown `/commands` fall through to normal conversation.
 
 ## Repo layout
 
