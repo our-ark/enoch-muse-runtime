@@ -91,6 +91,25 @@ an unknown cause. These artifacts do not establish arbitrary-task migration,
 behavioral identity equivalence, general exactly-once external effects or
 unattended reliability.
 
+## End-to-end verification (2026-09-18)
+
+`scripts/e2e_live_respond.py` loads the provider through Enoch's **real**
+registry (`load_provider("runtime", name="muse")`, entry point
+`runtime.muse`) and runs one blocking `respond()` turn:
+
+```
+available runtime providers: ('codex', 'muse')
+loaded: our_ark_muse.core.MuseRuntime
+health: ProviderHealth(... passed=True ...)
+respond() returned.
+session_id: 53030fbb2f1a406e84cae50b0b30f7e0
+final_text: Mailbox bridge live: consumer received request ... and answered. Round-trip OK.
+```
+
+Provider → `inbox/<id>.json` → consumer → `outbox/<id>.json` →
+`respond()` returns the reply text. Full loop verified against the real
+Enoch provider contract.
+
 ## License and citation
 
 The repository's [Apache-2.0 license](../LICENSE) covers its project code,

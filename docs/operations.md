@@ -1,5 +1,9 @@
 # Running isolated Muse instances
 
+[Back to the user guide](../README.md) ·
+[Deployment procedure](../prompts/deploy-enoch.md) ·
+[Mailbox protocol](mailbox-protocol.md)
+
 Use Python 3.11+ and an Enoch checkout compatible with the provider-kit contract.
 Keep one agent root and one mailbox per instance. These commands register the
 factories from this adapter checkout through Enoch's public registry API; they
@@ -63,6 +67,22 @@ container termination. If the supervisor disappears without an exit record,
 status is unknown, never assumed successful. PID reuse may conservatively block
 status/recovery; PIDs alone are not continuation authority. All cooperating
 daemon/worker commands must use this launcher; native Enoch fences still apply.
+
+## Troubleshooting a missing reply
+
+Keep the existing agent root and memory while inspecting a failed deployment.
+
+1. Run the launcher's `check` command to verify the configured providers and
+   mailbox. Confirm the chat route points to this instance.
+2. Inspect the latest managed attempt's status and stdout/stderr. The status
+   command above uses the attempt directory returned by the launcher.
+3. Check that one consumer is serving that mailbox. The daemon needs replies
+   to its reasoning requests, and the consumer must also deliver chat replies.
+   See the [consumer guide](mailbox-protocol.md#live-consumer-bidirectional-bridge)
+   for the two directions and attempt-nonce rules.
+4. Retain logs and resolve a stopped or unknown owner through the lifecycle
+   procedure below. Do not reset the instance or launch a second consumer as
+   a shortcut; a missing reply is not proof that the original worker is dead.
 
 ## Run a research phase and recover a stopped worker
 

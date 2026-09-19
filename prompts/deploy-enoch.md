@@ -54,7 +54,16 @@ what you chose. Do not interrogate them.
 
 ## Procedure
 
-1. **Read the repo first.** `README.md` (registration routes, env vars),
+Use Python 3.11+, Git and a POSIX host in Muse's workspace. The documented
+compatible Enoch body revision is
+`66781e209962bcce6d5254e50d05f000ac914668`; use a dedicated checkout at that
+revision for a new deployment. If the requested instance already exists,
+inspect and report it first; preserve its root and memory rather than creating
+a replacement or resetting its state.
+
+1. **Read the repo first.** [Development](../docs/development.md) (provider
+   registration), [mailbox protocol](../docs/mailbox-protocol.md) (environment
+   variables and consumer duties), [operations](../docs/operations.md),
    `src/our_ark_muse/core.py` (mailbox protocol, `ENOCH_MUSE_MAILBOX`,
    `ENOCH_MUSE_POLL_SECONDS`, `ENOCH_MUSE_TIMEOUT`), `src/our_ark_muse/chat.py`
    (`chat_inbox/<seq>.json` in, `chat_outbox/<id>.json` out),
@@ -73,6 +82,8 @@ what you chose. Do not interrogate them.
    a frozen body pass. See `docs/operations.md`.
 4. **Seed memory** via the memory API only. Then verify with
    `memory_for_prompt()` that the seed is visible to the prompt builder.
+   An immediate recall reply can use conversation context; verify the stored
+   record through the memory API when checking persistence.
 5. **Smoke test**: start the instance's daemon with
    `ENOCH_AGENT_ROOT=<agent_root> ENOCH_MUSE_MAILBOX=<mailbox> bash
    scripts/run_enoch_daemon.sh` (with `ENOCH_SRC` set to the body source),
