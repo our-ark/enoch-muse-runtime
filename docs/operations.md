@@ -47,7 +47,9 @@ python3 scripts/muse_instance.py --root /path/to/agent --enoch-src /path/to/enoc
   status /path/to/attempt
 ```
 
-`run_enoch_daemon.sh` remains a foreground compatibility entry point; it now uses
+`run_enoch_daemon.sh` starts the daemon detached (`--detach`): the supervisor
+runs in a new OS session and the launcher exits once it reports running, so the
+daemon survives the launcher session going away. It uses
 the same supervisor. `enoch-daemon.pid` identifies the supervisor, and
 `enoch-daemon-run.json` points to its evidence directory. SIGTERM to the
 supervisor is forwarded to the child's process group and its exit is recorded.
