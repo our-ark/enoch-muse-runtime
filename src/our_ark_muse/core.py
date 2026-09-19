@@ -10,6 +10,18 @@ transport to the Muse operator::
 The provider drops a request file and blocks (polling) until the reply
 appears, the execution is cancelled, or the deadline expires.
 
+Request/reply correlation: every provider call carries a fresh ``attempt``
+nonce in the inbox payload, and a reply is only accepted when it echoes
+that nonce. The harness may legitimately reuse a request_id (e.g. fixed
+ids on the task-context path); without the nonce, a stale outbox file
+from a previous attempt would be returned instantly as the new reply.
+
+Timeout/cancellation lifecycle: when a wait ends abnormally (timeout or
+stop), the inbox request is moved to ``dead-letter/`` stamped with
+``cancelled_at`` / ``cancel_reason``. The consumer must never answer
+dead-letter entries; a late reply for a dead attempt is inert because its
+attempt no longer matches.
+
 This is a reasoner-axis (R) substitution under RIPA: Enoch's daemon loop,
 leases, audit artifacts, and ``[ENOCH_ACTION]`` text-protocol parsing all
 run natively; only the model call itself is bridged. No function-calling
@@ -198,8 +210,15 @@ class MuseRuntime:
         # before any work (in particular, before touching the mailbox).
         control.raise_if_stopped()
         request_id = _request_id(control)
+        # Fresh attempt nonce per call: the harness may legitimately reuse
+        # a request_id (e.g. fixed ids on the task-context path), so the
+        # reply is only accepted when it echoes this attempt. A stale
+        # outbox file from a previous attempt with the same id is deleted
+        # on drop and can never be mistaken for a live reply.
+        attempt = uuid.uuid4().hex
         self._drop_request(
             request_id=request_id,
+            attempt=attempt,
             kind="respond",
             identity=identity,
             message=message,
@@ -209,7 +228,7 @@ class MuseRuntime:
             state_root=self._root,
             image_paths=image_paths,
         )
-        text = self._await_reply(request_id, control, sandbox="read-only")
+        text = self._await_reply(request_id, attempt, control, sandbox="read-only")
         control.raise_if_stopped()
         return RuntimeResult(final_text=text, session_id=request_id)
 
@@ -234,8 +253,10 @@ class MuseRuntime:
         control.raise_if_stopped()
         request_id = _request_id(control)
         effective_sandbox = sandbox or "workspace-write"
+        attempt = uuid.uuid4().hex
         self._drop_request(
             request_id=request_id,
+            attempt=attempt,
             kind="act_in_session",
             identity=identity,
             message=message,
@@ -245,7 +266,7 @@ class MuseRuntime:
             state_root=state_root if state_root is not None else self._root,
             image_paths=(),
         )
-        text = self._await_reply(request_id, control, sandbox=effective_sandbox)
+        text = self._await_reply(request_id, attempt, control, sandbox=effective_sandbox)
         control.raise_if_stopped()
         return RuntimeResult(final_text=text, session_id=request_id)
 
@@ -286,6 +307,7 @@ class MuseRuntime:
         self,
         *,
         request_id: str,
+        attempt: str,
         kind: str,
         identity: AgentIdentity,
         message: str,
@@ -295,9 +317,18 @@ class MuseRuntime:
         state_root: Path | None,
         image_paths: Sequence[Path],
     ) -> None:
-        inbox, _ = self._mailbox()
+        inbox, outbox = self._mailbox()
+        # A previous attempt may have reused this request_id; its reply is
+        # stale for the new attempt, so remove it before issuing the new
+        # request. (A consumer racing us with an atomic rename is safe: a
+        # late reply carries the old attempt and is rejected by _read_reply.)
+        try:
+            os.unlink(outbox / f"{request_id}.json")
+        except OSError:
+            pass
         payload = {
             "request_id": request_id,
+            "attempt": attempt,
             "kind": kind,
             "identity": _identity_dict(identity),
             "message": message,
@@ -313,11 +344,12 @@ class MuseRuntime:
     def _await_reply(
         self,
         request_id: str,
+        attempt: str,
         control: RuntimeExecutionControl,
         *,
         sandbox: str,
     ) -> str:
-        _, outbox = self._mailbox()
+        inbox, outbox = self._mailbox()
         reply_path = outbox / f"{request_id}.json"
         # Conversation turns carry no harness-side timeout, so the provider
         # self-imposes one (same pattern as the claude provider).
@@ -327,32 +359,65 @@ class MuseRuntime:
         poll = float(os.environ.get("ENOCH_MUSE_POLL_SECONDS", "10"))
         deadline = time.monotonic() + timeout
         last_progress = control.started_at_monotonic
-        while True:
-            # Honors cancellation, timeout events, and the epoch monitor.
-            control.raise_if_stopped()
-            reply = self._read_reply(reply_path)
-            if reply is not None:
-                return reply
-            now = time.monotonic()
-            if now >= deadline:
-                raise AgentRuntimeTimedOut(
-                    f"Muse mailbox wait timed out after {timeout}s "
-                    f"(request {request_id})."
-                )
-            if now - last_progress >= 60:
-                control.emit_progress(
-                    RuntimeProgress(
-                        elapsed_seconds=int(now - control.started_at_monotonic),
-                        stage="mailbox-wait",
-                        sandbox=sandbox,
-                        session_id=request_id,
+        try:
+            while True:
+                # Honors cancellation, timeout events, and the epoch monitor.
+                control.raise_if_stopped()
+                reply = self._read_reply(reply_path, attempt)
+                if reply is not None:
+                    return reply
+                now = time.monotonic()
+                if now >= deadline:
+                    raise AgentRuntimeTimedOut(
+                        f"Muse mailbox wait timed out after {timeout}s "
+                        f"(request {request_id})."
                     )
-                )
-                last_progress = now
-            time.sleep(min(poll, max(0.1, deadline - now)))
+                if now - last_progress >= 60:
+                    control.emit_progress(
+                        RuntimeProgress(
+                            elapsed_seconds=int(now - control.started_at_monotonic),
+                            stage="mailbox-wait",
+                            sandbox=sandbox,
+                            session_id=request_id,
+                        )
+                    )
+                    last_progress = now
+                time.sleep(min(poll, max(0.1, deadline - now)))
+        except BaseException as exc:
+            # The attempt is dead: quarantine the inbox request so its
+            # lifecycle is closed. The consumer must never answer
+            # dead-letter/ entries, and a late reply for this attempt is
+            # inert (attempt mismatch) even if one arrives.
+            reason = "timeout" if isinstance(exc, AgentRuntimeTimedOut) else "stopped"
+            self._quarantine_request(request_id, inbox=inbox, reason=reason)
+            raise
+
+    def _quarantine_request(self, request_id: str, *, inbox: Path, reason: str) -> None:
+        """Close the lifecycle of a dead attempt: move its inbox file to
+        ``dead-letter/`` stamped with when/why it was cancelled."""
+        base = mailbox_base()
+        dead = _ensure_private_dir(base / "dead-letter")
+        src = inbox / f"{request_id}.json"
+        try:
+            payload = json.loads(src.read_text(encoding="utf-8"))
+            if not isinstance(payload, dict):
+                payload = {}
+        except (OSError, ValueError):
+            payload = {}
+        payload.setdefault("request_id", request_id)
+        payload["cancelled_at"] = time.time()
+        payload["cancel_reason"] = reason
+        try:
+            _atomic_write_json(dead / f"{request_id}.json", payload)
+        except OSError:
+            pass
+        try:
+            os.unlink(src)
+        except OSError:
+            pass
 
     @staticmethod
-    def _read_reply(path: Path) -> str | None:
+    def _read_reply(path: Path, attempt: str) -> str | None:
         try:
             raw = path.read_text(encoding="utf-8")
         except (FileNotFoundError, OSError):
@@ -364,6 +429,11 @@ class MuseRuntime:
             # use atomic rename (see scripts/mailbox_consumer_stub.py).
             return None
         if not isinstance(payload, dict):
+            return None
+        # Reject replies from a previous attempt that reused this
+        # request_id: the consumer must echo the attempt nonce from the
+        # inbox request it actually answered.
+        if payload.get("attempt") != attempt:
             return None
         text = payload.get("text")
         if not isinstance(text, str) or not text.strip():

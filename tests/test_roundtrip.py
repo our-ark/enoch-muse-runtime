@@ -78,10 +78,18 @@ class MailboxRoundtripTest(unittest.TestCase):
     def _write_reply(self, request_id: str, text: str) -> None:
         outbox = self.mailbox / "outbox"
         outbox.mkdir(parents=True, exist_ok=True)
+        # The provider only accepts replies echoing the live attempt nonce.
+        inbox_file = self.mailbox / "inbox" / f"{request_id}.json"
+        attempt = json.loads(inbox_file.read_text(encoding="utf-8"))["attempt"]
         tmp = outbox / f".{request_id}.json.tmp"
         tmp.write_text(
             json.dumps(
-                {"request_id": request_id, "text": text, "created_at": time.time()}
+                {
+                    "request_id": request_id,
+                    "attempt": attempt,
+                    "text": text,
+                    "replied_at": time.time(),
+                }
             ),
             encoding="utf-8",
         )

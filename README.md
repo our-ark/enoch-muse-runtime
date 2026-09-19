@@ -92,6 +92,8 @@ src/our_ark_muse/
 scripts/
   mailbox_consumer_stub.py   documents the external-side protocol (stub only)
   mailbox_pending.py         lists inbox requests with no outbox reply yet
+  mailbox_reply.py           writes a protocol-correct reply for one request
+                             (echoes the attempt nonce; atomic, 0600)
   e2e_live_respond.py        live end-to-end: loads runtime.muse via Enoch's
                              registry and runs one blocking respond() turn
   chat_turn.py               legacy one-shot turn driver (retired from the
@@ -168,11 +170,20 @@ so a duplicate start safely retires the older process.)
 
 **R direction (reasoner):** scans `mailbox/inbox/` for requests with no
 `outbox/<request_id>.json` reply, reasons over each prompt as Muse, and
-atomic-writes the reply (`{"request_id", "text", "replied_at"}`, tmp +
-rename, 0600). Note: the daemon namespaces request ids
-(e.g. `conversation:<uuid>`) — the outbox filename must match the inbox
-filename exactly, prefix included. Empty inbox: the job does nothing and
-stays silent.
+atomic-writes the reply (`{"request_id", "attempt", "text", "replied_at"}`,
+tmp + rename, 0600). The reply **must echo the `attempt` nonce** from the
+inbox request it answers (easiest via
+`scripts/mailbox_reply.py <request_id> --text "..."`); the provider
+rejects any reply whose attempt doesn't match the live one, so a reused
+request_id can never pick up a stale reply. Note: the daemon namespaces
+request ids (e.g. `conversation:<uuid>`) — the outbox filename must match
+the inbox filename exactly, prefix included. Empty inbox: the job does
+nothing and stays silent.
+
+**Timeout lifecycle:** if a provider call times out or is stopped, the
+provider moves its inbox request to `mailbox/dead-letter/` stamped with
+`cancelled_at` / `cancel_reason`. The consumer never answers dead-letter
+entries; a late reply for a dead attempt is inert (attempt mismatch).
 
 **Delivery:** `@enoch` messages from Muse chat are appended by the chat
 operator to `mailbox/chat_inbox/<seq>.json` (never answered by the

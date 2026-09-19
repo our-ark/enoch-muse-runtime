@@ -2,7 +2,9 @@
 """List pending MuseEnoch mailbox requests.
 
 A request is pending when ``mailbox/inbox/<request_id>.json`` exists but
-``mailbox/outbox/<request_id>.json`` has no non-empty ``"text"`` reply yet.
+``mailbox/outbox/<request_id>.json`` has no reply echoing the request's
+live ``attempt`` nonce yet (a stale-attempt reply from a previous reuse
+of the same request_id does not count as answered).
 
 Usage:
     python3 scripts/mailbox_pending.py [mailbox_dir]
@@ -21,14 +23,20 @@ import sys
 from pathlib import Path
 
 
-def _has_reply(outbox: Path, request_id: str) -> bool:
-    path = outbox / f"{request_id}.json"
+def _has_reply(inbox: Path, outbox: Path, request_id: str) -> bool:
+    """A request counts as answered only when the outbox reply echoes the
+    inbox request's live attempt nonce (a stale-attempt reply from a
+    previous reuse of the same request_id does not count)."""
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        request = json.loads((inbox / f"{request_id}.json").read_text(encoding="utf-8"))
+        payload = json.loads((outbox / f"{request_id}.json").read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return False
+    if not isinstance(request, dict) or not isinstance(payload, dict):
+        return False
     return (
-        isinstance(payload, dict)
+        bool(request.get("attempt"))
+        and payload.get("attempt") == request.get("attempt")
         and isinstance(payload.get("text"), str)
         and bool(payload["text"].strip())
     )
@@ -46,7 +54,7 @@ def main() -> int:
         return 0
     for path in sorted(inbox.glob("*.json")):
         request_id = path.stem
-        if _has_reply(outbox, request_id):
+        if _has_reply(inbox, outbox, request_id):
             continue
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))

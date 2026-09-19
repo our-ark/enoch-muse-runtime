@@ -27,27 +27,44 @@ Mailbox protocol (see ``our_ark_muse.core`` for the provider side):
     <mailbox>/outbox/<request_id>.json   (written by the consumer)
         {
           "request_id": "...",
+          "attempt": "...",               # MUST echo the inbox request's
+                                          # attempt nonce verbatim; the
+                                          # provider rejects any reply whose
+                                          # attempt does not match the live one
           "text": "...",                  # PLAIN TEXT reply; the harness
                                           # parses [ENOCH_ACTION] blocks itself
-          "created_at": 1234567890.0
+          "replied_at": 1234567890.0
         }
+
+    <mailbox>/dead-letter/<request_id>.json
+        Timed-out or cancelled requests, moved here by the provider with
+        ``cancelled_at`` / ``cancel_reason`` stamps. The consumer must
+        NEVER answer dead-letter entries. A late reply for a dead attempt
+        is inert (attempt mismatch) even if written.
 
 Consumer rules:
 
-1. Write the reply file ATOMICALLY: write to a temp file in the same
+1. The reply MUST echo the inbox request's ``attempt`` nonce. Use
+   ``scripts/mailbox_reply.py <request_id> --text "..."`` to get this
+   right; hand-written replies that omit or mismatch the attempt are
+   silently ignored by the provider.
+2. Write the reply file ATOMICALLY: write to a temp file in the same
    directory, chmod 0600, then ``os.replace()`` into place. The provider
    tolerates transient partial reads, but atomic rename is the contract.
-2. Reply with plain text. To make Enoch act (run a command, queue work),
+3. Reply with plain text. To make Enoch act (run a command, queue work),
    emit ``[ENOCH_ACTION]{"command": ..., "argument": ...}[/ENOCH_ACTION]``
    blocks verbatim in the text -- the harness parses them; anything else
    is treated as the final answer for the turn.
-3. One provider call == one reply. There is no harness-managed session
+4. One provider call == one reply. There is no harness-managed session
    resume (unlike codex ``--resume``): keep per-``session_key`` threads on
    the Muse side if multi-turn continuity matters.
-4. Expire stale inbox entries (e.g. older than 2h with no reply) so a
+5. Expire stale inbox entries (e.g. older than 2h with no reply) so a
    crashed daemon cannot leave orphan requests that a later reply would
-   confuse. Request ids are unique per attempt.
-5. Mailbox dirs are 0700, files 0600: prompts carry private agent state
+   confuse. (The provider itself quarantines timed-out attempts into
+   ``dead-letter/``; this rule covers the case where the provider process
+   itself died.) Request ids may be reused across attempts -- the
+   ``attempt`` nonce, not the id, distinguishes them.
+6. Mailbox dirs are 0700, files 0600: prompts carry private agent state
    (identity, memory). Treat the mailbox like the migration bundle.
 """
 
