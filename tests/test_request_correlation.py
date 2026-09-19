@@ -207,6 +207,25 @@ class MailboxReplyHelperTest(unittest.TestCase):
         (self.mailbox / "inbox").mkdir(parents=True)
         (self.mailbox / "outbox").mkdir(parents=True)
         self.helper = REPO_ROOT / "scripts" / "mailbox_reply.py"
+        self._saved_env = {
+            key: os.environ.get(key)
+            for key in (
+                "ENOCH_MUSE_MAILBOX",
+                "ENOCH_MUSE_POLL_SECONDS",
+                "ENOCH_MUSE_TIMEOUT",
+            )
+        }
+        os.environ["ENOCH_MUSE_MAILBOX"] = str(self.mailbox)
+        os.environ["ENOCH_MUSE_POLL_SECONDS"] = "0.2"
+
+        def _restore() -> None:
+            for key, value in self._saved_env.items():
+                if value is None:
+                    os.environ.pop(key, None)
+                else:
+                    os.environ[key] = value
+
+        self.addCleanup(_restore)
 
     def _write_inbox(self, request_id: str, attempt: str) -> None:
         (self.mailbox / "inbox" / f"{request_id}.json").write_text(
@@ -277,6 +296,96 @@ class MailboxReplyHelperTest(unittest.TestCase):
             timeout=30,
         )
         self.assertNotEqual(proc.returncode, 0, "--attempt must be mandatory")
+
+    def test_timeout_then_retry_same_id(self) -> None:
+        """True A-timeout -> B-retry integration.
+
+        Request A genuinely times out (real provider, real dead-letter
+        stamped with A's attempt). The same request_id is then reused for
+        request B. A's late answer must be refused, while B's fresh answer
+        with B's attempt must be accepted -- a dead-letter entry for an
+        older attempt must not block the retry.
+        """
+        rid = "task:retry-after-timeout"
+        ident = _Identity()
+        provider = create_provider()
+
+        # 1. Request A times out for real.
+        outcome: dict = {}
+
+        def call_a() -> None:
+            try:
+                provider.respond(
+                    ident,
+                    "first",
+                    execution=RuntimeExecutionControl(
+                        request_id=rid, timeout_seconds=2
+                    ),
+                )
+            except BaseException as exc:  # noqa: BLE001 - capture for assertion
+                outcome["exc"] = exc
+
+        t1 = threading.Thread(target=call_a)
+        t1.start()
+        t1.join(timeout=15)
+        self.assertFalse(t1.is_alive(), "first respond() did not time out")
+        self.assertIsInstance(outcome.get("exc"), AgentRuntimeTimedOut)
+        dead = json.loads(
+            (self.mailbox / "dead-letter" / f"{rid}.json").read_text()
+        )
+        attempt_a = dead["attempt"]
+        self.assertTrue(attempt_a, "dead-letter must stamp the attempt")
+
+        # 2. Same request_id reused for request B (fresh attempt).
+        result_b: dict = {}
+
+        def call_b() -> None:
+            result_b["text"] = provider.respond(
+                ident,
+                "second",
+                execution=RuntimeExecutionControl(
+                    request_id=rid, timeout_seconds=30
+                ),
+            ).final_text
+
+        t2 = threading.Thread(target=call_b)
+        t2.start()
+        try:
+            deadline = time.monotonic() + 10
+            attempt_b = ""
+            inbox = self.mailbox / "inbox" / f"{rid}.json"
+            while time.monotonic() < deadline:
+                if inbox.exists():
+                    attempt_b = json.loads(inbox.read_text()).get("attempt", "")
+                    if attempt_b and attempt_b != attempt_a:
+                        break
+                time.sleep(0.05)
+            self.assertTrue(
+                attempt_b and attempt_b != attempt_a,
+                "second respond() did not drop a fresh attempt",
+            )
+            # 3. A's late answer is refused (its attempt was cancelled).
+            stale = self._reply(rid, attempt_a, "late answer from A")
+            self.assertNotEqual(
+                stale.returncode, 0, "cancelled attempt must be refused"
+            )
+            self.assertIn("cancelled", stale.stderr)
+            outbox_file = self.mailbox / "outbox" / f"{rid}.json"
+            self.assertFalse(
+                outbox_file.exists(),
+                "refused stale answer must not leave an outbox file",
+            )
+            # 4. B's fresh answer is accepted despite the dead-letter.
+            fresh = self._reply(rid, attempt_b, "answer for B")
+            self.assertEqual(fresh.returncode, 0, fresh.stderr)
+            payload = json.loads(outbox_file.read_text())
+            self.assertEqual(payload["attempt"], attempt_b)
+            self.assertEqual(payload["text"], "answer for B")
+            t2.join(timeout=10)
+            self.assertFalse(t2.is_alive(), "second respond() did not return")
+            self.assertEqual(result_b.get("text"), "answer for B")
+        finally:
+            t2.join(timeout=10)
 
 
 if __name__ == "__main__":

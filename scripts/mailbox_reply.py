@@ -16,8 +16,10 @@ Usage:
 
 Refuses (non-zero exit) when:
   - the text is empty;
-  - the inbox request is missing, unreadable, or already cancelled
-    (moved to ``dead-letter/``);
+  - the inbox request is missing or unreadable;
+  - this specific attempt was already cancelled (a ``dead-letter/``
+    entry exists whose ``attempt`` matches ``--attempt`` -- a dead-letter
+    for an *older* attempt does not block a retry with a fresh one);
   - the request carries no attempt nonce (legacy pre-protocol request);
   - the inbox's live attempt differs from ``--attempt`` (the request was
     superseded while this answer was being produced -- the answer is
@@ -72,9 +74,29 @@ def main() -> int:
     base = Path(args.mailbox).expanduser() if args.mailbox else Path.cwd()
     inbox_file = base / "inbox" / f"{args.request_id}.json"
     outbox_file = base / "outbox" / f"{args.request_id}.json"
-    if (base / "dead-letter" / f"{args.request_id}.json").exists():
-        print("request was cancelled (dead-letter); refusing", file=sys.stderr)
-        return 1
+    # Cancellation is keyed by (request_id, attempt): a dead-letter entry
+    # only blocks the exact attempt it cancelled. A retry of the same
+    # request_id with a fresh attempt must not be refused.
+    dead_file = base / "dead-letter" / f"{args.request_id}.json"
+    if dead_file.exists():
+        try:
+            dead_payload = json.loads(dead_file.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            dead_payload = {}
+        cancelled_attempt = (
+            dead_payload.get("attempt") if isinstance(dead_payload, dict) else None
+        )
+        if cancelled_attempt and cancelled_attempt == args.attempt:
+            reason = (
+                dead_payload.get("cancel_reason", "?")
+                if isinstance(dead_payload, dict)
+                else "?"
+            )
+            print(
+                f"this attempt was cancelled ({reason}); refusing",
+                file=sys.stderr,
+            )
+            return 1
     try:
         request = json.loads(inbox_file.read_text(encoding="utf-8"))
     except (OSError, ValueError):
