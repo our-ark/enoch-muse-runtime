@@ -6,28 +6,72 @@ execution substrate: **Muse as the reasoner (R)**, **Muse chat as the
 surface (S)**, the async mailbox bridge plus consumer loop as the
 **harness (H)** glue, all **hosted (D)** in the Muse environment.
 
+Licensed under [Apache-2.0](LICENSE). This repository provides the adapter and
+its synthetic research artifacts; Muse itself remains an external service.
+The live studies use a supervised Muse mailbox consumer, not an unattended API.
+
+## Quick start: offline checks
+
+Requirements: Python 3.11+, Git, and a POSIX host for managed process tests.
+Clone this repository and Enoch as sibling directories. The documented
+compatibility revision is Enoch `66781e209962bcce6d5254e50d05f000ac914668`.
+
+```bash
+git clone https://github.com/our-ark/enoch.git ../enoch
+git -C ../enoch checkout 66781e209962bcce6d5254e50d05f000ac914668
+ENOCH_SRC="$PWD/../enoch" \
+PYTHONPATH="$PWD/../enoch/libraries/provider-kit/src" \
+python3 -m unittest discover -s tests -v
+```
+
+Use a fresh sibling checkout for these commands. The 23 tests use deterministic
+mailbox replies and require no model credentials. A missing Enoch checkout
+skips integration tests, so verify the full test count and absence of skips.
+For an isolated package installation, install `../enoch/libraries/provider-kit`
+and this project into the same virtual environment; provider-kit is consumed
+from source, not assumed to be available from a package index.
+
+For live instances, follow [operations](docs/operations.md) and configure the
+external Muse consumer. The consumer stub only documents the transport.
+
+## Research artifacts
+
+[Artifact guide](docs/research-artifacts.md) links the pinned protocol, raw
+synthetic records, migration bundles, recovery evidence and verifiers. The
+measured study contains one qualification, five round trips, five controls and
+one planned worker interruption. The recovered development pilot is separate.
+
+```bash
+git fetch origin exp/ripa-study-20260919
+python3 scripts/verify_study_archive.py
+```
+
+This checks archived integrity and state consistency without model calls.
+Live reproduction additionally requires Codex and Muse access and operator
+coordination; the observations do not establish unattended reliability.
+
 ## RIPA framing ([paper](https://arxiv.org/abs/2609.00546))
 
 Under RIPA, an agent is its persistent substrate `P = (I, M, B)` —
 identity, memory, body revision — while the execution substrate
 `E = (R, H, D)` (reasoner, harness, host) and the interaction surfaces `S`
-are independently replaceable. Swapping the reasoner does **not** create a
-new agent: Enoch stays Enoch, it just thinks with a different brain.
+are replaceable under the continuity and authority checks. An authorized
+reasoner replacement can preserve the installed agent's lineage; it does not
+imply identical behavior or capability.
 
 MuseEnoch is exactly that substitution: `R = Muse`, reached through an
 async file **mailbox**, while Enoch's daemon loop, leases, audit
 artifacts, and `[ENOCH_ACTION]` text-protocol parsing run natively.
-(Muse has no synchronous machine-callable API — no public endpoint, CLI,
-or SDK — so the mailbox *is* the machine form of Muse's interface:
-files + a scheduled pickup. If Muse ever gains a real API, the provider
-interior can become one HTTP call without touching the contract.)
+The evaluated deployment used no synchronous Muse API. Its consumer read and
+answered actual mailbox requests through a live Muse operator conversation.
 
 ## Deploying an Enoch instance inside Muse
 
-One prompt is enough. Give Muse an **instance prompt** — the agent's name,
+Give a suitably configured Muse operator an **instance prompt** — the agent's name,
 who it is, its mission, and any seed memories — and point it at
 [`prompts/deploy-enoch.md`](prompts/deploy-enoch.md). Muse acts as the
-deploy agent and hands back a working instance ready to talk.
+deploy agent; verify the resulting bindings and smoke turn before use. Access
+to the host and a running consumer are prerequisites, not supplied by a clone.
 
 Example instance prompt:
 
@@ -75,8 +119,8 @@ real memory.
 
 **Chat:** send `@<name> <text>` in Muse chat. The operator appends your
 literal text to the instance's `chat_inbox` and delivers its
-`chat_outbox` reply verbatim — it never answers as the instance itself
-(the anti-roleplay guarantee).
+`chat_outbox` reply verbatim. The operator must not answer as the instance;
+this is an operating rule, not independently enforced host attestation.
 
 **Slash commands** (`/help`, `/status`, `/do`, …) are executed through
 Enoch's real registered-command table, the same dispatch the daemon
@@ -203,8 +247,8 @@ entries; a late reply for a dead attempt is inert (attempt mismatch).
    answered.
 
 **Delivery:** `@enoch` messages from Muse chat are appended by the chat
-operator to `mailbox/chat_inbox/<seq>.json` (never answered by the
-operator itself — the anti-roleplay guarantee). The job delivers
+operator to `mailbox/chat_inbox/<seq>.json` for the native daemon to handle.
+The operator must not invent an instance reply. The job delivers
 `mailbox/chat_outbox/` replies back into Muse chat verbatim (marked
 with `<id>.delivered`).
 
@@ -241,9 +285,8 @@ Enoch provider contract.
   thread and each `runtime.muse` call waits on the mailbox for minutes,
   so a long turn (up to 7 sequential calls) holds the poll loop for tens
   of minutes, starving other events, scheduled jobs, and lifecycle work
-  meanwhile. (Blocking per se is normal — every LLM call blocks; the
-  issue is the duration of the hold.) Task turns are thread-isolated and
-  safe.
+  meanwhile. Task turns run in separate threads; this does not eliminate
+  service availability or external side-effect risks.
 - **Real side effects**: model-issued `[ENOCH_ACTION]` blocks are now
   executed for real under `DaemonEffectFence`, and
   `[ENOCH_MEMORY_REQUEST]` persists to Enoch's real memory. The fence is
@@ -260,10 +303,9 @@ Enoch provider contract.
   for tens of minutes).
 - Cross-host mailbox (beyond one VM).
 
-## Pushing
+## License and contributions
 
-Pushes go through the `github` workspace skill (vault-backed, no pasted
-token), which mirrors local commits via the git-database API with
-identical SHAs:
-
-    ~/workspace/skills/github/bin/github-push --repo . --branch main
+See [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md) and
+[CITATION.cff](CITATION.cff). Use synthetic fixtures in reports; do not publish
+production instance state or live mailbox traffic. Historical study files
+remain immutable, including their recorded failures and limitations.

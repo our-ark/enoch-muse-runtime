@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the RIPA paper and identify the adapter and artifact commits used."
+title: "enoch-muse-runtime: Muse providers for Enoch"
+type: software
+version: 0.1.0
+license: Apache-2.0
+authors:
+  - name: "Our Ark contributors"
+repository-code: "https://github.com/our-ark/enoch-muse-runtime"
+url: "https://github.com/our-ark/enoch-muse-runtime"
+preferred-citation:
+  type: article
+  title: "Runtime-Independent Persistent Agents: Preserving Identity, Memory, and Code Across Models, Harnesses, and Servers"
+  authors:
+    - family-names: Zhao
+      given-names: Zhenyu
+    - family-names: Zhao
+      given-names: Roy
+  year: 2026
+  doi: "10.48550/arXiv.2609.00546"
+  url: "https://arxiv.org/abs/2609.00546"

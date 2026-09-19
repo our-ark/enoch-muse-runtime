@@ -3,11 +3,18 @@ name = "our-ark-muse"
 version = "0.1.0"
 description = "Muse runtime provider for Enoch (MuseEnoch PoC): async mailbox bridge"
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 # NOTE: our-ark-provider-kit is not published; it is consumed from the
 # Enoch source tree (libraries/provider-kit/src) via PYTHONPATH / sys.path
 # in tests. Declared here so the contract dependency is explicit.
 dependencies = ["our-ark-provider-kit"]
+
+[project.urls]
+Repository = "https://github.com/our-ark/enoch-muse-runtime"
+Issues = "https://github.com/our-ark/enoch-muse-runtime/issues"
+Paper = "https://arxiv.org/abs/2609.00546"
 
 [project.entry-points."our_ark.providers"]
 # Route A: entry-point registration, active once this package is installed.
@@ -16,7 +23,7 @@ dependencies = ["our-ark-provider-kit"]
 "chat.muse" = "our_ark_muse.chat:create_provider"
 
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]

@@ -4,3 +4,12 @@ mailbox/
 __pycache__/
 
 *.egg-info/
+.venv/
+build/
+dist/
+.enoch/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
