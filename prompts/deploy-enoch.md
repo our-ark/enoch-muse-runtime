@@ -15,8 +15,9 @@ Concretely, "deployed" = all of the following are true:
 
 1. A dedicated agent root exists (created by real `enoch init`, never hand-made
    JSON), e.g. `~/workspace/muse-enoch-<slug>/`.
-2. The `our_ark_muse` package is installed (entry points `runtime.muse` and
-   `chat.muse` registered and loadable through Enoch's real provider registry).
+2. Both Muse factories resolve through Enoch's real registry, using the
+   managed source launcher or a normal package installation. Importability
+   alone is not enough; never copy egg-info from another instance.
 3. The instance has its **own mailbox directory** (never shared between
    instances): `<mailbox>/inbox`, `<mailbox>/outbox`, `<mailbox>/chat_inbox`,
    `<mailbox>/chat_outbox`. The chat cursor is daemon-managed
@@ -62,17 +63,22 @@ what you chose. Do not interrogate them.
 2. **Create the agent root** with real `enoch init` at `agent_root`. Verify
    `.enoch/` exists and `load_body_identity` returns the identity. Never
    reuse another instance's root.
-3. **Install the provider**: `pip install -e <this repo>` (or confirm the
-   entry points already resolve). Verify with Enoch's real registry:
-   `available_providers("chat")` includes `muse`, and
-   `load_provider("chat", name="muse")` returns
-   `our_ark_muse.chat.MuseChatClient`.
+3. **Configure and verify the provider** using `scripts/muse_instance.py
+   --root <agent_root> --enoch-src <enoch_checkout> --mailbox <mailbox>
+   configure`, then the same command with `check` instead of `configure`.
+   This registers source factories through Enoch's public registry API and
+   persists both Muse bindings plus the mailbox in private config. It changes
+   no body files. Other Enoch entry points need normal package installation;
+   do not manufacture/copy registration metadata or edit genesis.toml to make
+   a frozen body pass. See `docs/operations.md`.
 4. **Seed memory** via the memory API only. Then verify with
    `memory_for_prompt()` that the seed is visible to the prompt builder.
 5. **Smoke test**: start the instance's daemon with
    `ENOCH_AGENT_ROOT=<agent_root> ENOCH_MUSE_MAILBOX=<mailbox> bash
-   scripts/run_enoch_daemon.sh` (it writes its own pidfile/log under the
-   instance mailbox), drop one message into `chat_inbox` with
+   scripts/run_enoch_daemon.sh` (with `ENOCH_SRC` set to the body source),
+   or use `muse_instance.py --detach daemon`. Keep the returned attempt
+   directory: stdout/stderr and observed exit status must not be overwritten.
+   Drop one message into `chat_inbox` with
    `drop_chat_message`, and confirm a reply lands in `chat_outbox` and the
    conversation journal was written under
    `<agent_root>/.enoch/conversation/`. The daemon owns the S direction
@@ -84,6 +90,11 @@ what you chose. Do not interrogate them.
    daemon-managed, so there is no `chat_cursor.txt` to wire up.
    Mark any test messages already processed so the consumer never replays
    them (cursor + `.delivered` markers on test outbox files).
+   Use the managed launcher for research workers too. If a worker disappears,
+   retain its logs and inspect ownership; do not simply rerun and advance the
+   epoch. `recover <task-id>` refuses live/unknown owners and pauses the task
+   through Enoch's native API; a subsequent run uses fresh output directories.
+   Missing exit evidence is unknown, not proof of SIGKILL or success.
 7. **Report back**: instance name, agent root, mailbox, what the smoke-test
    turn asked and what Enoch replied (verbatim), and how to talk to it
    (`@<name>` / drop into `chat_inbox`).

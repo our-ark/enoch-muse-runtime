@@ -41,10 +41,11 @@ What the deploy does, concretely:
 
 1. Creates a dedicated agent root with real `enoch init` (never hand-made
    JSON), e.g. `~/workspace/muse-enoch-<slug>/`.
-2. Installs the `our_ark_muse` package so entry points `runtime.muse` and
-   `chat.muse` resolve through Enoch's real provider registry.
+2. Configures the instance through `scripts/muse_instance.py`, which
+   registers the source factories through Enoch's real provider registry
+   and persists the Muse bindings for later migration exports.
 3. Gives the instance its **own mailbox directory** (`inbox/`, `outbox/`,
-   `chat_inbox/`, `chat_outbox/`, `chat_cursor.txt`) — never shared
+   `chat_inbox/`, `chat_outbox/`) — never shared
    between instances.
 4. Seeds memories through Enoch's real memory API (`remember_memory`),
    not by editing JSON.
@@ -59,9 +60,8 @@ What the deploy does, concretely:
    requests (R direction), and delivers `chat_outbox` replies.
 
 Constraints worth knowing: `mailbox/` is live traffic and gitignored;
-one mailbox per instance, never two daemons on the same mailbox
-(daemon epoch is last-writer-wins, so a duplicate start retires the
-older process). The daemon's chat cursor lives in
+one mailbox per instance. The managed launcher rejects duplicate starts
+before they acquire another daemon epoch. The daemon's chat cursor lives in
 `.enoch/channels/muse/cursor.json` — the legacy `chat_cursor.txt`
 is retired. Slash commands (`/help`, `/status`, `/do`, …) go through
 Enoch's real registered-command table via the genuine
@@ -100,8 +100,10 @@ scripts/
                              live loop; the daemon now owns S). Kept for
                              manual debugging.
   run_enoch_daemon.sh        starts Enoch's own daemon
-                             (`python -m enoch.agent`) for an agent root:
-                             env, PYTHONPATH, pidfile, log
+                             through the managed source launcher
+  muse_instance.py           source registration, persistent bindings,
+                             instance lock, detached execution, exit evidence
+  ripa_pilot.py              revised synthetic migration/workflow driver
 tests/
   test_roundtrip.py          round-trip / pre-cancel / timeout tests
   test_chat_roundtrip.py     chat provider receive/send/cursor tests
@@ -109,6 +111,12 @@ tests/
 ```
 
 ## Registration
+
+**Managed source launcher:** configure and run through
+[`scripts/muse_instance.py`](scripts/muse_instance.py). It uses Enoch's public
+registry API, verifies both providers and records per-attempt process evidence.
+No copied egg-info or changes to the body are needed. See
+[`docs/operations.md`](docs/operations.md) for setup, migration phases and recovery.
 
 **Route A — entry point (active once installed):**
 `pyproject.toml` declares
@@ -122,8 +130,10 @@ as a `[[runtime_dependencies]]` entry (`import_name = "our_ark_muse"`) in
 `genesis.toml`. The `supports` gate enables the provider only when the
 mailbox directory is creatable/writable.
 
-Select at runtime with `ENOCH_RUNTIME_PROVIDER=muse` (env wins) or
-`/config provider runtime muse`. Do **not** mark it `default=True`.
+For installed entry points, select with `/config provider runtime muse` and
+`/config provider chat muse`. Environment-only selections do not survive into
+a later export process. The managed launcher persists and checks both bindings.
+Do **not** mark the plugin `default=True`.
 
 ## Environment variables
 
@@ -138,15 +148,9 @@ ceiling for mailbox operation.
 
 ## Running the tests
 
-```bash
-cd ~/workspace/muse-enoch
-python3 tests/test_roundtrip.py
-```
-
-Tests use stdlib `unittest` only. They import Enoch's provider-kit
-contracts from the local source tree
-(`~/workspace/enoch-experiment/libraries/provider-kit/src`) — read-only;
-nothing in the Enoch checkout is modified.
+See [the test commands](docs/operations.md#tests). Tests use stdlib `unittest`,
+a caller-selected Enoch checkout and isolated temporary agent roots. Process
+tests exercise real host APIs with deterministic mailbox responses.
 
 ## Live consumer (bidirectional bridge)
 
@@ -165,8 +169,9 @@ A scheduled job (cron id `muse-enoch-mailbox-consumer`, every 1 minute)
 covers the rest:
 
 **Supervision:** checks `mailbox/enoch-daemon.pid`; restarts the daemon
-via `run_enoch_daemon.sh` if it died. (Daemon epoch is last-writer-wins,
-so a duplicate start safely retires the older process.)
+via `run_enoch_daemon.sh` if it died. Configure persistent bindings first.
+The instance lock rejects duplicate managed launches; each attempt retains its
+own logs and observed exit status. An unobserved process exit remains unknown.
 
 **R direction (reasoner):** runs `scripts/mailbox_pending.py` to find
 requests with no valid `outbox/<request_id>.json` reply (a reply is valid
@@ -244,8 +249,9 @@ Enoch provider contract.
   `[ENOCH_MEMORY_REQUEST]` persists to Enoch's real memory. The fence is
   Enoch's own authorization mechanism; review its capability grants
   before exposing the instance to untrusted input.
-- The daemon is supervised by the cron pidfile check; a dead daemon is
-  restarted within ~1 minute, but there is no systemd/launchd unit yet.
+- The managed supervisor captures child exits and supports explicit recovery
+  of a dead worker through Enoch's task API. Detaching cannot guarantee survival
+  of a host/container shutdown; there is no systemd/launchd unit yet.
 
 ## What's next
 
