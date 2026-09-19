@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import threading
@@ -187,6 +188,95 @@ class RequestCorrelationTest(unittest.TestCase):
         self.assertEqual(payload["cancel_reason"], "timeout")
         self.assertGreater(payload["cancelled_at"], 0)
         self.assertIn("attempt", payload)
+
+
+class MailboxReplyHelperTest(unittest.TestCase):
+    """Regression test for the stale-answer re-stamping race (2026-09-19).
+
+    Race: request A (attempt a1) is read by the consumer; A times out and
+    the same request_id is reused for request B (attempt a2); A's late
+    answer is then submitted. The helper must NOT stamp that stale answer
+    with B's live attempt -- it must refuse, because the consumer's
+    captured attempt (a1) no longer matches the inbox's live attempt (a2).
+    """
+
+    def setUp(self) -> None:
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.mailbox = Path(self.tmp.name) / "mailbox"
+        (self.mailbox / "inbox").mkdir(parents=True)
+        (self.mailbox / "outbox").mkdir(parents=True)
+        self.helper = REPO_ROOT / "scripts" / "mailbox_reply.py"
+
+    def _write_inbox(self, request_id: str, attempt: str) -> None:
+        (self.mailbox / "inbox" / f"{request_id}.json").write_text(
+            json.dumps(
+                {
+                    "request_id": request_id,
+                    "attempt": attempt,
+                    "kind": "respond",
+                    "message": "hello",
+                    "created_at": time.time(),
+                }
+            ),
+            encoding="utf-8",
+        )
+
+    def _reply(self, request_id: str, attempt: str, text: str) -> subprocess.CompletedProcess:
+        return subprocess.run(
+            [
+                sys.executable,
+                str(self.helper),
+                request_id,
+                "--attempt",
+                attempt,
+                "--text",
+                text,
+                "--mailbox",
+                str(self.mailbox),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+
+    def test_stale_answer_refused_after_attempt_rotation(self) -> None:
+        rid = "race:1"
+        # Consumer reads request A and captures attempt a1.
+        self._write_inbox(rid, "a1")
+        captured_attempt = json.loads(
+            (self.mailbox / "inbox" / f"{rid}.json").read_text()
+        )["attempt"]
+        self.assertEqual(captured_attempt, "a1")
+        # A times out; the same request_id is reused for request B.
+        self._write_inbox(rid, "a2")
+        # A's late answer arrives, carrying the attempt captured at read.
+        stale = self._reply(rid, "a1", "stale answer from A")
+        self.assertNotEqual(
+            stale.returncode, 0, "stale answer must be refused after rotation"
+        )
+        self.assertIn("superseded", stale.stderr)
+        # Nothing may be written: B must not see A's answer under its nonce.
+        outbox_file = self.mailbox / "outbox" / f"{rid}.json"
+        self.assertFalse(
+            outbox_file.exists(),
+            "refused stale answer must not leave an outbox file",
+        )
+        # A fresh answer for the live attempt is still accepted.
+        fresh = self._reply(rid, "a2", "fresh answer for B")
+        self.assertEqual(fresh.returncode, 0, fresh.stderr)
+        payload = json.loads(outbox_file.read_text())
+        self.assertEqual(payload["attempt"], "a2")
+        self.assertEqual(payload["text"], "fresh answer for B")
+
+    def test_attempt_argument_is_required(self) -> None:
+        proc = subprocess.run(
+            [sys.executable, str(self.helper), "x", "--text", "hi"],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        self.assertNotEqual(proc.returncode, 0, "--attempt must be mandatory")
 
 
 if __name__ == "__main__":

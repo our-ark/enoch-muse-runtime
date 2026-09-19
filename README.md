@@ -168,12 +168,15 @@ covers the rest:
 via `run_enoch_daemon.sh` if it died. (Daemon epoch is last-writer-wins,
 so a duplicate start safely retires the older process.)
 
-**R direction (reasoner):** scans `mailbox/inbox/` for requests with no
-`outbox/<request_id>.json` reply, reasons over each prompt as Muse, and
-atomic-writes the reply (`{"request_id", "attempt", "text", "replied_at"}`,
-tmp + rename, 0600). The reply **must echo the `attempt` nonce** from the
-inbox request it answers (easiest via
-`scripts/mailbox_reply.py <request_id> --text "..."`); the provider
+**R direction (reasoner):** runs `scripts/mailbox_pending.py` to find
+requests with no valid `outbox/<request_id>.json` reply (a reply is valid
+only if it echoes the inbox request's live `attempt` nonce), reasons over
+each prompt as Muse, and atomic-writes the reply (`{"request_id",
+"attempt", "text", "replied_at"}`, tmp + rename, 0600). The reply
+**must echo the `attempt` nonce** captured **when the request was read** (easiest via
+`scripts/mailbox_reply.py <request_id> --attempt <nonce> --text "..."`,
+where `<nonce>` is the attempt you captured **when you read the request**,
+not the inbox's current value); the provider
 rejects any reply whose attempt doesn't match the live one, so a reused
 request_id can never pick up a stale reply. Note: the daemon namespaces
 request ids (e.g. `conversation:<uuid>`) — the outbox filename must match

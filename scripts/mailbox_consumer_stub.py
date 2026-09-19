@@ -44,9 +44,11 @@ Mailbox protocol (see ``our_ark_muse.core`` for the provider side):
 
 Consumer rules:
 
-1. The reply MUST echo the inbox request's ``attempt`` nonce. Use
-   ``scripts/mailbox_reply.py <request_id> --text "..."`` to get this
-   right; hand-written replies that omit or mismatch the attempt are
+1. The reply MUST echo the ``attempt`` nonce captured when you READ the
+   request. Use
+   ``scripts/mailbox_reply.py <request_id> --attempt <nonce> --text "..."``;
+   the helper refuses to re-stamp a stale answer with a rotated attempt.
+   Hand-written replies that omit or mismatch the attempt are
    silently ignored by the provider.
 2. Write the reply file ATOMICALLY: write to a temp file in the same
    directory, chmod 0600, then ``os.replace()`` into place. The provider

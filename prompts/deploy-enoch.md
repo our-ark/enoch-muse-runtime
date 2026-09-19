@@ -19,13 +19,18 @@ Concretely, "deployed" = all of the following are true:
    `chat.muse` registered and loadable through Enoch's real provider registry).
 3. The instance has its **own mailbox directory** (never shared between
    instances): `<mailbox>/inbox`, `<mailbox>/outbox`, `<mailbox>/chat_inbox`,
-   `<mailbox>/chat_outbox`, plus its own `chat_cursor.txt`.
+   `<mailbox>/chat_outbox`. The chat cursor is daemon-managed
+   (`<agent_root>/.enoch/channels/muse/cursor.json`); there is no
+   `chat_cursor.txt` anymore.
 4. Seed memories from the instance prompt are written through Enoch's real
    memory API (`remember_memory`), not by editing JSON by hand.
 5. One real end-to-end turn has succeeded: a `chat.muse` message in
-   `chat_inbox` → `scripts/chat_turn.py` → genuine Enoch turn (real identity,
-   real `memory_for_prompt`, real `run_conversation` with journal, real
-   `runtime.muse`) → reply in `chat_outbox`.
+   `chat_inbox` → the instance's own daemon (`python -m enoch.agent`,
+   started via `scripts/run_enoch_daemon.sh` with `ENOCH_AGENT_ROOT` /
+   `ENOCH_MUSE_MAILBOX` pointed at this instance) picks it up in its poll
+   loop → genuine Enoch turn (real identity, real `memory_for_prompt`,
+   real `run_conversation` with journal, real `runtime.muse`) → reply in
+   `chat_outbox`.
 6. The bidirectional consumer (cron `muse-enoch-mailbox-consumer` or an
    equivalent loop) is pointed at this instance's mailbox so it keeps serving
    after you finish.
@@ -52,7 +57,8 @@ what you chose. Do not interrogate them.
    `src/our_ark_muse/core.py` (mailbox protocol, `ENOCH_MUSE_MAILBOX`,
    `ENOCH_MUSE_POLL_SECONDS`, `ENOCH_MUSE_TIMEOUT`), `src/our_ark_muse/chat.py`
    (`chat_inbox/<seq>.json` in, `chat_outbox/<id>.json` out),
-   `scripts/chat_turn.py` (`ENOCH_AGENT_ROOT`, `CHAT_AFTER_CURSOR`).
+   `scripts/run_enoch_daemon.sh` (daemon launcher; `ENOCH_AGENT_ROOT`,
+   `ENOCH_MUSE_MAILBOX`, `ENOCH_MUSE_REPO`, `ENOCH_SRC` overrides).
 2. **Create the agent root** with real `enoch init` at `agent_root`. Verify
    `.enoch/` exists and `load_body_identity` returns the identity. Never
    reuse another instance's root.
@@ -63,14 +69,19 @@ what you chose. Do not interrogate them.
    `our_ark_muse.chat.MuseChatClient`.
 4. **Seed memory** via the memory API only. Then verify with
    `memory_for_prompt()` that the seed is visible to the prompt builder.
-5. **Smoke test**: drop one message into `chat_inbox` with
-   `drop_chat_message`, run `scripts/chat_turn.py` with
-   `ENOCH_AGENT_ROOT`, `ENOCH_MUSE_MAILBOX`, `ENOCH_MUSE_POLL_SECONDS`,
-   `ENOCH_MUSE_TIMEOUT` set, and confirm a reply lands in `chat_outbox`
-   and the conversation journal was written under
-   `<agent_root>/.enoch/conversation/`.
+5. **Smoke test**: start the instance's daemon with
+   `ENOCH_AGENT_ROOT=<agent_root> ENOCH_MUSE_MAILBOX=<mailbox> bash
+   scripts/run_enoch_daemon.sh` (it writes its own pidfile/log under the
+   instance mailbox), drop one message into `chat_inbox` with
+   `drop_chat_message`, and confirm a reply lands in `chat_outbox` and the
+   conversation journal was written under
+   `<agent_root>/.enoch/conversation/`. The daemon owns the S direction
+   end-to-end; `scripts/chat_turn.py` is retired from the live loop (kept
+   for debugging only) and must not be used here.
 6. **Wire continuous service**: point the `muse-enoch-mailbox-consumer` cron
-   (or a per-instance loop) at this mailbox, with its own `chat_cursor.txt`.
+   (or a per-instance loop) at this mailbox. The cron supervises the daemon
+   via the mailbox pidfile and serves the R direction; the chat cursor is
+   daemon-managed, so there is no `chat_cursor.txt` to wire up.
    Mark any test messages already processed so the consumer never replays
    them (cursor + `.delivered` markers on test outbox files).
 7. **Report back**: instance name, agent root, mailbox, what the smoke-test
@@ -84,12 +95,13 @@ what you chose. Do not interrogate them.
   `@<name> <text>`: write their literal text to `chat_inbox`, ack briefly,
   and forward the instance's `chat_outbox` reply verbatim, clearly labeled.
   You are the deployer/operator, not the agent.
-- `chat_turn.py` mirrors the daemon's command dispatch (user-issued
-  slash commands go through Enoch's real registered-command table), but
-  it is still a PoC stand-in for the full `EnochApplication.handle_event()`
-  — say so if asked about production readiness. Do not claim daemon
-  features (receipts, epochs, effect fences, lifecycle workers) that are
-  not wired.
+- `scripts/chat_turn.py` is retired from the live loop (debug use only).
+  The S direction is owned by the instance's own daemon
+  (`python -m enoch.agent` via `scripts/run_enoch_daemon.sh`), which runs
+  the full `handle_event()` path: receipts, daemon epochs,
+  `DaemonEffectFence`, and real `[ENOCH_ACTION]` execution. Do not claim
+  production readiness beyond what the daemon actually wires; say what is
+  PoC if asked.
 - One mailbox per instance. One cursor per instance. Never point two
   consumers at the same mailbox.
 - Git: author `Muse <noreply@local>`; push only through the workspace
