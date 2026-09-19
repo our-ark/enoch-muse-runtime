@@ -1,0 +1,37 @@
+{
+  "study_id": "ripa-muse-study-20260919",
+  "parts": [
+    {
+      "path": "local-common-package.json",
+      "sha256": "f038274c72375c919c10d80ef807f4cad0048bcdb56de41e85863750a128e65c",
+      "file_count": 44,
+      "bytes": 196381
+    },
+    {
+      "path": "local-qualification-package.json",
+      "sha256": "0e697e112d7a828e00902e82ccf64928eb473a33ebe07c7d7f406f8daf33111c",
+      "file_count": 45,
+      "bytes": 107932
+    },
+    {
+      "path": "local-repeats-package.json",
+      "sha256": "5b617b9a0f5e9a3cd8c4d5f07bc8004be16e035c236dbd1d29192a0177db47ec",
+      "file_count": 225,
+      "bytes": 543132
+    },
+    {
+      "path": "local-controls-package.json",
+      "sha256": "a3194218643bf7226351fbb2bb511c73b2553536f37a3fdfc806512177ed411e",
+      "file_count": 135,
+      "bytes": 299370
+    },
+    {
+      "path": "local-fault-package.json",
+      "sha256": "c633c1604d505e52391e4d57836a36a75798901792aa1b4bbe31532787716fe7",
+      "file_count": 46,
+      "bytes": 119142
+    }
+  ],
+  "total_files": 495,
+  "all_cases_verified": true
+}

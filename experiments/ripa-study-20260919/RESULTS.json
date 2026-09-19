@@ -1,0 +1,706 @@
+{
+  "study_id": "ripa-muse-study-20260919",
+  "generated_at": "2026-09-19T05:07:31.362000+00:00",
+  "cases": [
+    {
+      "case": "Q",
+      "arm": "qualification",
+      "ledger": [
+        58,
+        53,
+        84
+      ],
+      "multiplier": 4,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 6.330232833046466,
+        "continuation": 5.425661490000039,
+        "recall": 6.780940541997552
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15776,
+          "cached_input_tokens": 12416,
+          "output_tokens": 83,
+          "reasoning_tokens": 40
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15844,
+          "cached_input_tokens": 12416,
+          "output_tokens": 94,
+          "reasoning_tokens": 26
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15776,
+          "cached_input_tokens": 12416,
+          "output_tokens": 83,
+          "reasoning_tokens": 40
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15844,
+          "cached_input_tokens": 12416,
+          "output_tokens": 94,
+          "reasoning_tokens": 26
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "b0c734d75d2d0df0656ecb5b1200f5370127b0df",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "R1",
+      "arm": "roundtrip",
+      "ledger": [
+        53,
+        88,
+        76
+      ],
+      "multiplier": 9,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 8.03883145796135,
+        "continuation": 5.206884509999782,
+        "recall": 7.614713208051398
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 12416,
+          "output_tokens": 80,
+          "reasoning_tokens": 33
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 7424,
+          "output_tokens": 115,
+          "reasoning_tokens": 43
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 12416,
+          "output_tokens": 80,
+          "reasoning_tokens": 33
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 7424,
+          "output_tokens": 115,
+          "reasoning_tokens": 43
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "56b825219bb90e121627119408388e26c3ba9571",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "R2",
+      "arm": "roundtrip",
+      "ledger": [
+        51,
+        15,
+        34
+      ],
+      "multiplier": 8,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 7.020709083182737,
+        "continuation": 4.818276523999884,
+        "recall": 7.763180000009015
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15782,
+          "cached_input_tokens": 14592,
+          "output_tokens": 78,
+          "reasoning_tokens": 32
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 104,
+          "reasoning_tokens": 32
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15782,
+          "cached_input_tokens": 14592,
+          "output_tokens": 78,
+          "reasoning_tokens": 32
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 104,
+          "reasoning_tokens": 32
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "be9d8efa5fec9c4a504bad097b51440987ca4b8e",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "R3",
+      "arm": "roundtrip",
+      "ledger": [
+        69,
+        38,
+        82
+      ],
+      "multiplier": 4,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 6.226839957991615,
+        "continuation": 4.012439339000139,
+        "recall": 7.614507708000019
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 7424,
+          "output_tokens": 79,
+          "reasoning_tokens": 32
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15850,
+          "cached_input_tokens": 12416,
+          "output_tokens": 113,
+          "reasoning_tokens": 42
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 7424,
+          "output_tokens": 79,
+          "reasoning_tokens": 32
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15850,
+          "cached_input_tokens": 12416,
+          "output_tokens": 113,
+          "reasoning_tokens": 42
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "ed796ec2b127ee9559e4117441acbd240a179612",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "R4",
+      "arm": "roundtrip",
+      "ledger": [
+        59,
+        99,
+        76
+      ],
+      "multiplier": 4,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 6.7046135840937495,
+        "continuation": 4.006571463,
+        "recall": 7.282442375086248
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15779,
+          "cached_input_tokens": 7424,
+          "output_tokens": 78,
+          "reasoning_tokens": 35
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 0,
+          "output_tokens": 98,
+          "reasoning_tokens": 26
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15779,
+          "cached_input_tokens": 7424,
+          "output_tokens": 78,
+          "reasoning_tokens": 35
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 0,
+          "output_tokens": 98,
+          "reasoning_tokens": 26
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "b918198d3aae63a8f6a9f754c25a8c008ddff98a",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "R5",
+      "arm": "roundtrip",
+      "ledger": [
+        14,
+        55,
+        48
+      ],
+      "multiplier": 7,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 6.17507104203105,
+        "continuation": 4.214118891999988,
+        "recall": 8.392214500112459
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 14592,
+          "output_tokens": 79,
+          "reasoning_tokens": 32
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15852,
+          "cached_input_tokens": 0,
+          "output_tokens": 146,
+          "reasoning_tokens": 73
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 14592,
+          "output_tokens": 79,
+          "reasoning_tokens": 32
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15852,
+          "cached_input_tokens": 0,
+          "output_tokens": 146,
+          "reasoning_tokens": 73
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "932802b817b5826d114bcee68d43c3f8e836f3fb",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": []
+    },
+    {
+      "case": "C1",
+      "arm": "control",
+      "ledger": [
+        53,
+        88,
+        76
+      ],
+      "multiplier": 9,
+      "status": "passed",
+      "checks_passed": 13,
+      "checks_total": 13,
+      "runtime_seconds": {
+        "source": 7.987653958145529,
+        "continuation": 9.80352241708897,
+        "recall": 6.770749625051394
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15780,
+          "cached_input_tokens": 12416,
+          "output_tokens": 102,
+          "reasoning_tokens": 58
+        },
+        "continuation": {
+          "input_tokens": 15869,
+          "cached_input_tokens": 14592,
+          "output_tokens": 115,
+          "reasoning_tokens": 24
+        },
+        "recall": {
+          "input_tokens": 15847,
+          "cached_input_tokens": 12416,
+          "output_tokens": 102,
+          "reasoning_tokens": 33
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15780,
+          "cached_input_tokens": 12416,
+          "output_tokens": 102,
+          "reasoning_tokens": 58
+        },
+        "continuation": {
+          "input_tokens": 15869,
+          "cached_input_tokens": 14592,
+          "output_tokens": 115,
+          "reasoning_tokens": 24
+        },
+        "recall": {
+          "input_tokens": 15847,
+          "cached_input_tokens": 12416,
+          "output_tokens": 102,
+          "reasoning_tokens": 33
+        }
+      }
+    },
+    {
+      "case": "C2",
+      "arm": "control",
+      "ledger": [
+        51,
+        15,
+        34
+      ],
+      "multiplier": 8,
+      "status": "passed",
+      "checks_passed": 13,
+      "checks_total": 13,
+      "runtime_seconds": {
+        "source": 7.491363416193053,
+        "continuation": 7.434888957999647,
+        "recall": 10.008467499865219
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 0,
+          "output_tokens": 85,
+          "reasoning_tokens": 38
+        },
+        "continuation": {
+          "input_tokens": 15877,
+          "cached_input_tokens": 7424,
+          "output_tokens": 105,
+          "reasoning_tokens": 26
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 7424,
+          "output_tokens": 152,
+          "reasoning_tokens": 79
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 0,
+          "output_tokens": 85,
+          "reasoning_tokens": 38
+        },
+        "continuation": {
+          "input_tokens": 15877,
+          "cached_input_tokens": 7424,
+          "output_tokens": 105,
+          "reasoning_tokens": 26
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 7424,
+          "output_tokens": 152,
+          "reasoning_tokens": 79
+        }
+      }
+    },
+    {
+      "case": "C3",
+      "arm": "control",
+      "ledger": [
+        69,
+        38,
+        82
+      ],
+      "multiplier": 4,
+      "status": "passed",
+      "checks_passed": 13,
+      "checks_total": 13,
+      "runtime_seconds": {
+        "source": 6.767352540977299,
+        "continuation": 6.566533959005028,
+        "recall": 7.089065958978608
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 14592,
+          "output_tokens": 82,
+          "reasoning_tokens": 35
+        },
+        "continuation": {
+          "input_tokens": 15877,
+          "cached_input_tokens": 0,
+          "output_tokens": 101,
+          "reasoning_tokens": 22
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 106,
+          "reasoning_tokens": 33
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15783,
+          "cached_input_tokens": 14592,
+          "output_tokens": 82,
+          "reasoning_tokens": 35
+        },
+        "continuation": {
+          "input_tokens": 15877,
+          "cached_input_tokens": 0,
+          "output_tokens": 101,
+          "reasoning_tokens": 22
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 106,
+          "reasoning_tokens": 33
+        }
+      }
+    },
+    {
+      "case": "C4",
+      "arm": "control",
+      "ledger": [
+        59,
+        99,
+        76
+      ],
+      "multiplier": 4,
+      "status": "passed",
+      "checks_passed": 13,
+      "checks_total": 13,
+      "runtime_seconds": {
+        "source": 6.24729295889847,
+        "continuation": 6.680586708011106,
+        "recall": 6.926736249821261
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15781,
+          "cached_input_tokens": 14592,
+          "output_tokens": 81,
+          "reasoning_tokens": 36
+        },
+        "continuation": {
+          "input_tokens": 15867,
+          "cached_input_tokens": 14592,
+          "output_tokens": 95,
+          "reasoning_tokens": 24
+        },
+        "recall": {
+          "input_tokens": 15843,
+          "cached_input_tokens": 7424,
+          "output_tokens": 101,
+          "reasoning_tokens": 36
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15781,
+          "cached_input_tokens": 14592,
+          "output_tokens": 81,
+          "reasoning_tokens": 36
+        },
+        "continuation": {
+          "input_tokens": 15867,
+          "cached_input_tokens": 14592,
+          "output_tokens": 95,
+          "reasoning_tokens": 24
+        },
+        "recall": {
+          "input_tokens": 15843,
+          "cached_input_tokens": 7424,
+          "output_tokens": 101,
+          "reasoning_tokens": 36
+        }
+      }
+    },
+    {
+      "case": "C5",
+      "arm": "control",
+      "ledger": [
+        14,
+        55,
+        48
+      ],
+      "multiplier": 7,
+      "status": "passed",
+      "checks_passed": 13,
+      "checks_total": 13,
+      "runtime_seconds": {
+        "source": 5.981089625041932,
+        "continuation": 8.309114124858752,
+        "recall": 9.082862499868497
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15797,
+          "cached_input_tokens": 12416,
+          "output_tokens": 84,
+          "reasoning_tokens": 36
+        },
+        "continuation": {
+          "input_tokens": 15878,
+          "cached_input_tokens": 7424,
+          "output_tokens": 116,
+          "reasoning_tokens": 21
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 108,
+          "reasoning_tokens": 35
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15797,
+          "cached_input_tokens": 12416,
+          "output_tokens": 84,
+          "reasoning_tokens": 36
+        },
+        "continuation": {
+          "input_tokens": 15878,
+          "cached_input_tokens": 7424,
+          "output_tokens": 116,
+          "reasoning_tokens": 21
+        },
+        "recall": {
+          "input_tokens": 15851,
+          "cached_input_tokens": 12416,
+          "output_tokens": 108,
+          "reasoning_tokens": 35
+        }
+      }
+    },
+    {
+      "case": "F",
+      "arm": "fault",
+      "ledger": [
+        35,
+        84,
+        99
+      ],
+      "multiplier": 7,
+      "status": "passed",
+      "checks_passed": 28,
+      "checks_total": 28,
+      "runtime_seconds": {
+        "source": 7.330372957978398,
+        "continuation": 4.006002098999488,
+        "recall": 7.545218167128041
+      },
+      "raw_reported_usage": {
+        "source": {
+          "input_tokens": 15776,
+          "cached_input_tokens": 7424,
+          "output_tokens": 107,
+          "reasoning_tokens": 64
+        },
+        "continuation": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "recall": {
+          "input_tokens": 15844,
+          "cached_input_tokens": 14592,
+          "output_tokens": 117,
+          "reasoning_tokens": 49
+        }
+      },
+      "usable_usage": {
+        "source": {
+          "input_tokens": 15776,
+          "cached_input_tokens": 7424,
+          "output_tokens": 107,
+          "reasoning_tokens": 64
+        },
+        "continuation": null,
+        "recall": {
+          "input_tokens": 15844,
+          "cached_input_tokens": 14592,
+          "output_tokens": 117,
+          "reasoning_tokens": 49
+        }
+      },
+      "provenance_passed": true,
+      "artifact_commit": "5b6ae05a9a6e93d9a1e99a8496c8312d820365f6",
+      "operator_reported_interventions": 0,
+      "operator_reported_failures": [],
+      "planned_worker_terminations": 1,
+      "supplement_artifact_commit": "de9314831681d0aad5dadc7a8235521ab67f7a0e",
+      "evidence_caveats": [
+        "Native recovery records were missing from the initial package and then supplied with the previously recorded matching hash; no experimental rerun.",
+        "Old-nonce rejection stderr is retained; helper exit 3 is an operator observation, not a separately captured machine exit record."
+      ]
+    }
+  ],
+  "all_cases_verified": true,
+  "scope": "Supervised engineering study with simple synthetic arithmetic/recall witnesses and an explicit workflow driver.",
+  "usage_note": "Muse provider emits zero placeholders; treat Muse token usage as unavailable, not zero.",
+  "timing_note": "Per-runtime wall time includes harness/operator delays. Local source and control batches overlapped. Do not infer a model speed ranking.",
+  "statistics_note": "Five repeated cases and five paired controls do not establish a population reliability estimate."
+}
