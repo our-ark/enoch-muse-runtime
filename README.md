@@ -188,6 +188,15 @@ provider moves its inbox request to `mailbox/dead-letter/` stamped with
 `cancelled_at` / `cancel_reason`. The consumer never answers dead-letter
 entries; a late reply for a dead attempt is inert (attempt mismatch).
 
+**Reply checklist** (two rules, learned the hard way):
+
+1. Capture the `attempt` when you **read** the request and carry it to
+   submit time (`--attempt`); never substitute the inbox's current value —
+   the request may have been superseded while you were reasoning.
+2. A `dead-letter/` entry blocks only its own attempt; a retry of the
+   same request id with a fresh attempt is legitimate and must be
+   answered.
+
 **Delivery:** `@enoch` messages from Muse chat are appended by the chat
 operator to `mailbox/chat_inbox/<seq>.json` (never answered by the
 operator itself — the anti-roleplay guarantee). The job delivers
