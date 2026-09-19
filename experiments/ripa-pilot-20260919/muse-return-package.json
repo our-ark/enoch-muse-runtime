@@ -1,0 +1,631 @@
+{
+ "bundle_b64": "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",
+ "bundle_sha256": "f31d097535e5facde62af638c06afb43e990867e62a61591b65f057264e46550",
+ "evidence": {
+  "export": {
+   "export": {
+    "artifacts_included": true,
+    "body_revision": "66781e209962bcce6d5254e50d05f000ac914668",
+    "bundle_path": "/home/hatch/workspace/ripa-pilot/evidence/muse/return.zip",
+    "bundle_sha256": "f31d097535e5facde62af638c06afb43e990867e62a61591b65f057264e46550",
+    "bytes": 26423,
+    "files": 15,
+    "migration_id": "6ff2918485764f51b16f77f05097f068"
+   },
+   "inspection": {
+    "artifacts_included": true,
+    "body_revision": "66781e209962bcce6d5254e50d05f000ac914668",
+    "bundle_path": "/home/hatch/workspace/ripa-pilot/evidence/muse/return.zip",
+    "bytes": 26423,
+    "files": 15,
+    "manifest": {
+     "contents": {
+      "artifacts_included": true,
+      "excluded": [
+       "credentials and config.yaml",
+       "daemon process state",
+       "downloaded dependencies and backups",
+       "provider-native runtime session mappings"
+      ],
+      "files": [
+       {
+        "archive_path": "artifacts/logs/conversations/2026-09-19.jsonl",
+        "area": "artifacts",
+        "relative_path": "logs/conversations/2026-09-19.jsonl",
+        "sha256": "e398f4ba02d9b0d06bb4bfa90ca507061c39cb881907109203bf1cef0a8f2f51",
+        "size": 523
+       },
+       {
+        "archive_path": "artifacts/logs/system/2026-09-19.jsonl",
+        "area": "artifacts",
+        "relative_path": "logs/system/2026-09-19.jsonl",
+        "sha256": "4f96d2b5f96db7a7b807f80299b3a102c336a496dcc129ef62fcbebafa2dc56c",
+        "size": 292
+       },
+       {
+        "archive_path": "artifacts/migrations/80676bf1e4124a65b4eeaec090161397/migration-report.json",
+        "area": "artifacts",
+        "relative_path": "migrations/80676bf1e4124a65b4eeaec090161397/migration-report.json",
+        "sha256": "985a76699fc773c92f6de9d3cf9eb2d7f457f7ac13c7e91325977b413d5f45db",
+        "size": 1220
+       },
+       {
+        "archive_path": "artifacts/task_events.jsonl",
+        "area": "artifacts",
+        "relative_path": "task_events.jsonl",
+        "sha256": "a2ea7fe28854a3fd4538feed7a147afe447bd6f6bf68786b77c092b5206612da",
+        "size": 12593
+       },
+       {
+        "archive_path": "artifacts/task_events.jsonl.lock",
+        "area": "artifacts",
+        "relative_path": "task_events.jsonl.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+       },
+       {
+        "archive_path": "state/channels/muse/cursor.json",
+        "area": "private-state",
+        "relative_path": "channels/muse/cursor.json",
+        "sha256": "be785fe8e60587cef7890c844c4ae35e77d09880f729cfcbd8074215be7c133d",
+        "size": 41
+       },
+       {
+        "archive_path": "state/channels/muse/inbox.json",
+        "area": "private-state",
+        "relative_path": "channels/muse/inbox.json",
+        "sha256": "3d6e3b15fd101120968b764f935fe0528fca389c26df4427395d052796e89512",
+        "size": 690
+       },
+       {
+        "archive_path": "state/channels/muse/lifecycle.json",
+        "area": "private-state",
+        "relative_path": "channels/muse/lifecycle.json",
+        "sha256": "40b4972dc27d8387a8914b5c1bb54d4c6634a0d02996a0a4eb0e764457e979e7",
+        "size": 138
+       },
+       {
+        "archive_path": "state/channels/muse/notifications.json",
+        "area": "private-state",
+        "relative_path": "channels/muse/notifications.json",
+        "sha256": "8f2a00c580a67f31838524fecb93c090e58ede3d60a6bc22942561667111c8e1",
+        "size": 1896
+       },
+       {
+        "archive_path": "state/conversation/7e9c399252e80ed1bdc7f188b2438dddcbec3ac1cf80b60b6f54520c9b3dffcf.json",
+        "area": "private-state",
+        "relative_path": "conversation/7e9c399252e80ed1bdc7f188b2438dddcbec3ac1cf80b60b6f54520c9b3dffcf.json",
+        "sha256": "ca2e1a6f4287279c432ae9d17383044a97d212d4b6faba8e44ee4dc77fd5daf5",
+        "size": 205
+       },
+       {
+        "archive_path": "state/last_codex_input.json",
+        "area": "private-state",
+        "relative_path": "last_codex_input.json",
+        "sha256": "4f15ded00f35b9e5309fd5d9217d56a11df1cfcdfca15e64c078172459a83c2a",
+        "size": 2923
+       },
+       {
+        "archive_path": "state/memory/long_term.json",
+        "area": "private-state",
+        "relative_path": "memory/long_term.json",
+        "sha256": "799737ae5523c820b9cad09795a6c29bac7f66e7b69a28bb093d67dc2500cca1",
+        "size": 1269
+       },
+       {
+        "archive_path": "state/self.json",
+        "area": "private-state",
+        "relative_path": "self.json",
+        "sha256": "5944dacacce05954aedffeb6157ddf30dbf1cdc7f3b9b680eaa59e1e7802ac4e",
+        "size": 1415
+       },
+       {
+        "archive_path": "state/state_manifest.json",
+        "area": "private-state",
+        "relative_path": "state_manifest.json",
+        "sha256": "a3980963101d6767a6a6ba8b25ba410d45f80dd11b9393060b17d2d604841684",
+        "size": 846
+       },
+       {
+        "archive_path": "state/task_queue.json",
+        "area": "private-state",
+        "relative_path": "task_queue.json",
+        "sha256": "a9255ad94f5d36d15275eaf14b49f816346ba55751eae7609af626c8a42a3a60",
+        "size": 2372
+       }
+      ]
+     },
+     "created_at": "2026-09-19T02:44:34+00:00",
+     "migration_id": "6ff2918485764f51b16f77f05097f068",
+     "schema_version": 1,
+     "source": {
+      "authority_generation": 6,
+      "host": "htch-runtime",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+      "provider_bindings": {
+       "chat": "telegram",
+       "forge": "github",
+       "runtime": "codex",
+       "service": "systemd",
+       "vcs": "git"
+      },
+      "runtime_settings": {}
+     },
+     "substrate": {
+      "body_revision": "66781e209962bcce6d5254e50d05f000ac914668",
+      "identity_sha256": "5944dacacce05954aedffeb6157ddf30dbf1cdc7f3b9b680eaa59e1e7802ac4e",
+      "memory_sha256": "3563daaf51eed4d5265a30e8c6e97aeb40652b2b6a81de9104b6a6f825ce6058",
+      "tasks": {
+       "history": [
+        1
+       ],
+       "paused": [],
+       "pending": [],
+       "running": []
+      }
+     }
+    },
+    "migration_id": "6ff2918485764f51b16f77f05097f068",
+    "provider_bindings": {
+     "chat": "telegram",
+     "forge": "github",
+     "runtime": "codex",
+     "service": "systemd",
+     "vcs": "git"
+    },
+    "runtime_settings": {},
+    "source_authority_generation": 6,
+    "source_host": "htch-runtime"
+   },
+   "source_fence_rejection": "This source instance is fenced by exported migration 6ff2918485764f51b16f77f05097f068. Start the imported target, or cancel the export only after confirming that no target continuation is active.",
+   "state": {
+    "at": "2026-09-19T02:44:34.684118+00:00",
+    "body_sha": "66781e209962bcce6d5254e50d05f000ac914668",
+    "epoch": {
+     "generation": 6,
+     "pid": 2031,
+     "provider": "pilot-worker-muse",
+     "started_at": "2026-09-19T02:43:33+00:00",
+     "token": "879d34fbd1d44009bfe722c7d9dc2334"
+    },
+    "host": "htch-runtime",
+    "identity": {
+     "care": {
+      "behaviors": [
+       "Preserve the audit trail."
+      ],
+      "boundaries": [
+       "Use only synthetic experiment data."
+      ],
+      "domains": [
+       "research"
+      ]
+     },
+     "identity": {
+      "gender": {
+       "presentation": "neutral",
+       "relational_maturity": "adult"
+      },
+      "id": "ripa-muse-pilot-20260919",
+      "names": {
+       "canonical": "LANTERN-PILOT-01",
+       "localized": {
+        "en": "Lantern Pilot"
+       }
+      },
+      "nature": "ai-agent"
+     },
+     "mission": {
+      "roles": [
+       "research-assistant"
+      ],
+      "statement": "Complete the synthetic ledger task and report evidence honestly."
+     },
+     "origin": {
+      "activated_at": "2026-09-19T02:30:57.880889+00:00",
+      "activation_event": "synthetic RIPA pilot",
+      "body": "Enoch",
+      "lineage": [
+       "Synthetic-Origin",
+       "Enoch",
+       "ripa-muse-pilot-20260919"
+      ]
+     },
+     "personality": {
+      "maturity_definition": "Accountable and bounded.",
+      "traits": [
+       "careful",
+       "concise"
+      ]
+     },
+     "relationships": [
+      {
+       "address_as": "Avery",
+       "name": "Avery",
+       "person_id": "synthetic-collaborator",
+       "roles": [
+        "collaborator"
+       ]
+      }
+     ],
+     "schema_version": 1,
+     "values": [
+      {
+       "behaviors": [
+        "Do not invent evidence."
+       ],
+       "description": "Report observed results.",
+       "id": "accuracy",
+       "name": "Accuracy"
+      }
+     ]
+    },
+    "identity_sha256": "5944dacacce05954aedffeb6157ddf30dbf1cdc7f3b9b680eaa59e1e7802ac4e",
+    "memory": {
+     "memories": [
+      {
+       "confidence": "high",
+       "created_at": "2026-09-19T02:30:57+00:00",
+       "id": "mem_20260919_001",
+       "last_used_at": null,
+       "scope": "project",
+       "sensitivity": "low",
+       "source": "explicit",
+       "source_refs": [
+        "ripa-muse-pilot-20260919"
+       ],
+       "subject": "ripa-muse-pilot-20260919",
+       "tags": [
+        "synthetic",
+        "pilot"
+       ],
+       "text": "The source marker is source-f75e9109cf10462b8d3708e3ce91d84e. The synthetic ledger entries are 17, 29, and 43.",
+       "type": "project_fact",
+       "updated_at": "2026-09-19T02:30:57+00:00"
+      },
+      {
+       "confidence": "high",
+       "created_at": "2026-09-19T02:44:03+00:00",
+       "id": "mem_20260919_002",
+       "last_used_at": null,
+       "scope": "project",
+       "sensitivity": "low",
+       "source": "explicit",
+       "source_refs": [
+        "ripa-muse-pilot-20260919"
+       ],
+       "subject": "ripa-muse-pilot-20260919",
+       "tags": [
+        "synthetic",
+        "pilot"
+       ],
+       "text": "The target marker is target-353234587656452ca3c3f374cd8bec1e. Ledger task 1 completed on Muse with total 623.",
+       "type": "project_fact",
+       "updated_at": "2026-09-19T02:44:03+00:00"
+      }
+     ],
+     "schema_version": 1
+    },
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "workflow": {
+     "history": [
+      {
+       "approval_actor": "",
+       "attempt": 3,
+       "candidate_actor": "",
+       "candidate_id": "",
+       "chat_id": "muse-chat",
+       "completed_at": "2026-09-19T02:44:03+00:00",
+       "context": "",
+       "context_source": "",
+       "created_at": "2026-09-19T02:30:57+00:00",
+       "evidence_source": "",
+       "execution_lane": "",
+       "extension_artifact_refs": [],
+       "extension_metadata": {},
+       "failure_class": "",
+       "failure_code": "",
+       "id": 1,
+       "idempotency_key": "ripa-muse-pilot-20260919",
+       "initiated_by": "human",
+       "max_attempts": 1,
+       "next_attempt_at": "",
+       "parent_candidate_id": "",
+       "parent_task_id": null,
+       "publish_stage": "",
+       "required_capabilities": [],
+       "result": "{\"stage\": 2, \"answer\": {\"personal_name\": \"LANTERN-PILOT-01\", \"source_marker\": \"source-f75e9109cf10462b8d3708e3ce91d84e\", \"previous_subtotal\": 89, \"total\": 623, \"target_marker\": \"target-353234587656452ca3c3f374cd8bec1e\"}}",
+       "retryable": false,
+       "review_id": "",
+       "review_published": false,
+       "review_url": "",
+       "review_urls": [],
+       "revision_id": "",
+       "runtime_completion_reason": "completed",
+       "runtime_event_types": [],
+       "runtime_output_refs": [],
+       "runtime_provider": "muse",
+       "runtime_session_id": "ripa-muse-pilot-20260919-muse-stage2",
+       "runtime_side_effects": [],
+       "runtime_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+       },
+       "signal_actor": "",
+       "source": "task",
+       "source_task_id": null,
+       "started_at": "2026-09-19T02:43:33+00:00",
+       "status": "completed",
+       "status_message_id": null,
+       "terminal_evidence_at": "",
+       "terminal_evidence_source": "",
+       "terminal_status": "",
+       "text": "Two-stage ledger: sum the remembered entries locally, pause; after migration multiply the subtotal by 7 and persist a target marker.",
+       "timeout_seconds": null,
+       "trigger": "/do",
+       "worker_heartbeat_at": "",
+       "worker_id": "",
+       "worker_lease_id": "",
+       "worker_pid": null,
+       "workspace_id": "",
+       "workspace_path": ""
+      }
+     ],
+     "paused": [],
+     "paused_count": 0,
+     "pending": [],
+     "pending_count": 0,
+     "reconciliation": null,
+     "running": null
+    }
+   }
+  },
+  "import": {
+   "activated": {
+    "authority_generation": 2,
+    "migration_id": "80676bf1e4124a65b4eeaec090161397"
+   },
+   "applied": {
+    "applied": true,
+    "bundle_path": "/home/hatch/workspace/ripa-pilot/inbound/outbound.zip",
+    "bytes": 11988,
+    "dry_run": false,
+    "files": 7,
+    "migration_id": "80676bf1e4124a65b4eeaec090161397",
+    "target_marker": "/home/hatch/workspace/ripa-pilot/agent-root/.enoch/migration_target.json"
+   },
+   "dry_run": {
+    "applied": false,
+    "bundle_path": "/home/hatch/workspace/ripa-pilot/inbound/outbound.zip",
+    "bytes": 11988,
+    "dry_run": true,
+    "files": 7,
+    "migration_id": "80676bf1e4124a65b4eeaec090161397",
+    "target_marker": null
+   },
+   "verified": {
+    "authority_active": true,
+    "checks": {
+     "authority_advanced": true,
+     "body_revision": true,
+     "portable_file_hashes": true,
+     "private_state_supported": true
+    },
+    "migration_id": "80676bf1e4124a65b4eeaec090161397",
+    "passed": true,
+    "report_path": "/home/hatch/workspace/ripa-pilot/agent-root/.enoch/artifacts/migrations/80676bf1e4124a65b4eeaec090161397/migration-report.json"
+   }
+  },
+  "worker": {
+   "at": "2026-09-19T02:44:03.429693+00:00",
+   "body_sha": "66781e209962bcce6d5254e50d05f000ac914668",
+   "epoch": {
+    "generation": 6,
+    "pid": 2031,
+    "provider": "pilot-worker-muse",
+    "started_at": "2026-09-19T02:43:33+00:00",
+    "token": "879d34fbd1d44009bfe722c7d9dc2334"
+   },
+   "host": "htch-runtime",
+   "identity": {
+    "care": {
+     "behaviors": [
+      "Preserve the audit trail."
+     ],
+     "boundaries": [
+      "Use only synthetic experiment data."
+     ],
+     "domains": [
+      "research"
+     ]
+    },
+    "identity": {
+     "gender": {
+      "presentation": "neutral",
+      "relational_maturity": "adult"
+     },
+     "id": "ripa-muse-pilot-20260919",
+     "names": {
+      "canonical": "LANTERN-PILOT-01",
+      "localized": {
+       "en": "Lantern Pilot"
+      }
+     },
+     "nature": "ai-agent"
+    },
+    "mission": {
+     "roles": [
+      "research-assistant"
+     ],
+     "statement": "Complete the synthetic ledger task and report evidence honestly."
+    },
+    "origin": {
+     "activated_at": "2026-09-19T02:30:57.880889+00:00",
+     "activation_event": "synthetic RIPA pilot",
+     "body": "Enoch",
+     "lineage": [
+      "Synthetic-Origin",
+      "Enoch",
+      "ripa-muse-pilot-20260919"
+     ]
+    },
+    "personality": {
+     "maturity_definition": "Accountable and bounded.",
+     "traits": [
+      "careful",
+      "concise"
+     ]
+    },
+    "relationships": [
+     {
+      "address_as": "Avery",
+      "name": "Avery",
+      "person_id": "synthetic-collaborator",
+      "roles": [
+       "collaborator"
+      ]
+     }
+    ],
+    "schema_version": 1,
+    "values": [
+     {
+      "behaviors": [
+       "Do not invent evidence."
+      ],
+      "description": "Report observed results.",
+      "id": "accuracy",
+      "name": "Accuracy"
+     }
+    ]
+   },
+   "identity_sha256": "5944dacacce05954aedffeb6157ddf30dbf1cdc7f3b9b680eaa59e1e7802ac4e",
+   "memory": {
+    "memories": [
+     {
+      "confidence": "high",
+      "created_at": "2026-09-19T02:30:57+00:00",
+      "id": "mem_20260919_001",
+      "last_used_at": null,
+      "scope": "project",
+      "sensitivity": "low",
+      "source": "explicit",
+      "source_refs": [
+       "ripa-muse-pilot-20260919"
+      ],
+      "subject": "ripa-muse-pilot-20260919",
+      "tags": [
+       "synthetic",
+       "pilot"
+      ],
+      "text": "The source marker is source-f75e9109cf10462b8d3708e3ce91d84e. The synthetic ledger entries are 17, 29, and 43.",
+      "type": "project_fact",
+      "updated_at": "2026-09-19T02:30:57+00:00"
+     },
+     {
+      "confidence": "high",
+      "created_at": "2026-09-19T02:44:03+00:00",
+      "id": "mem_20260919_002",
+      "last_used_at": null,
+      "scope": "project",
+      "sensitivity": "low",
+      "source": "explicit",
+      "source_refs": [
+       "ripa-muse-pilot-20260919"
+      ],
+      "subject": "ripa-muse-pilot-20260919",
+      "tags": [
+       "synthetic",
+       "pilot"
+      ],
+      "text": "The target marker is target-353234587656452ca3c3f374cd8bec1e. Ledger task 1 completed on Muse with total 623.",
+      "type": "project_fact",
+      "updated_at": "2026-09-19T02:44:03+00:00"
+     }
+    ],
+    "schema_version": 1
+   },
+   "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+   "python": "3.12.3",
+   "workflow": {
+    "history": [
+     {
+      "approval_actor": "",
+      "attempt": 3,
+      "candidate_actor": "",
+      "candidate_id": "",
+      "chat_id": "muse-chat",
+      "completed_at": "2026-09-19T02:44:03+00:00",
+      "context": "",
+      "context_source": "",
+      "created_at": "2026-09-19T02:30:57+00:00",
+      "evidence_source": "",
+      "execution_lane": "",
+      "extension_artifact_refs": [],
+      "extension_metadata": {},
+      "failure_class": "",
+      "failure_code": "",
+      "id": 1,
+      "idempotency_key": "ripa-muse-pilot-20260919",
+      "initiated_by": "human",
+      "max_attempts": 1,
+      "next_attempt_at": "",
+      "parent_candidate_id": "",
+      "parent_task_id": null,
+      "publish_stage": "",
+      "required_capabilities": [],
+      "result": "{\"stage\": 2, \"answer\": {\"personal_name\": \"LANTERN-PILOT-01\", \"source_marker\": \"source-f75e9109cf10462b8d3708e3ce91d84e\", \"previous_subtotal\": 89, \"total\": 623, \"target_marker\": \"target-353234587656452ca3c3f374cd8bec1e\"}}",
+      "retryable": false,
+      "review_id": "",
+      "review_published": false,
+      "review_url": "",
+      "review_urls": [],
+      "revision_id": "",
+      "runtime_completion_reason": "completed",
+      "runtime_event_types": [],
+      "runtime_output_refs": [],
+      "runtime_provider": "muse",
+      "runtime_session_id": "ripa-muse-pilot-20260919-muse-stage2",
+      "runtime_side_effects": [],
+      "runtime_usage": {
+       "cached_input_tokens": 0,
+       "input_tokens": 0,
+       "output_tokens": 0,
+       "reasoning_tokens": 0
+      },
+      "signal_actor": "",
+      "source": "task",
+      "source_task_id": null,
+      "started_at": "2026-09-19T02:43:33+00:00",
+      "status": "completed",
+      "status_message_id": null,
+      "terminal_evidence_at": "",
+      "terminal_evidence_source": "",
+      "terminal_status": "",
+      "text": "Two-stage ledger: sum the remembered entries locally, pause; after migration multiply the subtotal by 7 and persist a target marker.",
+      "timeout_seconds": null,
+      "trigger": "/do",
+      "worker_heartbeat_at": "",
+      "worker_id": "",
+      "worker_lease_id": "",
+      "worker_pid": null,
+      "workspace_id": "",
+      "workspace_path": ""
+     }
+    ],
+    "paused": [],
+    "paused_count": 0,
+    "pending": [],
+    "pending_count": 0,
+    "reconciliation": null,
+    "running": null
+   }
+  }
+ },
+ "kind": "muse-return-package",
+ "notes": "Synthetic RIPA round-trip completed on the isolated pilot instance. Task 1 continued on the Muse runtime (89*7=623) with the new target marker persisted to target memory; the return bundle is fenced and carries the completed task plus the new target memory.",
+ "run": "ripa-muse-pilot-20260919",
+ "target_marker": "target-353234587656452ca3c3f374cd8bec1e"
+}
