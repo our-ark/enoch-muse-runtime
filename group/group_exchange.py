@@ -4,6 +4,11 @@
 用法:
     python3 group_exchange.py --speaker 观察者 --text "..." [--max-hops 3]
                              [--timeout-s 1500] [--poll-s 30]
+                             [--zixia-text "..."]
+
+--zixia-text: 紫霞以参与者身份说的话 (调用方以紫霞口吻写好).
+  给出后, 交换开场时把 "[群聊] 紫霞: <text>" 扇出给两边 daemon,
+  并记入 transcript (kind=zixia). 不占 hop 预算.
 
 R 推理不由本脚本做: 两个 mailbox consumer 的每分钟 R 循环会回答 daemon 的
 inference 请求 (群聊进行中它们的投递被旗标暂停, 但 R 照常). 本脚本只负责
@@ -29,12 +34,19 @@ def main() -> int:
     ap.add_argument("--timeout-s", type=float, default=1500)
     ap.add_argument("--poll-s", type=float, default=10)
     ap.add_argument("--quiet-s", type=float, default=120)
+    ap.add_argument("--zixia-text", default="")
     args = ap.parse_args()
 
     t0 = time.time()
     st = gc.start_exchange(args.speaker, args.text)
     eid = st["exchange_id"]
     print(f"exchange {eid} started; seed seqs={st['seed_seqs']}", flush=True)
+
+    if args.zixia_text:
+        zseqs = gc.fanout_room_message("紫霞", args.zixia_text, eid)
+        print("--- 💜 **紫霞** ---", flush=True)
+        print(args.zixia_text, flush=True)
+        print(f"[zixia fanout] seqs={zseqs}", flush=True)
 
     seen: set[tuple[str, str]] = set()
     hops = 0

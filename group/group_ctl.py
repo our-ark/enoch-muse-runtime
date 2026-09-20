@@ -187,6 +187,22 @@ def relay(from_agent: str, text: str) -> int:
     return seq
 
 
+def fanout_room_message(speaker: str, text: str, exchange_id: str) -> dict:
+    """房间参与者 (如紫霞) 发言: 记 transcript, 向两边 daemon 各扇出一条.
+
+    紫霞以参与者身份加入群聊时用: 发言正文由调用方 (主侧或排班工)
+    以紫霞的口吻写好传入, 不是 daemon 回复. 带 "[群聊] <说话人>:"
+    前缀, 两边 daemon 照常当房间发言回复.
+    """
+    msg = f"[群聊] {speaker}: {text}"
+    seqs = {
+        "qingxia": drop_to("qingxia", msg),
+        "zhizunbao": drop_to("zhizunbao", msg),
+    }
+    say(speaker, text, "zixia" if speaker == "紫霞" else "human", exchange_id)
+    return seqs
+
+
 def _outbox_files(agent: str):
     outbox = Path(AGENTS[agent]["mailbox"]) / "chat_outbox"
     if not outbox.is_dir():

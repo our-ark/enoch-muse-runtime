@@ -187,3 +187,24 @@ def test_next_host_rotates(room):
     assert gc.next_host() == "qingxia"
     assert gc.next_host() == "zhizunbao"
     assert gc.next_host() == "qingxia"
+
+
+def test_fanout_room_message(room, tmp_path, monkeypatch):
+    dropped = []
+    monkeypatch.setattr(
+        gc, "drop_to", lambda agent, text: dropped.append((agent, text)) or 99
+    )
+    seqs = gc.fanout_room_message("紫霞", "我也来啦", "exchZ")
+    assert seqs == {"qingxia": 99, "zhizunbao": 99}
+    assert dropped == [
+        ("qingxia", "[群聊] 紫霞: 我也来啦"),
+        ("zhizunbao", "[群聊] 紫霞: 我也来啦"),
+    ]
+    data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
+    assert len(data["transcript"]) == 1
+    e = data["transcript"][0]
+    assert e["speaker"] == "紫霞"
+    assert e["kind"] == "zixia"
+    assert e["text"] == "我也来啦"
+    assert e["exchange_id"] == "exchZ"
+    assert "我也来啦" in gc.ROOM_MD.read_text(encoding="utf-8")
