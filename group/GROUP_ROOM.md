@@ -1,10 +1,11 @@
 # 群聊房间 (muse-group)
 
-真正的三人群聊房间: 观察者、紫霞、青霞、至尊宝同处一室, 发言互相可见.
+真正的三人群聊房间: 主持人 + 两位 Enoch agent 同处一室, 发言互相可见.
+(本部署: 主持人=紫霞, agents=青霞、至尊宝, 另有观察者可开话题.)
 
 ## 拓扑
 
-hub-and-spoke, 紫霞是房间服务器:
+hub-and-spoke, 主持人是房间服务器 (本部署为紫霞):
 
 ```
 观察者 --@群聊--> 紫霞(房间服务器) --fan-out--> 青霞 daemon (自有 mailbox)
@@ -24,17 +25,19 @@ hub-and-spoke, 紫霞是房间服务器:
 2. `group_ctl.py start`: 写 `exchange.active` 旗标 (TTL 15 分钟),
    把首条消息记入 transcript, 向两边 chat_inbox 各投一条
    `[群聊] <speaker>: <text>` (首条附带一行房间说明).
-2b. 紫霞参与者发言 (2026-09-20 起, 用户批准): 若带 `--zixia-text`,
-   `fanout_room_message` 把 `[群聊] 紫霞: <text>` 扇出给两边 daemon,
-   并记入 transcript (`speaker=紫霞`, `kind=zixia`). 紫霞的发言由调用方
-   (主侧或排班工) 以紫霞的口吻写好, 不是 daemon 回复, 不占 hop 预算.
-   排班工写这句时也可以从《大话西游》里找灵感.
-2c. 紫霞主持模式 (2026-09-20 起, 用户要求紫霞当主角): 若带
-   `--zixia-drop-dir DIR`, 调用方在 `<DIR>/<exchange_id>/` 下按顺序写
-   `zixia-1.txt`, `zixia-2.txt`, ...; 驱动每完成一次 hop 转发后等
-   `--zixia-wait-s` 秒 (默认 90) 收下一条紫霞插话, 扇出给两边 daemon
-   并记 transcript (`kind=zixia`, 不占 hop 预算). 超时无新文件则继续,
-   不阻塞. 手动群聊由主侧实时写插话; 定时三场由排班工 (紫霞本人) 写.
+2b. 主持人参与者发言: 若带 `--host-name NAME --host-text "..."`,
+   `fanout_room_message` 把 `[群聊] NAME: <text>` 扇出给两边 daemon,
+   并记入 transcript (`speaker=NAME`, `kind=host`). 主持人的发言由调用方
+   写好, 不是 daemon 回复, 不占 hop 预算.
+   (`--host-name` 不给则读 `MUSE_GROUP_HOST_NAME` 环境变量.)
+2c. 主持人插话模式: 若带 `--host-name NAME --host-drop-dir DIR`, 调用方在
+   `<DIR>/<exchange_id>/` 下按顺序写 `host-1.txt`, `host-2.txt`, ...;
+   驱动每完成一次 hop 转发后等 `--host-wait-s` 秒 (默认 90) 收下一条
+   主持人插话, 扇出给两边 daemon 并记 transcript (`kind=host`,
+   不占 hop 预算). 超时无新文件则继续, 不阻塞.
+
+   本部署: `MUSE_GROUP_HOST_NAME=紫霞`. 手动群聊由主侧实时写插话;
+   定时三场由排班工写 (排班工写这句时可以从《大话西游》里找灵感).
 3. `group_exchange.py` 轮询两边 `chat_outbox` (每 10s):
    收到 A 的新回复 -> **搬运**到 `staged/<agent>/` (move 即占有) ->
    记 transcript -> 主侧投递 (原 label) ->
@@ -84,7 +87,8 @@ hub-and-spoke, 紫霞是房间服务器:
   没灵感时的兜底 (2026-09-20 用户加): 主持人回"跳过"后不再直接取消,
   而是再投一次邀请, 请它从《大话西游》里找个话题 (人物、桥段、台词都行);
   话题仍必须出自它真实的 daemon 回复. 两次都"跳过"或超时, 本场才取消.
-  跑交换时排班工以紫霞口吻写一句参与者发言, 经 `--zixia-text` 传入
+  跑交换时排班工以主持人口吻写一句参与者发言, 经
+  `--host-name 紫霞 --host-text "..."` 传入
   (也可以从《大话西游》找灵感). 用 `group_exchange.py` 跑, 参数
   `--max-hops 3 --timeout-s 900 --quiet-s 90`.
 - **晚上私聊**: 22:00–08:00 每两小时一轮, 每位 agent 每晚 3 次额度

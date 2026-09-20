@@ -194,33 +194,44 @@ def test_fanout_room_message(room, tmp_path, monkeypatch):
     monkeypatch.setattr(
         gc, "drop_to", lambda agent, text: dropped.append((agent, text)) or 99
     )
-    seqs = gc.fanout_room_message("紫霞", "我也来啦", "exchZ")
+    monkeypatch.setattr(gc, "HOST_NAME", "主持人")
+    seqs = gc.fanout_room_message("主持人", "我也来啦", "exchZ")
     assert seqs == {"qingxia": 99, "zhizunbao": 99}
     assert dropped == [
-        ("qingxia", "[群聊] 紫霞: 我也来啦"),
-        ("zhizunbao", "[群聊] 紫霞: 我也来啦"),
+        ("qingxia", "[群聊] 主持人: 我也来啦"),
+        ("zhizunbao", "[群聊] 主持人: 我也来啦"),
     ]
     data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
     assert len(data["transcript"]) == 1
     e = data["transcript"][0]
-    assert e["speaker"] == "紫霞"
-    assert e["kind"] == "zixia"
+    assert e["speaker"] == "主持人"
+    assert e["kind"] == "host"
     assert e["text"] == "我也来啦"
     assert e["exchange_id"] == "exchZ"
     assert "我也来啦" in gc.ROOM_MD.read_text(encoding="utf-8")
 
 
-def test_await_zixia_drop_hit_and_miss(tmp_path):
+def test_fanout_room_message_non_host_is_human(room, tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        gc, "drop_to", lambda agent, text: 99
+    )
+    monkeypatch.setattr(gc, "HOST_NAME", "主持人")
+    gc.fanout_room_message("观察者", "旁听一句", "exchH")
+    data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
+    assert data["transcript"][-1]["kind"] == "human"
+
+
+def test_await_host_drop_hit_and_miss(tmp_path):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "group"))
     import group_exchange as gx  # noqa: E402
 
     d = tmp_path / "drops"
     (d / "eid1").mkdir(parents=True)
-    (d / "eid1" / "zixia-1.txt").write_text("紫霞驾到", encoding="utf-8")
-    assert gx.await_zixia_drop(d, "eid1", 1, 5) == "紫霞驾到"
+    (d / "eid1" / "host-1.txt").write_text("主持人驾到", encoding="utf-8")
+    assert gx.await_host_drop(d, "eid1", 1, 5) == "主持人驾到"
     t0 = time.time()
-    assert gx.await_zixia_drop(d, "eid1", 2, 0) is None
+    assert gx.await_host_drop(d, "eid1", 2, 0) is None
     assert time.time() - t0 < 5
     # 空白文件视为未写, 不应被取走
-    (d / "eid1" / "zixia-3.txt").write_text("   \n", encoding="utf-8")
-    assert gx.await_zixia_drop(d, "eid1", 3, 0) is None
+    (d / "eid1" / "host-3.txt").write_text("   \n", encoding="utf-8")
+    assert gx.await_host_drop(d, "eid1", 3, 0) is None

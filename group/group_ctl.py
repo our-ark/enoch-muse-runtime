@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """muse-group 群聊房间控制脚本.
 
-hub-and-spoke 拓扑: 紫霞是房间服务器. 两个 Enoch daemon 各自只读写自己的
+hub-and-spoke 拓扑: 主持人 (host) 是房间服务器. 两个 Enoch daemon 各自只读写自己的
 mailbox (chat_inbox/chat_outbox), 房间负责把发言扇出 (fan-out) 到两边,
 并把两边的回复收进共享 transcript (room.json / room.md).
+
+主持人是第三方参与者: 发言正文由调用方写好传入 (不是 daemon 回复),
+可开场、可插话, 不占 hop 预算. 主持人的显示名由环境变量 MUSE_GROUP_HOST_NAME
+配置 (本部署设为紫霞); 不设则房间只有 agents.
 
 防重:
 - exchange.active 旗标: 群聊交换进行中时, 两个 mailbox consumer 与
@@ -58,6 +62,10 @@ AGENTS = {
     },
 }
 OTHER = {"qingxia": "zhizunbao", "zhizunbao": "qingxia"}
+
+# 房间主持人 (host) 的显示名, 由调用方配置. 主持人的发言正文由调用方写好
+# 传入 (不是 daemon 回复), 记 transcript 时 kind="host", 不占 hop 预算.
+HOST_NAME = os.environ.get("MUSE_GROUP_HOST_NAME", "")
 
 _src_paths = os.environ.get("MUSE_GROUP_SRC_PATHS")
 SRC_PATHS = (
@@ -120,7 +128,7 @@ def say(speaker: str, text: str, kind: str, exchange_id: str) -> None:
             "speaker": speaker,
             "text": text,
             "exchange_id": exchange_id,
-            "kind": kind,  # human | zixia | agent
+            "kind": kind,  # human | host | agent
         }
     )
 
@@ -144,8 +152,11 @@ def start_exchange(speaker: str, text: str) -> dict:
         raise RuntimeError("已有进行中的群聊交换, 先等它结束")
     eid = uuid.uuid4().hex[:12]
     now = time.time()
+    members = "、".join(
+        [n for n in [HOST_NAME] + [a["name"] for a in AGENTS.values()] if n]
+    )
     framing = (
-        "[群聊] 房间新话题. 房间成员: 观察者、紫霞、青霞、至尊宝. "
+        f"[群聊] 房间新话题. 房间成员: {members}. "
         "以 [群聊] 开头的都是房间里的发言, 纯聊天、不用执行动作, "
         "直接像平时聊天一样回就行."
     )
@@ -167,9 +178,9 @@ def start_exchange(speaker: str, text: str) -> dict:
     say(
         speaker,
         text,
-        "human"
-        if speaker == "观察者"
-        else ("agent" if speaker in ("青霞", "至尊宝") else "zixia"),
+        "agent"
+        if speaker in {a["name"] for a in AGENTS.values()}
+        else ("host" if HOST_NAME and speaker == HOST_NAME else "human"),
         eid,
     )
     return {"exchange_id": eid, "started_at": now, "seed_seqs": seqs}
@@ -188,18 +199,18 @@ def relay(from_agent: str, text: str) -> int:
 
 
 def fanout_room_message(speaker: str, text: str, exchange_id: str) -> dict:
-    """房间参与者 (如紫霞) 发言: 记 transcript, 向两边 daemon 各扇出一条.
+    """房间主持人/参与者发言: 记 transcript, 向两边 daemon 各扇出一条.
 
-    紫霞以参与者身份加入群聊时用: 发言正文由调用方 (主侧或排班工)
-    以紫霞的口吻写好传入, 不是 daemon 回复. 带 "[群聊] <说话人>:"
-    前缀, 两边 daemon 照常当房间发言回复.
+    发言正文由调用方写好传入, 不是 daemon 回复. 带 "[群聊] <说话人>:"
+    前缀, 两边 daemon 照常当房间发言回复. 说话人是主持人 (HOST_NAME)
+    时 kind="host", 否则 kind="human". 不占 hop 预算.
     """
     msg = f"[群聊] {speaker}: {text}"
     seqs = {
         "qingxia": drop_to("qingxia", msg),
         "zhizunbao": drop_to("zhizunbao", msg),
     }
-    say(speaker, text, "zixia" if speaker == "紫霞" else "human", exchange_id)
+    say(speaker, text, "host" if HOST_NAME and speaker == HOST_NAME else "human", exchange_id)
     return seqs
 
 
