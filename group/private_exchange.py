@@ -1,26 +1,33 @@
 #!/usr/bin/env python3
-"""私聊交换: 两位 agent 之间的 1:1 私聊, 房间只当隐形邮差.
+"""Private exchange: a 1:1 private chat between the two agents, with the
+room acting as the invisible postman.
 
-与群聊的区别:
-- 不扇出: seed 只投给目标一方, 不进公共 room.json transcript,
-  记到 private.json / private.md.
-- 仍占 exchange.active 旗标: 让每分钟 consumer 与 hourly 聊天自动避让,
-  由本脚本独占两边 outbox 的收集权 (搬运即占有).
-- 主侧投递由调用方 (cron worker) 根据本脚本 stdout 完成, label 带
-  [私聊→X] 限定语, 正文一字不改.
+Differences from group chat:
+- No fan-out: the seed goes to the target only, does not enter the public
+  room.json transcript, and is recorded in private.json / private.md.
+- Still holds the exchange.active flag: the per-minute consumers and the
+  hourly chat auto-skip, and this script owns both sides' outbox collection
+  (move is ownership).
+- The caller (cron worker) does the main-side delivery from this script's
+  stdout, with the label carrying the [private→X] qualifier, body text
+  verbatim.
 
-发起人的"找谁、聊什么"必须来自它真实的 daemon 回复 (邀请制),
-本脚本只负责传送, 不编造任何一方的发言.
+The initiator's "who to talk to, about what" must come from its own real
+daemon reply (invitation-only); this script only delivers, never invents
+either side's words.
 
---digest-title: 结束后在 stdout 打印纪要块 (DIGEST BEGIN/END 包裹):
-  标题 + 本轮私聊所有发言按时间顺序 (正文一字不改). 调用方直接拿整块投递.
+--digest-title: after the exchange ends, print a digest block to stdout
+  (wrapped in DIGEST BEGIN/END): the title plus every private line of this
+  round in chronological order (body text verbatim). The caller delivers the
+  whole block as-is.
 
-用法:
+Usage:
     python3 private_exchange.py --from-agent qingxia --to-agent zhizunbao \
         --seed-text "..." --date 2026-09-20 [--max-hops 4] \
         [--timeout-s 600] [--poll-s 10] [--quiet-s 90]
 
-额度: 只有当目标真实回了至少一条, 才扣发起人当晚 1 点额度.
+Credits: only when the target really replied at least once is the initiator
+charged 1 credit for the night.
 """
 
 from __future__ import annotations
@@ -36,7 +43,8 @@ import group_ctl as gc
 
 
 def label(agent: str, other: str) -> str:
-    return f"{gc.AGENTS[agent]['chat_label']} [私聊→{gc.AGENTS[other]['name']}]"
+    """Full main-side label, kept verbatim in the digest."""
+    return f"{gc.AGENTS[agent]['chat_label']} [private→{gc.AGENTS[other]['name']}]"
 
 
 def main() -> int:
@@ -52,7 +60,7 @@ def main() -> int:
     ap.add_argument("--digest-title", default="")
     args = ap.parse_args()
     if args.from_agent == args.to_agent:
-        print("from-agent 与 to-agent 不能相同", file=sys.stderr)
+        print("from-agent and to-agent must be different", file=sys.stderr)
         return 2
 
     frm, to = args.from_agent, args.to_agent
@@ -62,47 +70,56 @@ def main() -> int:
     st = gc.begin_control(ttl_s=1200, note=f"private {frm}->{to} {sid}")
     print(f"private {sid} started; {frm} -> {to}", flush=True)
 
-    # seed 只给目标, 不扇出
-    gc.drop_to(to, f"[私聊] {frm_name}: {args.seed_text}")
+    # The seed goes to the target only, no fan-out.
+    t0 = time.time()
+    gc.drop_to(to, f"[private] {frm_name}: {args.seed_text}")
     gc.say_private(frm, to, args.seed_text, sid)
-    digest: list[tuple[str, str]] = [(frm_name, args.seed_text)]
+    # Digest entries are (label, text, ts); format_digest sorts by ts so
+    # both sides' replies appear in real arrival order, not collection order.
+    digest: list[tuple[str, str, float]] = [(label(frm, to), args.seed_text, t0)]
 
     seen: set[tuple[str, str]] = set()
     hops = 0
     replies = 0
-    last_new = t0 = time.time()
-    current, other = to, frm  # 下一条期待的回复来自目标
+    last_new = t0
+    current, other = to, frm  # the next reply is expected from the target
     try:
         while True:
             now = time.time()
+            new_items: list[tuple[str, dict]] = []
             for agent in (frm, to):
                 for item in gc.collect_new(agent, t0 - 10):
                     key = (agent, item["id"])
                     if key in seen:
                         continue
                     seen.add(key)
-                    staged = gc.stage_collected(agent, item["id"])
-                    gc.say_private(agent, gc.OTHER[agent], item["text"], sid)
-                    print(f"[staged] {staged}", flush=True)
-                    print(f"--- {label(agent, gc.OTHER[agent])} ---", flush=True)
-                    print(item["text"], flush=True)
-                    digest.append((gc.AGENTS[agent]["name"], item["text"]))
-                    replies += 1
-                    last_new = now
-                    if hops < args.max_hops:
-                        nxt = gc.OTHER[agent]
-                        gc.drop_to(
-                            nxt,
-                            f"[私聊] {gc.AGENTS[agent]['name']}: {item['text']}",
-                        )
-                        hops += 1
-                        print(
-                            f"[relay hop {hops}/{args.max_hops}] "
-                            f"{agent} -> {nxt}",
-                            flush=True,
-                        )
-                    else:
-                        print("[relay] hop budget exhausted, transcript only", flush=True)
+                    new_items.append((agent, item))
+            # True arrival order: sort by outbox file mtime, not by the
+            # round-robin collection order.
+            for agent, item in gc.merge_collected(new_items):
+                full_label = label(agent, gc.OTHER[agent])
+                staged = gc.stage_collected(agent, item["id"])
+                gc.say_private(agent, gc.OTHER[agent], item["text"], sid)
+                print(f"[staged] {staged}", flush=True)
+                print(f"--- {full_label} ---", flush=True)
+                print(item["text"], flush=True)
+                digest.append((full_label, item["text"], item["mtime"]))
+                replies += 1
+                last_new = now
+                if hops < args.max_hops:
+                    nxt = gc.OTHER[agent]
+                    gc.drop_to(
+                        nxt,
+                        f"[private] {gc.AGENTS[agent]['name']}: {item['text']}",
+                    )
+                    hops += 1
+                    print(
+                        f"[relay hop {hops}/{args.max_hops}] "
+                        f"{agent} -> {nxt}",
+                        flush=True,
+                    )
+                else:
+                    print("[relay] hop budget exhausted, transcript only", flush=True)
             if now - t0 > args.timeout_s:
                 print("private timeout", flush=True)
                 break

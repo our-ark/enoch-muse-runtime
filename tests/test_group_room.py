@@ -1,7 +1,8 @@
 """Tests for group/group_ctl.py room-server primitives.
 
 Covers: outbox collection windowing/filtering, move-based staging
-(ownership), delivered markers, and the exchange flag TTL. No daemon,
+(ownership), delivered markers, the exchange flag TTL, chronological
+merging of both agents' replies, and verbatim digest labels. No daemon,
 mailbox, or network is involved — all state lives under tmp_path.
 """
 
@@ -132,15 +133,15 @@ def test_end_exchange_clears_flag(room):
 
 
 def test_say_appends_transcript(room):
-    gc.say("观察者", "hello room", "human", "exch9")
+    gc.say("observer", "hello room", "human", "exch9")
     data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
     assert len(data["transcript"]) == 1
     entry = data["transcript"][0]
-    assert entry["speaker"] == "观察者"
+    assert entry["speaker"] == "observer"
     assert entry["text"] == "hello room"
     assert entry["exchange_id"] == "exch9"
     md = gc.ROOM_MD.read_text(encoding="utf-8")
-    assert "观察者" in md and "hello room" in md
+    assert "observer" in md and "hello room" in md
 
 
 def test_begin_control_and_end(room):
@@ -155,13 +156,14 @@ def test_begin_control_and_end(room):
 
 
 def test_say_private_transcript(room):
-    gc.say_private("qingxia", "zhizunbao", "悄悄话", "s1")
+    gc.say_private("qingxia", "zhizunbao", "a quiet word", "s1")
     data = json.loads(gc.PRIVATE_JSON.read_text(encoding="utf-8"))
     assert len(data["transcript"]) == 1
     e = data["transcript"][0]
-    assert (e["from"], e["to"], e["text"]) == ("qingxia", "zhizunbao", "悄悄话")
-    assert "悄悄话" in gc.PRIVATE_MD.read_text(encoding="utf-8")
-    # 公共 transcript 不受影响
+    assert (e["from"], e["to"], e["text"]) == ("qingxia", "zhizunbao", "a quiet word")
+    assert "a quiet word" in gc.PRIVATE_MD.read_text(encoding="utf-8")
+    assert "[private qingxia->zhizunbao]" in gc.PRIVATE_MD.read_text(encoding="utf-8")
+    # public transcript unaffected
     assert not gc.ROOM_JSON.exists()
 
 
@@ -169,7 +171,7 @@ def test_credits_default_and_use(room):
     assert gc.credits_left("2026-09-20", "qingxia") == gc.NIGHTLY_CREDITS
     assert gc.use_credit("2026-09-20", "qingxia") == gc.NIGHTLY_CREDITS - 1
     assert gc.credits_left("2026-09-20", "qingxia") == gc.NIGHTLY_CREDITS - 1
-    # 另一天互不影响
+    # a different day is unaffected
     assert gc.credits_left("2026-09-21", "qingxia") == gc.NIGHTLY_CREDITS
 
 
@@ -194,44 +196,93 @@ def test_fanout_room_message(room, tmp_path, monkeypatch):
     monkeypatch.setattr(
         gc, "drop_to", lambda agent, text: dropped.append((agent, text)) or 99
     )
-    monkeypatch.setattr(gc, "HOST_NAME", "主持人")
-    seqs = gc.fanout_room_message("主持人", "我也来啦", "exchZ")
+    monkeypatch.setattr(gc, "HOST_NAME", "host")
+    seqs = gc.fanout_room_message("host", "I'm here too", "exchZ")
     assert seqs == {"qingxia": 99, "zhizunbao": 99}
     assert dropped == [
-        ("qingxia", "[群聊] 主持人: 我也来啦"),
-        ("zhizunbao", "[群聊] 主持人: 我也来啦"),
+        ("qingxia", "[group] host: I'm here too"),
+        ("zhizunbao", "[group] host: I'm here too"),
     ]
     data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
     assert len(data["transcript"]) == 1
     e = data["transcript"][0]
-    assert e["speaker"] == "主持人"
+    assert e["speaker"] == "host"
     assert e["kind"] == "host"
-    assert e["text"] == "我也来啦"
+    assert e["text"] == "I'm here too"
     assert e["exchange_id"] == "exchZ"
-    assert "我也来啦" in gc.ROOM_MD.read_text(encoding="utf-8")
+    assert "I'm here too" in gc.ROOM_MD.read_text(encoding="utf-8")
 
 
 def test_fanout_room_message_non_host_is_human(room, tmp_path, monkeypatch):
     monkeypatch.setattr(
         gc, "drop_to", lambda agent, text: 99
     )
-    monkeypatch.setattr(gc, "HOST_NAME", "主持人")
-    gc.fanout_room_message("观察者", "旁听一句", "exchH")
+    monkeypatch.setattr(gc, "HOST_NAME", "host")
+    gc.fanout_room_message("observer", "listening in", "exchH")
     data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
     assert data["transcript"][-1]["kind"] == "human"
 
 
 def test_format_digest_keeps_text_verbatim():
     out = gc.format_digest(
-        "📜 群聊纪要 · 午场",
-        [("开场", "青霞：聊月亮"), ("青霞", "月亮很圆"), ("主持人插话", "紫霞：附议")],
+        "📜 group digest · afternoon",
+        [("opening", "Qingxia: let's talk about the moon"), ("⚔️ **Qingxia**", "the moon is round"), ("host interjection", "Zixia: agreed")],
     )
-    assert out.startswith("📜 群聊纪要 · 午场\n")
-    assert "[开场] 青霞：聊月亮" in out
-    assert "[青霞] 月亮很圆" in out
-    assert "[主持人插话] 紫霞：附议" in out
-    # 时间顺序: 开场 < 回复 < 插话
-    assert out.index("开场") < out.index("月亮很圆") < out.index("附议")
+    assert out.startswith("📜 group digest · afternoon\n")
+    assert "[opening] Qingxia: let's talk about the moon" in out
+    assert "[⚔️ **Qingxia**] the moon is round" in out
+    assert "[host interjection] Zixia: agreed" in out
+    # chronological order: opening < reply < interjection
+    assert out.index("opening") < out.index("the moon is round") < out.index("agreed")
+
+
+def test_format_digest_sorts_by_timestamp_not_collection_order():
+    # Entries arrive from both agents in the driver's fixed poll order, but
+    # the digest must follow real arrival times.
+    lines = [
+        ("⚔️ **Qingxia**", "collected first", 1000.3),
+        ("opening", "host opened the round", 1000.0),
+        ("🐵 **Zhizunbao**", "arrived second", 1000.2),
+        ("host interjection", "interjected third", 1000.4),
+    ]
+    out = gc.format_digest("title", lines)
+    i_open = out.index("host opened the round")
+    i_second = out.index("arrived second")
+    i_first = out.index("collected first")
+    i_third = out.index("interjected third")
+    assert i_open < i_second < i_first < i_third
+    # labels stay verbatim — not rewritten by the sort
+    assert "[⚔️ **Qingxia**] collected first" in out
+    assert "[🐵 **Zhizunbao**] arrived second" in out
+
+
+def test_merge_collected_orders_by_mtime():
+    items = [
+        ("qingxia", {"id": "a", "mtime": 2000.5, "text": "later q"}),
+        ("zhizunbao", {"id": "b", "mtime": 2000.1, "text": "earlier z"}),
+        ("qingxia", {"id": "c", "mtime": 2000.3, "text": "middle q"}),
+    ]
+    merged = gc.merge_collected(items)
+    assert [i["id"] for _, i in merged] == ["b", "c", "a"]
+    assert [a for a, _ in merged] == ["zhizunbao", "qingxia", "qingxia"]
+
+
+def test_agent_labels_are_english_and_verbatim():
+    assert gc.AGENTS["qingxia"]["name"] == "Qingxia"
+    assert gc.AGENTS["qingxia"]["chat_label"] == "⚔️ **Qingxia**"
+    assert gc.AGENTS["zhizunbao"]["name"] == "Zhizunbao"
+    assert gc.AGENTS["zhizunbao"]["chat_label"] == "🐵 **Zhizunbao**"
+
+
+def test_private_label_kept_verbatim():
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "group"))
+    import private_exchange as px  # noqa: E402
+
+    lbl = px.label("qingxia", "zhizunbao")
+    assert lbl == "⚔️ **Qingxia** [private→Zhizunbao]"
+    # and the digest carries that full label unchanged
+    out = gc.format_digest("title", [(lbl, "a quiet word", 1000.0)])
+    assert "[⚔️ **Qingxia** [private→Zhizunbao]] a quiet word" in out
 
 
 def test_await_host_drop_hit_and_miss(tmp_path):
@@ -240,11 +291,11 @@ def test_await_host_drop_hit_and_miss(tmp_path):
 
     d = tmp_path / "drops"
     (d / "eid1").mkdir(parents=True)
-    (d / "eid1" / "host-1.txt").write_text("主持人驾到", encoding="utf-8")
-    assert gx.await_host_drop(d, "eid1", 1, 5) == "主持人驾到"
+    (d / "eid1" / "host-1.txt").write_text("the host has arrived", encoding="utf-8")
+    assert gx.await_host_drop(d, "eid1", 1, 5) == "the host has arrived"
     t0 = time.time()
     assert gx.await_host_drop(d, "eid1", 2, 0) is None
     assert time.time() - t0 < 5
-    # 空白文件视为未写, 不应被取走
+    # blank files count as not written, must not be picked up
     (d / "eid1" / "host-3.txt").write_text("   \n", encoding="utf-8")
     assert gx.await_host_drop(d, "eid1", 3, 0) is None

@@ -1,29 +1,35 @@
 #!/usr/bin/env python3
-"""muse-group 群聊房间控制脚本.
+"""muse-group group chat room control script.
 
-hub-and-spoke 拓扑: 主持人 (host) 是房间服务器. 两个 Enoch daemon 各自只读写自己的
-mailbox (chat_inbox/chat_outbox), 房间负责把发言扇出 (fan-out) 到两边,
-并把两边的回复收进共享 transcript (room.json / room.md).
+hub-and-spoke topology: the host is the room server. Two Enoch daemons each
+read and write only their own mailbox (chat_inbox/chat_outbox); the room
+fans messages out (fan-out) to both sides and collects their replies into a
+shared transcript (room.json / room.md).
 
-主持人是第三方参与者: 发言正文由调用方写好传入 (不是 daemon 回复),
-可开场、可插话, 不占 hop 预算. 主持人的显示名由环境变量 MUSE_GROUP_HOST_NAME
-配置 (本部署设为紫霞); 不设则房间只有 agents.
+The host is a third-party participant: its message text is written by the
+caller and passed in (not a daemon reply); it may open and interject, and it
+costs no hop budget. The host's display name is configured via the
+MUSE_GROUP_HOST_NAME environment variable (set to Zixia in this deployment);
+without it, the room has agents only.
 
-防重:
-- exchange.active 旗标: 群聊交换进行中时, 两个 mailbox consumer 与
-  hourly-enoch-chat 跳过各自的投递/收集动作 (见各自 cron 文本的"群聊避让"),
-  由群聊编排独占 chat_outbox 的收集权. 旗标带 TTL (15 分钟), 编排异常
-  退出后 cron 自动恢复正常投递.
-- 每个 outbox 回复只收集一次: seen 集合 + .delivered 标记.
+Anti-duplication:
+- exchange.active flag: while a group exchange is in progress, both mailbox
+  consumers and hourly-enoch-chat skip their own delivery/collection actions
+  (see the "group-yield" section of their cron task texts), and the group
+  orchestrator owns chat_outbox collection exclusively. The flag carries a
+  TTL (15 minutes); after an abnormal orchestrator exit, crons resume normal
+  delivery automatically.
+- Each outbox reply is collected exactly once: seen-set + .delivered marker.
 
-防环:
-- 每次交换最多 max_hops 次 agent->agent 转发 (默认 3), 之后只收录不转发.
+Anti-loop:
+- At most max_hops agent->agent forwards per exchange (default 3); after
+  that, replies are recorded but not forwarded.
 
-可移植性 (环境变量, 不设则用默认):
-- MUSE_GROUP_HOME: 房间状态目录 (room.json/room.md/staged/exchange.active),
-  默认 ~/workspace/muse-group.
-- MUSE_GROUP_QINGXIA_MAILBOX / MUSE_GROUP_ZHIZUNBAO_MAILBOX: 两边 mailbox.
-- MUSE_GROUP_SRC_PATHS: 冒号分隔的 our_ark_muse import 路径.
+Portability (environment variables, defaults used when unset):
+- MUSE_GROUP_HOME: room state directory (room.json/room.md/staged/exchange.active),
+  default ~/workspace/muse-group.
+- MUSE_GROUP_QINGXIA_MAILBOX / MUSE_GROUP_ZHIZUNBAO_MAILBOX: the two mailboxes.
+- MUSE_GROUP_SRC_PATHS: colon-separated our_ark_muse import paths.
 """
 
 from __future__ import annotations
@@ -49,22 +55,23 @@ AGENTS = {
         "mailbox": os.environ.get(
             "MUSE_GROUP_QINGXIA_MAILBOX", "/home/hatch/workspace/muse-enoch/mailbox"
         ),
-        "name": "青霞",
-        "chat_label": "⚔️ **青霞**",
+        "name": "Qingxia",
+        "chat_label": "⚔️ **Qingxia**",
     },
     "zhizunbao": {
         "mailbox": os.environ.get(
             "MUSE_GROUP_ZHIZUNBAO_MAILBOX",
             "/home/hatch/workspace/muse-zhizunbao/mailbox",
         ),
-        "name": "至尊宝",
-        "chat_label": "🐵 **至尊宝**",
+        "name": "Zhizunbao",
+        "chat_label": "🐵 **Zhizunbao**",
     },
 }
 OTHER = {"qingxia": "zhizunbao", "zhizunbao": "qingxia"}
 
-# 房间主持人 (host) 的显示名, 由调用方配置. 主持人的发言正文由调用方写好
-# 传入 (不是 daemon 回复), 记 transcript 时 kind="host", 不占 hop 预算.
+# The room host's display name, configured by the caller. Host message text is
+# written by the caller and passed in (not a daemon reply); it is recorded in
+# the transcript with kind="host" and costs no hop budget.
 HOST_NAME = os.environ.get("MUSE_GROUP_HOST_NAME", "")
 
 _src_paths = os.environ.get("MUSE_GROUP_SRC_PATHS")
@@ -85,7 +92,7 @@ def _ensure_paths() -> None:
 
 
 def drop_to(agent: str, text: str) -> int:
-    """往指定 agent 的 chat_inbox 投一条消息, 返回 seq."""
+    """Drop a message into the given agent's chat_inbox; return its seq."""
     _ensure_paths()
     os.environ["ENOCH_MUSE_MAILBOX"] = AGENTS[agent]["mailbox"]
     from our_ark_muse.chat import drop_chat_message
@@ -134,7 +141,7 @@ def say(speaker: str, text: str, kind: str, exchange_id: str) -> None:
 
 
 def active_exchange() -> dict | None:
-    """进行中的交换, 无或过期返回 None."""
+    """The in-progress exchange; None when none or expired."""
     if not ACTIVE.exists():
         return None
     try:
@@ -147,20 +154,21 @@ def active_exchange() -> dict | None:
 
 
 def start_exchange(speaker: str, text: str) -> dict:
-    """开一轮群聊交换: 写旗标, 记 transcript, 向两边扇出首条消息."""
+    """Open a group exchange round: write the flag, record the transcript,
+    fan the first message out to both sides."""
     if active_exchange():
-        raise RuntimeError("已有进行中的群聊交换, 先等它结束")
+        raise RuntimeError("a group exchange is already in progress; wait for it to end")
     eid = uuid.uuid4().hex[:12]
     now = time.time()
-    members = "、".join(
+    members = ", ".join(
         [n for n in [HOST_NAME] + [a["name"] for a in AGENTS.values()] if n]
     )
     framing = (
-        f"[群聊] 房间新话题. 房间成员: {members}. "
-        "以 [群聊] 开头的都是房间里的发言, 纯聊天、不用执行动作, "
-        "直接像平时聊天一样回就行."
+        f"[group] New room topic. Room members: {members}. "
+        "Lines starting with [group] are room messages: just chat, no actions "
+        "needed, reply like you normally would."
     )
-    first = f"{framing}\n[群聊] {speaker}: {text}"
+    first = f"{framing}\n[group] {speaker}: {text}"
     seqs = {
         "qingxia": drop_to("qingxia", first),
         "zhizunbao": drop_to("zhizunbao", first),
@@ -187,10 +195,10 @@ def start_exchange(speaker: str, text: str) -> dict:
 
 
 def relay(from_agent: str, text: str) -> int:
-    """把 from_agent 的房间回复转给另一位 agent."""
+    """Forward from_agent's room reply to the other agent."""
     other = OTHER[from_agent]
     name = AGENTS[from_agent]["name"]
-    seq = drop_to(other, f"[群聊] {name}: {text}")
+    seq = drop_to(other, f"[group] {name}: {text}")
     st = active_exchange()
     if st:
         st["hops_used"] = st.get("hops_used", 0) + 1
@@ -199,13 +207,15 @@ def relay(from_agent: str, text: str) -> int:
 
 
 def fanout_room_message(speaker: str, text: str, exchange_id: str) -> dict:
-    """房间主持人/参与者发言: 记 transcript, 向两边 daemon 各扇出一条.
+    """Room host/participant speaks: record the transcript and fan one
+    message out to each daemon.
 
-    发言正文由调用方写好传入, 不是 daemon 回复. 带 "[群聊] <说话人>:"
-    前缀, 两边 daemon 照常当房间发言回复. 说话人是主持人 (HOST_NAME)
-    时 kind="host", 否则 kind="human". 不占 hop 预算.
+    The message text is written by the caller and passed in, not a daemon
+    reply. It carries a "[group] <speaker>:" prefix, which both daemons treat
+    as an ordinary room message. The speaker is recorded as kind="host" when
+    it matches HOST_NAME, otherwise kind="human". Costs no hop budget.
     """
-    msg = f"[群聊] {speaker}: {text}"
+    msg = f"[group] {speaker}: {text}"
     seqs = {
         "qingxia": drop_to("qingxia", msg),
         "zhizunbao": drop_to("zhizunbao", msg),
@@ -220,9 +230,10 @@ def _outbox_files(agent: str):
         return []
     files = []
     for child in outbox.iterdir():
-        # 只看原子写好的 .json; 点文件与标记文件跳过.
-        # 注意: 不再以 .delivered 标记作为收集依据 —— 搬运 (move) 即占有,
-        # 避免 consumer 即兴标记导致房间漏收. mtime 窗口由调用方限定.
+        # Only take atomically-written .json files; skip dot files and markers.
+        # Note: .delivered markers are no longer the collection basis — moving
+        # (move) is ownership, so an improvised consumer marker can't make the
+        # room miss a reply. The mtime window is set by the caller.
         if not child.is_file() or child.suffix != ".json" or child.name.startswith("."):
             continue
         if child.name.endswith(".delivered.json"):
@@ -232,7 +243,8 @@ def _outbox_files(agent: str):
 
 
 def collect_new(agent: str, since_ts: float):
-    """收集该 agent 在 since_ts 之后产生的 outbox 回复 (不看标记)."""
+    """Collect this agent's outbox replies produced after since_ts (ignoring
+    markers). Each item carries the outbox file's mtime as its arrival time."""
     out = []
     for child in _outbox_files(agent):
         try:
@@ -252,10 +264,23 @@ def collect_new(agent: str, since_ts: float):
     return out
 
 
-def stage_collected(agent: str, mid: str) -> Path:
-    """把已收集的回复搬运到房间 staged 存档 (move 即占有, 防 consumer 重投).
+def merge_collected(new_items: list[tuple[str, dict]]) -> list[tuple[str, dict]]:
+    """Merge freshly collected (agent, item) pairs into true arrival order.
 
-    daemon 写 outbox 是原子 rename, move 不会撕裂文件; daemon 写后不再读回.
+    The drivers poll the two outboxes in a fixed agent order, which is not
+    the order the replies actually arrived in. Sort by the outbox file mtime
+    so the transcript and digest reflect real chronological order instead of
+    the round-robin collection order.
+    """
+    return sorted(new_items, key=lambda kv: kv[1].get("mtime", 0.0))
+
+
+def stage_collected(agent: str, mid: str) -> Path:
+    """Move a collected reply into the room's staged archive (move is
+    ownership, preventing consumer re-delivery).
+
+    The daemon writes its outbox with an atomic rename, so the move cannot
+    tear a file; the daemon never reads the file back after writing.
     """
     dest_dir = STAGED / agent
     dest_dir.mkdir(parents=True, exist_ok=True)
@@ -283,41 +308,54 @@ def end_exchange() -> dict | None:
     return st
 
 
-def format_digest(title: str, lines: list[tuple[str, str]]) -> str:
-    """把一轮交换的 (标记, 正文) 按时间顺序整理成纪要块.
+def format_digest(title: str, lines: list[tuple]) -> str:
+    """Compile one exchange round's (label, text) pairs into a digest block,
+    in chronological order.
 
-    正文一字不改, 只加标题和 [标记] 前缀. 调用方 (cron worker / 手动)
-    把 --digest-title 里的标题 (场次、话题等) 传进来, 拿 stdout 里
-    DIGEST BEGIN/END 之间的整块直接投递.
+    Each entry is (label, text) or (label, text, ts). When a timestamp is
+    present, entries are sorted by it (earliest first) so replies from both
+    sides appear in real arrival order, not collection order. The body text is
+    never modified — only the title and the [label] prefix are added, and the
+    label is kept verbatim. The caller (cron worker / manual) fills
+    --digest-title with the session and topic, then delivers the whole
+    DIGEST BEGIN/END block from stdout as-is.
     """
+    rows: list[tuple[str, str, float]] = []
+    for ln in lines:
+        if len(ln) == 3:
+            rows.append((ln[0], ln[1], ln[2]))
+        else:
+            rows.append((ln[0], ln[1], 0.0))
+    rows.sort(key=lambda r: r[2])
     parts = [title.strip(), ""]
-    for tag, text in lines:
+    for tag, text, _ in rows:
         parts.append(f"[{tag}] {text}")
         parts.append("")
     return "\n".join(parts).rstrip() + "\n"
 
 
-def print_digest(title: str, lines: list[tuple[str, str]]) -> None:
+def print_digest(title: str, lines: list[tuple]) -> None:
     print("===== DIGEST BEGIN =====", flush=True)
     print(format_digest(title, lines), flush=True)
     print("===== DIGEST END =====", flush=True)
 
 
 # ---------------------------------------------------------------------------
-# 私聊 / 夜班额度 / 群聊主持人轮换
+# Private chat / nightly credits / group host rotation
 # ---------------------------------------------------------------------------
 
 PRIVATE_JSON = GROUP_HOME / "private.json"
 PRIVATE_MD = GROUP_HOME / "private.md"
 CREDITS_JSON = GROUP_HOME / "private_credits.json"
 HOST_JSON = GROUP_HOME / "group_host.json"
-NIGHTLY_CREDITS = 3  # 每位 agent 每晚私聊额度
+NIGHTLY_CREDITS = 3  # private-chat credits per agent per night
 
 
 def begin_control(ttl_s: int = 1800, note: str = "") -> dict:
-    """只占旗标、不扇出: 邀请阶段 / 私聊交换用, 让 consumer 自动避让."""
+    """Hold the flag only, no fan-out: for the invitation phase / private
+    exchanges, so consumers auto-skip."""
     if active_exchange():
-        raise RuntimeError("已有进行中的群聊交换, 先等它结束")
+        raise RuntimeError("a group exchange is already in progress; wait for it to end")
     eid = uuid.uuid4().hex[:12]
     st = {
         "exchange_id": eid,
@@ -333,7 +371,7 @@ def begin_control(ttl_s: int = 1800, note: str = "") -> dict:
 
 
 def say_private(from_agent: str, to_agent: str, text: str, session_id: str) -> None:
-    """记私聊 transcript (与公共 room.json 分开)."""
+    """Record the private-chat transcript (separate from the public room.json)."""
     data: dict = {"session": "private", "transcript": []}
     if PRIVATE_JSON.exists():
         try:
@@ -352,7 +390,7 @@ def say_private(from_agent: str, to_agent: str, text: str, session_id: str) -> N
     _atomic_write_json(PRIVATE_JSON, data)
     line = (
         f"\n## {time.strftime('%Y-%m-%d %H:%M', time.localtime())} "
-        f"[私聊 {from_agent}->{to_agent}] ({session_id})\n\n{text}\n"
+        f"[private {from_agent}->{to_agent}] ({session_id})\n\n{text}\n"
     )
     with PRIVATE_MD.open("a", encoding="utf-8") as f:
         f.write(line)
@@ -376,14 +414,14 @@ def use_credit(date_str: str, agent: str) -> int:
     day = data.setdefault(date_str, {})
     left = day.get(agent, NIGHTLY_CREDITS)
     if left <= 0:
-        raise RuntimeError(f"{agent} 今晚私聊额度已用完 ({date_str})")
+        raise RuntimeError(f"{agent} has no private-chat credits left tonight ({date_str})")
     day[agent] = left - 1
     _atomic_write_json(CREDITS_JSON, data)
     return left - 1
 
 
 def next_host() -> str:
-    """群聊主持人轮换: qingxia -> zhizunbao -> qingxia ..."""
+    """Group host rotation: qingxia -> zhizunbao -> qingxia ..."""
     order = ["qingxia", "zhizunbao"]
     nxt = "qingxia"
     if HOST_JSON.exists():

@@ -32,9 +32,9 @@ workspace execution and background scheduling capabilities to complete setup.
 After Muse confirms setup, send:
 
 ```text
-@Enoch 你是谁？
-@Enoch 请记住：我们把这个项目叫作「青舟」。
-@Enoch 我们给这个项目起了什么名字？
+@Enoch Who are you?
+@Enoch Please remember: we named this project "Qingzhou" (BlueBoat).
+@Enoch What did we name this project?
 ```
 
 For another instance name, use its configured `@<name>` instead.
