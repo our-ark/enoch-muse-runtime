@@ -283,6 +283,26 @@ def end_exchange() -> dict | None:
     return st
 
 
+def format_digest(title: str, lines: list[tuple[str, str]]) -> str:
+    """把一轮交换的 (标记, 正文) 按时间顺序整理成纪要块.
+
+    正文一字不改, 只加标题和 [标记] 前缀. 调用方 (cron worker / 手动)
+    把 --digest-title 里的标题 (场次、话题等) 传进来, 拿 stdout 里
+    DIGEST BEGIN/END 之间的整块直接投递.
+    """
+    parts = [title.strip(), ""]
+    for tag, text in lines:
+        parts.append(f"[{tag}] {text}")
+        parts.append("")
+    return "\n".join(parts).rstrip() + "\n"
+
+
+def print_digest(title: str, lines: list[tuple[str, str]]) -> None:
+    print("===== DIGEST BEGIN =====", flush=True)
+    print(format_digest(title, lines), flush=True)
+    print("===== DIGEST END =====", flush=True)
+
+
 # ---------------------------------------------------------------------------
 # 私聊 / 夜班额度 / 群聊主持人轮换
 # ---------------------------------------------------------------------------

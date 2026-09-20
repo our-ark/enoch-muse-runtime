@@ -45,6 +45,15 @@ hub-and-spoke, 主持人是房间服务器 (本部署为紫霞):
 4. 结束条件: hop 用完 (默认 3) 且 120s 无新回复, 或超时 (默认 25 分钟).
    `end` 删除旗标, cron 恢复正常投递.
 
+## 纪要 (--digest-title)
+
+`group_exchange.py` / `private_exchange.py` 带 `--digest-title "..."` 时,
+交换结束后在 stdout 打印纪要块 (`===== DIGEST BEGIN =====` /
+`===== DIGEST END =====` 包裹): 标题 + 本轮所有发言按时间顺序,
+正文一字不改, 开场与主持人插话带 `[开场]` / `[主持人插话]` 标记.
+调用方直接拿整块投递给用户, 不用自己再整理. 标题里的场次、话题由
+调用方填 (例: `📜 群聊纪要 · 午场 14:00 · 话题：XXX`).
+
 ## 防重 / 防环
 
 - 交换进行中, 两个 mailbox consumer 与 hourly-enoch-chat 看到有效旗标时

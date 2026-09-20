@@ -12,6 +12,9 @@
 发起人的"找谁、聊什么"必须来自它真实的 daemon 回复 (邀请制),
 本脚本只负责传送, 不编造任何一方的发言.
 
+--digest-title: 结束后在 stdout 打印纪要块 (DIGEST BEGIN/END 包裹):
+  标题 + 本轮私聊所有发言按时间顺序 (正文一字不改). 调用方直接拿整块投递.
+
 用法:
     python3 private_exchange.py --from-agent qingxia --to-agent zhizunbao \
         --seed-text "..." --date 2026-09-20 [--max-hops 4] \
@@ -46,6 +49,7 @@ def main() -> int:
     ap.add_argument("--timeout-s", type=float, default=600)
     ap.add_argument("--poll-s", type=float, default=10)
     ap.add_argument("--quiet-s", type=float, default=90)
+    ap.add_argument("--digest-title", default="")
     args = ap.parse_args()
     if args.from_agent == args.to_agent:
         print("from-agent 与 to-agent 不能相同", file=sys.stderr)
@@ -61,6 +65,7 @@ def main() -> int:
     # seed 只给目标, 不扇出
     gc.drop_to(to, f"[私聊] {frm_name}: {args.seed_text}")
     gc.say_private(frm, to, args.seed_text, sid)
+    digest: list[tuple[str, str]] = [(frm_name, args.seed_text)]
 
     seen: set[tuple[str, str]] = set()
     hops = 0
@@ -81,6 +86,7 @@ def main() -> int:
                     print(f"[staged] {staged}", flush=True)
                     print(f"--- {label(agent, gc.OTHER[agent])} ---", flush=True)
                     print(item["text"], flush=True)
+                    digest.append((gc.AGENTS[agent]["name"], item["text"]))
                     replies += 1
                     last_new = now
                     if hops < args.max_hops:
@@ -107,6 +113,8 @@ def main() -> int:
     finally:
         gc.end_exchange()
         print(f"private {sid} ended; replies={replies} hops used={hops}", flush=True)
+        if args.digest_title:
+            gc.print_digest(args.digest_title, digest)
 
     if replies > 0:
         left = gc.use_credit(args.date, frm)

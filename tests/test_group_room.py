@@ -221,6 +221,19 @@ def test_fanout_room_message_non_host_is_human(room, tmp_path, monkeypatch):
     assert data["transcript"][-1]["kind"] == "human"
 
 
+def test_format_digest_keeps_text_verbatim():
+    out = gc.format_digest(
+        "📜 群聊纪要 · 午场",
+        [("开场", "青霞：聊月亮"), ("青霞", "月亮很圆"), ("主持人插话", "紫霞：附议")],
+    )
+    assert out.startswith("📜 群聊纪要 · 午场\n")
+    assert "[开场] 青霞：聊月亮" in out
+    assert "[青霞] 月亮很圆" in out
+    assert "[主持人插话] 紫霞：附议" in out
+    # 时间顺序: 开场 < 回复 < 插话
+    assert out.index("开场") < out.index("月亮很圆") < out.index("附议")
+
+
 def test_await_host_drop_hit_and_miss(tmp_path):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "group"))
     import group_exchange as gx  # noqa: E402

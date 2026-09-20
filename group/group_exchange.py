@@ -19,6 +19,9 @@
   (默认 90) 收下一条主持人插话, 扇出给两边 daemon 并记 transcript
   (kind=host, 不占 hop 预算). 超时无新文件则直接继续, 不阻塞.
 
+--digest-title: 结束后在 stdout 打印纪要块 (DIGEST BEGIN/END 包裹):
+  标题 + 本轮所有发言按时间顺序 (正文一字不改). 调用方直接拿整块投递.
+
 R 推理不由本脚本做: 两个 mailbox consumer 的每分钟 R 循环会回答 daemon 的
 inference 请求 (群聊进行中它们的投递被旗标暂停, 但 R 照常). 本脚本只负责
 chat_outbox 的收集、转投与 transcript.
@@ -64,6 +67,7 @@ def main() -> int:
     ap.add_argument("--host-text", default="")
     ap.add_argument("--host-drop-dir", default="")
     ap.add_argument("--host-wait-s", type=float, default=90)
+    ap.add_argument("--digest-title", default="")
     args = ap.parse_args()
 
     if (args.host_text or args.host_drop_dir) and not args.host_name:
@@ -73,6 +77,8 @@ def main() -> int:
     st = gc.start_exchange(args.speaker, args.text)
     eid = st["exchange_id"]
     print(f"exchange {eid} started; seed seqs={st['seed_seqs']}", flush=True)
+
+    digest: list[tuple[str, str]] = [("开场", f"{args.speaker}：{args.text}")]
 
     host_name = args.host_name
     drop_dir = Path(args.host_drop_dir) if args.host_drop_dir else None
@@ -94,12 +100,14 @@ def main() -> int:
         print(f"--- **{host_name}** ---", flush=True)
         print(text, flush=True)
         print(f"[host fanout] seqs={hseqs}", flush=True)
+        digest.append(("主持人插话", f"{host_name}：{text}"))
 
     if args.host_text:
         hseqs = gc.fanout_room_message(host_name, args.host_text, eid)
         print(f"--- **{host_name}** ---", flush=True)
         print(args.host_text, flush=True)
         print(f"[host fanout] seqs={hseqs}", flush=True)
+        digest.append(("主持人插话", f"{host_name}：{args.host_text}"))
 
     seen: set[tuple[str, str]] = set()
     hops = 0
@@ -119,6 +127,7 @@ def main() -> int:
                     print(f"[staged] {staged}", flush=True)
                     print(f"--- {gc.AGENTS[agent]['chat_label']} ---", flush=True)
                     print(item["text"], flush=True)
+                    digest.append((name, item["text"]))
                     last_new = now
                     if hops < args.max_hops:
                         other = gc.OTHER[agent]
@@ -143,6 +152,8 @@ def main() -> int:
     finally:
         gc.end_exchange()
         print(f"exchange {eid} ended; hops used={hops}", flush=True)
+        if args.digest_title:
+            gc.print_digest(args.digest_title, digest)
     return 0
 
 
