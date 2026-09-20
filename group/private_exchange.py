@@ -49,8 +49,8 @@ def label(agent: str, other: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--from-agent", required=True, choices=("qingxia", "zhizunbao"))
-    ap.add_argument("--to-agent", required=True, choices=("qingxia", "zhizunbao"))
+    ap.add_argument("--from-agent", required=True, choices=("qingxia", "zhizunbao", "baijingjing", "tangsanzang"))
+    ap.add_argument("--to-agent", required=True, choices=("qingxia", "zhizunbao", "baijingjing", "tangsanzang"))
     ap.add_argument("--seed-text", required=True)
     ap.add_argument("--date", default=time.strftime("%Y-%m-%d"))
     ap.add_argument("--max-hops", type=int, default=4)
@@ -97,9 +97,10 @@ def main() -> int:
             # True arrival order: sort by outbox file mtime, not by the
             # round-robin collection order.
             for agent, item in gc.merge_collected(new_items):
-                full_label = label(agent, gc.OTHER[agent])
+                other_side = to if agent == frm else frm
+                full_label = label(agent, other_side)
                 staged = gc.stage_collected(agent, item["id"])
-                gc.say_private(agent, gc.OTHER[agent], item["text"], sid)
+                gc.say_private(agent, other_side, item["text"], sid)
                 print(f"[staged] {staged}", flush=True)
                 print(f"--- {full_label} ---", flush=True)
                 print(item["text"], flush=True)
@@ -107,7 +108,7 @@ def main() -> int:
                 replies += 1
                 last_new = now
                 if hops < args.max_hops:
-                    nxt = gc.OTHER[agent]
+                    nxt = to if agent == frm else frm
                     gc.drop_to(
                         nxt,
                         f"[private] {gc.AGENTS[agent]['name']}: {item['text']}",

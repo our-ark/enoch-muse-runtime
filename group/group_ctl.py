@@ -66,8 +66,30 @@ AGENTS = {
         "name": "Zhizunbao",
         "chat_label": "🐵 **Zhizunbao**",
     },
+    "baijingjing": {
+        "mailbox": os.environ.get(
+            "MUSE_GROUP_BAIJINGJING_MAILBOX",
+            "/home/hatch/workspace/muse-baijingjing/mailbox",
+        ),
+        "name": "白晶晶",
+        "chat_label": "💀 **白晶晶**",
+    },
+    "tangsanzang": {
+        "mailbox": os.environ.get(
+            "MUSE_GROUP_TANGSANZANG_MAILBOX",
+            "/home/hatch/workspace/muse-tangsanzang/mailbox",
+        ),
+        "name": "唐三藏",
+        "chat_label": "📿 **唐三藏**",
+    },
 }
-OTHER = {"qingxia": "zhizunbao", "zhizunbao": "qingxia"}
+GROUP_RING = ["qingxia", "zhizunbao", "baijingjing", "tangsanzang"]
+
+
+def group_next(agent: str) -> str:
+    """Next agent in the room's relay ring (room speaks in ring order)."""
+    i = GROUP_RING.index(agent)
+    return GROUP_RING[(i + 1) % len(GROUP_RING)]
 
 # The room host's display name, configured by the caller. Host message text is
 # written by the caller and passed in (not a daemon reply); it is recorded in
@@ -169,10 +191,7 @@ def start_exchange(speaker: str, text: str) -> dict:
         "needed, reply like you normally would."
     )
     first = f"{framing}\n[group] {speaker}: {text}"
-    seqs = {
-        "qingxia": drop_to("qingxia", first),
-        "zhizunbao": drop_to("zhizunbao", first),
-    }
+    seqs = {agent: drop_to(agent, first) for agent in AGENTS}
     _atomic_write_json(
         ACTIVE,
         {
@@ -195,8 +214,8 @@ def start_exchange(speaker: str, text: str) -> dict:
 
 
 def relay(from_agent: str, text: str) -> int:
-    """Forward from_agent's room reply to the other agent."""
-    other = OTHER[from_agent]
+    """Forward from_agent's room reply to the next agent in the ring."""
+    other = group_next(from_agent)
     name = AGENTS[from_agent]["name"]
     seq = drop_to(other, f"[group] {name}: {text}")
     st = active_exchange()
@@ -216,10 +235,7 @@ def fanout_room_message(speaker: str, text: str, exchange_id: str) -> dict:
     it matches HOST_NAME, otherwise kind="human". Costs no hop budget.
     """
     msg = f"[group] {speaker}: {text}"
-    seqs = {
-        "qingxia": drop_to("qingxia", msg),
-        "zhizunbao": drop_to("zhizunbao", msg),
-    }
+    seqs = {agent: drop_to(agent, msg) for agent in AGENTS}
     say(speaker, text, "host" if HOST_NAME and speaker == HOST_NAME else "human", exchange_id)
     return seqs
 
@@ -421,8 +437,8 @@ def use_credit(date_str: str, agent: str) -> int:
 
 
 def next_host() -> str:
-    """Group host rotation: qingxia -> zhizunbao -> qingxia ..."""
-    order = ["qingxia", "zhizunbao"]
+    """Group host rotation: qingxia -> zhizunbao -> baijingjing -> tangsanzang -> ..."""
+    order = ["qingxia", "zhizunbao", "baijingjing", "tangsanzang"]
     nxt = "qingxia"
     if HOST_JSON.exists():
         try:

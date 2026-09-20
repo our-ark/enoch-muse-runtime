@@ -128,7 +128,7 @@ def main() -> int:
         while True:
             now = time.time()
             new_items: list[tuple[str, dict]] = []
-            for agent in ("qingxia", "zhizunbao"):
+            for agent in gc.AGENTS:
                 for item in gc.collect_new(agent, t0 - 10):
                     key = (agent, item["id"])
                     if key in seen:
@@ -147,7 +147,7 @@ def main() -> int:
                 digest.append((label, item["text"], item["mtime"]))
                 last_new = now
                 if hops < args.max_hops:
-                    other = gc.OTHER[agent]
+                    other = gc.group_next(agent)
                     seq = gc.relay(agent, item["text"])
                     hops += 1
                     print(

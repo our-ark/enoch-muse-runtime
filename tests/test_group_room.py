@@ -188,6 +188,8 @@ def test_credits_exhausted(room):
 def test_next_host_rotates(room):
     assert gc.next_host() == "qingxia"
     assert gc.next_host() == "zhizunbao"
+    assert gc.next_host() == "baijingjing"
+    assert gc.next_host() == "tangsanzang"
     assert gc.next_host() == "qingxia"
 
 
@@ -198,10 +200,12 @@ def test_fanout_room_message(room, tmp_path, monkeypatch):
     )
     monkeypatch.setattr(gc, "HOST_NAME", "host")
     seqs = gc.fanout_room_message("host", "I'm here too", "exchZ")
-    assert seqs == {"qingxia": 99, "zhizunbao": 99}
+    assert seqs == {"qingxia": 99, "zhizunbao": 99, "baijingjing": 99, "tangsanzang": 99}
     assert dropped == [
         ("qingxia", "[group] host: I'm here too"),
         ("zhizunbao", "[group] host: I'm here too"),
+        ("baijingjing", "[group] host: I'm here too"),
+        ("tangsanzang", "[group] host: I'm here too"),
     ]
     data = json.loads(gc.ROOM_JSON.read_text(encoding="utf-8"))
     assert len(data["transcript"]) == 1
