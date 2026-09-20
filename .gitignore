@@ -13,3 +13,9 @@ dist/
 !.env.example
 *.pem
 *.key
+
+# Group room runtime state (live transcripts/archives) — never commit.
+group/staged/
+group/room.json
+group/room.md
+group/exchange.active
