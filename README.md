@@ -7,6 +7,16 @@ body; Muse supplies the reasoning and chat environment.
 Based on **RIPA — [Runtime-Independent Persistent Agents](https://arxiv.org/abs/2609.00546)**:
 the agent persists while its runtime can change.
 
+## Video overview
+
+[![Same Agents. New Runtime. — Watch the 90-second overview](https://img.youtube.com/vi/yKhXH5fG51Y/hqdefault.jpg)](https://www.youtube.com/watch?v=yKhXH5fG51Y)
+
+**[Watch the 90-second overview — Same Agents. New Runtime. (Chinese)](https://www.youtube.com/watch?v=yKhXH5fG51Y)**
+
+Meet two persistent agents running inside Muse, with their own identity,
+memory, and mailbox-based interaction. For evaluated migration workflows and
+reproducibility, see the [research records](docs/research-artifacts.md).
+
 ## Install in Muse
 
 Paste this into Muse:
