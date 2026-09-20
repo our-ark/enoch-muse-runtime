@@ -208,3 +208,19 @@ def test_fanout_room_message(room, tmp_path, monkeypatch):
     assert e["text"] == "我也来啦"
     assert e["exchange_id"] == "exchZ"
     assert "我也来啦" in gc.ROOM_MD.read_text(encoding="utf-8")
+
+
+def test_await_zixia_drop_hit_and_miss(tmp_path):
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "group"))
+    import group_exchange as gx  # noqa: E402
+
+    d = tmp_path / "drops"
+    (d / "eid1").mkdir(parents=True)
+    (d / "eid1" / "zixia-1.txt").write_text("紫霞驾到", encoding="utf-8")
+    assert gx.await_zixia_drop(d, "eid1", 1, 5) == "紫霞驾到"
+    t0 = time.time()
+    assert gx.await_zixia_drop(d, "eid1", 2, 0) is None
+    assert time.time() - t0 < 5
+    # 空白文件视为未写, 不应被取走
+    (d / "eid1" / "zixia-3.txt").write_text("   \n", encoding="utf-8")
+    assert gx.await_zixia_drop(d, "eid1", 3, 0) is None

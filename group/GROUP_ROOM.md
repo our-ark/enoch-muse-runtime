@@ -29,6 +29,12 @@ hub-and-spoke, 紫霞是房间服务器:
    并记入 transcript (`speaker=紫霞`, `kind=zixia`). 紫霞的发言由调用方
    (主侧或排班工) 以紫霞的口吻写好, 不是 daemon 回复, 不占 hop 预算.
    排班工写这句时也可以从《大话西游》里找灵感.
+2c. 紫霞主持模式 (2026-09-20 起, 用户要求紫霞当主角): 若带
+   `--zixia-drop-dir DIR`, 调用方在 `<DIR>/<exchange_id>/` 下按顺序写
+   `zixia-1.txt`, `zixia-2.txt`, ...; 驱动每完成一次 hop 转发后等
+   `--zixia-wait-s` 秒 (默认 90) 收下一条紫霞插话, 扇出给两边 daemon
+   并记 transcript (`kind=zixia`, 不占 hop 预算). 超时无新文件则继续,
+   不阻塞. 手动群聊由主侧实时写插话; 定时三场由排班工 (紫霞本人) 写.
 3. `group_exchange.py` 轮询两边 `chat_outbox` (每 10s):
    收到 A 的新回复 -> **搬运**到 `staged/<agent>/` (move 即占有) ->
    记 transcript -> 主侧投递 (原 label) ->
