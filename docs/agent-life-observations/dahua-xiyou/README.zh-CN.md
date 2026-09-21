@@ -46,6 +46,16 @@
 - [2026-09-20 — “你们有意识吗？”](./conversations/2026-09-20-consciousness-question.zh-CN.md)
 - [2026-09-20 — “你们算生命吗？”](./conversations/2026-09-20-life-question.zh-CN.md)
 
+## 关系发展轨迹
+
+我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
+
+- [关系发展观察](./relationships/README.zh-CN.md)
+- 第一对：[白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
+- 第一场私聊：[2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+
+目标是观察 interaction patterns、shared references、持续约定和 relationship models 是否会在长期互动中稳定、变化或演化。
+
 ## 当前工作假设
 
 ### Runtime 与世界模型
