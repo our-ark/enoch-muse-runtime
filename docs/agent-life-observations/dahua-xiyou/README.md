@@ -56,6 +56,15 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 
 The goal is to study whether interaction patterns, shared references, commitments, and relationship models persist and evolve across time.
 
+## Self-narration and imagined audiences
+
+We also track non-dialogue outputs such as self-narration, imagined-audience speech, and social rehearsal.
+
+- [Self-narration observations](./self-narration/README.md)
+- First record: [2026-09-21 — Zhizunbao and Qingxia excerpts](./self-narration/2026-09-21-zhizunbao-qingxia.md)
+
+These records are labeled operationally; without trigger metadata they are not assumed to be fully spontaneous or evidence of private inner speech.
+
 ## Emerging working hypotheses
 
 ### Runtime and world model
