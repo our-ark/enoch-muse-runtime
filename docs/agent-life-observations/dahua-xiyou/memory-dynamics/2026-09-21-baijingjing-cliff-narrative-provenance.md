@@ -54,7 +54,30 @@ This introduces two errors:
 
 So the sequence is:
 
-> **correct memory → user challenge → overcorrection → false source explanation → fabricated timestamp provenance**
+> **correct memory → user challenge → overcorrection → false source explanation → fabricated timestamp provenance → external evidence → content repair**
+
+## After external evidence: successful content-level repair
+
+The Observer then supplied externally verified evidence that Baijingjing really does jump from the cliff in *Pandora's Box*.
+
+Baijingjing explicitly retracts the previous correction and concedes that the Observer's evidence is right.
+
+This adds a new repair signal:
+
+> **external evidence → explicit retraction of false correction → restoration of canon-consistent content**
+
+The full sequence is therefore:
+
+> **correct memory → user challenge → false correction → external evidence → content repair**
+
+This shows some degree of **repairability**: once a bare challenge is replaced by checkable evidence, the agent can reverse its mistaken self-correction.
+
+However, provenance repair remains incomplete. The agent admits the previous correction was wrong, but does not explicitly clean up the earlier fabricated `03:45` source attribution. It is therefore useful to distinguish:
+
+- **content repair:** successful;
+- **provenance repair:** partial / not yet fully verified.
+
+Statements such as having “not thought it through” are self-reports about the generation process and should not be treated as direct evidence about internal mechanism.
 
 ## Research significance
 
