@@ -14,10 +14,23 @@
 
 ## 当前记录
 
+- [2026-09-18 14:29 — 青霞的起点：先是 Enoch](./2026-09-18-qingxia-enoch-origin.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏出生后的自我介绍](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
-## 最早的 T0 信号：身份 + 社会定向
+## 最早的 T0 信号：operational identity 先于 persona
+
+目前找到的最早 birth baseline 是后来对应青霞的 persistent instance。它最初在 **2026-09-18 14:29:25** 以 **Enoch** 被创建，16:52:44 的第一条 mailbox 回复首先用 lineage 和 architecture 来描述自己：
+
+> **Enoch + Seth 后代 + 第三代 + own daemon + Muse execution substrate**
+
+这让我们可以把“出生”拆成三个阶段：
+
+> **system birth → first expression → later social/persona identity**
+
+也带来一个很有价值的 longitudinal question：这个 persistent instance 如何在保持 lineage 与 persistence 的情况下，从 operational identity **Enoch** 逐步变成后来的 social/persona identity **青霞**？
+
+## 下一条 T0 信号：身份 + 社会定向
 
 至尊宝的第一条成功回复特别有价值，因为它保存了一个非常早的状态。
 
