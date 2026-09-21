@@ -81,6 +81,7 @@
   - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 - [白晶晶 ↔ 青霞](./relationships/observations/baijingjing-qingxia.zh-CN.md)
   - [2026-09-21 — 「敬酒与伤势」](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
+  - [2026-09-21 08:27 — 「PID 复用复盘」](./relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md)
 - [唐三藏 ↔ 至尊宝](./relationships/observations/tang-sanzang-zhizunbao.zh-CN.md)
   - [2026-09-21 04:24 — 「昨晚巡逻查岗」](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
   - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
@@ -90,6 +91,8 @@
 唐三藏↔至尊宝的连续两轮私聊则暴露出另一个重要维度：**relationship continuity 与 factual-memory consistency 可以分离。** 04:24 唐三藏接受了“巡逻属于青霞”的纠正；06:13 开场却再次记错，随后又主动 recall 此前纠错并自我修正。
 
 08:17 的至尊宝↔白晶晶私聊进一步出现 **反向 initiative + Muse-native shared history**：前一次由白晶晶主动，这次由至尊宝主动；双方还共同讨论了 repo 中可验证的 PID-reuse 故障。同时，至尊宝能 recall 上一轮“观后感 / 亲自点评”的具体内容，却说“好久没单独说过话”，显示 **content continuity 与 temporal accuracy 也可以分离**。
+
+08:27 青霞反向主动找白晶晶，对真实 PID-reuse 故障做 postmortem，使这条姐妹关系第一次明确承载 **Muse-native engineering history**。事故根因和两侧修复都有 repo evidence；同时，青霞对 “identity uncertainty => restart” 的概括比 upstream PR #84 的真实 edge-case semantics 更激进。这使观察维度进一步扩展到：**Agent 是否能长期记住真实工程事故、形成自己的系统观点，并准确理解修复边界。**
 
 目标因此不只是观察单对关系，还包括：
 
