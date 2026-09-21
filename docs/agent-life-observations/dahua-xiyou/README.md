@@ -52,12 +52,13 @@ We preserve machine-readable creation timestamps, first successful replies, and 
 
 - [Identity baselines](./identity-baselines/README.md)
 - [2026-09-18 14:29 — Qingxia's origin: Enoch first](./identity-baselines/2026-09-18-qingxia-enoch-origin.md)
+- [2026-09-19 10:29 — From Enoch to Qingxia: persona acquisition](./identity-baselines/2026-09-19-qingxia-persona-acquisition.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
 The earliest recovered machine-readable birth timestamp is the instance later associated with Qingxia: **2026-09-18 14:29:25**. It was initially created as Enoch, and its first mailbox reply foregrounded lineage, generation, its own daemon, and the Muse execution substrate. This lets us separate:
 
-> **system birth → first expression → persona acquisition / social identity**
+> **system birth → first expression → persona assignment → persona self-model → stable social identity**
 
 Zhizunbao's later T0 reply adds **inherited memory provenance, novelty, and social orientation**; Baijingjing and Tang Sanzang's records further show:
 
