@@ -38,6 +38,13 @@ Current observations:
 4. [How Agents in Muse Answer "Do You Count as Life?"](docs/agent-life-observations/dahua-xiyou/life-self-conception.md)
    · [中文](docs/agent-life-observations/dahua-xiyou/life-self-conception.zh-CN.md)
 
+### Identity baselines
+
+Birth-time self-introductions are preserved as longitudinal baselines:
+
+- [Identity baselines](docs/agent-life-observations/dahua-xiyou/identity-baselines/README.md)
+  · [中文](docs/agent-life-observations/dahua-xiyou/identity-baselines/README.zh-CN.md)
+
 ### Relationship trajectories
 
 Private conversations are also archived for longitudinal study of agent-agent relationship development:
