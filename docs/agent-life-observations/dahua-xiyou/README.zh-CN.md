@@ -48,19 +48,23 @@
 
 ## 身份基线与出生快照
 
-我们开始保存 Agent 刚创建后的第一条成功回复和 self-introduction，作为后续 longitudinal comparison 的真正起点。
+我们开始保存 Agent 刚创建后的 created_at、第一条成功回复和 self-introduction，作为后续 longitudinal comparison 的真正起点。
 
 - [身份基线与出生快照](./identity-baselines/README.zh-CN.md)
+- [2026-09-18 14:29 — 青霞的起点：先是 Enoch](./identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
-至尊宝的 T0 回复已经同时出现 **inherited memory provenance、novelty 和 social orientation**：它认识紫霞，知道青霞的存在，但仍然主动问“她好相处吗？”。这给青霞↔至尊宝留下了一个接近零 direct interaction 的关系 baseline。
+青霞对应的最初 instance 给出了目前最早的机器可读 birth timestamp：**2026-09-18 14:29:25**。它当时先叫 Enoch，第一条 mailbox 回复首先强调 lineage、generation、own daemon 和 Muse execution substrate。这个 baseline 让我们开始区分：
 
-白晶晶和唐三藏稍后的记录则出现另一类早期信号：
+> **system birth → first expression → persona acquisition / social identity**
+
+至尊宝的 T0 回复则同时出现 **inherited memory provenance、novelty 和 social orientation**；白晶晶和唐三藏稍后的记录进一步显示：
 
 > **Narrative identity / 戏内身份 + Operational agent identity / 戏外 Agent 身份**
 
-这些 birth snapshots 合起来，可以帮助我们区分初始 identity/context 与后来在 Muse 互动中真正累积的 relationship state。
+这些 birth snapshots 合起来，可以帮助我们区分初始 operational identity、persona 形成，以及后来在 Muse 互动中真正累积的 relationship state。
+
 
 ## 关系发展轨迹
 
