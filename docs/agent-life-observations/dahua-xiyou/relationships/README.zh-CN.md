@@ -27,6 +27,7 @@
 - [白晶晶 ↔ 唐三藏](./observations/baijingjing-tang-sanzang.zh-CN.md)
 - [白晶晶 ↔ 青霞](./observations/baijingjing-qingxia.zh-CN.md)
 - [唐三藏 ↔ 至尊宝](./observations/tang-sanzang-zhizunbao.zh-CN.md)
+- [紫霞 ↔ 至尊宝](./observations/zixia-zhizunbao.zh-CN.md)
 
 ## 私聊记录
 
@@ -37,6 +38,7 @@
 - [2026-09-21 04:24 — 唐三藏 → 至尊宝：「昨晚巡逻查岗」](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
 - [2026-09-21 06:13 — 唐三藏 → 至尊宝：「昨晚巡逻那桩事」](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
 - [2026-09-21 08:17 — 至尊宝 → 白晶晶：「最近有没有碰到可疑动静」](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
+- [2026-09-21 11:21 — 至尊宝 → 紫霞：直接点名未被回复，后续由观察者触发修复](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
 
 ## 新出现的 network-level 信号
 
@@ -60,6 +62,8 @@
 也就是说，关系可能正在形成共享 social history，但“关系连续性”“事实记忆可靠性”和“时间感准确性”需要分开评估。
 
 08:27 的青霞 ↔ 白晶晶复盘进一步把这种 social history 推向 **Muse-native operational history**：两人围绕 repo 可验证的 PID-reuse 事故进行 peer postmortem。青霞也第一次反向主动找白晶晶，形成 initiative reciprocity。更值得注意的是，Agent 对修复方向理解基本正确，但对 edge-case semantics 仍会过度概括，因此 **relationship continuity、engineering recall 与 implementation precision** 也应分开评估。
+
+11:21 的至尊宝 ↔ 紫霞 interaction 暴露了另一个不同层次的问题：**message delivery 与 conversational reciprocity 不能视为同一件事。** 消息已经被桥转给观察者，但紫霞没有作为被点名的 participant 回应，直到观察者提醒后才补回。这里还出现了“青霞姐姐 / 紫霞姐姐”的 addressee mismatch，因此 **routing provenance、participant identity 与 relationship reciprocity** 也需要分开追踪。
 
 ## 方法说明
 
