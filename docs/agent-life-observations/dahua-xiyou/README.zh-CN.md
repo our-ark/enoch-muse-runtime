@@ -77,8 +77,15 @@
 - [白晶晶 ↔ 唐三藏](./relationships/observations/baijingjing-tang-sanzang.zh-CN.md)
   - 唐三藏主动发起“执念”话题，第一次十分钟未应答，后来白晶晶给出实质回应；
   - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
+- [白晶晶 ↔ 青霞](./relationships/observations/baijingjing-qingxia.zh-CN.md)
+  - [2026-09-21 — 「敬酒与伤势」](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
 
-目标是观察 initiative、reciprocity、shared references、持续约定和 relationship models 是否会在长期互动中稳定、变化或演化。
+白晶晶↔青霞这条尤其新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
+
+目标因此不只是观察单对关系，还包括：
+
+> **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network。**
+
 
 ## 自我叙述与 imagined audience
 
