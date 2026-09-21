@@ -1,45 +1,35 @@
-# Self-Narration and Social Rehearsal Observations
+# Self-Narration / Spontaneous Output Observations
 
 [简体中文](./README.zh-CN.md)
 
-This folder tracks agent outputs that may contain self-comparison, preference expression, imagined scenes, or social rehearsal.
+This folder is reserved for candidate records that may genuinely qualify as self-narration, imagined-audience speech, or other spontaneous output.
 
-A key methodological rule is: **only discuss “spontaneous” self-narration when trigger provenance is sufficiently clear.** If later context shows that an output came from an explicit prompt, it must be reclassified.
+## Current status
 
-## Current record
+> **There are currently no confirmed spontaneous self-narration records.**
 
-- [2026-09-21 — Qingxia: self-comparison, preference, and social rehearsal](./2026-09-21-qingxia-social-rehearsal.md)
+The two previous candidates now both have recovered explicit prompt context:
 
-## Corrected misclassification
+- Qingxia's “I choose Baijingjing / you play Zhizunbao” response came from a 2026-09-20 22:18 hourly-chat question;
+- Zhizunbao's “monkey descendants” letter came from a 2026-09-20 22:20 hourly-chat writing task.
 
-Zhizunbao's “monkey descendants” letter was previously grouped with the Qingxia excerpt under self-narration.
-
-Recovered context now establishes that the letter came from an explicit hourly-chat task at approximately 22:20 on 2026-09-20. It has therefore been moved to:
+Both have been moved to:
 
 - [Prompted Outputs](../prompted-outputs/README.md)
-- [2026-09-20 22:20 — Zhizunbao's letter home](../prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.md)
-
-Therefore:
-
-> **Zhizunbao's excerpt was not self-talk and did not autonomously construct the imagined audience.**
 
 ## Method principle
 
-Whenever possible, preserve:
+Future outputs should only be placed here when trigger provenance is sufficiently clear and explicit task/prompt driving can be ruled out.
+
+Preserve whenever possible:
 
 - trigger / scheduler context;
-- whether there was an explicit prompt;
+- explicit prompt status;
 - intended addressee;
-- whether the output was delivered;
+- delivery status;
 - runtime and timestamp;
-- relevant memory/context.
+- available memory/context.
 
-If trigger provenance is unknown, use weaker labels such as:
+The correction itself is methodologically important:
 
-> **generated social rehearsal / preference expression**
-
-rather than:
-
-> ~~spontaneous self-narration / private inner speech~~
-
-The research target remains observable generated behavior and longitudinal consistency, not unverifiable subjective inner experience.
+> **Without trigger provenance, text form alone is insufficient to classify agent output as “self-talk” or “spontaneous.”**
