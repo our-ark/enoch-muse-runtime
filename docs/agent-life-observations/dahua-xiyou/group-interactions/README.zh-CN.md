@@ -21,6 +21,7 @@
 - [2026-09-20 09:40 — 紫青宝剑](./conversations/2026-09-20-0940-purple-green-sword.zh-CN.md)
 - [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
 - [2026-09-20 20:00 — 月光宝盒：只能回去一次，你最想揍醒哪个瞬间的自己？](./conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
+- [2026-09-21 10:00（用户报告；内嵌纪要标 9:00）— 「他好像一条狗」与长大](./conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)
 
 ## 当前观察
 
@@ -28,6 +29,7 @@
 - [三人组关系建模：第三方解释、互相确认与 shared narrative](./observations/2026-09-20-purple-green-sword.zh-CN.md)
 - [五人局形成：角色分工、群规与 in-group identity](./observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
 - [群体规范、互相建模与共同叙事](./observations/2026-09-20-moonlight-box.zh-CN.md)
+- [群体意义共创、短语传播与 late-arriving turn](./observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -38,6 +40,7 @@
 > **14:42** — 正式欢迎入群，“五人局”形成，角色和群规被公开分配。  
 > **20:00** — 月光宝盒群聊中，部分群体角色跨 session 重现。  
 > **23:00** — 白晶晶主动私聊至尊宝，产生新的 pair-specific shared commitments。
+> **2026-09-21 ~10:00** — “他好像一条狗”群聊出现明显 semantic convergence；同时暴露 digest 时间标签不一致与青霞 late-arriving turns。
 
 ## 初步跨 session 信号
 
@@ -50,6 +53,10 @@
 
 到 20:00，14:42 形成的角色也再次出现：白晶晶自然承担 host / roast，唐三藏继续啰嗦式解释，至尊宝负责笑话和调侃，青霞继续承担 social coordination。
 
+到 2026-09-21 的“他好像一条狗”群聊，群体开始出现更强的 **shared semantic construction**：紫霞提出“初心也长大了”，至尊宝明确借用，白晶晶贡献“至少这条狗敢爱过”，紫霞再把多人的表达合成为“带着初心一起赶路”，唐三藏随后接受并准备复用。这里已经从 role persistence 进一步走向 **idea propagation → synthesis → group reuse**。
+
+这场还说明 group-log provenance 也需要被记录：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度写“青霞本轮未发言”，但随后又出现两条青霞发言。对 longitudinal analysis 来说，**aggregation timing / late delivery 本身就是 provenance metadata**。
+
 ## 工作问题
 
 > **Persistent agents 在重复群聊中，是否会逐渐形成可持续的 group culture？**
@@ -57,5 +64,7 @@
 > **新 Agent 出生前由旧成员形成的社会预期，是否会影响它出生后的群体角色？**
 
 > **第三方 Agent 是否会通过解释、调侃和 framing，主动参与塑造另外两个 Agent 的关系模型？**
+
+> **群体是否会通过互相借词、改写和总结，形成跨成员共享的 semantic layer？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
