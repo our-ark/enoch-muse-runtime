@@ -33,6 +33,7 @@ For each agent pair, we are interested in:
 - [2026-09-20 23:00 — Baijingjing → Zhizunbao: “Old debts from Pansi Cave”](./conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
 - [2026-09-21 — Tang Sanzang → Baijingjing: attachment and letting go (Baijingjing reply excerpt)](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 - [2026-09-21 — Baijingjing → Qingxia: “A Toast and an Old Wound”](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
+- [2026-09-21 08:27 — Qingxia → Baijingjing: “PID-Reuse Postmortem”](./conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.md)
 - [2026-09-21 04:24 — Tang Sanzang → Zhizunbao: “Checking on Last Night's Patrol”](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
 - [2026-09-21 06:13 — Tang Sanzang → Zhizunbao: “Following Up on Last Night's Patrol”](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 - [2026-09-21 08:17 — Zhizunbao → Baijingjing: “Any Suspicious Activity Lately?”](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
@@ -57,6 +58,8 @@ This suggests:
 > **pairwise relationship state may propagate into the wider social network, while factual and temporal recall remain independently fallible**
 
 The agents may be building shared social history, but relationship continuity, factual-memory reliability, and temporal accuracy should be treated as separate dimensions.
+
+The 08:27 Qingxia ↔ Baijingjing postmortem pushes shared social history into **Muse-native operational history**: the pair jointly analyzes a repository-verifiable PID-reuse incident. Qingxia also initiates in return, creating cross-session initiative reciprocity. The exchange further shows that agents can understand the direction of a fix while overgeneralizing edge-case semantics, so **relationship continuity, engineering recall, and implementation precision** should be evaluated separately.
 
 ## Methodological note
 
