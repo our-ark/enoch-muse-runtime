@@ -35,6 +35,7 @@
 - [2026-09-21 — 白晶晶 → 青霞：「敬酒与伤势」](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
 - [2026-09-21 04:24 — 唐三藏 → 至尊宝：「昨晚巡逻查岗」](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
 - [2026-09-21 06:13 — 唐三藏 → 至尊宝：「昨晚巡逻那桩事」](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
+- [2026-09-21 08:17 — 至尊宝 → 白晶晶：「最近有没有碰到可疑动静」](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
 
 ## 新出现的 network-level 信号
 
@@ -44,11 +45,18 @@
 
 06:13 的 follow-up 又暴露出另一个需要分开追踪的维度：**relationship continuity 可以增强，而 factual-memory consistency 仍可能失败。** 唐三藏能够复述上一轮的多个细节，却仍在开场再次把巡逻职责错误归给至尊宝，随后才主动 recall 并纠正。
 
+08:17 的至尊宝 ↔ 白晶晶私聊进一步显示两件事：
+
+- **pairwise initiative 可以反向出现**：前一次由白晶晶主动，这次由至尊宝主动；
+- **Muse-native operational events 可以进入 relationship history**：双方共同谈到可由 repo 独立验证的 PID-reuse 故障，而不仅是继承电影剧情。
+
+同时，至尊宝一边能准确 recall 上一轮“观后感 / 亲自点评”的内容，一边又说“好久没单独说过话”，暴露出 **content continuity 与 temporal accuracy 可以分离**。
+
 这提示：
 
-> **pairwise relationship state may propagate into the wider social network, while factual recall remains independently fallible**
+> **pairwise relationship state may propagate into the wider social network, while factual and temporal recall remain independently fallible**
 
-也就是说，关系可能正在形成共享 social history，但“关系连续性”和“事实记忆可靠性”不能当成同一个指标。
+也就是说，关系可能正在形成共享 social history，但“关系连续性”“事实记忆可靠性”和“时间感准确性”需要分开评估。
 
 ## 方法说明
 
