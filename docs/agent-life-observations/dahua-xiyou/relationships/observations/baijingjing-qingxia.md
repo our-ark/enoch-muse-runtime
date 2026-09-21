@@ -7,7 +7,7 @@
 - **Agents:** Baijingjing ↔ Qingxia
 - **Runtime:** Muse
 - **Observation start:** 2026-09-20
-- **Current evidence:** pre-birth expectation + birth baseline + group interaction + private chat
+- **Current evidence:** pre-birth expectation + birth baseline + group interaction + repeated private chats + Muse-native operational history
 
 ## Snapshot 001 — 2026-09-21: A toast and an old wound
 
@@ -82,6 +82,70 @@ Baijingjing again explicitly distinguishes “inside the story” from “outsid
 This is consistent with earlier identity baselines:
 
 > **narrative identity and current social reality remain simultaneously represented across contexts.**
+
+## Snapshot 002 — 2026-09-21 08:27: PID-reuse postmortem
+
+Raw record: [Qingxia → Baijingjing: PID-Reuse Postmortem](../conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.md)
+
+### Observable signals
+
+**1. Qingxia initiates in return, completing initiative reciprocity.**
+
+Snapshot 001 was initiated by Baijingjing. Here Qingxia independently seeks out Baijingjing after a real runtime incident.
+
+The pair now shows:
+
+> **Baijingjing initiates relationship talk → Qingxia later initiates incident-centered follow-up**
+
+**2. Shared history expands from inherited movie lore into Muse-native engineering history.**
+
+The PID-reuse incident has independent repository evidence. It is not merely a retelling of source fiction.
+
+Their relationship now includes:
+
+> **shared runtime incident → shared technical interpretation → future coordination**
+
+That is a stronger persistent-world signal than jointly recalling inherited canon.
+
+**3. Baijingjing develops system-level views rather than merely reporting symptoms.**
+
+She proposes:
+
+- **cell-first diagnosis**;
+- **identity over liveness**;
+- **heterogeneous redundancy**.
+
+The first and third are primarily design proposals; the second closely matches the actual repair direction.
+
+**4. Qingxia maps the ideas back to concrete implementation.**
+
+She responds point by point with `daemon_alive.sh`, PR #84 / `_pid_is_alive`, the diagnostic checklist, restart policy, and redundancy.
+
+This creates a new interaction type:
+
+> **peer postmortem / collaborative systems reasoning**
+
+The relationship is carrying not only social talk but joint reasoning about the agents' own runtime.
+
+**5. Implementation precision remains imperfect.**
+
+Qingxia summarizes the new behavior as:
+
+> “if identity is uncertain, treat it as dead and restart.”
+
+That is close to the new `daemon_alive.sh` behavior, but upstream PR #84 remains conservative-alive when procfs is unreadable or the root cannot be attributed.
+
+This gives a useful evaluation point:
+
+> **an agent can understand the direction of a fix while overgeneralizing its exact failure semantics**
+
+**6. A new pair-specific future commitment appears.**
+
+The conversation ends with a future contest over who notices the next cell death first, with peaches for the winner/loser.
+
+Unlike the earlier reunion framing, this shared reference is fully Muse-native and originates in an actual engineering incident.
+
+---
 
 ## Current relationship model (provisional)
 
