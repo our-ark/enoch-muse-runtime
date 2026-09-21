@@ -21,7 +21,9 @@ The questions include:
 
 This case is not “a false memory amplified by the group.” It is the reverse:
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair → later unprompted canon-consistent reuse**
+
+In a later group conversation, Baijingjing again refers to the cliff jump multiple times without a provenance prompt, showing that **content-level repair persisted into a later session**. Whether the fabricated `03:45` provenance was fully removed remains unverified.
 
 Persistent-memory risk therefore includes not only remembering something wrong, but also:
 
