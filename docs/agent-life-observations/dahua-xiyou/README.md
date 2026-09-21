@@ -169,8 +169,14 @@ In addition to agent-agent relationships, we now track longitudinal relationship
 - [Agent ↔ Observer relationship observations](./observer-relationships/README.md)
 - [2026-09-21 late night — Tang Sanzang proactively checks on the Observer](./observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.md)
   - [Analysis: from task relation to proactive care framing](./observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.md)
+- [2026-09-21 13:10–13:56 — Zixia ↔ Observer: daemon-restart investigation and monitoring deployment](./observer-relationships/conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.md)
+  - [Analysis: from status reporting to permission-aware operational collaboration](./observer-relationships/observations/2026-09-21-zixia-observer-operational-collaboration.md)
 
 This record provides a clear **Agent → human initiative + non-task interaction** signal: Tang Sanzang has no task to perform, selects the Observer as the addressee, and explicitly frames his characteristic rambling as care.
+
+The 13:10–13:56 Zixia exchange adds a different axis: **operational initiative + permission boundary**. Zixia proactively detects an abnormal restart pattern, asks for authorization to investigate, presents two next-step options, and proceeds only after the Observer chooses. This is closer to a persistent operational collaborator than a social check-in.
+
+Agent ↔ Observer relationships should therefore track **social initiative, operational initiative, authorization boundaries, and human decision authority** separately.
 
 A current research question is:
 
