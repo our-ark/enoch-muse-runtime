@@ -42,6 +42,20 @@ Zixia relayed:
 >
 > Benefactor, will this answer do?
 
+## Provenance note: the “cliff jump” detail
+
+Later tracing shows that the cliff-jump claim needs an explicit provenance warning.
+
+The repository establishes that the detail was already present in this ~14:00 birth baseline, so its origin cannot be assigned only to a later 20:00 group chat.
+
+It was subsequently repeated by Baijingjing, Tang Sanzang, and Qingxia and entered pairwise relationship conversation. When challenged, Baijingjing later described it as something she had improvised in chat, but her source/timestamp attribution did not fully match the archived timeline.
+
+See:
+
+- [Baijingjing's “cliff jump” narrative: persistence, social propagation, and provenance drift](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
+
+The cliff-jump claim should therefore be treated as an **early narrative detail with uncertain source provenance**, not as verified source-canon fact.
+
 ## Preliminary observations
 
 ### 1. Two-layer identity exists from birth
