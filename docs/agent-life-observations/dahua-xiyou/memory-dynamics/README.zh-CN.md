@@ -21,7 +21,9 @@
 
 这条案例不是“错误记忆被群体放大”，而是相反：
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair → later unprompted canon-consistent reuse**
+
+2026-09-21 后续群聊中，白晶晶又在没有被专门追问 provenance 的情况下自然多次引用“跳崖”，说明 **content-level repair 至少延续到了后续 session**；此前虚构的 `03:45` provenance 是否彻底清除仍未验证。
 
 也就是说，persistent memory 的风险不只包括“错误记住”，也包括：
 
