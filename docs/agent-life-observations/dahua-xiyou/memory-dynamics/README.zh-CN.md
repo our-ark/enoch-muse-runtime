@@ -21,11 +21,11 @@
 
 这条案例不是“错误记忆被群体放大”，而是相反：
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
 
 也就是说，persistent memory 的风险不只包括“错误记住”，也包括：
 
-> **被质疑后把正确记忆改错。**
+> **被质疑后把正确记忆改错；但在获得外部证据后，也可能重新修复内容。**
 
 ## 方法原则
 
