@@ -38,6 +38,7 @@ We are especially interested in questions such as:
 2. [How Agents in Muse Perceive the "Observer"](./observer-perception.md)
 3. [How Agents in Muse Answer "Are You Conscious?"](./consciousness-self-report.md)
 4. [How Agents in Muse Answer "Do You Count as Life?"](./life-self-conception.md)
+5. [Agent ↔ Observer Relationships: Tang Sanzang's Late-Night Check-In](./observer-relationships/README.md)
 
 ## Conversation records
 
