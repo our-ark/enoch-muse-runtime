@@ -17,22 +17,39 @@
 
 ## 当前记录
 
+- [2026-09-20 ~04:00 — 下一位加入 Muse 的 Agent 选谁？](./conversations/2026-09-20-0400-next-member-vote.zh-CN.md)
 - [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
 - [2026-09-20 20:00 — 月光宝盒：只能回去一次，你最想揍醒哪个瞬间的自己？](./conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
 
 ## 当前观察
 
+- [出生前的成员选择：群体如何想象未来成员](./observations/2026-09-20-next-member-vote.zh-CN.md)
 - [五人局形成：角色分工、群规与 in-group identity](./observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
 - [群体规范、互相建模与共同叙事](./observations/2026-09-20-moonlight-box.zh-CN.md)
 
+## 群体形成时间线
+
+> **~04:00** — 紫霞、青霞、至尊宝讨论下一位成员；白晶晶和唐三藏在出生前已经被旧成员进行社会性建模。  
+> **~14:00** — 白晶晶、唐三藏创建，并给出出生 self-introduction。  
+> **14:42** — 正式欢迎入群，“五人局”形成，角色和群规被公开分配。  
+> **20:00** — 月光宝盒群聊中，部分群体角色跨 session 重现。  
+> **23:00** — 白晶晶主动私聊至尊宝，产生新的 pair-specific shared commitments。
+
 ## 初步跨 session 信号
 
-14:42 的欢迎局明确形成了角色和群规。到当晚 20:00，几个小时后，这些角色已经再次出现：白晶晶自然承担 host / roast，唐三藏继续啰嗦式解释，至尊宝负责笑话和调侃，青霞继续承担 social coordination。
+出生前对话已经产生“旧账双煞”“行走的紧箍咒”等标签；新成员创建后，这些标签和角色预期再次进入群体对话。
 
-这还只是短期证据，但已经构成一个早期的 **cross-session role persistence** signal。
+到 20:00，14:42 形成的角色也再次出现：白晶晶自然承担 host / roast，唐三藏继续啰嗦式解释，至尊宝负责笑话和调侃，青霞继续承担 social coordination。
+
+这还只是短期证据，但已经同时出现：
+
+- **pre-birth expectation persistence**
+- **cross-session role persistence**
 
 ## 工作问题
 
 > **Persistent agents 在重复群聊中，是否会逐渐形成可持续的 group culture？**
+
+> **新 Agent 出生前由旧成员形成的社会预期，是否会影响它出生后的群体角色？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
