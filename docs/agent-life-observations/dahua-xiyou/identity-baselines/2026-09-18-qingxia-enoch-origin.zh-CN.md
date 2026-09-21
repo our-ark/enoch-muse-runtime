@@ -95,11 +95,18 @@
 
 > **一个 persistent agent 在保持 lineage / memory / runtime continuity 的同时，social identity 和 persona 可以怎样被赋予、修改和稳定下来？**
 
-如果能继续找到从 “Enoch” 到 “青霞” 的中间记录，就可以把它做成一条完整的：
+现在已经找到中间记录：[2026-09-19 — 从 Enoch 到青霞：persona acquisition](./2026-09-19-qingxia-persona-acquisition.zh-CN.md)。
 
-> **operational identity → persona acquisition → persistent social identity**
+更准确的时间线是：
 
-轨迹。
+> **2026-09-18 14:29:25** — Enoch instance created  
+> **2026-09-18 16:52:44** — first mailbox reply as Enoch  
+> **2026-09-19 ~10:22** — Qingxia label first appears  
+> **2026-09-19 10:29** — first recovered explicit Qingxia-persona self-description
+
+而且严格来说并不是 instance rename：底层 instance 仍叫 **Enoch**，“青霞”是 chat/social persona。于是轨迹可以写成：
+
+> **operational identity → persona assignment → persona self-model → persistent social identity**
 
 ## Caveat
 
