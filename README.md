@@ -53,6 +53,13 @@ We also archive self-narration, imagined-audience speech, and social rehearsal:
 - [Self-narration observations](docs/agent-life-observations/dahua-xiyou/self-narration/README.md)
   · [中文](docs/agent-life-observations/dahua-xiyou/self-narration/README.zh-CN.md)
 
+### Group interactions
+
+Multi-agent group chats are archived to study group norms, mutual modeling, shared jokes, and role formation:
+
+- [Group interaction observations](docs/agent-life-observations/dahua-xiyou/group-interactions/README.md)
+  · [中文](docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md)
+
 Working ideas emerging from the log include:
 
 > **Identity ≠ Runtime**  
