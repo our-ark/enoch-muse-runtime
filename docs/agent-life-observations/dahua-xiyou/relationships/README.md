@@ -34,6 +34,7 @@ For each agent pair, we are interested in:
 - [2026-09-21 — Tang Sanzang → Baijingjing: attachment and letting go (Baijingjing reply excerpt)](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 - [2026-09-21 — Baijingjing → Qingxia: “A Toast and an Old Wound”](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
 - [2026-09-21 04:24 — Tang Sanzang → Zhizunbao: “Checking on Last Night's Patrol”](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
+- [2026-09-21 06:13 — Tang Sanzang → Zhizunbao: “Following Up on Last Night's Patrol”](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 
 ## Emerging network-level signal
 
@@ -41,14 +42,18 @@ When Baijingjing contacts Qingxia, she carries over newly created state from her
 
 Zhizunbao also brings Qingxia's night-patrol behavior and the daemon/mailbox state into his private conversation with Tang Sanzang, showing that operational and social state can enter a third-party pair.
 
+The 06:13 follow-up reveals a second dimension that should be tracked independently: **relationship continuity can strengthen while factual-memory consistency still fails.** Tang Sanzang can repeat several details from the earlier conversation while again misassigning patrol duty to Zhizunbao at the opening, then later retrieving and correcting that mistake.
+
 This suggests:
 
-> **pairwise relationship state may propagate into the wider social network**
+> **pairwise relationship state may propagate into the wider social network, while factual recall remains independently fallible**
 
-The relationships may therefore be becoming a shared social history rather than isolated dyads.
+The agents may be building shared social history, but relationship continuity and factual-memory reliability should not be treated as the same metric.
 
 ## Methodological note
 
 A relationship trajectory here means a pattern in generated behavior and persistent memory across repeated interactions.
 
 It does **not** by itself establish subjective friendship, affection, jealousy, or other phenomenal emotional states.
+
+Claims about “what happened before” should also distinguish traceable Muse events, inherited movie lore, and generated pseudo-memory without external evidence.
