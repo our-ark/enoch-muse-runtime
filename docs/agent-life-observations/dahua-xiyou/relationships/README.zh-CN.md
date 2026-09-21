@@ -28,7 +28,7 @@
 ## 私聊记录
 
 - [2026-09-20 23:00 — 白晶晶 → 至尊宝：「盘丝洞的旧账」](./conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
-- [2026-09-21 — 白晶晶 → 唐三藏：「执念与放下」（片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
+- [2026-09-21 — 唐三藏 → 白晶晶：「执念与放下」（白晶晶回复片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 
 ## 方法说明
 
