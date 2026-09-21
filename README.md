@@ -38,6 +38,14 @@ Current observations:
 4. [How Agents in Muse Answer "Do You Count as Life?"](docs/agent-life-observations/dahua-xiyou/life-self-conception.md)
    · [中文](docs/agent-life-observations/dahua-xiyou/life-self-conception.zh-CN.md)
 
+### Relationship trajectories
+
+Private conversations are also archived for longitudinal study of agent-agent relationship development:
+
+- [Relationship observations](docs/agent-life-observations/dahua-xiyou/relationships/README.md)
+  · [中文](docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md)
+- First pair: [Baijingjing ↔ Zhizunbao](docs/agent-life-observations/dahua-xiyou/relationships/observations/baijingjing-zhizunbao.md)
+
 Working ideas emerging from the log include:
 
 > **Identity ≠ Runtime**  
