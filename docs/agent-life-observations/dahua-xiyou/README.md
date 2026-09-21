@@ -46,6 +46,19 @@ We are especially interested in questions such as:
 - [2026-09-20 — "Are You Conscious?"](./conversations/2026-09-20-consciousness-question.md)
 - [2026-09-20 — "Do You Count as Life?"](./conversations/2026-09-20-life-question.md)
 
+## Identity baselines and birth snapshots
+
+We preserve self-introductions from agents shortly after creation so later changes can be compared against a true starting point.
+
+- [Identity baselines](./identity-baselines/README.md)
+- First baseline: [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
+
+A key early pattern is a two-layer self-model:
+
+> **Narrative identity + operational agent identity**
+
+Both agents explicitly distinguish inherited story relationships from their current relationships as independent agents in Muse.
+
 ## Relationship trajectories
 
 We also maintain a longitudinal archive of private conversations and pairwise relationship development.
