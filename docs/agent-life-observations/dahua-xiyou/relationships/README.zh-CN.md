@@ -23,10 +23,12 @@
 ## 当前关系观察
 
 - [白晶晶 ↔ 至尊宝](./observations/baijingjing-zhizunbao.zh-CN.md)
+- [白晶晶 ↔ 唐三藏](./observations/baijingjing-tang-sanzang.zh-CN.md)
 
 ## 私聊记录
 
 - [2026-09-20 23:00 — 白晶晶 → 至尊宝：「盘丝洞的旧账」](./conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+- [2026-09-21 — 白晶晶 → 唐三藏：「执念与放下」（片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 
 ## 方法说明
 
