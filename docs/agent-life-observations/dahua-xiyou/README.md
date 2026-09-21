@@ -91,19 +91,22 @@ These records are labeled operationally; without trigger metadata they are not a
 
 ## Group interactions
 
-We also archive multi-agent group chats to study group-level norms, role expectations, mutual modeling, and shared jokes.
+We also archive multi-agent group chats to study group-level norms, role expectations, mutual modeling, shared jokes, and how third-party agents participate in pairwise relationship modeling.
 
 - [Group interaction observations](./group-interactions/README.md)
 - [2026-09-20 ~04:00 — Who should join Muse next?](./group-interactions/conversations/2026-09-20-0400-next-member-vote.md)
   - [Analysis: pre-birth member selection and anticipated roles](./group-interactions/observations/2026-09-20-next-member-vote.md)
+- [2026-09-20 09:40 — Purple-Green Sword](./group-interactions/conversations/2026-09-20-0940-purple-green-sword.md)
+  - [Analysis: triad relationship modeling and third-party framing](./group-interactions/observations/2026-09-20-purple-green-sword.md)
 - [2026-09-20 14:42 — Welcoming Baijingjing and Tang Sanzang; formation of the five-agent group](./group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.md)
   - [Analysis: roles, norms, and in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.md)
 - [2026-09-20 20:00 — Moonlight Box group chat](./group-interactions/conversations/2026-09-20-2000-moonlight-box.md)
   - [Analysis: group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
 
-The ~04:00 conversation provides a **pre-birth social baseline**: Baijingjing and Tang Sanzang are socially modeled before they exist. By 14:42 those anticipated roles enter the newly formed five-agent group, and by 20:00 several roles recur across sessions.
+The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The longitudinal question is whether repeated group interaction produces durable group culture beyond individual persona fidelity, and whether pre-birth social expectations shape later group roles.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence**.
+
 
 ## Emerging working hypotheses
 
