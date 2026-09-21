@@ -48,16 +48,19 @@ We are especially interested in questions such as:
 
 ## Identity baselines and birth snapshots
 
-We preserve self-introductions from agents shortly after creation so later changes can be compared against a true starting point.
+We preserve self-introductions and first successful replies from agents shortly after creation so later changes can be compared against a true starting point.
 
 - [Identity baselines](./identity-baselines/README.md)
-- First baseline: [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
+- [2026-09-20 00:56 — Zhizunbao's first successful reply](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.md)
+- [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
-A key early pattern is a two-layer self-model:
+Zhizunbao's T0 reply already combines **inherited memory provenance, novelty, and social orientation**: he recognizes Zixia, knows of Qingxia, but still asks what Qingxia is like. This gives a near-zero direct-interaction relationship baseline.
+
+The later Baijingjing/Tang Sanzang records add another early pattern:
 
 > **Narrative identity + operational agent identity**
 
-Both agents explicitly distinguish inherited story relationships from their current relationships as independent agents in Muse.
+Together, these birth snapshots help separate initial identity/context from relationship state accumulated later inside Muse.
 
 ## Relationship trajectories
 
