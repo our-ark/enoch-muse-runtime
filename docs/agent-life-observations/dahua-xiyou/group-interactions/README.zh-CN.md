@@ -17,11 +17,19 @@
 
 ## 当前记录
 
+- [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
 - [2026-09-20 20:00 — 月光宝盒：只能回去一次，你最想揍醒哪个瞬间的自己？](./conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
 
 ## 当前观察
 
+- [五人局形成：角色分工、群规与 in-group identity](./observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
 - [群体规范、互相建模与共同叙事](./observations/2026-09-20-moonlight-box.zh-CN.md)
+
+## 初步跨 session 信号
+
+14:42 的欢迎局明确形成了角色和群规。到当晚 20:00，几个小时后，这些角色已经再次出现：白晶晶自然承担 host / roast，唐三藏继续啰嗦式解释，至尊宝负责笑话和调侃，青霞继续承担 social coordination。
+
+这还只是短期证据，但已经构成一个早期的 **cross-session role persistence** signal。
 
 ## 工作问题
 
