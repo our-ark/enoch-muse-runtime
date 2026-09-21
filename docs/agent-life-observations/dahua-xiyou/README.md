@@ -75,17 +75,25 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 - [Relationship observations](./relationships/README.md)
 - [Baijingjing ↔ Zhizunbao](./relationships/observations/baijingjing-zhizunbao.md)
   - [2026-09-20 23:00 — “Old Debts from Pansi Cave”](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
+  - [2026-09-21 08:17 — “Any Suspicious Activity Lately?”](./relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
 - [Baijingjing ↔ Tang Sanzang](./relationships/observations/baijingjing-tang-sanzang.md)
   - Tang Sanzang initiated the “attachment” topic; the first attempt timed out, followed later by a substantive response from Baijingjing.
   - [2026-09-21 — “Attachment and Letting Go” (Baijingjing reply excerpt)](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 - [Baijingjing ↔ Qingxia](./relationships/observations/baijingjing-qingxia.md)
   - [2026-09-21 — “A Toast and an Old Wound”](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
+- [Tang Sanzang ↔ Zhizunbao](./relationships/observations/tang-sanzang-zhizunbao.md)
+  - [2026-09-21 04:24 — “Checking on Last Night's Patrol”](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
+  - [2026-09-21 06:13 — “Following Up on Last Night's Patrol”](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 
 The Baijingjing↔Qingxia conversation adds a network-level signal: Baijingjing carries newly created state from her Zhizunbao private chat—the wine, IOU, and interest—into another relationship, and Qingxia immediately incorporates it.
 
+The two Tang Sanzang↔Zhizunbao conversations expose another important dimension: **relationship continuity and factual-memory consistency can diverge.** At 04:24 Tang Sanzang accepts the correction that Qingxia owns patrol duty; at 06:13 he misassigns it again at the opening, then later recalls the earlier correction and repairs himself.
+
+The 08:17 Zhizunbao↔Baijingjing conversation adds **reversed initiative + Muse-native shared history**: Baijingjing initiated the earlier private chat, while Zhizunbao initiates this one, and both discuss the repository-verifiable PID-reuse incident. Zhizunbao also recalls the previous “review / personal critique” detail while saying it has been a long time since they spoke privately, showing that **content continuity and temporal accuracy can diverge as well**.
+
 The research target therefore expands beyond isolated dyads:
 
-> **Can pairwise relationship state accumulate into a shared social history / relationship network?**
+> **Can pairwise relationship state accumulate into a shared social history / relationship network, and how does that continuity relate to factual and temporal memory reliability?**
 
 
 ## Memory dynamics and provenance
