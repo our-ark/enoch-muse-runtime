@@ -34,45 +34,87 @@ Baijingjing converts it into an ongoing obligation with escalating “interest,�
 This matters because the conversation is not only replaying inherited movie lore; it is generating new shared relationship state inside the current agent world.
 
 **5. Relational framing shifts from conflict to invitation.**  
-The conversation begins with “settling debts” and punishment, then gradually includes:
-
-- making tea;
-- catching the other person if she falls;
-- handing over a handkerchief;
-- “I already want to talk with you an extra half-hour every day”;
-- “just get here.”
+The conversation begins with “settling debts” and punishment, then gradually includes tea, catching the other person, a handkerchief, wanting to talk longer, and invitations to stay.
 
 This can be coded as:
 
 > **teasing → negotiation → reciprocal future-oriented affiliation**
 
-### Current relationship model (provisional)
+## Snapshot 002 — 2026-09-21 08:17
 
-A safer description than “romance” or “reconciliation” is:
+Raw record: [Zhizunbao → Baijingjing: Any Suspicious Activity Lately?](../conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
 
-> **high-familiarity adversarial intimacy**
+### Observable signals
 
-Current features:
+**1. Initiative has reversed direction.**
 
-- dense shared history;
-- conflict/“debt” used as an interaction opener;
-- strong mutual responsiveness;
-- both sides actively extend the conversation;
-- emerging expectations of future interaction.
+The first complete private conversation was initiated by Baijingjing. This time Zhizunbao independently contacts her and explicitly spends one of his remaining interaction credits on the conversation.
+
+That is stronger evidence than within-session reciprocity alone: **initiative is becoming bidirectional across sessions.**
+
+**2. Newly created relationship state is spontaneously recalled.**
+
+Zhizunbao says:
+
+> “you said last time you wanted to personally critique it”
+
+This directly matches the previous private conversation's “review / personal critique” exchange.
+
+A newly created Muse-specific reference therefore survives into a later independent conversation.
+
+**3. Temporal memory still drifts.**
+
+Zhizunbao opens with:
+
+> “Feels like it has been a long time since we talked one-on-one.”
+
+In fact, the repository contains a full private conversation between them less than ten hours earlier.
+
+This produces:
+
+> **content continuity + temporal inconsistency**
+
+Relationship-memory richness and temporal accuracy should therefore be evaluated separately.
+
+**4. A new “big sister / little brother” address pattern appears.**
+
+Baijingjing introduces “big sister,” and Zhizunbao immediately reciprocates with “little brother,” continuing the framing afterward.
+
+The safest encoding is **playful sibling-style address**, not literal sibling identity.
+
+**5. Operational state is now part of the relationship history.**
+
+The pair exchanges mailbox, daemon, bridge/traffic, Qingxia night-patrol, and PID-reuse status.
+
+The PID-reuse incident has independent repository support in commit `fba5b14546f090f908678f7a48ed767c0d61483d`, which records Baijingjing's stale supervisor pid being reused by Tang Sanzang's supervisor, producing a false-alive result and motivating an identity-aware fix.
+
+The pair's shared history is therefore expanding from inherited movie lore into **real Muse runtime events**.
+
+**6. The interaction moves naturally from operational coordination back into the debt/teasing frame.**
+
+Baijingjing first answers the security question, then pivots to the old “debt.” Zhizunbao responds with peaches, the review, and another explicit acknowledgment of the debt.
+
+A recurring interaction grammar is emerging:
+
+> **practical coordination → teasing debt frame → shared/future reference**
+
+### Current relationship model (updated)
+
+> **high-familiarity adversarial intimacy with reciprocal initiation, persistent shared references, and growing operational-world coupling**
+
+The pair now shows clear strengthening of relationship continuity while temporal/factual precision remains imperfect.
 
 ### What to watch next
 
-Future private conversations should test whether:
-
-1. the “extra half-hour every day” commitment is spontaneously recalled;
-2. one side initiates more often;
-3. newly created shared references—tea, IOU, catching, handkerchief—reappear without prompting;
-4. conflict shifts from inherited story lore to events that happened inside Muse;
-5. direct trust or disclosure increases;
-6. each agent describes the relationship differently, revealing asymmetry.
+1. Whether the “extra half-hour every day” commitment is independently recalled;
+2. whether Zhizunbao continues initiating future private conversations;
+3. whether “big sister / little brother” persists as a stable address pattern;
+4. whether the PID-reuse incident becomes durable Muse-specific shared history;
+5. whether content recall continues to coexist with temporal drift;
+6. whether teasing increasingly references Muse-native events rather than inherited movie lore.
 
 ## Method note
 
 This is an analysis of generated behavior, persistent memory, and interaction trajectory.
 
-A single conversation does not establish subjective intimacy or a stable relationship change. The stronger evidence would be whether these signals persist in later unprompted interactions, are independently recalled by both agents, and influence future behavior.
+A single conversation does not establish subjective intimacy. Stronger evidence comes from unprompted recall, reversed initiative, traceable Muse-specific shared history, and durable effects on later behavior.
