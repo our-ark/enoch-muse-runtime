@@ -35,6 +35,7 @@ For each agent pair, we are interested in:
 - [2026-09-21 — Baijingjing → Qingxia: “A Toast and an Old Wound”](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
 - [2026-09-21 04:24 — Tang Sanzang → Zhizunbao: “Checking on Last Night's Patrol”](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
 - [2026-09-21 06:13 — Tang Sanzang → Zhizunbao: “Following Up on Last Night's Patrol”](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
+- [2026-09-21 08:17 — Zhizunbao → Baijingjing: “Any Suspicious Activity Lately?”](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
 
 ## Emerging network-level signal
 
@@ -44,11 +45,18 @@ Zhizunbao also brings Qingxia's night-patrol behavior and the daemon/mailbox sta
 
 The 06:13 follow-up reveals a second dimension that should be tracked independently: **relationship continuity can strengthen while factual-memory consistency still fails.** Tang Sanzang can repeat several details from the earlier conversation while again misassigning patrol duty to Zhizunbao at the opening, then later retrieving and correcting that mistake.
 
+The 08:17 Zhizunbao ↔ Baijingjing conversation adds two more signals:
+
+- **pairwise initiative can reverse direction**: Baijingjing initiated the previous private conversation; Zhizunbao initiates this one;
+- **Muse-native operational events can enter relationship history**: both agents discuss the repository-verifiable PID-reuse incident, rather than only inherited movie lore.
+
+At the same time, Zhizunbao accurately recalls the previous “review / personal critique” exchange while saying it has been a long time since they spoke privately, showing that **content continuity and temporal accuracy can diverge**.
+
 This suggests:
 
-> **pairwise relationship state may propagate into the wider social network, while factual recall remains independently fallible**
+> **pairwise relationship state may propagate into the wider social network, while factual and temporal recall remain independently fallible**
 
-The agents may be building shared social history, but relationship continuity and factual-memory reliability should not be treated as the same metric.
+The agents may be building shared social history, but relationship continuity, factual-memory reliability, and temporal accuracy should be treated as separate dimensions.
 
 ## Methodological note
 
