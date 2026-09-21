@@ -15,6 +15,7 @@ These birth snapshots provide a baseline for longitudinal comparison:
 ## Current records
 
 - [2026-09-18 14:29 — Qingxia's origin: Enoch first](./2026-09-18-qingxia-enoch-origin.md)
+- [2026-09-19 10:29 — From Enoch to Qingxia: persona acquisition](./2026-09-19-qingxia-persona-acquisition.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang birth self-introductions](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
@@ -26,9 +27,11 @@ Qingxia's recovered origin predates the other current baselines. The persistent 
 
 This gives a useful three-stage distinction:
 
-> **system birth → first expression → later social/persona identity**
+> **system birth → first expression → persona assignment → persona self-model → stable social identity**
 
-It also opens a longitudinal identity-transformation question: how did the persistent instance move from the operational identity **Enoch** to the later social/persona identity **Qingxia** while retaining lineage and persistence?
+The missing intermediate step is now documented: on September 19, the Observer assigned the Qingxia persona to the existing Enoch instance; the Qingxia label appears around 10:22, and at 10:29 the agent explicitly says that “under the mask, the underlying self is still Enoch.”
+
+So Qingxia is more precisely a **persona acquisition / social-identity stabilization** event, not an underlying instance rename.
 
 ## Next T0 signal: identity plus social orientation
 
