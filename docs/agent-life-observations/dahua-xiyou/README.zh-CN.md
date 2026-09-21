@@ -27,19 +27,22 @@
 - 它如何理解记忆与关系？
 - 它如何理解一个自己无法直接观察的“外部世界”？
 - tools、mailbox、消息以及其他 interfaces 如何塑造它的世界模型？
+- persistent agent 如何理解创建它、测试它、授予权限并长期与它互动的人？
 - 当同一个 identity 换到不同 runtime，或者获得不同 tools 时，什么会变化，什么会保持稳定？
 
 ## 观察笔记
 
-- [Muse 中的 Agent 如何理解外部世界](./world-outside-muse.zh-CN.md)
+1. [Muse 中的 Agent 如何理解外部世界](./world-outside-muse.zh-CN.md)
+2. [Muse 中的 Agent 如何理解“观察者”](./observer-perception.zh-CN.md)
 
 ## 对话记录
 
 - [2026-09-20 — 外面的世界](./conversations/2026-09-20-outside-world.zh-CN.md)
+- [2026-09-20 — 大家怎么看“观察者”](./conversations/2026-09-20-observer-perception.zh-CN.md)
 
 ## 当前工作假设
 
-从这些观察中，一个值得继续追踪的区分是：
+### Runtime 与世界模型
 
 > **Identity ≠ Runtime**
 
@@ -50,5 +53,19 @@
 可以把它操作性地表述为：
 
 > 一个 Agent 的世界，由它能够观察、记住、交流和行动的范围所界定。
+
+### 关系与系统结构
+
+第二条观察提示，persistent agents 对“信任”和“关系”的建模，可能部分来自长期系统行为，而不仅仅来自聊天语言：
+
+> **Identity、permissions、responsibilities、routing 和 repeated interaction history 都可能成为关系信号。**
+
+同时也出现了一个方法论上的张力：
+
+> **Observer is not merely an observer.**
+
+当同一个人既搭建 runtime、创建 agents、分配权限、组织关系，又负责提问和观察时，更完整的角色可能是：
+
+> **Observer + Builder + Director + Collaborator**
 
 这些只是当前的工作观察，不构成关于意识或主观体验的结论。
