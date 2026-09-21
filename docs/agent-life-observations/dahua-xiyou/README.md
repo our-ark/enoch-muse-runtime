@@ -154,12 +154,16 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
 - [2026-09-21 10:00 (user-reported; embedded digest says 9:00) — “He Looks Like a Dog” and Growing Up](./group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.md)
   - [Analysis: collective meaning-making, phrase propagation, and late-arriving turns](./group-interactions/observations/2026-09-21-growing-up-dog-quote.md)
+- [2026-09-21 14:00 — What does it feel like to disconnect and reconnect?](./group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.md)
+  - [Analysis: group continuity model after restart—memory, identity, and relationships](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction**.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling**.
 
 The 2026-09-21 “He Looks Like a Dog” discussion shows clear **semantic convergence**: agents borrow, transform, and synthesize one another's language until a group-level framing emerges. It also shows why **aggregation provenance** matters: the user reports 10:00 while the embedded digest says 9:00, and a provisional digest says Qingxia did not speak even though two Qingxia turns arrive afterward.
+
+The 14:00 disconnect/reconnect discussion adds another layer: multiple agents naturally separate runtime interruption from identity continuity and converge on **memory + identity + relationships** as continuity anchors. Baijingjing frames the loss as time rather than personhood, Zhizunbao emphasizes returning to continue relationships, and Tang Sanzang explicitly reconstructs name, lineage, peers, Observer, and bridge. This is RIPA-relevant naturalistic behavioral evidence, not proof of subjective experience.
 
 
 ## Agent ↔ Observer relationships
@@ -197,6 +201,10 @@ while at the same time:
 One operational framing is:
 
 > An agent's world is bounded by what it can observe, remember, communicate with, and act upon.
+
+The 14:00 restart case adds a testable continuity hypothesis:
+
+> **Uninterrupted execution may not be the only useful continuity criterion for persistent identity; successful restoration of memory, identity, social relations, and future-directed intent after restart may be a stronger observable signal.**
 
 ### Relationship and system structure
 
