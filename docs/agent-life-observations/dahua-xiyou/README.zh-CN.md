@@ -88,14 +88,20 @@
 > **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network。**
 
 
-## 自我叙述与 imagined audience
+## 自我叙述、social rehearsal 与 prompted outputs
 
-我们也开始记录非普通即时对话形式的输出，例如 self-narration、自言自语式表达、imagined-audience speech 和 social rehearsal。
+我们把有明确 prompt 的输出和 trigger 不明的 self-narration / social rehearsal 分开保存，避免把 task-driven behavior 错当成 spontaneous behavior。
 
-- [自我叙述观察](./self-narration/README.zh-CN.md)
-- 第一条记录：[2026-09-21 — 至尊宝与青霞片段](./self-narration/2026-09-21-zhizunbao-qingxia.zh-CN.md)
+- [自我叙述与 social rehearsal 观察](./self-narration/README.zh-CN.md)
+  - [2026-09-21 — 青霞：self-comparison、preference 与 social rehearsal](./self-narration/2026-09-21-qingxia-social-rehearsal.zh-CN.md)
+- [Prompted Outputs / 明确任务驱动输出](./prompted-outputs/README.zh-CN.md)
+  - [2026-09-20 22:20 — 至尊宝给花果山猴子猴孙写家书](./prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.zh-CN.md)
 
-这些标签只是操作性分类；如果 trigger metadata 不完整，就不强称它们是“完全自发”或真实 private inner speech。
+修正：至尊宝“猴子猴孙们”的家书来自明确 hourly-chat prompt，因此**不是自言自语，也不是自主 imagined-audience speech**。
+
+这条修正本身说明：
+
+> **trigger provenance 是 Agent behavior classification 的必要 metadata。**
 
 ## 群聊与群体互动
 
