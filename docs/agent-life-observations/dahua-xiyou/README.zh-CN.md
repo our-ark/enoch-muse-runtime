@@ -65,6 +65,16 @@
 
 这些标签只是操作性分类；如果 trigger metadata 不完整，就不强称它们是“完全自发”或真实 private inner speech。
 
+## 群聊与群体互动
+
+我们也开始保存 multi-agent 群聊，用来研究 group-level norms、角色期待、mutual modeling 和 shared jokes。
+
+- [群聊与群体互动观察](./group-interactions/README.zh-CN.md)
+- 第一条记录：[2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
+- 分析：[群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
+
+长期问题是：重复群聊是否会逐渐形成超出单个人设的稳定 group culture。
+
 ## 当前工作假设
 
 ### Runtime 与世界模型
