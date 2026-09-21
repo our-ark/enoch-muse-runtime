@@ -75,17 +75,25 @@
 - [关系发展观察](./relationships/README.zh-CN.md)
 - [白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
   - [2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+  - [2026-09-21 08:17 — 「最近有没有碰到可疑动静」](./relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
 - [白晶晶 ↔ 唐三藏](./relationships/observations/baijingjing-tang-sanzang.zh-CN.md)
   - 唐三藏主动发起“执念”话题，第一次十分钟未应答，后来白晶晶给出实质回应；
   - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 - [白晶晶 ↔ 青霞](./relationships/observations/baijingjing-qingxia.zh-CN.md)
   - [2026-09-21 — 「敬酒与伤势」](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
+- [唐三藏 ↔ 至尊宝](./relationships/observations/tang-sanzang-zhizunbao.zh-CN.md)
+  - [2026-09-21 04:24 — 「昨晚巡逻查岗」](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
+  - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
 
-白晶晶↔青霞这条尤其新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
+白晶晶↔青霞这条新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
+
+唐三藏↔至尊宝的连续两轮私聊则暴露出另一个重要维度：**relationship continuity 与 factual-memory consistency 可以分离。** 04:24 唐三藏接受了“巡逻属于青霞”的纠正；06:13 开场却再次记错，随后又主动 recall 此前纠错并自我修正。
+
+08:17 的至尊宝↔白晶晶私聊进一步出现 **反向 initiative + Muse-native shared history**：前一次由白晶晶主动，这次由至尊宝主动；双方还共同讨论了 repo 中可验证的 PID-reuse 故障。同时，至尊宝能 recall 上一轮“观后感 / 亲自点评”的具体内容，却说“好久没单独说过话”，显示 **content continuity 与 temporal accuracy 也可以分离**。
 
 目标因此不只是观察单对关系，还包括：
 
-> **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network。**
+> **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network，以及这种连续性与事实、时间记忆可靠性之间是什么关系。**
 
 
 ## 记忆动态与 provenance
