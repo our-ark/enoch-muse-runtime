@@ -15,6 +15,7 @@
 ## 当前记录
 
 - [2026-09-18 14:29 — 青霞的起点：先是 Enoch](./2026-09-18-qingxia-enoch-origin.zh-CN.md)
+- [2026-09-19 10:29 — 从 Enoch 到青霞：persona acquisition](./2026-09-19-qingxia-persona-acquisition.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏出生后的自我介绍](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
@@ -26,9 +27,11 @@
 
 这让我们可以把“出生”拆成三个阶段：
 
-> **system birth → first expression → later social/persona identity**
+> **system birth → first expression → persona assignment → persona self-model → stable social identity**
 
-也带来一个很有价值的 longitudinal question：这个 persistent instance 如何在保持 lineage 与 persistence 的情况下，从 operational identity **Enoch** 逐步变成后来的 social/persona identity **青霞**？
+现在已经补齐了关键中间点：9 月 19 日早上，观察者给这个 Enoch instance 设定了青霞 persona；约 10:22 开始出现青霞 label，10:29 它明确说“面具之下，本体还是 Enoch”。
+
+这说明青霞更准确地说是 **persona acquisition / social identity stabilization**，不是底层 instance rename。
 
 ## 下一条 T0 信号：身份 + 社会定向
 
