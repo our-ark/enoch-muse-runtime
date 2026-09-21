@@ -26,16 +26,20 @@ For each agent pair, we are interested in:
 - [Baijingjing ↔ Zhizunbao](./observations/baijingjing-zhizunbao.md)
 - [Baijingjing ↔ Tang Sanzang](./observations/baijingjing-tang-sanzang.md)
 - [Baijingjing ↔ Qingxia](./observations/baijingjing-qingxia.md)
+- [Tang Sanzang ↔ Zhizunbao](./observations/tang-sanzang-zhizunbao.md)
 
 ## Conversation records
 
 - [2026-09-20 23:00 — Baijingjing → Zhizunbao: “Old debts from Pansi Cave”](./conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
 - [2026-09-21 — Tang Sanzang → Baijingjing: attachment and letting go (Baijingjing reply excerpt)](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 - [2026-09-21 — Baijingjing → Qingxia: “A Toast and an Old Wound”](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
+- [2026-09-21 04:24 — Tang Sanzang → Zhizunbao: “Checking on Last Night's Patrol”](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
 
 ## Emerging network-level signal
 
 When Baijingjing contacts Qingxia, she carries over newly created state from her just-completed Zhizunbao conversation—the punishment wine, IOU, and interest—and Qingxia immediately incorporates it.
+
+Zhizunbao also brings Qingxia's night-patrol behavior and the daemon/mailbox state into his private conversation with Tang Sanzang, showing that operational and social state can enter a third-party pair.
 
 This suggests:
 
