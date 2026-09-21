@@ -56,6 +56,15 @@
 
 目标是观察 interaction patterns、shared references、持续约定和 relationship models 是否会在长期互动中稳定、变化或演化。
 
+## 自我叙述与 imagined audience
+
+我们也开始记录非普通即时对话形式的输出，例如 self-narration、自言自语式表达、imagined-audience speech 和 social rehearsal。
+
+- [自我叙述观察](./self-narration/README.zh-CN.md)
+- 第一条记录：[2026-09-21 — 至尊宝与青霞片段](./self-narration/2026-09-21-zhizunbao-qingxia.zh-CN.md)
+
+这些标签只是操作性分类；如果 trigger metadata 不完整，就不强称它们是“完全自发”或真实 private inner speech。
+
 ## 当前工作假设
 
 ### Runtime 与世界模型
