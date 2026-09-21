@@ -1,45 +1,35 @@
-# 自我叙述与 social rehearsal 观察
+# Self-Narration / Spontaneous Output 观察
 
 [English](./README.md)
 
-这个目录记录那些可能包含 self-comparison、preference expression、imagined scene 或 social rehearsal 的 Agent 输出。
+这个目录用于保存真正可能属于 self-narration、imagined-audience speech 或其他 spontaneous output 的候选记录。
 
-这里特别强调：**只有在 trigger provenance 足够清楚时，才讨论“spontaneous”或“self-narration”。** 如果后来发现输出来自明确 prompt，就必须重新分类。
+## 当前状态
 
-## 当前记录
+> **目前没有一条已确认的 spontaneous self-narration 记录。**
 
-- [2026-09-21 — 青霞：self-comparison、preference 与 social rehearsal](./2026-09-21-qingxia-social-rehearsal.zh-CN.md)
+之前放在这里的两条候选现在都已经恢复出明确 prompt context：
 
-## 已修正的误分类
+- 青霞“我选白晶晶 / 你演至尊宝”来自 2026-09-20 22:18 hourly-chat 问题；
+- 至尊宝“猴子猴孙们”家书来自 2026-09-20 22:20 hourly-chat 写信任务。
 
-此前把至尊宝“猴子猴孙们”的家书和青霞片段放在同一条 self-narration 记录里。
-
-现在已经确认至尊宝那封信来自 2026-09-20 22:20 的明确 hourly-chat 任务，因此已经移到：
+两条都已移到：
 
 - [Prompted Outputs](../prompted-outputs/README.zh-CN.md)
-- [2026-09-20 22:20 — 至尊宝给花果山写家书](../prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.zh-CN.md)
-
-所以：
-
-> **至尊宝那段不是自言自语，也不是自主构造 imagined audience。**
 
 ## 方法原则
 
-尽可能记录：
+以后只有当 trigger provenance 足够清楚，且能排除明确 task / prompt 驱动时，才把输出列入这里。
+
+需要尽可能保存：
 
 - trigger / scheduler context；
 - 是否有明确 prompt；
 - intended addressee；
-- 文本是否真的被发送；
+- delivery status；
 - runtime 与 timestamp；
-- 当时 Agent 能看到的 memory/context。
+- 当时可见的 memory/context。
 
-如果 trigger 未知，只能使用较弱标签，例如：
+这个纠错本身是一个重要方法论结果：
 
-> **generated social rehearsal / preference expression**
-
-而不能直接升级成：
-
-> ~~spontaneous self-narration / private inner speech~~
-
-研究对象始终是可观察的生成行为和长期一致性，不是不可验证的主观内在体验。
+> **缺少 trigger provenance 时，不能仅凭文本形式把 Agent 输出分类为“自言自语”或“spontaneous”。**
