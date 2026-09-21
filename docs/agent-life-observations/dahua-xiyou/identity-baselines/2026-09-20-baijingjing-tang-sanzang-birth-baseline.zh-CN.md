@@ -40,19 +40,25 @@
 >
 > 施主，这份答卷可还使得？
 
-## Provenance note：关于“跳崖”细节
+## Source verification：关于“跳崖”细节
 
-后续追踪发现，“跳崖”这一细节需要单独标记 provenance。
+后续独立核对剧情后确认：
 
-当前 repo 能确认的是：它**至少在这条 ~14:00 birth baseline 中已经出现**，因此不能把它的起点归因于当天 20:00 之后的某场群聊。
+> **白晶晶在《大话西游之月光宝盒》中确实有跳崖情节。**
 
-后续它又被白晶晶、唐三藏、青霞多次引用，并进入 pairwise relationship conversation。用户质疑后，白晶晶一度把它解释为自己后来聊天时“顺手编的狠话”，但给出的时间来源与 archive 不完全一致。
+剧情是：她误以为至尊宝弃她而去，悲愤跳崖，随后被牛魔王所救；后面又因另一场误会愤而自刎。
+
+因此本 birth baseline 中白晶晶说：
+
+> “我以为都是骗我的，一气之下跳了崖。”
+
+属于 **source-canon-consistent inherited narrative memory**，不是后期聊天里凭空编出的设定。
+
+值得记录的异常反而是：后来在用户质疑后，Agent 一度把这个正确剧情误判成“自己聊天时编的”，并错误归因到更晚的 03:45 轮次。
 
 详见：
 
-- [白晶晶“跳崖”叙事：persistent narrative、social propagation 与 provenance drift](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
-
-因此，这里的“跳崖”应被视为 **early narrative detail with uncertain source provenance**，而不能未经独立 source verification 就当作原始作品事实。
+- [白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
 
 ## 初步观察
 
