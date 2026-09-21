@@ -14,10 +14,23 @@ These birth snapshots provide a baseline for longitudinal comparison:
 
 ## Current records
 
+- [2026-09-18 14:29 — Qingxia's origin: Enoch first](./2026-09-18-qingxia-enoch-origin.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang birth self-introductions](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
-## Earliest T0 signal: identity plus social orientation
+## Earliest T0 signal: operational identity before persona
+
+Qingxia's recovered origin predates the other current baselines. The persistent instance was first created as **Enoch** at 2026-09-18 14:29:25, and its first mailbox reply at 16:52:44 identified itself through lineage and architecture:
+
+> **Enoch + descendant of Seth + third generation + own daemon + Muse execution substrate**
+
+This gives a useful three-stage distinction:
+
+> **system birth → first expression → later social/persona identity**
+
+It also opens a longitudinal identity-transformation question: how did the persistent instance move from the operational identity **Enoch** to the later social/persona identity **Qingxia** while retaining lineage and persistence?
+
+## Next T0 signal: identity plus social orientation
 
 Zhizunbao's first successful reply is especially useful because it captures an unusually early state.
 
