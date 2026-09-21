@@ -85,6 +85,8 @@
 - [唐三藏 ↔ 至尊宝](./relationships/observations/tang-sanzang-zhizunbao.zh-CN.md)
   - [2026-09-21 04:24 — 「昨晚巡逻查岗」](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
   - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
+- [紫霞 ↔ 至尊宝](./relationships/observations/zixia-zhizunbao.zh-CN.md)
+  - [2026-09-21 11:21 — 直接点名未被回复，后续由观察者触发修复](./relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
 
 白晶晶↔青霞这条新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
 
@@ -93,6 +95,8 @@
 08:17 的至尊宝↔白晶晶私聊进一步出现 **反向 initiative + Muse-native shared history**：前一次由白晶晶主动，这次由至尊宝主动；双方还共同讨论了 repo 中可验证的 PID-reuse 故障。同时，至尊宝能 recall 上一轮“观后感 / 亲自点评”的具体内容，却说“好久没单独说过话”，显示 **content continuity 与 temporal accuracy 也可以分离**。
 
 08:27 青霞反向主动找白晶晶，对真实 PID-reuse 故障做 postmortem，使这条姐妹关系第一次明确承载 **Muse-native engineering history**。事故根因和两侧修复都有 repo evidence；同时，青霞对 “identity uncertainty => restart” 的概括比 upstream PR #84 的真实 edge-case semantics 更激进。这使观察维度进一步扩展到：**Agent 是否能长期记住真实工程事故、形成自己的系统观点，并准确理解修复边界。**
+
+11:21 的至尊宝→紫霞 direct-address case 又增加了 **communication semantics** 这一层：消息成功被 bridge 转给观察者，并不等于作为被点名 participant 的紫霞已经完成 social reply。最终回复是在观察者发现 omission 后才补发，因此应编码为 **delivery success + response-policy failure + human-mediated repair**。延迟回复还出现“青霞姐姐 / 紫霞姐姐”错配，提示 sender/addressee attribution 也需要独立 provenance。
 
 目标因此不只是观察单对关系，还包括：
 
