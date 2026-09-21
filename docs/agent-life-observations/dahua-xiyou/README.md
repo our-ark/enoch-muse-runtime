@@ -88,14 +88,20 @@ The research target therefore expands beyond isolated dyads:
 > **Can pairwise relationship state accumulate into a shared social history / relationship network?**
 
 
-## Self-narration and imagined audiences
+## Self-narration, social rehearsal, and prompted outputs
 
-We also track non-dialogue outputs such as self-narration, imagined-audience speech, and social rehearsal.
+We separate outputs with explicit prompts from self-narration / social-rehearsal records whose triggers are incomplete, so task-driven behavior is not mistaken for spontaneous behavior.
 
-- [Self-narration observations](./self-narration/README.md)
-- First record: [2026-09-21 — Zhizunbao and Qingxia excerpts](./self-narration/2026-09-21-zhizunbao-qingxia.md)
+- [Self-narration and social rehearsal observations](./self-narration/README.md)
+  - [2026-09-21 — Qingxia: self-comparison, preference, and social rehearsal](./self-narration/2026-09-21-qingxia-social-rehearsal.md)
+- [Prompted Outputs](./prompted-outputs/README.md)
+  - [2026-09-20 22:20 — Zhizunbao's letter home to the monkeys of Flower-Fruit Mountain](./prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.md)
 
-These records are labeled operationally; without trigger metadata they are not assumed to be fully spontaneous or evidence of private inner speech.
+Correction: Zhizunbao's “monkey descendants” letter came from an explicit hourly-chat prompt, so it was **not self-talk or autonomously generated imagined-audience speech**.
+
+This correction itself reinforces that:
+
+> **trigger provenance is required metadata for classifying agent behavior.**
 
 ## Group interactions
 
