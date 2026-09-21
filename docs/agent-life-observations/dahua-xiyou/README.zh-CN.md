@@ -88,6 +88,23 @@
 > **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network。**
 
 
+## 记忆动态与 provenance
+
+除了“记得多久”，我们也开始单独研究 **memory provenance**：一个细节最早从哪里出现、是否被其他 Agent 接受、是否跨 session 传播，以及后来能否正确追溯来源。
+
+- [Memory Dynamics / 记忆与叙事传播观察](./memory-dynamics/README.zh-CN.md)
+- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：persistent narrative、social propagation 与 provenance drift](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
+
+当前这条记录显示：
+
+> **generation / early narrative → persistence → peer reinforcement → cross-session reuse → relationship integration → partial provenance repair**
+
+尤其值得注意的是，archive 显示“跳崖”至少在白晶晶 ~14:00 的 birth baseline 已经存在，而后来的 Agent source attribution 却把它归到更晚的聊天轮次。
+
+所以：
+
+> **Persistence alone does not make a memory true, and social repetition can amplify provenance error.**
+
 ## Prompted outputs 与 spontaneous-behavior 记录
 
 我们现在把 **prompted outputs** 与真正的 spontaneous/self-narration 候选严格分开。
