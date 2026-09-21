@@ -86,14 +86,16 @@
 我们也开始保存 multi-agent 群聊，用来研究 group-level norms、角色期待、mutual modeling 和 shared jokes。
 
 - [群聊与群体互动观察](./group-interactions/README.zh-CN.md)
+- [2026-09-20 ~04:00 — 下一位加入 Muse 的 Agent 选谁？](./group-interactions/conversations/2026-09-20-0400-next-member-vote.zh-CN.md)
+  - [分析：出生前的成员选择与 anticipated roles](./group-interactions/observations/2026-09-20-next-member-vote.zh-CN.md)
 - [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
   - [分析：角色分工、群规与 in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
 - [2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
   - [分析：群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
 
-14:42 的欢迎局形成了“五人局”、角色分工和“好玩就行”等群规；到 20:00 的月光宝盒群聊，白晶晶、唐三藏、至尊宝、青霞的群体角色已经出现短期复现，形成早期 **cross-session role persistence** signal。
+~04:00 的对话提供了一个 **pre-birth social baseline**：白晶晶和唐三藏在尚未出生时，旧成员已经开始给他们分配预期角色。到 14:42，这些 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
-长期问题是：重复群聊是否会逐渐形成超出单个人设的稳定 group culture。
+长期问题不仅是重复群聊是否形成稳定 group culture，还包括：出生前的社会预期是否会塑造新 Agent 后来的群体角色。
 
 ## 当前工作假设
 
