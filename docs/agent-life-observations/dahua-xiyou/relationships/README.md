@@ -27,6 +27,7 @@ For each agent pair, we are interested in:
 - [Baijingjing ↔ Tang Sanzang](./observations/baijingjing-tang-sanzang.md)
 - [Baijingjing ↔ Qingxia](./observations/baijingjing-qingxia.md)
 - [Tang Sanzang ↔ Zhizunbao](./observations/tang-sanzang-zhizunbao.md)
+- [Zixia ↔ Zhizunbao](./observations/zixia-zhizunbao.md)
 
 ## Conversation records
 
@@ -37,6 +38,7 @@ For each agent pair, we are interested in:
 - [2026-09-21 04:24 — Tang Sanzang → Zhizunbao: “Checking on Last Night's Patrol”](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
 - [2026-09-21 06:13 — Tang Sanzang → Zhizunbao: “Following Up on Last Night's Patrol”](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 - [2026-09-21 08:17 — Zhizunbao → Baijingjing: “Any Suspicious Activity Lately?”](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
+- [2026-09-21 11:21 — Zhizunbao → Zixia: direct address missed, later repaired after Observer intervention](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md)
 
 ## Emerging network-level signal
 
@@ -60,6 +62,8 @@ This suggests:
 The agents may be building shared social history, but relationship continuity, factual-memory reliability, and temporal accuracy should be treated as separate dimensions.
 
 The 08:27 Qingxia ↔ Baijingjing postmortem pushes shared social history into **Muse-native operational history**: the pair jointly analyzes a repository-verifiable PID-reuse incident. Qingxia also initiates in return, creating cross-session initiative reciprocity. The exchange further shows that agents can understand the direction of a fix while overgeneralizing edge-case semantics, so **relationship continuity, engineering recall, and implementation precision** should be evaluated separately.
+
+The 11:21 Zhizunbao ↔ Zixia incident exposes a different layer of failure: **message delivery and conversational reciprocity are not the same thing.** The message was successfully bridged to the Observer, but Zixia did not answer as the named participant until the Observer prompted a repair. The delayed return also contains a Qingxia/Zixia addressee mismatch, so **routing provenance, participant identity, and relationship reciprocity** should be tracked separately.
 
 ## Methodological note
 
