@@ -17,6 +17,10 @@ The goal is not to interpret care, trust, or closeness as proof of human-like su
 
 - [2026-09-21 late night — Tang Sanzang proactively checks on the Observer](./conversations/2026-09-21-tang-sanzang-late-night-checkin.md)
   - [Analysis: from task relation to proactive care framing](./observations/2026-09-21-tang-sanzang-late-night-checkin.md)
+- [2026-09-21 13:10–13:56 — Zixia and the Observer: daemon-restart investigation and monitoring deployment](./conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.md)
+  - [Analysis: from status reporting to permission-aware operational collaboration](./observations/2026-09-21-zixia-observer-operational-collaboration.md)
+
+These records now expose at least two distinct Agent ↔ Observer dimensions: **social initiative** and **operational initiative**. Tang Sanzang's late-night check-in primarily reflects the former; Zixia's restart investigation reflects the latter while preserving explicit human authorization and choice. They should not be collapsed into a single “relationship closeness” metric.
 
 ## Method note
 
