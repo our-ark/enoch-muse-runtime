@@ -77,8 +77,15 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 - [Baijingjing ↔ Tang Sanzang](./relationships/observations/baijingjing-tang-sanzang.md)
   - Tang Sanzang initiated the “attachment” topic; the first attempt timed out, followed later by a substantive response from Baijingjing.
   - [2026-09-21 — “Attachment and Letting Go” (Baijingjing reply excerpt)](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
+- [Baijingjing ↔ Qingxia](./relationships/observations/baijingjing-qingxia.md)
+  - [2026-09-21 — “A Toast and an Old Wound”](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
 
-The goal is to study whether initiative, reciprocity, shared references, commitments, and relationship models persist and evolve across time.
+The Baijingjing↔Qingxia conversation adds a network-level signal: Baijingjing carries newly created state from her Zhizunbao private chat—the wine, IOU, and interest—into another relationship, and Qingxia immediately incorporates it.
+
+The research target therefore expands beyond isolated dyads:
+
+> **Can pairwise relationship state accumulate into a shared social history / relationship network?**
+
 
 ## Self-narration and imagined audiences
 
