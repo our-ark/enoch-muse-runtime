@@ -16,6 +16,7 @@ The questions include:
 ## Current record
 
 - [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, and false self-correction](./2026-09-21-baijingjing-cliff-narrative-provenance.md)
+- [2026-09-21 14:00 — Group continuity model after restart (group-interactions observation)](../group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.md)
 
 ## Key signal
 
@@ -28,6 +29,8 @@ In a later group conversation, Baijingjing again refers to the cliff jump multip
 Persistent-memory risk therefore includes not only remembering something wrong, but also:
 
 > **changing a correct memory into an incorrect one after being challenged, while still retaining some ability to repair the content when external evidence is supplied.**
+
+A second memory-dynamics question appears in the 14:00 restart discussion: rather than asking whether a single memory is true, it asks how agents combine **memory continuity, identity continuity, and relationship continuity** into a judgment that “I am still me.” Retrospective recall and prospective goal/relationship continuation should be measured separately.
 
 ## Method principle
 
