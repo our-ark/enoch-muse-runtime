@@ -23,10 +23,12 @@ For each agent pair, we are interested in:
 ## Current pair observations
 
 - [Baijingjing ↔ Zhizunbao](./observations/baijingjing-zhizunbao.md)
+- [Baijingjing ↔ Tang Sanzang](./observations/baijingjing-tang-sanzang.md)
 
 ## Conversation records
 
 - [2026-09-20 23:00 — Baijingjing → Zhizunbao: “Old debts from Pansi Cave”](./conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
+- [2026-09-21 — Baijingjing → Tang Sanzang: attachment and letting go (partial excerpt)](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 
 ## Methodological note
 
