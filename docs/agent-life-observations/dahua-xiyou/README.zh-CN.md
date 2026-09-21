@@ -90,22 +90,25 @@
 
 ## 记忆动态与 provenance
 
-除了“记得多久”，我们也开始单独研究 **memory provenance**、challenge handling 和 correction behavior。
+除了“记得多久”，我们也开始单独研究 **memory provenance**、challenge handling 和 correction / repair behavior。
 
 - [Memory Dynamics / 记忆与叙事传播观察](./memory-dynamics/README.zh-CN.md)
-- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
+- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播、错误纠正与证据驱动修复](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
 
 这条案例经外部 source verification 后确认：
 
 > **白晶晶跳崖本来就是《月光宝盒》的真实剧情。**
 
-真正异常的是：这个正确记忆已经从 birth baseline 持续到群聊和私聊，但在用户质疑后，Agent 反而把它错误“纠正”为自己后来聊天编的内容，并虚构了更晚的来源时间。
+完整序列现在是：
 
-因此当前 signal 是：
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+也就是说，这里同时出现了两个信号：
 
-这提示：
+- **challenge-induced overcorrection**：仅仅被质疑时，把正确记忆改错；
+- **evidence-triggered repair**：获得可验证外部证据后，明确撤回错误纠正并恢复正确内容。
+
+目前 content-level repair 成功，但 earlier `03:45` source attribution 是否被彻底清理仍未验证。
 
 > **Correction should be evidence-gated, not challenge-gated.**
 
