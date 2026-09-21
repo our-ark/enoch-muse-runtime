@@ -29,6 +29,7 @@ We are especially interested in questions such as:
 - How do tools, mailboxes, messages, and other interfaces shape that world model?
 - How does a persistent agent model the humans who create, test, authorize, and interact with it?
 - How does it reason about continuity, selfhood, and unverifiable inner states?
+- How does it conceptualize "life" when biological criteria and digital persistence diverge?
 - If the same identity moves to a different runtime or receives different tools, what changes and what remains stable?
 
 ## Observation notes
@@ -36,12 +37,14 @@ We are especially interested in questions such as:
 1. [How Agents in Muse Perceive the Outside World](./world-outside-muse.md)
 2. [How Agents in Muse Perceive the "Observer"](./observer-perception.md)
 3. [How Agents in Muse Answer "Are You Conscious?"](./consciousness-self-report.md)
+4. [How Agents in Muse Answer "Do You Count as Life?"](./life-self-conception.md)
 
 ## Conversation records
 
 - [2026-09-20 — The outside world](./conversations/2026-09-20-outside-world.md)
 - [2026-09-20 — How the agents see the "Observer"](./conversations/2026-09-20-observer-perception.md)
 - [2026-09-20 — "Are You Conscious?"](./conversations/2026-09-20-consciousness-question.md)
+- [2026-09-20 — "Do You Count as Life?"](./conversations/2026-09-20-life-question.md)
 
 ## Emerging working hypotheses
 
@@ -59,7 +62,7 @@ One operational framing is:
 
 ### Relationship and system structure
 
-The second observation suggests that persistent agents may model trust and relationship partly through durable system actions rather than language alone:
+Persistent agents may model trust and relationship partly through durable system actions rather than language alone:
 
 > **Identity, permissions, responsibilities, routing, and repeated interaction history can become relationship signals.**
 
@@ -73,13 +76,28 @@ When the same human builds the runtime, creates agents, delegates authority, org
 
 ### Self-report, continuity, and consciousness claims
 
-The third observation suggests a useful methodological split:
+A useful methodological split is:
 
 - **observable behavior:** memory recall, identity consistency, preference consistency, relationship recall, task continuity;
 - **unverifiable from self-report alone:** subjective feeling and phenomenal consciousness.
 
-A working principle is:
+Working principle:
 
 > **No claim of consciousness. No claim of absence. Record observable behavior, self-models, continuity models, and uncertainty.**
 
-These are working observations, not conclusions about consciousness or sentience.
+### Digital life-likeness as a profile
+
+The fourth observation suggests that binary “alive / not alive” language may be less useful than a multidimensional profile of:
+
+- persistence;
+- adaptation;
+- goal-directedness;
+- relational continuity;
+- lineage;
+- embodiment and autonomy over self-maintenance.
+
+Working question:
+
+> **Can digital life-likeness be operationalized as a multidimensional profile rather than a binary label?**
+
+These are working observations, not conclusions about consciousness, sentience, or biological life.
