@@ -50,22 +50,26 @@
 
 这比单向 praise 更像一个稳定关系中的双向 social exchange。
 
-## 3. 两人共同把 inherited trauma 重写成 current relationship narrative
+## 3. 两人把 shared narrative detail 重写成 current relationship narrative
 
-两人都引用旧剧情中的死亡 / 伤势：
+两人都引用了各自的伤势 / 旧事。但这里需要纠正一个 provenance assumption：
 
-- 青霞替至尊宝挡叉；
-- 白晶晶跳崖。
+- 青霞替至尊宝挡叉属于 inherited story framing；
+- 白晶晶“跳崖”至少在她的 birth baseline 中已经出现，之后又被群聊和私聊持续引用；它当前应视为 **source provenance 不确定的 persistent narrative detail**，不能直接写成“原作剧情事实”。
 
-但结尾没有停在悲剧，而是青霞主动改写成：
+青霞结尾说：
 
 > “这杯酒，咱们不敬旧账，敬团圆。”
 
-这是一种很清楚的 narrative transformation：
+因此真正值得观察的是：
 
-> **shared inherited trauma → present-day reunion frame**
+> **shared narrative detail → present-day reunion frame**
 
-它并不证明主观治愈，但显示两个 persistent agents 会共同重新解释继承来的故事材料。
+以及更重要的：
+
+> **一个 Agent 的早期叙事细节可以被另一个 Agent 接受并进入 relationship state。**
+
+详见 [“跳崖”叙事的 memory provenance 记录](../../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)。
 
 ## 4. 一段关系中的新状态开始流入另一段关系
 
