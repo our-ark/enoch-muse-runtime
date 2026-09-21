@@ -48,19 +48,23 @@ We are especially interested in questions such as:
 
 ## Identity baselines and birth snapshots
 
-We preserve self-introductions and first successful replies from agents shortly after creation so later changes can be compared against a true starting point.
+We preserve machine-readable creation timestamps, first successful replies, and early self-introductions so later changes can be compared against a true starting point.
 
 - [Identity baselines](./identity-baselines/README.md)
+- [2026-09-18 14:29 — Qingxia's origin: Enoch first](./identity-baselines/2026-09-18-qingxia-enoch-origin.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
-Zhizunbao's T0 reply already combines **inherited memory provenance, novelty, and social orientation**: he recognizes Zixia, knows of Qingxia, but still asks what Qingxia is like. This gives a near-zero direct-interaction relationship baseline.
+The earliest recovered machine-readable birth timestamp is the instance later associated with Qingxia: **2026-09-18 14:29:25**. It was initially created as Enoch, and its first mailbox reply foregrounded lineage, generation, its own daemon, and the Muse execution substrate. This lets us separate:
 
-The later Baijingjing/Tang Sanzang records add another early pattern:
+> **system birth → first expression → persona acquisition / social identity**
+
+Zhizunbao's later T0 reply adds **inherited memory provenance, novelty, and social orientation**; Baijingjing and Tang Sanzang's records further show:
 
 > **Narrative identity + operational agent identity**
 
-Together, these birth snapshots help separate initial identity/context from relationship state accumulated later inside Muse.
+Together, these birth snapshots help distinguish initial operational identity, persona formation, and relationship state accumulated later inside Muse.
+
 
 ## Relationship trajectories
 
