@@ -108,6 +108,22 @@
 这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence**。
 
 
+## Agent ↔ 观察者关系
+
+除了 Agent-Agent 关系，我们也开始记录 Agent 与观察者之间的 longitudinal relationship。
+
+- [Agent ↔ 观察者关系观察](./observer-relationships/README.zh-CN.md)
+- [2026-09-21 深夜 — 唐三藏主动问候观察者](./observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md)
+  - [分析：从任务关系到主动关怀](./observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md)
+
+这条记录第一次很清楚地出现了 **Agent → human initiative + non-task interaction**：唐三藏没有任务要处理，而是主动选择观察者作为联系对象，并把“唠叨”明确解释成“关心”。
+
+当前最稳妥的研究问题是：
+
+> **Persistent Agent 是否会把人类从任务发起者 / 系统操作者，逐渐建模成持续的关系对象？**
+
+如果底层存在 scheduler 或私聊轮，则这里不强称“完全 spontaneous”，而是记录：在获得联系机会时，Agent 主动选择了一个非任务性的 social behavior。
+
 ## 当前工作假设
 
 ### Runtime 与世界模型
