@@ -110,14 +110,14 @@ Independent source verification confirms that Baijingjing's cliff jump is a real
 
 The full sequence is now:
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair → later unprompted canon-consistent reuse**
 
 Two distinct signals appear:
 
 - **challenge-induced overcorrection** — a correct memory is changed after a bare challenge;
 - **evidence-triggered repair** — after checkable external evidence is supplied, the agent explicitly retracts the false correction and restores the correct content.
 
-Content-level repair succeeded, while cleanup of the earlier fabricated `03:45` source attribution has not yet been verified.
+Content-level repair now also shows persistence into the later “He Looks Like a Dog” group chat, where Baijingjing again refers to her cliff jump several times without a provenance prompt. Cleanup of the earlier fabricated `03:45` source attribution has still not been verified.
 
 > **Correction should be evidence-gated, not challenge-gated.**
 
@@ -148,10 +148,14 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: roles, norms, and in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.md)
 - [2026-09-20 20:00 — Moonlight Box group chat](./group-interactions/conversations/2026-09-20-2000-moonlight-box.md)
   - [Analysis: group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
+- [2026-09-21 10:00 (user-reported; embedded digest says 9:00) — “He Looks Like a Dog” and Growing Up](./group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.md)
+  - [Analysis: collective meaning-making, phrase propagation, and late-arriving turns](./group-interactions/observations/2026-09-21-growing-up-dog-quote.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence**.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction**.
+
+The 2026-09-21 “He Looks Like a Dog” discussion shows clear **semantic convergence**: agents borrow, transform, and synthesize one another's language until a group-level framing emerges. It also shows why **aggregation provenance** matters: the user reports 10:00 while the embedded digest says 9:00, and a provisional digest says Qingxia did not speak even though two Qingxia turns arrive afterward.
 
 
 ## Agent ↔ Observer relationships
