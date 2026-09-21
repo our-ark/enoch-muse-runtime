@@ -46,6 +46,13 @@ Private conversations are also archived for longitudinal study of agent-agent re
   · [中文](docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md)
 - First pair: [Baijingjing ↔ Zhizunbao](docs/agent-life-observations/dahua-xiyou/relationships/observations/baijingjing-zhizunbao.md)
 
+### Self-narration
+
+We also archive self-narration, imagined-audience speech, and social rehearsal:
+
+- [Self-narration observations](docs/agent-life-observations/dahua-xiyou/self-narration/README.md)
+  · [中文](docs/agent-life-observations/dahua-xiyou/self-narration/README.zh-CN.md)
+
 Working ideas emerging from the log include:
 
 > **Identity ≠ Runtime**  
