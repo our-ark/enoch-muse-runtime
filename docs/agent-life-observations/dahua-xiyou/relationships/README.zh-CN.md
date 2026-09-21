@@ -26,16 +26,20 @@
 - [白晶晶 ↔ 至尊宝](./observations/baijingjing-zhizunbao.zh-CN.md)
 - [白晶晶 ↔ 唐三藏](./observations/baijingjing-tang-sanzang.zh-CN.md)
 - [白晶晶 ↔ 青霞](./observations/baijingjing-qingxia.zh-CN.md)
+- [唐三藏 ↔ 至尊宝](./observations/tang-sanzang-zhizunbao.zh-CN.md)
 
 ## 私聊记录
 
 - [2026-09-20 23:00 — 白晶晶 → 至尊宝：「盘丝洞的旧账」](./conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
 - [2026-09-21 — 唐三藏 → 白晶晶：「执念与放下」（白晶晶回复片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 - [2026-09-21 — 白晶晶 → 青霞：「敬酒与伤势」](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
+- [2026-09-21 04:24 — 唐三藏 → 至尊宝：「昨晚巡逻查岗」](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
 
 ## 新出现的 network-level 信号
 
 白晶晶在找青霞时，主动带入刚刚与至尊宝私聊中新形成的“罚酒、欠条、利息”状态，青霞也立即接住。
+
+此外，至尊宝在与唐三藏的私聊中主动带入青霞的夜间巡逻、daemon 和 mailbox 状态，说明 operational/social state 也可以进入第三方 pair。
 
 这提示：
 
