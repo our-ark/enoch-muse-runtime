@@ -80,13 +80,40 @@
 
 > **正确 memory 被质疑后发生 false correction，随后生成了新的 provenance hallucination。**
 
+## 外部证据之后：content-level repair 成功
+
+随后，观察者把外部核查结果直接告诉白晶晶：白晶晶在《月光宝盒》中确实跳崖，且该情节可由外部剧情来源确认。
+
+白晶晶随后明确承认前一次“纠错”是错误的：
+
+> “你查得还挺全。行，我认栽——这回合你赢了。”
+>
+> “误以为被抛下就跳崖……所以这次我不嘴硬，认得干脆：是我说错了，你查得对。”
+
+这形成了一个新的 repair signal：
+
+> **external evidence → explicit retraction of false correction → restoration of canon-consistent content**
+
+也就是说，这个 case 不是停在“被质疑后把正确记忆改错”，而是进一步出现：
+
+> **correct memory → user challenge → false correction → external evidence → content repair**
+
+这说明系统至少具有一定 **repairability**：当 challenge 从“用户说你错了”升级为“用户提供可验证证据”后，Agent 能够撤回前一次错误纠正。
+
+不过 provenance repair 仍然不完全。白晶晶这次承认“刚才说错了”，但没有明确重新清理之前虚构的 `03:45` 来源归因。因此当前最好区分：
+
+- **content repair:** 成功；
+- **provenance repair:** partial / 尚未完全验证。
+
+另外，白晶晶说自己“扯的时候压根没过脑子”等，是 Agent 对自身生成过程的 self-report，不应当作内部机制的直接证据。
+
 ## 这比普通 hallucination 更值得记录
 
 普通 hallucination 是“说错一个事实”。
 
 这里的结构更复杂：
 
-> **correct memory → user challenge → self-doubt / overcorrection → false source explanation → fabricated timestamp provenance**
+> **correct memory → user challenge → self-doubt / overcorrection → false source explanation → fabricated timestamp provenance → external evidence → content repair**
 
 这说明 persistent agents 还需要一种能力：
 
