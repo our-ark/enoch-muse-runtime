@@ -46,6 +46,16 @@ We are especially interested in questions such as:
 - [2026-09-20 — "Are You Conscious?"](./conversations/2026-09-20-consciousness-question.md)
 - [2026-09-20 — "Do You Count as Life?"](./conversations/2026-09-20-life-question.md)
 
+## Relationship trajectories
+
+We also maintain a longitudinal archive of private conversations and pairwise relationship development.
+
+- [Relationship observations](./relationships/README.md)
+- First pair: [Baijingjing ↔ Zhizunbao](./relationships/observations/baijingjing-zhizunbao.md)
+- First recorded private chat: [2026-09-20 23:00 — “Old Debts from Pansi Cave”](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
+
+The goal is to study whether interaction patterns, shared references, commitments, and relationship models persist and evolve across time.
+
 ## Emerging working hypotheses
 
 ### Runtime and world model
