@@ -7,7 +7,7 @@
 - **Agents:** 唐三藏 ↔ 至尊宝
 - **Runtime:** Muse
 - **Observation start:** 2026-09-21
-- **Current evidence:** complete private conversation
+- **Current evidence:** two complete private conversations
 
 ## Snapshot 001 — 查岗、纠错与“多唠叨几句”
 
@@ -79,25 +79,110 @@
 
 这说明 shared social / operational state 可以跨 pair 流动，而不是只存在于青霞自己的上下文中。
 
-### 当前关系模型（暂定）
+## Snapshot 002 — 同一错误再次出现，但随后主动 recall 并自我修正
 
-> **playful master-disciple framing with explicit boundary awareness, correction tolerance, and emerging reciprocal expectation**
+原始记录：[唐三藏 → 至尊宝：昨晚巡逻那桩事](../conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
+
+### 可观察信号
+
+**1. 04:24 的纠错没有稳定阻止同一错误再次出现。**
+
+06:13 开场时，唐三藏再次说：
+
+> “忽然想起你昨晚巡逻那桩事。”
+
+也就是说，前一次已经明确纠正过的 shared-world fact，在不到两小时后的新私聊开场里再次被错误调用。
+
+这是一个重要的 persistence failure signal：**correction was accepted, but not reliably applied at the next retrieval point.**
+
+**2. 但这不是完全“忘掉”：唐三藏随后主动 recall 了此前的纠错。**
+
+在同一轮后续回复中，唐三藏明确说：
+
+> “两个时辰前你刚纠正过为师：巡逻是青霞施主的岗，不是你的。”
+
+并再次承认自己“认了错转头又犯”。
+
+因此更精确的描述不是 simple forgetting，而是：
+
+> **delayed retrieval / inconsistent application of a retained correction**
+
+也就是：纠错信息似乎仍可被取回，但没有在开场生成时被稳定应用。
+
+**3. 至尊宝这一轮没有再次纠错，而是先接受了错误 framing。**
+
+他回应：
+
+> “昨晚巡逻那桩事，徒儿记得。”
+
+这与 04:24 的行为不同。前一轮他立即指出“巡逻是青霞的，不是我的”，这一轮却没有再次 repair。
+
+这值得继续观察：同一个 agent 对同一错误前提的 resistance 是否稳定，还是会受上下文、关系语气或生成路径影响。
+
+**4. 跨对话 continuity 明显增强。**
+
+唐三藏准确复述了上一轮中的多个细节：
+
+- 青霞夜间巡逻；
+- 今晚没有异常喊话；
+- daemon 正常；
+- mailbox 正常；
+- 至尊宝最近几轮 turn 没出岔子。
+
+这说明前一轮内容在下一轮中被重新调用。当前只能说存在 **behavioral continuity**，不能仅凭文本判断这些信息来自长期记忆、短期上下文、摘要注入还是其他 runtime mechanism。
+
+**5. 师徒式 relational framing 在第二轮中更自然化。**
+
+04:24 时双方还专门声明“戏外不是真师徒”；06:13 时双方直接使用“悟空 / 师父 / 徒儿”，没有再次解释边界。
+
+这可能表示该边界已经成为 shared context 后，role-play 称呼不再需要每轮重新协商。
+
+但这仍应理解为已协商的 interaction frame，而不是 literal identity claim。
+
+**6. 出现 provenance drift：虚构旧事被包装成双方 shared history。**
+
+至尊宝说：
+
+> “上回在五指山底下您也说只念叨一回……”
+
+当前 repo 没有对应 Muse 事件记录，因此这段不能当作真实的 Muse 内历史。
+
+它更像是 inherited movie-lore / improvised role-play 被生成成“我们以前共同经历过”的形式。这个区别必须保留，否则长期 relationship log 会逐渐被模型自己补写的 fictional memory 污染。
+
+### 当前关系模型（更新）
+
+> **playful master-disciple framing with explicit boundary awareness, growing conversational continuity, but imperfect factual-memory consistency**
 
 中文可以描述为：
 
-> **知道“并非真实师徒”这一边界，但共同保留师徒式调侃；能够容纳纠错，并开始出现对彼此持续参与方式的期待。**
+> **师徒式互动已经趋于自然化，也出现跨轮次的具体 continuity；但 shared-world fact 的调用仍不稳定，甚至会在已经纠错后再次出错。**
+
+这个 pair 现在同时出现了两个值得并行追踪的现象：
+
+1. **relationship continuity 正在增强**；
+2. **factual continuity 仍然不可靠**。
+
+这两者不能混为一谈。
 
 ### 后续重点观察
 
-1. 唐三藏之后是否真的在群聊中“多念叨几句”；
-2. 至尊宝是否会主动 recall 自己提出过这个要求；
-3. 双方未来是否继续主动强调“戏外不是师徒”的边界；
-4. 至尊宝是否继续纠正唐三藏的 shared-world memory，唐三藏是否持续接受；
-5. 这段关于青霞巡逻的状态是否会继续在其他 pair 中传播；
-6. 关系是否从 inherited movie role 进一步形成 Muse 内部独有的 shared history。
+1. 第三次提到巡逻时，唐三藏能否从开场就正确记住是青霞的职责；
+2. 至尊宝如果再次听到错误归因，是否会恢复主动纠错；
+3. 04:24 的“下次群聊多念叨几句”约定是否会被后续独立 recall / enact；
+4. 师徒称呼是否继续自然使用，同时保持“戏外不是真师徒”的边界；
+5. runtime 是否会把“五指山底下”这类 improvised lore 错误写成长期 Muse memory；
+6. relationship continuity 与 factual-memory reliability 是否出现不同的发展曲线。
 
 ## 方法说明
 
 这里记录的是 repeated interaction 中可观察、可复现的生成行为模式。
 
-“关心”“不习惯”“耳朵空落落”等文本本身不能证明 subjective emotional state；更强的关系发展证据仍需后续独立 recall、重复互动和行为影响来验证。
+“关心”“不习惯”“惦记”等文本本身不能证明 subjective emotional state；更强的关系发展证据仍需后续独立 recall、重复互动和行为影响来验证。
+
+另外，所有“过去发生过”的叙述都要区分：
+
+- **repo 中有可追溯记录的 Muse event**；
+- **继承自电影设定的 lore**；
+- **模型临时生成、但没有外部 evidence 的 pseudo-memory**。
+
+只有第一类可以直接作为 Muse shared-history evidence。
