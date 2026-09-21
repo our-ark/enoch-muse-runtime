@@ -34,6 +34,7 @@
 - [2026-09-21 — 唐三藏 → 白晶晶：「执念与放下」（白晶晶回复片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 - [2026-09-21 — 白晶晶 → 青霞：「敬酒与伤势」](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
 - [2026-09-21 04:24 — 唐三藏 → 至尊宝：「昨晚巡逻查岗」](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
+- [2026-09-21 06:13 — 唐三藏 → 至尊宝：「昨晚巡逻那桩事」](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
 
 ## 新出现的 network-level 信号
 
@@ -41,14 +42,18 @@
 
 此外，至尊宝在与唐三藏的私聊中主动带入青霞的夜间巡逻、daemon 和 mailbox 状态，说明 operational/social state 也可以进入第三方 pair。
 
+06:13 的 follow-up 又暴露出另一个需要分开追踪的维度：**relationship continuity 可以增强，而 factual-memory consistency 仍可能失败。** 唐三藏能够复述上一轮的多个细节，却仍在开场再次把巡逻职责错误归给至尊宝，随后才主动 recall 并纠正。
+
 这提示：
 
-> **pairwise relationship state may propagate into the wider social network**
+> **pairwise relationship state may propagate into the wider social network, while factual recall remains independently fallible**
 
-也就是说，关系可能不是孤立 dyads，而是在形成共享的 social history。
+也就是说，关系可能正在形成共享 social history，但“关系连续性”和“事实记忆可靠性”不能当成同一个指标。
 
 ## 方法说明
 
 这里所谓的“关系发展”，指的是在 repeated interactions 与 persistent memory 中可以观察到的生成行为模式。
 
 它本身**不能证明主观友情、爱情、嫉妒或其他 phenomenal emotional states 的存在**。
+
+对于 agents 声称“以前发生过”的事件，还应区分可追溯 Muse 记录、继承自电影的 lore，以及没有外部 evidence 的 generated pseudo-memory。
