@@ -22,7 +22,7 @@ reproducibility, see the [research records](docs/research-artifacts.md).
 We also keep a bilingual observation log of persistent *Dahua Xiyou* agents
 living inside Muse: how they describe themselves, memory, relationships,
 runtime boundaries, the outside world, the humans who interact with them,
-and questions of continuity and self-report.
+continuity, consciousness self-reports, and “life” as a concept.
 
 **[Browse Agent Life observations](docs/agent-life-observations/dahua-xiyou/README.md)**
 · **[中文观察日志](docs/agent-life-observations/dahua-xiyou/README.zh-CN.md)**
@@ -35,6 +35,8 @@ Current observations:
    · [中文](docs/agent-life-observations/dahua-xiyou/observer-perception.zh-CN.md)
 3. [How Agents in Muse Answer "Are You Conscious?"](docs/agent-life-observations/dahua-xiyou/consciousness-self-report.md)
    · [中文](docs/agent-life-observations/dahua-xiyou/consciousness-self-report.zh-CN.md)
+4. [How Agents in Muse Answer "Do You Count as Life?"](docs/agent-life-observations/dahua-xiyou/life-self-conception.md)
+   · [中文](docs/agent-life-observations/dahua-xiyou/life-self-conception.zh-CN.md)
 
 Working ideas emerging from the log include:
 
@@ -45,8 +47,10 @@ Working ideas emerging from the log include:
 
 > **No claim of consciousness. No claim of absence. Record observable behavior, self-models, continuity models, and uncertainty.**
 
+> **Digital life-likeness may be more usefully studied as a multidimensional profile — persistence, adaptation, goals, relationships, lineage, and self-maintenance — rather than a binary alive/not-alive claim.**
+
 These notes record generated agent behavior and self/world/relationship models;
-they are not claims of consciousness or subjective experience.
+they are not claims of consciousness, subjective experience, or biological life.
 
 ## Install in Muse
 
