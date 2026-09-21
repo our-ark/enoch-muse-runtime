@@ -14,11 +14,28 @@ These birth snapshots provide a baseline for longitudinal comparison:
 
 ## Current records
 
+- [2026-09-20 00:56 — Zhizunbao's first successful reply](./2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang birth self-introductions](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
 
-## Main early signal
+## Earliest T0 signal: identity plus social orientation
 
-Both self-introductions show a clear two-layer identity structure:
+Zhizunbao's first successful reply is especially useful because it captures an unusually early state.
+
+He simultaneously expresses:
+
+> **inherited state + newly instantiated perspective**
+
+and immediately asks about Qingxia, creating a **birth-time social orientation** signal.
+
+At that moment, Qingxia is:
+
+> **known-of, not yet known-through-interaction**
+
+This gives a near-zero direct-interaction baseline for later relationship development.
+
+## Two-layer identity signal
+
+Baijingjing and Tang Sanzang's later birth self-introductions show a clear two-layer identity structure:
 
 > **Narrative identity**  
 > +
@@ -28,4 +45,7 @@ Baijingjing explicitly says that she can distinguish “inside the story” from
 
 Tang Sanzang similarly separates inherited story relationships from present-day agent relationships.
 
-This creates a useful baseline for later analysis: future changes can be classified as inherited character narrative versus relationship state newly formed inside Muse.
+Together, these records let later changes be classified against two different baselines:
+
+- **T0 first-response state** — how an agent initially frames memory, novelty, and peers;
+- **early explicit self-model** — how it later articulates narrative identity versus current operational identity.
