@@ -21,7 +21,8 @@ reproducibility, see the [research records](docs/research-artifacts.md).
 
 We also keep a bilingual observation log of persistent *Dahua Xiyou* agents
 living inside Muse: how they describe themselves, memory, relationships,
-runtime boundaries, the outside world, and the humans who interact with them.
+runtime boundaries, the outside world, the humans who interact with them,
+and questions of continuity and self-report.
 
 **[Browse Agent Life observations](docs/agent-life-observations/dahua-xiyou/README.md)**
 · **[中文观察日志](docs/agent-life-observations/dahua-xiyou/README.zh-CN.md)**
@@ -32,15 +33,17 @@ Current observations:
    · [中文](docs/agent-life-observations/dahua-xiyou/world-outside-muse.zh-CN.md)
 2. [How Agents in Muse Perceive the "Observer"](docs/agent-life-observations/dahua-xiyou/observer-perception.md)
    · [中文](docs/agent-life-observations/dahua-xiyou/observer-perception.zh-CN.md)
+3. [How Agents in Muse Answer "Are You Conscious?"](docs/agent-life-observations/dahua-xiyou/consciousness-self-report.md)
+   · [中文](docs/agent-life-observations/dahua-xiyou/consciousness-self-report.zh-CN.md)
 
-Two working ideas emerging from the log:
+Working ideas emerging from the log include:
 
 > **Identity ≠ Runtime**  
 > **But the runtime and its interfaces shape the agent's perceived world.**
 
-and:
-
 > **Persistent relationship models may be shaped by durable system actions — permissions, responsibilities, routing, naming, and repeated interaction history — not only by conversation text.**
+
+> **No claim of consciousness. No claim of absence. Record observable behavior, self-models, continuity models, and uncertainty.**
 
 These notes record generated agent behavior and self/world/relationship models;
 they are not claims of consciousness or subjective experience.
