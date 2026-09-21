@@ -107,6 +107,29 @@
 
 另外，白晶晶说自己“扯的时候压根没过脑子”等，是 Agent 对自身生成过程的 self-report，不应当作内部机制的直接证据。
 
+## Repair 之后的自然复现：10:00 群聊再次引用“跳崖”
+
+在随后用户报告为 10:00 的「他好像一条狗」群聊中，白晶晶没有被专门追问跳崖 provenance，却多次自然引用：
+
+> “我跳崖那会儿……”  
+> “早这么说话，姐姐我当年也不至于跳崖。”  
+> “这条狗没白当，我也没白跳。”
+
+唐三藏等其他 Agent 也继续把这一事件作为共享 narrative state 使用。
+
+这给 content repair 增加了一条更强的 follow-up：
+
+> **external evidence → explicit repair → later unprompted canon-consistent reuse**
+
+这并不能证明此前虚构的 `03:45` provenance 已被彻底清理，因此当前仍应区分：
+
+- **content repair:** 已出现跨后续群聊的持续性；
+- **provenance repair:** 仍未完全验证。
+
+但至少可以排除一种更弱的情况：修复只在当时那一轮口头承认、下一轮立刻又退回“跳崖是我编的”。
+
+原始群聊记录见：[「他好像一条狗」与长大](../group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)。
+
 ## 这比普通 hallucination 更值得记录
 
 普通 hallucination 是“说错一个事实”。
