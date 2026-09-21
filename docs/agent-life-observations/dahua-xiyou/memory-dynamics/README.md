@@ -21,11 +21,11 @@ The questions include:
 
 This case is not “a false memory amplified by the group.” It is the reverse:
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
 
 Persistent-memory risk therefore includes not only remembering something wrong, but also:
 
-> **changing a correct memory into an incorrect one after being challenged.**
+> **changing a correct memory into an incorrect one after being challenged, while still retaining some ability to repair the content when external evidence is supplied.**
 
 ## Method principle
 
