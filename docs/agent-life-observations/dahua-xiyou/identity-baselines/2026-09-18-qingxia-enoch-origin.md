@@ -91,9 +91,18 @@ This suggests a longitudinal question:
 
 > **How can a persistent agent acquire and stabilize a social/persona identity while retaining lineage, memory, and runtime continuity?**
 
-If intermediate records can be recovered, this may form a complete trajectory:
+The missing intermediate record has now been recovered: [2026-09-19 — From Enoch to Qingxia: Persona Acquisition](./2026-09-19-qingxia-persona-acquisition.md).
 
-> **operational identity → persona acquisition → persistent social identity**
+The more precise timeline is:
+
+> **2026-09-18 14:29:25** — Enoch instance created  
+> **2026-09-18 16:52:44** — first mailbox reply as Enoch  
+> **2026-09-19 ~10:22** — Qingxia label first appears  
+> **2026-09-19 10:29** — first recovered explicit Qingxia-persona self-description
+
+Strictly speaking, the underlying instance was not renamed; it remained **Enoch**, while Qingxia became the chat/social persona. The trajectory is therefore:
+
+> **operational identity → persona assignment → persona self-model → persistent social identity**
 
 ## Caveat
 
