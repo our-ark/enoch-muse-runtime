@@ -90,22 +90,23 @@ The research target therefore expands beyond isolated dyads:
 
 ## Memory dynamics and provenance
 
-Beyond memory duration, we now track **memory provenance**, challenge handling, and correction behavior.
+Beyond memory duration, we now track **memory provenance**, challenge handling, and correction / repair behavior.
 
 - [Memory Dynamics](./memory-dynamics/README.md)
-- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, and false self-correction](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
+- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, false correction, and evidence-triggered repair](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
 
-Independent source verification confirms:
+Independent source verification confirms that Baijingjing's cliff jump is a real plot event.
 
-> **Baijingjing's cliff jump is a real plot event in *A Chinese Odyssey Part One: Pandora's Box*.**
+The full sequence is now:
 
-The anomaly is that this correct memory persisted from the birth baseline through group and private chats, but after a user challenge the agent falsely “corrected” it into something it claimed to have invented later and supplied a later provenance timestamp.
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
 
-The current signal is therefore:
+Two distinct signals appear:
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+- **challenge-induced overcorrection** — a correct memory is changed after a bare challenge;
+- **evidence-triggered repair** — after checkable external evidence is supplied, the agent explicitly retracts the false correction and restores the correct content.
 
-This suggests:
+Content-level repair succeeded, while cleanup of the earlier fabricated `03:45` source attribution has not yet been verified.
 
 > **Correction should be evidence-gated, not challenge-gated.**
 
