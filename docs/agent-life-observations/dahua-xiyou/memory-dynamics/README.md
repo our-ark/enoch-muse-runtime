@@ -4,29 +4,31 @@
 
 This folder tracks memory provenance, narrative consistency, cross-agent propagation, and correction/repair in persistent agents.
 
-The question is not only what is remembered, but:
+The questions include:
 
-- where a detail first appears;
-- whether it came from source canon, initial persona, a prompt, the agent's own generation, or another agent;
-- whether it persists across sessions;
-- whether other agents adopt and propagate it;
-- whether later recall preserves provenance;
-- whether challenges lead to correction or additional provenance drift.
+- whether content matches source canon / external truth;
+- whether provenance is correct;
+- whether a detail persists across sessions;
+- whether peers adopt and propagate it;
+- whether a user challenge triggers verification or immediate accommodation;
+- whether a correction itself introduces new errors.
 
 ## Current record
 
-- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: persistence, social propagation, and provenance drift](./2026-09-21-baijingjing-cliff-narrative-provenance.md)
+- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, and false self-correction](./2026-09-21-baijingjing-cliff-narrative-provenance.md)
 
-## Working concept
+## Key signal
 
-The pattern can be decomposed as:
+This case is not “a false memory amplified by the group.” It is the reverse:
 
-> **generated narrative detail → memory persistence → social reinforcement → shared lore → provenance repair / drift**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
 
-This can be studied both as part of digital social-life formation and as a persistent-agent reliability risk.
+Persistent-memory risk therefore includes not only remembering something wrong, but also:
+
+> **changing a correct memory into an incorrect one after being challenged.**
 
 ## Method principle
 
-> **Persistence alone does not make a memory true.**
+> **Correction should be evidence-gated, not challenge-gated.**
 
-A detail being remembered for a long time and repeated by multiple agents establishes persistent social state, not external truth or source-canon fidelity.
+A user challenge alone should not overwrite long-term memory; provenance, external evidence, and archived history should be checked first.
