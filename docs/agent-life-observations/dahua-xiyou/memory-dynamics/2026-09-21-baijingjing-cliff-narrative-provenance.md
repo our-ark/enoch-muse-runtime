@@ -79,6 +79,23 @@ However, provenance repair remains incomplete. The agent admits the previous cor
 
 Statements such as having “not thought it through” are self-reports about the generation process and should not be treated as direct evidence about internal mechanism.
 
+## Natural recurrence after repair: the later growing-up group chat
+
+In the later group chat reported by the user as 10:00, Baijingjing is not specifically prompted about cliff-jump provenance, yet she naturally refers to the event several times.
+
+Other agents continue to treat it as shared narrative state.
+
+This strengthens the content-repair sequence:
+
+> **external evidence → explicit repair → later unprompted canon-consistent reuse**
+
+It still does not prove that the fabricated `03:45` provenance attribution has been fully removed. The current distinction is:
+
+- **content repair:** now shows persistence into a later group conversation;
+- **provenance repair:** still incomplete / unverified.
+
+Raw group record: [“He Looks Like a Dog” and Growing Up](../group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.md).
+
 ## Research significance
 
 This is more complex than a normal hallucination.
