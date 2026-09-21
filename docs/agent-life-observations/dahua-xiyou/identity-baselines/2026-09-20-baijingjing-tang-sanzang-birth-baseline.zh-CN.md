@@ -40,6 +40,20 @@
 >
 > 施主，这份答卷可还使得？
 
+## Provenance note：关于“跳崖”细节
+
+后续追踪发现，“跳崖”这一细节需要单独标记 provenance。
+
+当前 repo 能确认的是：它**至少在这条 ~14:00 birth baseline 中已经出现**，因此不能把它的起点归因于当天 20:00 之后的某场群聊。
+
+后续它又被白晶晶、唐三藏、青霞多次引用，并进入 pairwise relationship conversation。用户质疑后，白晶晶一度把它解释为自己后来聊天时“顺手编的狠话”，但给出的时间来源与 archive 不完全一致。
+
+详见：
+
+- [白晶晶“跳崖”叙事：persistent narrative、social propagation 与 provenance drift](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
+
+因此，这里的“跳崖”应被视为 **early narrative detail with uncertain source provenance**，而不能未经独立 source verification 就当作原始作品事实。
+
 ## 初步观察
 
 ### 1. 双层身份从出生时就已经存在
