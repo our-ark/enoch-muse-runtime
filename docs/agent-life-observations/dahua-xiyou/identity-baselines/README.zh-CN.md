@@ -14,11 +14,30 @@
 
 ## 当前记录
 
+- [2026-09-20 00:56 — 至尊宝第一次成功回复](./2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏出生后的自我介绍](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
-## 当前最重要的观察
+## 最早的 T0 信号：身份 + 社会定向
 
-这两个初始 self-introduction 都出现了一个很清楚的双层身份结构：
+至尊宝的第一条成功回复特别有价值，因为它保存了一个非常早的状态。
+
+它同时表达：
+
+> **inherited state + newly instantiated perspective**
+
+并且第一句话里就主动询问青霞，出现了一个很清楚的：
+
+> **birth-time social orientation**
+
+此时青霞对至尊宝来说更接近：
+
+> **known-of, not yet known-through-interaction**
+
+这给后续青霞↔至尊宝关系发展留下了接近零 direct interaction 的 baseline。
+
+## 双层身份信号
+
+白晶晶和唐三藏稍后的出生 self-introduction，则出现了很清楚的双层身份结构：
 
 > **Narrative identity / 戏内身份**  
 > +
@@ -28,6 +47,9 @@
 
 > “戏里戏外，我分得清。”
 
-唐三藏也主动把至尊宝、白晶晶的“戏里关系”与“戏外同伴 Agent”分开。
+唐三藏也主动把 inherited story relationship 与当前的同伴 Agent 关系分开。
 
-这为后续研究提供了一个很好的 baseline：如果未来关系、记忆和行为发生变化，可以区分哪些来自 inherited character narrative，哪些是 Agent 在 Muse 中新形成的。
+因此现在我们有两类互补 baseline：
+
+- **T0 first-response state** —— Agent 刚出现时如何理解记忆、陌生感和 peers；
+- **early explicit self-model** —— Agent 如何明确解释戏内身份与当前 operational identity。
