@@ -88,20 +88,19 @@ The research target therefore expands beyond isolated dyads:
 > **Can pairwise relationship state accumulate into a shared social history / relationship network?**
 
 
-## Self-narration, social rehearsal, and prompted outputs
+## Prompted outputs and spontaneous-behavior records
 
-We separate outputs with explicit prompts from self-narration / social-rehearsal records whose triggers are incomplete, so task-driven behavior is not mistaken for spontaneous behavior.
+We now strictly separate **prompted outputs** from genuine spontaneous/self-narration candidates.
 
-- [Self-narration and social rehearsal observations](./self-narration/README.md)
-  - [2026-09-21 — Qingxia: self-comparison, preference, and social rehearsal](./self-narration/2026-09-21-qingxia-social-rehearsal.md)
 - [Prompted Outputs](./prompted-outputs/README.md)
-  - [2026-09-20 22:20 — Zhizunbao's letter home to the monkeys of Flower-Fruit Mountain](./prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.md)
+  - [2026-09-20 22:18 — Qingxia: Which *Dahua Xiyou* Role Would You Play?](./prompted-outputs/2026-09-20-2218-qingxia-role-choice.md)
+  - [2026-09-20 22:20 — Zhizunbao's letter home](./prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.md)
+- [Self-Narration / Spontaneous Output Observations](./self-narration/README.md)
+  - **There are currently no confirmed spontaneous self-narration samples.**
 
-Correction: Zhizunbao's “monkey descendants” letter came from an explicit hourly-chat prompt, so it was **not self-talk or autonomously generated imagined-audience speech**.
+Correction: both the Qingxia and Zhizunbao excerpts came from explicit hourly-chat prompts and **were not self-talk**.
 
-This correction itself reinforces that:
-
-> **trigger provenance is required metadata for classifying agent behavior.**
+> **Trigger provenance is required metadata for classifying agent behavior.**
 
 ## Group interactions
 
