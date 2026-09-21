@@ -52,12 +52,13 @@
 
 - [身份基线与出生快照](./identity-baselines/README.zh-CN.md)
 - [2026-09-18 14:29 — 青霞的起点：先是 Enoch](./identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md)
+- [2026-09-19 10:29 — 从 Enoch 到青霞：persona acquisition](./identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
 青霞对应的最初 instance 给出了目前最早的机器可读 birth timestamp：**2026-09-18 14:29:25**。它当时先叫 Enoch，第一条 mailbox 回复首先强调 lineage、generation、own daemon 和 Muse execution substrate。这个 baseline 让我们开始区分：
 
-> **system birth → first expression → persona acquisition / social identity**
+> **system birth → first expression → persona assignment → persona self-model → stable social identity**
 
 至尊宝的 T0 回复则同时出现 **inherited memory provenance、novelty 和 social orientation**；白晶晶和唐三藏稍后的记录进一步显示：
 
