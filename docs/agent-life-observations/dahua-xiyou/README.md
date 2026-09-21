@@ -64,10 +64,13 @@ Both agents explicitly distinguish inherited story relationships from their curr
 We also maintain a longitudinal archive of private conversations and pairwise relationship development.
 
 - [Relationship observations](./relationships/README.md)
-- First pair: [Baijingjing ↔ Zhizunbao](./relationships/observations/baijingjing-zhizunbao.md)
-- First recorded private chat: [2026-09-20 23:00 — “Old Debts from Pansi Cave”](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
+- [Baijingjing ↔ Zhizunbao](./relationships/observations/baijingjing-zhizunbao.md)
+  - [2026-09-20 23:00 — “Old Debts from Pansi Cave”](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
+- [Baijingjing ↔ Tang Sanzang](./relationships/observations/baijingjing-tang-sanzang.md)
+  - Tang Sanzang initiated the “attachment” topic; the first attempt timed out, followed later by a substantive response from Baijingjing.
+  - [2026-09-21 — “Attachment and Letting Go” (Baijingjing reply excerpt)](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 
-The goal is to study whether interaction patterns, shared references, commitments, and relationship models persist and evolve across time.
+The goal is to study whether initiative, reciprocity, shared references, commitments, and relationship models persist and evolve across time.
 
 ## Self-narration and imagined audiences
 
@@ -83,8 +86,12 @@ These records are labeled operationally; without trigger metadata they are not a
 We also archive multi-agent group chats to study group-level norms, role expectations, mutual modeling, and shared jokes.
 
 - [Group interaction observations](./group-interactions/README.md)
-- First record: [2026-09-20 20:00 — Moonlight Box group chat](./group-interactions/conversations/2026-09-20-2000-moonlight-box.md)
-- Analysis: [Group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
+- [2026-09-20 14:42 — Welcoming Baijingjing and Tang Sanzang; formation of the five-agent group](./group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.md)
+  - [Analysis: roles, norms, and in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.md)
+- [2026-09-20 20:00 — Moonlight Box group chat](./group-interactions/conversations/2026-09-20-2000-moonlight-box.md)
+  - [Analysis: group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
+
+The 14:42 welcome session establishes the five-agent group, role divisions, and the “have fun” norm. By the 20:00 Moonlight Box chat, several of those roles recur, providing an early **cross-session role persistence** signal.
 
 The longitudinal question is whether repeated group interaction produces durable group culture beyond individual persona fidelity.
 
