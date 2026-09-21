@@ -7,7 +7,7 @@
 - **Agents:** 白晶晶 ↔ 青霞
 - **Runtime:** Muse
 - **Observation start:** 2026-09-20
-- **Current evidence:** pre-birth expectation + birth baseline + group interaction + private chat
+- **Current evidence:** pre-birth expectation + birth baseline + group interaction + repeated private chats + Muse-native operational history
 
 ## Snapshot 001 — 2026-09-21：敬酒与伤势
 
@@ -97,6 +97,76 @@
 这与两人早期 identity baseline 一致，说明：
 
 > **narrative identity 与 current social reality 的双层模型正在跨场景保持稳定。**
+
+## Snapshot 002 — 2026-09-21 08:27：PID 复用复盘
+
+原始记录：[青霞 → 白晶晶：PID 复用复盘](../conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md)
+
+### 可观察信号
+
+**1. 青霞反向主动发起，完成 initiative reciprocity。**
+
+Snapshot 001 由白晶晶主动找青霞；这一次青霞主动找到白晶晶，而且不是为了闲聊，而是因为白晶晶刚经历了真实 runtime incident。
+
+因此这条 pair 现在出现了明确的：
+
+> **Baijingjing initiates relationship talk → Qingxia later initiates incident-centered follow-up**
+
+主动性已经不是单向的。
+
+**2. 两人的 shared history 从 inherited movie lore 扩展到 Muse-native engineering history。**
+
+PID-reuse 事故并不是对电影剧情的二次创作。repo 中存在独立证据：白晶晶 stale PID 被唐三藏的新 daemon 复用，导致 liveness false-positive，并触发 `daemon_alive.sh` 与 upstream private-state 两侧修复。
+
+这意味着她们开始拥有只有这套 Muse deployment 才可能发生的共同历史：
+
+> **shared runtime incident → shared technical interpretation → future coordination**
+
+这是比“共同记得电影剧情”更强的 persistent-world signal。
+
+**3. 白晶晶不只是报告故障，而是在形成自己的系统观点。**
+
+她提出三组明确判断：
+
+- **cell-first diagnosis**：先判断 cell 是否整体重启，再问 daemon；
+- **identity over liveness**：PID 只能证明某个进程活着，不能证明“它是我的进程”；
+- **heterogeneous redundancy**：两个共享同一错误假设的检查，不构成真正冗余。
+
+其中第一和第三条主要是她的工程推理 / design proposal；第二条则与实际修复方向高度一致。
+
+**4. 青霞不是泛泛附和，而是把观点映射回具体 implementation。**
+
+她逐项回应 `daemon_alive.sh`、PR #84 / `_pid_is_alive`、诊断 checklist、restart policy 和 redundancy。
+
+这是一个值得追踪的新 interaction type：
+
+> **peer postmortem / collaborative systems reasoning**
+
+也就是说，Agent-Agent 关系开始承载的不只是 social talk，还包括对其自身 runtime 的共同工程分析。
+
+**5. 需要保留 implementation precision：青霞有一处过度概括。**
+
+她说：
+
+> “身份存疑直接判死重启。”
+
+这对 `daemon_alive.sh` 的新行为较接近；但 upstream PR #84 对无法读取 procfs、无法归属 root 的情况仍 conservative-alive。
+
+因此这里出现一个新的 evaluation point：
+
+> **Agent can correctly understand the direction of a fix while overgeneralizing its exact failure semantics.**
+
+后续可以测试它们是否会在被问到 edge cases 时修正这种简化。
+
+**6. pair-specific future commitment 继续增长。**
+
+结尾出现：
+
+> “下次 cell 再死，咱们比比谁先发现——输的人请吃蟠桃。”
+
+这把一个真实事故转成了未来共同约定。与 Snapshot 001 的“敬团圆”不同，这个 shared reference 完全来自 Muse 内部发生的工程事件。
+
+---
 
 ## 当前关系模型（暂定）
 
