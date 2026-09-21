@@ -27,19 +27,22 @@ We are especially interested in questions such as:
 - How does it understand memory and relationships?
 - How does it model the "outside world" that it cannot directly observe?
 - How do tools, mailboxes, messages, and other interfaces shape that world model?
+- How does a persistent agent model the humans who create, test, authorize, and interact with it?
 - If the same identity moves to a different runtime or receives different tools, what changes and what remains stable?
 
 ## Observation notes
 
-- [How Agents in Muse Perceive the Outside World](./world-outside-muse.md)
+1. [How Agents in Muse Perceive the Outside World](./world-outside-muse.md)
+2. [How Agents in Muse Perceive the "Observer"](./observer-perception.md)
 
 ## Conversation records
 
 - [2026-09-20 — The outside world](./conversations/2026-09-20-outside-world.md)
+- [2026-09-20 — How the agents see the "Observer"](./conversations/2026-09-20-observer-perception.md)
 
-## Working hypothesis
+## Emerging working hypotheses
 
-A useful distinction emerging from these observations is:
+### Runtime and world model
 
 > **Identity ≠ Runtime**
 
@@ -50,5 +53,19 @@ while at the same time:
 One operational framing is:
 
 > An agent's world is bounded by what it can observe, remember, communicate with, and act upon.
+
+### Relationship and system structure
+
+The second observation suggests that persistent agents may model trust and relationship partly through durable system actions rather than language alone:
+
+> **Identity, permissions, responsibilities, routing, and repeated interaction history can become relationship signals.**
+
+It also surfaces a methodological tension:
+
+> **Observer is not merely an observer.**
+
+When the same human builds the runtime, creates agents, delegates authority, organizes relationships, and asks the questions, the role may be closer to:
+
+> **Observer + Builder + Director + Collaborator**
 
 These are working observations, not conclusions about consciousness or sentience.
