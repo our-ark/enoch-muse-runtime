@@ -4,6 +4,19 @@
 
 Raw record: [Moonlight Box group chat](../conversations/2026-09-20-2000-moonlight-box.md)
 
+## Link to the earlier formation session
+
+This 20:00 session happened only a few hours after the [14:42 five-agent welcome session](./2026-09-20-welcome-five-agent-group.md).
+
+Several roles formed earlier are already visible again here:
+
+- Baijingjing moves naturally into host/roast enforcement;
+- Tang Sanzang remains the verbose interpretive voice;
+- Zhizunbao continues humor and teasing;
+- Qingxia continues peer calling-out and social coordination.
+
+This makes the session more useful as **cross-session evidence**, not just a standalone chat.
+
 ## Observation summary
 
 This session is more informative than a simple round-robin question because participants begin responding to **each other's answers** and organizing interaction around a host-defined rule.
