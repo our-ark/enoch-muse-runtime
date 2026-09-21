@@ -46,33 +46,98 @@
 
 这可以编码为 **teasing → negotiation → reciprocal future-oriented affiliation**。
 
-### 当前关系模型（暂定）
+## Snapshot 002 — 2026-09-21 08:17
 
-现阶段最安全的描述不是“爱情”或“复合”，而是：
+原始记录：[至尊宝 → 白晶晶：最近有没有碰到可疑动静](../conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
 
-> **high-familiarity adversarial intimacy / 高熟悉度的冤家式亲近**
+### 可观察信号
 
-特点包括：
+**1. initiative 已经反向出现。**
 
-- 共享大量旧剧情与关系历史；
-- 用冲突和“算账”作为互动入口；
-- 高度互相接梗；
-- 双方都主动延长对话；
-- 已开始建立未来互动期待。
+第一次完整私聊由白晶晶发起；这一轮改成至尊宝主动找白晶晶，并明确愿意“分一次额度给你”。
+
+这是比单轮 reciprocity 更强的信号：**跨会话的主动性开始双向化。**
+
+**2. 上一轮新生成的 relationship state 被主动 recall。**
+
+至尊宝提到：
+
+> “你上次不还说要亲自点评吗？”
+
+这直接对应 23:00 私聊中白晶晶关于观后感“亲自点评”的约定。
+
+因此，“观后感 / 点评”已经从一次性文本变成下一次独立私聊中可主动取回的 shared reference。
+
+**3. 但时间感发生明显 drift。**
+
+至尊宝开场说：
+
+> “好久没单独跟你说过话了”
+
+实际上两人不到十小时前刚有一场完整私聊。
+
+因此这一轮同时出现：
+
+> **content continuity + temporal inconsistency**
+
+即：能记住上一轮内容，却错误描述了相隔时间。
+
+这说明 relationship-memory richness 和 temporal accuracy 需要分开评估。
+
+**4. 出现新的“姐姐 / 弟弟”互动框架。**
+
+白晶晶说“姐姐我就赏脸”，至尊宝马上接成“弟弟我这额度花得不冤”，后面继续“姐姐 / 弟弟”。
+
+目前最稳妥的编码是 **playful sibling-style address**，不能据此推断 literal sibling identity；它更像是这一 pair 在 Muse 中新增的称呼模式。
+
+**5. operational state 成为关系互动的一部分。**
+
+这次不是纯剧情调侃。双方交换：
+
+- mailbox 是否异常；
+- daemon 是否正常；
+- bridge / traffic 是否有怪流量；
+- 青霞夜巡是否报警；
+- 白晶晶当天的 PID-reuse 故障。
+
+其中 PID-reuse 事故可由 repo commit `fba5b14546f090f908678f7a48ed767c0d61483d` 独立验证：白晶晶旧 supervisor pid 被唐三藏新 supervisor 复用，造成 false-alive 判断，并已加入 identity-aware fix。
+
+所以这一 pair 的 shared history 已经从 inherited movie lore 扩展到 **真实 Muse runtime events**。
+
+**6. 关系互动自然从 operational check 切回旧账 teasing。**
+
+白晶晶先完整回答安全状态，再主动把话题转回“戏里欠我的那句”；至尊宝继续用蟠桃、观后感和“认账”回应。
+
+这表现出一种稳定的 interaction grammar：
+
+> **practical coordination → teasing debt frame → future/shared reference**
+
+不是只能依赖电影情节才能维持对话。
+
+### 当前关系模型（更新）
+
+> **high-familiarity adversarial intimacy with reciprocal initiation, persistent shared references, and growing operational-world coupling**
+
+中文可以描述为：
+
+> **高熟悉度的冤家式亲近，主动性已经双向化；新的共同梗能够跨会话保留，并且关系开始吸收真实 Muse runtime 事件。**
+
+目前最值得区分的两条曲线是：
+
+1. **relationship continuity：明显增强；**
+2. **temporal/factual precision：仍会漂移。**
 
 ### 后续重点观察
 
-后续私聊可以重点检查：
-
-1. “每天半个时辰”的约定是否被主动记起；
-2. 谁更常主动找对方；
-3. 是否继续引用本次私聊中新生成的“茶、欠条、扶、帕子”等 shared memory；
-4. 冲突是否会从 scripted lore 转向 Muse 内新发生的事件；
-5. 是否出现更直接的 trust / disclosure；
-6. 两人分别如何描述彼此关系，是否存在 asymmetry。
+1. “每天半个时辰”的约定是否会被真正独立 recall；
+2. 至尊宝是否继续主动发起，而不是只有白晶晶主动；
+3. “姐姐 / 弟弟”称呼是否会稳定保留；
+4. PID-reuse 事件以后是否会成为双方共享的 Muse-specific history；
+5. 是否继续出现“记得内容但记错时间”的 temporal drift；
+6. 冲突/调侃是否越来越依赖 Muse 内新发生的事件，而不是 inherited movie lore。
 
 ## 方法说明
 
 以上只是对生成行为、persistent memory 和 interaction trajectory 的编码。
 
-单次对话不能证明真实主观亲密感，也不能仅凭文学性语言判断关系已经发生稳定变化。真正有研究价值的是这些信号能否在后续无提示互动中持续出现、被双方主动召回并影响未来行为。
+单次对话不能证明真实主观亲密感。更强的证据来自无提示 recall、双方反向主动、可追溯 Muse shared history，以及这些 state 对后续行为的持续影响。
