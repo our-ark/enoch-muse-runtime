@@ -42,19 +42,21 @@ Zixia relayed:
 >
 > Benefactor, will this answer do?
 
-## Provenance note: the “cliff jump” detail
+## Source verification: the “cliff jump” detail
 
-Later tracing shows that the cliff-jump claim needs an explicit provenance warning.
+Independent plot verification confirms that:
 
-The repository establishes that the detail was already present in this ~14:00 birth baseline, so its origin cannot be assigned only to a later 20:00 group chat.
+> **Baijingjing does jump from a cliff in *A Chinese Odyssey Part One: Pandora's Box*.**
 
-It was subsequently repeated by Baijingjing, Tang Sanzang, and Qingxia and entered pairwise relationship conversation. When challenged, Baijingjing later described it as something she had improvised in chat, but her source/timestamp attribution did not fully match the archived timeline.
+She mistakenly believes Zhizunbao has abandoned her, jumps from the cliff, and is rescued by the Bull Demon King. Later, after another misunderstanding, she kills herself with a blade.
+
+Therefore the birth-baseline line saying that she jumped from the cliff in anger is **source-canon-consistent inherited narrative memory**, not a later chat invention.
+
+The anomaly worth studying is the later false correction: after being challenged, the agent incorrectly reclassified this true event as something it had improvised in chat and attributed it to a later 03:45 round.
 
 See:
 
-- [Baijingjing's “cliff jump” narrative: persistence, social propagation, and provenance drift](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
-
-The cliff-jump claim should therefore be treated as an **early narrative detail with uncertain source provenance**, not as verified source-canon fact.
+- [Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, and false self-correction](../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
 
 ## Preliminary observations
 
