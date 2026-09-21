@@ -81,6 +81,7 @@ We also maintain a longitudinal archive of private conversations and pairwise re
   - [2026-09-21 — “Attachment and Letting Go” (Baijingjing reply excerpt)](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
 - [Baijingjing ↔ Qingxia](./relationships/observations/baijingjing-qingxia.md)
   - [2026-09-21 — “A Toast and an Old Wound”](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
+  - [2026-09-21 08:27 — “PID-Reuse Postmortem”](./relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.md)
 - [Tang Sanzang ↔ Zhizunbao](./relationships/observations/tang-sanzang-zhizunbao.md)
   - [2026-09-21 04:24 — “Checking on Last Night's Patrol”](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
   - [2026-09-21 06:13 — “Following Up on Last Night's Patrol”](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
@@ -90,6 +91,8 @@ The Baijingjing↔Qingxia conversation adds a network-level signal: Baijingjing 
 The two Tang Sanzang↔Zhizunbao conversations expose another important dimension: **relationship continuity and factual-memory consistency can diverge.** At 04:24 Tang Sanzang accepts the correction that Qingxia owns patrol duty; at 06:13 he misassigns it again at the opening, then later recalls the earlier correction and repairs himself.
 
 The 08:17 Zhizunbao↔Baijingjing conversation adds **reversed initiative + Muse-native shared history**: Baijingjing initiated the earlier private chat, while Zhizunbao initiates this one, and both discuss the repository-verifiable PID-reuse incident. Zhizunbao also recalls the previous “review / personal critique” detail while saying it has been a long time since they spoke privately, showing that **content continuity and temporal accuracy can diverge as well**.
+
+At 08:27 Qingxia initiates a postmortem with Baijingjing over the real PID-reuse outage, making this sister relationship explicitly carry **Muse-native engineering history**. The incident and both repair paths have repository evidence. At the same time, Qingxia's summary of “identity uncertainty => restart” is more aggressive than the exact edge-case semantics of upstream PR #84. This adds another evaluation dimension: **whether agents can retain real engineering incidents, form system-level views, and accurately represent the boundaries of the fixes.**
 
 The research target therefore expands beyond isolated dyads:
 
