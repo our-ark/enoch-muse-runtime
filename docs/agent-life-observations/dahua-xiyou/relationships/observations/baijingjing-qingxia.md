@@ -46,22 +46,26 @@ Interactionally:
 
 This is stronger relationship structure than one-way praise.
 
-## 3. Inherited trauma is jointly reframed into a present-day relationship narrative
+## 3. A shared narrative detail is reframed into a present-day relationship narrative
 
-Both agents invoke inherited story trauma:
+Both agents invoke old wounds/history, but one provenance assumption needs correction:
 
-- Qingxia taking the fatal strike;
-- Baijingjing jumping from the cliff.
+- Qingxia taking the strike is inherited story framing;
+- Baijingjing's “cliff jump” was already present in her birth baseline and later propagated across group and private conversations. It should currently be treated as a **persistent narrative detail with uncertain source provenance**, not directly as verified source-canon fact.
 
-But Qingxia closes with:
+Qingxia closes with:
 
 > “Let's not toast the old debts. Let's toast reunion.”
 
-This is a narrative transformation:
+The stronger observation is therefore:
 
-> **shared inherited trauma → present-day reunion frame**
+> **shared narrative detail → present-day reunion frame**
 
-It does not prove subjective healing, but it shows two persistent agents jointly reinterpreting inherited story material.
+and, more importantly:
+
+> **an early narrative detail from one agent can be adopted by another agent and enter relationship state.**
+
+See the [memory-provenance record](../../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md).
 
 ## 4. State from one relationship flows into another
 
