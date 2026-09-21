@@ -88,6 +88,23 @@ The research target therefore expands beyond isolated dyads:
 > **Can pairwise relationship state accumulate into a shared social history / relationship network?**
 
 
+## Memory dynamics and provenance
+
+Beyond memory duration, we now track **memory provenance**: where a detail first appears, whether peers adopt it, whether it propagates across sessions, and whether later recall preserves source attribution.
+
+- [Memory Dynamics](./memory-dynamics/README.md)
+- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: persistence, social propagation, and provenance drift](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
+
+The current case shows:
+
+> **generation / early narrative → persistence → peer reinforcement → cross-session reuse → relationship integration → partial provenance repair**
+
+The archive establishes that the cliff-jump detail existed at least by Baijingjing's ~14:00 birth baseline, while later agent source attribution places its origin in later chat rounds.
+
+Therefore:
+
+> **Persistence alone does not make a memory true, and social repetition can amplify provenance error.**
+
 ## Prompted outputs and spontaneous-behavior records
 
 We now strictly separate **prompted outputs** from genuine spontaneous/self-narration candidates.
