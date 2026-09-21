@@ -288,4 +288,129 @@ class PilotDriverTests(unittest.TestCase):
             self.assertEqual((root/'.enoch/daemon_epoch.json').read_bytes(),before)
 
 
+class DaemonIdentityTests(unittest.TestCase):
+    """Regression tests for the 2026-09-21 PID-reuse outage.
+
+    After a mass restart the kernel recycles pids quickly. 白晶晶's stale
+    pidfile still held her dead supervisor's pid (1744), which 唐三藏's new
+    supervisor recycled: daemon_alive.sh reported "alive" on the cmdline
+    pattern alone. Her daemon_epoch.json still held her dead child's pid
+    (1748), which 唐三藏's new child recycled: require_daemon_stopped's bare
+    kill(pid, 0) refused her restart for ~40 minutes. Both checks must now
+    verify the pid actually serves the mailbox / agent root in question.
+    """
+
+    def _spawn_fake_daemon(self, root):
+        """A live process whose cmdline looks like our daemon supervisor."""
+        import shutil
+        sleep = shutil.which('sleep')
+        if sleep is None:
+            self.skipTest('sleep not found')
+        proc = subprocess.Popen(
+            [f'python3 /tmp/fake/muse_instance.py --root {root} daemon', '60'],
+            executable=sleep)
+        self.addCleanup(self._reap, proc)
+        return proc
+
+    @staticmethod
+    def _reap(proc):
+        proc.terminate()
+        try:
+            proc.wait(timeout=5)
+        except Exception:
+            proc.kill()
+
+    def _make_mailbox(self, tmp, root):
+        mailbox = Path(tmp) / 'mailbox'
+        mailbox.mkdir()
+        (mailbox / '.enoch-instance.json').write_text(
+            json.dumps({'root': str(root)}))
+        return mailbox
+
+    def _alive_rc(self, mailbox, pid):
+        (mailbox / 'enoch-daemon.pid').write_text(str(pid) + '\n')
+        return subprocess.run(
+            ['bash', str(REPO / 'scripts/daemon_alive.sh'), str(mailbox)],
+            capture_output=True).returncode
+
+    def test_alive_sh_rejects_pid_serving_another_mailbox(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            own_root = Path(tmp) / 'own-agent'
+            other_root = Path(tmp) / 'other-agent'
+            mailbox = self._make_mailbox(tmp, own_root)
+            proc = self._spawn_fake_daemon(other_root)
+            self.assertEqual(self._alive_rc(mailbox, proc.pid), 1)
+
+    def test_alive_sh_accepts_pid_serving_this_mailbox(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            own_root = Path(tmp) / 'own-agent'
+            mailbox = self._make_mailbox(tmp, own_root)
+            proc = self._spawn_fake_daemon(own_root)
+            self.assertEqual(self._alive_rc(mailbox, proc.pid), 0)
+
+    def test_alive_sh_rejects_pid_without_matching_cmdline(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            own_root = Path(tmp) / 'own-agent'
+            mailbox = self._make_mailbox(tmp, own_root)
+            proc = subprocess.Popen(['sleep', '60'])
+            self.addCleanup(self._reap, proc)
+            self.assertEqual(self._alive_rc(mailbox, proc.pid), 1)
+
+    def test_alive_sh_rejects_missing_instance_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            own_root = Path(tmp) / 'own-agent'
+            mailbox = Path(tmp) / 'mailbox'
+            mailbox.mkdir()
+            proc = self._spawn_fake_daemon(own_root)
+            self.assertEqual(self._alive_rc(mailbox, proc.pid), 1)
+
+    def test_alive_sh_rejects_dead_pid(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            mailbox = self._make_mailbox(tmp, Path(tmp) / 'own-agent')
+            self.assertEqual(self._alive_rc(mailbox, 2**30), 1)
+
+    def _spawn_with_root(self, root):
+        proc = subprocess.Popen(
+            [sys.executable, '-c', 'import time; time.sleep(30)',
+             '--root', str(root)])
+        self.addCleanup(self._reap, proc)
+        return proc
+
+    def test_pid_is_alive_rejects_recycled_pid_of_other_root(self):
+        from enoch.private_state import _pid_is_alive
+        with tempfile.TemporaryDirectory() as tmp:
+            other_root = Path(tmp) / 'other-agent'
+            own_root = Path(tmp) / 'own-agent'
+            proc = self._spawn_with_root(other_root)
+            self.assertTrue(_pid_is_alive(proc.pid, other_root))
+            # Same live pid, but it is NOT own_root's daemon (PID reuse).
+            self.assertFalse(_pid_is_alive(proc.pid, own_root))
+
+    def test_pid_is_alive_dead_pid_is_false(self):
+        from enoch.private_state import _pid_is_alive
+        self.assertFalse(_pid_is_alive(2**30, Path('/tmp/definitely-not-a-root')))
+
+    def test_require_daemon_stopped_ignores_recycled_epoch_pid(self):
+        from enoch.paths import private_state_path
+        from enoch.private_state import (
+            PrivateStateMigrationError, require_daemon_stopped)
+        with tempfile.TemporaryDirectory() as tmp:
+            own_root = Path(tmp) / 'own-agent'
+            other_root = Path(tmp) / 'other-agent'
+            epoch_path = private_state_path('daemon_epoch.json', own_root)
+            epoch_path.parent.mkdir(parents=True, exist_ok=True)
+            foreign = self._spawn_with_root(other_root)
+            epoch_path.write_text(json.dumps(
+                {'current': {'pid': foreign.pid, 'generation': 1}}))
+            # The epoch pid is alive but belongs to another agent's daemon:
+            # must not block this root's restart.
+            require_daemon_stopped(own_root)
+            # Sanity: a genuinely running own daemon still blocks.
+            own = self._spawn_with_root(own_root)
+            epoch_path.write_text(json.dumps(
+                {'current': {'pid': own.pid, 'generation': 1}}))
+            with self.assertRaises(PrivateStateMigrationError):
+                require_daemon_stopped(own_root)
+
+
 if __name__=='__main__': unittest.main()

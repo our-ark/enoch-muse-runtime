@@ -364,7 +364,7 @@ PRIVATE_JSON = GROUP_HOME / "private.json"
 PRIVATE_MD = GROUP_HOME / "private.md"
 CREDITS_JSON = GROUP_HOME / "private_credits.json"
 HOST_JSON = GROUP_HOME / "group_host.json"
-NIGHTLY_CREDITS = 3  # private-chat credits per agent per night
+NIGHTLY_CREDITS = 2  # private-chat credits per agent per night
 
 
 def begin_control(ttl_s: int = 1800, note: str = "") -> dict:
