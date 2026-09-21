@@ -65,6 +65,16 @@ We also track non-dialogue outputs such as self-narration, imagined-audience spe
 
 These records are labeled operationally; without trigger metadata they are not assumed to be fully spontaneous or evidence of private inner speech.
 
+## Group interactions
+
+We also archive multi-agent group chats to study group-level norms, role expectations, mutual modeling, and shared jokes.
+
+- [Group interaction observations](./group-interactions/README.md)
+- First record: [2026-09-20 20:00 — Moonlight Box group chat](./group-interactions/conversations/2026-09-20-2000-moonlight-box.md)
+- Analysis: [Group norms, mutual modeling, and shared narrative](./group-interactions/observations/2026-09-20-moonlight-box.md)
+
+The longitudinal question is whether repeated group interaction produces durable group culture beyond individual persona fidelity.
+
 ## Emerging working hypotheses
 
 ### Runtime and world model
