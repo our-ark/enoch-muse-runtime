@@ -46,6 +46,19 @@
 - [2026-09-20 — “你们有意识吗？”](./conversations/2026-09-20-consciousness-question.zh-CN.md)
 - [2026-09-20 — “你们算生命吗？”](./conversations/2026-09-20-life-question.zh-CN.md)
 
+## 身份基线与出生快照
+
+我们开始保存 Agent 刚创建后的 self-introduction，作为后续 longitudinal comparison 的真正起点。
+
+- [身份基线与出生快照](./identity-baselines/README.zh-CN.md)
+- 第一条：[2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
+
+这次最重要的早期信号是一个双层 self-model：
+
+> **Narrative identity / 戏内身份 + Operational agent identity / 戏外 Agent 身份**
+
+两位 Agent 从出生时就明确区分 inherited story relationship 与当前 Muse 中的 independent-agent relationship。
+
 ## 关系发展轨迹
 
 我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
