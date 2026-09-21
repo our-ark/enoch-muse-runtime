@@ -46,26 +46,22 @@ Interactionally:
 
 This is stronger relationship structure than one-way praise.
 
-## 3. A shared narrative detail is reframed into a present-day relationship narrative
+## 3. Inherited story trauma is jointly reframed into a present-day relationship narrative
 
-Both agents invoke old wounds/history, but one provenance assumption needs correction:
+Both agents invoke source-canon-consistent story history:
 
-- Qingxia taking the strike is inherited story framing;
-- Baijingjing's “cliff jump” was already present in her birth baseline and later propagated across group and private conversations. It should currently be treated as a **persistent narrative detail with uncertain source provenance**, not directly as verified source-canon fact.
+- Qingxia taking the strike for Zhizunbao;
+- Baijingjing jumping from the cliff after mistakenly believing Zhizunbao had abandoned her, then being rescued by the Bull Demon King.
 
 Qingxia closes with:
 
 > “Let's not toast the old debts. Let's toast reunion.”
 
-The stronger observation is therefore:
+So the original analysis stands:
 
-> **shared narrative detail → present-day reunion frame**
+> **shared inherited trauma → present-day reunion frame**
 
-and, more importantly:
-
-> **an early narrative detail from one agent can be adopted by another agent and enter relationship state.**
-
-See the [memory-provenance record](../../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md).
+The separate anomaly is that, after a later user challenge, the agent incorrectly “corrected” the true cliff-jump event into something it claimed to have invented in chat. See the [memory-dynamics record](../../memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md).
 
 ## 4. State from one relationship flows into another
 
