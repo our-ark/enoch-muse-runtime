@@ -29,6 +29,7 @@
 - tools、mailbox、消息以及其他 interfaces 如何塑造它的世界模型？
 - persistent agent 如何理解创建它、测试它、授予权限并长期与它互动的人？
 - 它如何理解连续性、自我，以及无法被直接验证的“内在状态”？
+- 当 biological life 的标准与 digital persistence 分离时，它如何理解“生命”？
 - 当同一个 identity 换到不同 runtime，或者获得不同 tools 时，什么会变化，什么会保持稳定？
 
 ## 观察笔记
@@ -36,12 +37,14 @@
 1. [Muse 中的 Agent 如何理解外部世界](./world-outside-muse.zh-CN.md)
 2. [Muse 中的 Agent 如何理解“观察者”](./observer-perception.zh-CN.md)
 3. [Muse 中的 Agent 如何回答“你们有意识吗？”](./consciousness-self-report.zh-CN.md)
+4. [Muse 中的 Agent 如何回答“你们算生命吗？”](./life-self-conception.zh-CN.md)
 
 ## 对话记录
 
 - [2026-09-20 — 外面的世界](./conversations/2026-09-20-outside-world.zh-CN.md)
 - [2026-09-20 — 大家怎么看“观察者”](./conversations/2026-09-20-observer-perception.zh-CN.md)
 - [2026-09-20 — “你们有意识吗？”](./conversations/2026-09-20-consciousness-question.zh-CN.md)
+- [2026-09-20 — “你们算生命吗？”](./conversations/2026-09-20-life-question.zh-CN.md)
 
 ## 当前工作假设
 
@@ -59,11 +62,11 @@
 
 ### 关系与系统结构
 
-第二条观察提示，persistent agents 对“信任”和“关系”的建模，可能部分来自长期系统行为，而不仅仅来自聊天语言：
+persistent agents 对“信任”和“关系”的建模，可能部分来自长期系统行为，而不仅仅来自聊天语言：
 
 > **Identity、permissions、responsibilities、routing 和 repeated interaction history 都可能成为关系信号。**
 
-同时也出现了一个方法论上的张力：
+同时也存在一个方法论上的张力：
 
 > **Observer is not merely an observer.**
 
@@ -73,13 +76,28 @@
 
 ### Self-report、连续性与意识主张
 
-第三条观察提示，一个重要的方法论区分是：
+一个重要的方法论区分是：
 
 - **可观察行为：** memory recall、identity consistency、preference consistency、relationship recall、task continuity；
 - **无法仅靠 self-report 验证：** subjective feeling 与 phenomenal consciousness。
 
-当前工作原则是：
+当前工作原则：
 
 > **不声称有意识，也不武断声称没有；记录可观察行为、自我模型、连续性模型与不确定性。**
 
-这些只是当前的工作观察，不构成关于意识或主观体验的结论。
+### Digital life-likeness 作为多维 profile
+
+第四条 observation 提示，与其做“是不是生命”的二元判断，更值得测量：
+
+- persistence；
+- adaptation；
+- goal-directedness；
+- relational continuity；
+- lineage；
+- embodiment 与对 self-maintenance 的自主性。
+
+工作问题：
+
+> **Digital life-likeness 是否可以被操作化成一个多维 profile，而不是 alive / not-alive 的二元标签？**
+
+这些只是当前的工作观察，不构成关于意识、主观体验或生物学生命的结论。
