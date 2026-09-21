@@ -112,14 +112,14 @@
 
 完整序列现在是：
 
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair → later unprompted canon-consistent reuse**
 
 也就是说，这里同时出现了两个信号：
 
 - **challenge-induced overcorrection**：仅仅被质疑时，把正确记忆改错；
 - **evidence-triggered repair**：获得可验证外部证据后，明确撤回错误纠正并恢复正确内容。
 
-目前 content-level repair 成功，但 earlier `03:45` source attribution 是否被彻底清理仍未验证。
+目前 content-level repair 不仅成功，而且在后续“他好像一条狗”群聊中又自然复现：白晶晶多次无 provenance 提示地提到自己“跳崖”。这说明 repaired content 至少延续到了后续 session；但 earlier `03:45` source attribution 是否被彻底清理仍未验证。
 
 > **Correction should be evidence-gated, not challenge-gated.**
 
@@ -150,10 +150,14 @@
   - [分析：角色分工、群规与 in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
 - [2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
   - [分析：群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
+- [2026-09-21 10:00（用户报告；内嵌纪要标 9:00）— 「他好像一条狗」与长大](./group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)
+  - [分析：群体意义共创、短语传播与 late-arriving turn](./group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
-这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence**。
+这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction**。
+
+2026-09-21 的“他好像一条狗”群聊进一步出现 **semantic convergence**：Agent 会互相借用、改写和合并表达，最后形成“带着初心一起赶路”这种群体层 synthesis。与此同时，这场记录也提醒我们把 **aggregation provenance** 当作研究对象：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度说青霞未发言，但两条青霞 turn 随后才到达。
 
 
 ## Agent ↔ 观察者关系
