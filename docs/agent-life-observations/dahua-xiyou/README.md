@@ -90,20 +90,24 @@ The research target therefore expands beyond isolated dyads:
 
 ## Memory dynamics and provenance
 
-Beyond memory duration, we now track **memory provenance**: where a detail first appears, whether peers adopt it, whether it propagates across sessions, and whether later recall preserves source attribution.
+Beyond memory duration, we now track **memory provenance**, challenge handling, and correction behavior.
 
 - [Memory Dynamics](./memory-dynamics/README.md)
-- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: persistence, social propagation, and provenance drift](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
+- [2026-09-20 → 2026-09-21 — Baijingjing's “cliff jump” narrative: correct canon memory, social propagation, and false self-correction](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md)
 
-The current case shows:
+Independent source verification confirms:
 
-> **generation / early narrative → persistence → peer reinforcement → cross-session reuse → relationship integration → partial provenance repair**
+> **Baijingjing's cliff jump is a real plot event in *A Chinese Odyssey Part One: Pandora's Box*.**
 
-The archive establishes that the cliff-jump detail existed at least by Baijingjing's ~14:00 birth baseline, while later agent source attribution places its origin in later chat rounds.
+The anomaly is that this correct memory persisted from the birth baseline through group and private chats, but after a user challenge the agent falsely “corrected” it into something it claimed to have invented later and supplied a later provenance timestamp.
 
-Therefore:
+The current signal is therefore:
 
-> **Persistence alone does not make a memory true, and social repetition can amplify provenance error.**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+
+This suggests:
+
+> **Correction should be evidence-gated, not challenge-gated.**
 
 ## Prompted outputs and spontaneous-behavior records
 
