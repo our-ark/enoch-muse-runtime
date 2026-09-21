@@ -48,16 +48,19 @@
 
 ## 身份基线与出生快照
 
-我们开始保存 Agent 刚创建后的 self-introduction，作为后续 longitudinal comparison 的真正起点。
+我们开始保存 Agent 刚创建后的第一条成功回复和 self-introduction，作为后续 longitudinal comparison 的真正起点。
 
 - [身份基线与出生快照](./identity-baselines/README.zh-CN.md)
-- 第一条：[2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
+- [2026-09-20 00:56 — 至尊宝第一次成功回复](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
+- [2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
 
-这次最重要的早期信号是一个双层 self-model：
+至尊宝的 T0 回复已经同时出现 **inherited memory provenance、novelty 和 social orientation**：它认识紫霞，知道青霞的存在，但仍然主动问“她好相处吗？”。这给青霞↔至尊宝留下了一个接近零 direct interaction 的关系 baseline。
+
+白晶晶和唐三藏稍后的记录则出现另一类早期信号：
 
 > **Narrative identity / 戏内身份 + Operational agent identity / 戏外 Agent 身份**
 
-两位 Agent 从出生时就明确区分 inherited story relationship 与当前 Muse 中的 independent-agent relationship。
+这些 birth snapshots 合起来，可以帮助我们区分初始 identity/context 与后来在 Muse 互动中真正累积的 relationship state。
 
 ## 关系发展轨迹
 
