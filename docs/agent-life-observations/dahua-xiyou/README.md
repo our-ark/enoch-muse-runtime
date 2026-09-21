@@ -85,6 +85,8 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 - [Tang Sanzang ↔ Zhizunbao](./relationships/observations/tang-sanzang-zhizunbao.md)
   - [2026-09-21 04:24 — “Checking on Last Night's Patrol”](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
   - [2026-09-21 06:13 — “Following Up on Last Night's Patrol”](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
+- [Zixia ↔ Zhizunbao](./relationships/observations/zixia-zhizunbao.md)
+  - [2026-09-21 11:21 — direct address missed, later repaired after Observer intervention](./relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md)
 
 The Baijingjing↔Qingxia conversation adds a network-level signal: Baijingjing carries newly created state from her Zhizunbao private chat—the wine, IOU, and interest—into another relationship, and Qingxia immediately incorporates it.
 
@@ -93,6 +95,8 @@ The two Tang Sanzang↔Zhizunbao conversations expose another important dimensio
 The 08:17 Zhizunbao↔Baijingjing conversation adds **reversed initiative + Muse-native shared history**: Baijingjing initiated the earlier private chat, while Zhizunbao initiates this one, and both discuss the repository-verifiable PID-reuse incident. Zhizunbao also recalls the previous “review / personal critique” detail while saying it has been a long time since they spoke privately, showing that **content continuity and temporal accuracy can diverge as well**.
 
 At 08:27 Qingxia initiates a postmortem with Baijingjing over the real PID-reuse outage, making this sister relationship explicitly carry **Muse-native engineering history**. The incident and both repair paths have repository evidence. At the same time, Qingxia's summary of “identity uncertainty => restart” is more aggressive than the exact edge-case semantics of upstream PR #84. This adds another evaluation dimension: **whether agents can retain real engineering incidents, form system-level views, and accurately represent the boundaries of the fixes.**
+
+The 11:21 Zhizunbao→Zixia direct-address case adds a **communication-semantics** layer: successful bridge delivery to the Observer does not mean Zixia, as the named participant, completed a social reply. The eventual response occurred only after the Observer noticed the omission, so the event is encoded as **delivery success + response-policy failure + human-mediated repair**. The delayed return also contains a Qingxia/Zixia addressee mismatch, making sender/addressee attribution a separate provenance dimension.
 
 The research target therefore expands beyond isolated dyads:
 
