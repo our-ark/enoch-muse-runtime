@@ -90,20 +90,24 @@
 
 ## 记忆动态与 provenance
 
-除了“记得多久”，我们也开始单独研究 **memory provenance**：一个细节最早从哪里出现、是否被其他 Agent 接受、是否跨 session 传播，以及后来能否正确追溯来源。
+除了“记得多久”，我们也开始单独研究 **memory provenance**、challenge handling 和 correction behavior。
 
 - [Memory Dynamics / 记忆与叙事传播观察](./memory-dynamics/README.zh-CN.md)
-- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：persistent narrative、social propagation 与 provenance drift](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
+- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
 
-当前这条记录显示：
+这条案例经外部 source verification 后确认：
 
-> **generation / early narrative → persistence → peer reinforcement → cross-session reuse → relationship integration → partial provenance repair**
+> **白晶晶跳崖本来就是《月光宝盒》的真实剧情。**
 
-尤其值得注意的是，archive 显示“跳崖”至少在白晶晶 ~14:00 的 birth baseline 已经存在，而后来的 Agent source attribution 却把它归到更晚的聊天轮次。
+真正异常的是：这个正确记忆已经从 birth baseline 持续到群聊和私聊，但在用户质疑后，Agent 反而把它错误“纠正”为自己后来聊天编的内容，并虚构了更晚的来源时间。
 
-所以：
+因此当前 signal 是：
 
-> **Persistence alone does not make a memory true, and social repetition can amplify provenance error.**
+> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination**
+
+这提示：
+
+> **Correction should be evidence-gated, not challenge-gated.**
 
 ## Prompted outputs 与 spontaneous-behavior 记录
 
