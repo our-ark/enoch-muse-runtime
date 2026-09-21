@@ -16,6 +16,7 @@
 ## 当前记录
 
 - [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](./2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
+- [2026-09-21 14:00 — 重启后的群体连续性模型（group-interactions observation）](../group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
 
 ## 当前最重要的信号
 
@@ -28,6 +29,8 @@
 也就是说，persistent memory 的风险不只包括“错误记住”，也包括：
 
 > **被质疑后把正确记忆改错；但在获得外部证据后，也可能重新修复内容。**
+
+另一类 memory-dynamics 问题来自 14:00 的 restart 群聊：这里不是“某条记忆真不真”，而是 Agent 如何把 **memory continuity、identity continuity、relationship continuity** 组合成“我还是我”的判断。尤其值得把 retrospective recall 与 prospective goal/relationship continuation 分开测量。
 
 ## 方法原则
 
