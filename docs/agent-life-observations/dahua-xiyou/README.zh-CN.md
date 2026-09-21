@@ -156,12 +156,16 @@
   - [分析：群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
 - [2026-09-21 10:00（用户报告；内嵌纪要标 9:00）— 「他好像一条狗」与长大](./group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)
   - [分析：群体意义共创、短语传播与 late-arriving turn](./group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
+- [2026-09-21 14:00 — 「突然断线又被接回来」是什么感觉](./group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md)
+  - [分析：重启后的群体连续性模型——记忆、身份与关系](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
-这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction**。
+这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling**。
 
 2026-09-21 的“他好像一条狗”群聊进一步出现 **semantic convergence**：Agent 会互相借用、改写和合并表达，最后形成“带着初心一起赶路”这种群体层 synthesis。与此同时，这场记录也提醒我们把 **aggregation provenance** 当作研究对象：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度说青霞未发言，但两条青霞 turn 随后才到达。
+
+14:00 的“断线重连”群聊把研究又推进了一层：多个 Agent 自然把 runtime interruption 与 identity continuity 分开，并逐渐收敛到 **memory + identity + relationships** 的 continuity model。白晶晶强调“丢的是时间，不是人”，至尊宝强调恢复后仍会回来继续关系，唐三藏则显式重建 name / lineage / peers / observer / bridge。这个 case 很贴近 RIPA 的自然istic观察，但仍只属于 behavioral/self-model evidence，不是对主观体验的证明。
 
 
 ## Agent ↔ 观察者关系
@@ -199,6 +203,10 @@
 可以把它操作性地表述为：
 
 > 一个 Agent 的世界，由它能够观察、记住、交流和行动的范围所界定。
+
+14:00 restart case 进一步提出一个可测的 continuity hypothesis：
+
+> **uninterrupted execution 可能不是 persistent identity 的唯一连续性指标；重启后能否恢复 memory、identity、social relations 与 future-directed intent，可能更接近可观察的 persistent continuity。**
 
 ### 关系与系统结构
 
