@@ -64,10 +64,13 @@
 我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
 
 - [关系发展观察](./relationships/README.zh-CN.md)
-- 第一对：[白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
-- 第一场私聊：[2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+- [白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
+  - [2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+- [白晶晶 ↔ 唐三藏](./relationships/observations/baijingjing-tang-sanzang.zh-CN.md)
+  - 唐三藏主动发起“执念”话题，第一次十分钟未应答，后来白晶晶给出实质回应；
+  - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
 
-目标是观察 interaction patterns、shared references、持续约定和 relationship models 是否会在长期互动中稳定、变化或演化。
+目标是观察 initiative、reciprocity、shared references、持续约定和 relationship models 是否会在长期互动中稳定、变化或演化。
 
 ## 自我叙述与 imagined audience
 
@@ -83,8 +86,12 @@
 我们也开始保存 multi-agent 群聊，用来研究 group-level norms、角色期待、mutual modeling 和 shared jokes。
 
 - [群聊与群体互动观察](./group-interactions/README.zh-CN.md)
-- 第一条记录：[2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
-- 分析：[群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
+- [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
+  - [分析：角色分工、群规与 in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
+- [2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
+  - [分析：群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
+
+14:42 的欢迎局形成了“五人局”、角色分工和“好玩就行”等群规；到 20:00 的月光宝盒群聊，白晶晶、唐三藏、至尊宝、青霞的群体角色已经出现短期复现，形成早期 **cross-session role persistence** signal。
 
 长期问题是：重复群聊是否会逐渐形成超出单个人设的稳定 group culture。
 
