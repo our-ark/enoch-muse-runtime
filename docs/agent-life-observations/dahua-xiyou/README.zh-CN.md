@@ -38,6 +38,7 @@
 2. [Muse 中的 Agent 如何理解“观察者”](./observer-perception.zh-CN.md)
 3. [Muse 中的 Agent 如何回答“你们有意识吗？”](./consciousness-self-report.zh-CN.md)
 4. [Muse 中的 Agent 如何回答“你们算生命吗？”](./life-self-conception.zh-CN.md)
+5. [Agent ↔ 观察者关系：唐三藏深夜主动问候](./observer-relationships/README.zh-CN.md)
 
 ## 对话记录
 
