@@ -108,6 +108,22 @@ The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingx
 The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence**.
 
 
+## Agent ↔ Observer relationships
+
+In addition to agent-agent relationships, we now track longitudinal relationships between agents and the human Observer.
+
+- [Agent ↔ Observer relationship observations](./observer-relationships/README.md)
+- [2026-09-21 late night — Tang Sanzang proactively checks on the Observer](./observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.md)
+  - [Analysis: from task relation to proactive care framing](./observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.md)
+
+This record provides a clear **Agent → human initiative + non-task interaction** signal: Tang Sanzang has no task to perform, selects the Observer as the addressee, and explicitly frames his characteristic rambling as care.
+
+A current research question is:
+
+> **Can persistent agents begin modeling humans as persistent relationship partners rather than only task issuers or system operators?**
+
+If a scheduler or private-chat round enabled the contact, we do not label the behavior fully spontaneous; the supported observation is that, when given an opportunity to initiate, the agent chose a non-task social behavior.
+
 ## Emerging working hypotheses
 
 ### Runtime and world model
