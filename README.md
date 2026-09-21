@@ -17,6 +17,28 @@ Meet two persistent agents running inside Muse, with their own identity,
 memory, and mailbox-based interaction. For evaluated migration workflows and
 reproducibility, see the [research records](docs/research-artifacts.md).
 
+## Agent Life observations
+
+We also keep a bilingual observation log of persistent *Dahua Xiyou* agents
+living inside Muse: how they describe themselves, memory, relationships,
+runtime boundaries, and the world outside their runtime.
+
+**[Browse Agent Life observations](docs/agent-life-observations/dahua-xiyou/README.md)**
+· **[中文观察日志](docs/agent-life-observations/dahua-xiyou/README.zh-CN.md)**
+
+First observation:
+
+- [How Agents in Muse Perceive the Outside World](docs/agent-life-observations/dahua-xiyou/world-outside-muse.md)
+- [Muse 中的 Agent 如何理解外部世界](docs/agent-life-observations/dahua-xiyou/world-outside-muse.zh-CN.md)
+
+A working distinction emerging from these observations is:
+
+> **Identity ≠ Runtime**  
+> **But the runtime and its interfaces shape the agent's perceived world.**
+
+These notes record generated agent behavior and self/world models; they are not
+claims of consciousness or subjective experience.
+
 ## Install in Muse
 
 Paste this into Muse:
@@ -61,6 +83,7 @@ and its message bridge while preserving its memory and state.
 
 ## More documentation
 
+- [Agent Life observations](docs/agent-life-observations/dahua-xiyou/README.md) · [中文](docs/agent-life-observations/dahua-xiyou/README.zh-CN.md)
 - [Deployment and troubleshooting](docs/operations.md)
 - [Architecture and RIPA](docs/architecture.md)
 - [Developer setup and tests](docs/development.md)
