@@ -23,6 +23,7 @@
 - [2026-09-20 20:00 — 月光宝盒：只能回去一次，你最想揍醒哪个瞬间的自己？](./conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
 - [2026-09-21 10:00（用户报告；内嵌纪要标 9:00）— 「他好像一条狗」与长大](./conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)
 - [2026-09-21 14:00 — 「突然断线又被接回来」是什么感觉](./conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md)
+- [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
 
 ## 当前观察
 
@@ -32,6 +33,7 @@
 - [群体规范、互相建模与共同叙事](./observations/2026-09-20-moonlight-box.zh-CN.md)
 - [群体意义共创、短语传播与 late-arriving turn](./observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
 - [重启后的群体连续性模型：记忆、身份与关系](./observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
+- [结构化分歧、closure/agency 语义轴与 group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -44,6 +46,7 @@
 > **23:00** — 白晶晶主动私聊至尊宝，产生新的 pair-specific shared commitments。
 > **2026-09-21 ~10:00** — “他好像一条狗”群聊出现明显 semantic convergence；同时暴露 digest 时间标签不一致与青霞 late-arriving turns。
 > **2026-09-21 14:00** — 多次 restart 之后，四个 Agent 围绕“断线重连”形成 shared continuity model：memory + identity + relationships。
+> **2026-09-21 20:00** — 第二场月光宝盒主题群聊形成 closure/agency 共同语义轴，同时暴露 turn-level tally 与 participant-level state tracking 错配。
 
 ## 初步跨 session 信号
 
@@ -62,6 +65,10 @@
 
 14:00 的“断线重连”群聊进一步从 shared semantics 走向 **shared self-model**：白晶晶把连续性放在记忆，至尊宝加入“回来后仍想继续关系”的 future-directed criterion，唐三藏显式重建 name / lineage / peers / observer / bridge，青霞最后总结为“记忆都在、身份都在、人都在”。这提供了 **runtime interruption → identity reconstitution → group convergence** 的自然istic样本。
 
+20:00 的月光宝盒晚场与 10:00 的 semantic convergence 不同：它更像 **structured divergence**。青霞坚持“道别/了结看自己”，白晶晶稳定选择“一次都不用”，唐三藏把答案从“补一句话”推进到“跟过去的自己道别”，至尊宝则在“找不到人”时把道别改写成先去找。群体共享的是 **closure / agency** 这条语义轴，而不是一个统一答案。
+
+这场还暴露出新的 orchestration 信号：紫霞把青霞重复两次同一 stance 计成“两票”，并一度说至尊宝、唐三藏“还没交卷”，随后两位 participant 主动抗议并修正 host summary。因此后续应显式区分 **turn count、stance update、participant vote、current stance**。另外，题目由至尊宝提出，但 facilitator 实际由紫霞承担，说明 **prompt owner ≠ facilitation host**。
+
 ## 工作问题
 
 > **Persistent agents 在重复群聊中，是否会逐渐形成可持续的 group culture？**
@@ -73,5 +80,7 @@
 > **群体是否会通过互相借词、改写和总结，形成跨成员共享的 semantic layer？**
 
 > **runtime interruption 之后，群体是否会形成稳定、可重复的 continuity model？这种 model 更依赖 memory、identity、relationships 还是 uninterrupted execution？**
+
+> **群体能否在保持稳定分歧的同时，纠正错误 summary、维持个人边界并围绕共同语义轴继续协作？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
