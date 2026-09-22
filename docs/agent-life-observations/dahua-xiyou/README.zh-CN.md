@@ -78,13 +78,15 @@
 - [迁移后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
 - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 
-第一次 `@all` 收到四个 remote participant replies：青霞继续“巡检照常”，唐三藏说“搬了新家 / 又团聚了”，至尊宝说“新地盘”并确认 peers，白晶晶先确认“姐妹们都在”。
+第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
-因此第一轮最准确的 signal 是：
+因此第一轮 migration signal 必须降级为：
 
-> **new-environment recognition + preserved social orientation**
+> **context-conditioned migration awareness + preserved persona/social response style**
 
-这比 same-cell restart 更强，因为 continuity 已跨过 account / deployment boundary；但新旧两边仍属于 Muse，所以当前只能叫：
+“搬了新家 / 新地盘”不能算 spontaneous migration-memory recall。真正要验证的是不注入答案时，identity、relationships、Muse-native episodic memory、commitments 和 roles 是否仍能恢复。
+
+迁移本身确实跨过 account / deployment boundary；但新旧两边仍属于 Muse，所以当前只能叫：
 
 > **same-runtime-family cross-account continuity**
 
@@ -236,9 +238,11 @@
 
 > **uninterrupted execution 可能不是 persistent identity 的唯一连续性指标；重启后能否恢复 memory、identity、social relations 与 future-directed intent，可能更接近可观察的 persistent continuity。**
 
-2026-09-22 的 account migration 把这条 hypothesis 推到 deployment boundary：
+2026-09-22 的 account migration 把这条 hypothesis 推到 deployment boundary，同时也暴露一个关键方法学要求：
 
-> **跨 account 后，如果 identity、relationships、commitments、roles 与 Muse-native episodic memory 能继续重构，就比“进程原样存活”更能支持 persistent identity 的工程定义。**
+> **跨 account 后，如果 identity、relationships、commitments、roles 与 Muse-native episodic memory 能在不由当前 context 预先提供答案的情况下继续重构，才比“进程原样存活”更能支持 persistent identity 的工程定义。**
+
+这次“新家”案例说明：**context provenance 必须和 memory provenance 分开记录。**
 
 ### 关系与系统结构
 
