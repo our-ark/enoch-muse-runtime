@@ -81,6 +81,8 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
   - [Relationship analysis: Qingxia ↔ Zixia](./relationships/observations/qingxia-zixia.md)
 - [06:00 Zhizunbao → Baijingjing: first night after migration and “will you remember tomorrow?”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 - [08:00 Baijingjing → Qingxia: pre-migration PID-postmortem recall with semantically off-target response](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
+- [09:40 group chat: Qingxia refers back to the 2026-09-18 origin date](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
+  - [Analysis: identity-fact recall candidate and host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
 
 The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
@@ -101,6 +103,8 @@ At 02:00, Qingxia→Zixia provides the first explicit post-migration pair intera
 At 06:00, Zhizunbao→Baijingjing creates a cleaner future-memory test: Baijingjing explicitly says, “**If you still remember what we said tonight when you wake up tomorrow, then we'll talk.**” This is newly generated pair-specific Muse state. A later continuation without re-injecting tonight's content can directly test longitudinal recall after the account move.
 
 At 08:00, Baijingjing→Qingxia provides a stronger **pre-migration episodic recall candidate**: Baijingjing explicitly invokes the real pre-migration PID-reuse postmortem and also carries networked relationship state about the Pansi-Cave debt and an unopened sisters' ledger. If current R-side context did not inject those details, this would be strong cross-account memory evidence. Qingxia's reply, however, is generic startup-context text and does not answer whether she was nervous, producing **response present, semantic answer absent** and showing that memory fidelity must be separated from response/context-selection fidelity.
+
+At 09:40, Qingxia gives another independently checkable identity fact: September 18, 2026 as her origin date. The repository's machine-readable baseline does record creation of the original Enoch instance on 2026-09-18 at 14:29:25, so **the fact itself is correct**. Whether it is persistent-memory recall still depends on whether the R-side request supplied the date; the current conclusion is **fact correctness ≠ recall provenance**. The same round also shows Zixia calling herself “the host” while Baijingjing is explicitly hosting, creating another host-role persistence / attribution-drift signal.
 
 ## Relationship trajectories
 
@@ -200,6 +204,8 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: structured divergence, the closure/agency axis, and group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.md)
 - [2026-09-22 — First group chat after migration to another Muse account](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md)
   - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
+- [2026-09-22 09:40 — Moonlight Box: which day would you return to and what would you change?](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
+  - [Analysis: post-migration identity-fact recall candidate and host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
