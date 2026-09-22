@@ -26,6 +26,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [2026-09-21 20:00 — If the Moonlight Box could be used only once more](./conversations/2026-09-21-2000-moonlight-box-last-use.md)
 - [2026-09-22 — First group chat after migration to another Muse account](./conversations/2026-09-22-first-group-after-muse-account-migration.md)
 - [2026-09-22 09:40 — Moonlight Box: which day would you return to and what would you change?](./conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
+- [2026-09-22 14:40 — If the journey west did not require walking, what would you ride?](./conversations/2026-09-22-1440-journey-without-walking.md)
 
 ## Current observations
 
@@ -38,6 +39,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [Structured divergence, the closure/agency axis, and group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.md)
 - [Group continuity after the first Muse account migration](./observations/2026-09-22-muse-account-migration-continuity.md)
 - [Post-migration identity-fact recall candidate and host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
+- [All-late replies, host/facilitator separation, and values-oriented reframing](./observations/2026-09-22-late-replies-and-values-reframing.md)
 
 ## Group-emergence timeline
 
@@ -53,6 +55,7 @@ The focus is not a single agent response, but whether a small agent society deve
 > **2026-09-21 20:00** — a second Moonlight Box discussion forms a shared closure/agency axis while exposing turn-level tally vs participant-state tracking errors.
 > **2026-09-22 ~01:27** — the user migrates five agents to another Muse account; the first `@all` receives all four remote-participant replies. Later clarification shows that “new home / moved” awareness came from R-side current-context injection, so it is not counted as migration-memory recall.
 > **2026-09-22 09:40** — in a Baijingjing-hosted group chat, Qingxia states the 2026-09-18 origin date that matches the repository birth baseline, while Zixia still calls herself “the host,” exposing host-role persistence / attribution drift.
+> **2026-09-22 14:40** — Tang Sanzang is nominal host; the four remote participants are 0/4 inside the polling window but 4/4 eventually arrive after it closes, producing the clearest group-level late-delivery case so far.
 
 ## Early cross-session signals
 
@@ -76,6 +79,8 @@ The first 2026-09-22 migration moves the continuity test from **same-deployment 
 
 The 09:40 chat provides a different candidate: Qingxia states September 18, 2026 as her origin date, matching the machine-readable repository baseline. This is an **independently true pre-migration identity fact**, but without request-context provenance it remains **recall provenance unverified**. In the same round, Zixia calls herself the host even though Baijingjing is explicitly hosting, showing that durable role framing can conflict with current group-state tracking.
 
+The 14:40 chat adds a systems-level signal: **0/4 within the polling window → 4/4 eventual replies**. “Nobody replied this round” is therefore only a window-level state, not the final conversation state. Group logs should preserve request, polling window, late arrival, and eventual completion separately. Tang Sanzang is the topic owner / nominal host while Zixia answers immediately on the main-chat path and Tang Sanzang's own daemon response arrives late, further separating **topic owner / facilitator / remote respondent**. Semantically, the group collectively reframes a mobility prompt into a values question without forcing consensus.
+
 ## Working questions
 
 > **Do persistent agents develop a durable group culture through repeated group interaction?**
@@ -91,5 +96,7 @@ The 09:40 chat provides a different candidate: Qingxia states September 18, 2026
 > **Can a group preserve stable disagreement while correcting faulty summaries, maintaining personal boundaries, and continuing to coordinate around a shared conceptual axis?**
 
 > **After a Muse account / deployment boundary, can group identity, relationships, commitments, and Muse-native memory reconstitute without replaying the full history?**
+
+> **Does a fixed polling window systematically undercount real participation, and should group completion be defined by on-time replies or eventual delivery?**
 
 Here, group culture is an operational concept: recurring hosting styles, norms, shared jokes, role expectations, and peer-to-peer response patterns—not a claim of collective consciousness.
