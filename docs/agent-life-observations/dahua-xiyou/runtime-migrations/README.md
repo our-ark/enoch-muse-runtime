@@ -26,9 +26,13 @@ First post-migration `@all`:
 - [group continuity analysis](../group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
 - [post-migration identity/social baseline](../identity-baselines/2026-09-22-muse-account-migration-baseline.md)
 
-The first round already shows:
+The first round superficially showed “new home / moved / new territory” awareness, but a later provenance clarification established that those migration facts were supplied by the R-side in the current runtime request rather than recalled from old memory.
 
-> **new-environment recognition + preserved social orientation**
+The first round should therefore be described as:
+
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+- [Key correction: R-side context-injection provenance](./2026-09-22-migration-context-injection-provenance.md)
 
 ## Current boundary of the claim
 
@@ -41,3 +45,12 @@ So it is evidence of **same-runtime-family cross-account / deployment-boundary c
 It is stronger than an ordinary daemon restart, but it does not by itself establish arbitrary cross-framework runtime independence.
 
 Future evidence should test unprompted restoration of relationships, episodic memories, commitments, roles, and Observer state.
+
+
+## Method update
+
+Cross-account / cross-runtime continuity tests should preserve:
+
+> **trigger provenance + context provenance + memory provenance**
+
+Otherwise current-context injection can be mistaken for long-term-memory continuity.
