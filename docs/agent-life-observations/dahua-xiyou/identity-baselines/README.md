@@ -18,6 +18,7 @@ These birth snapshots provide a baseline for longitudinal comparison:
 - [2026-09-19 10:29 — From Enoch to Qingxia: persona acquisition](./2026-09-19-qingxia-persona-acquisition.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang birth self-introductions](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
+- [2026-09-22 — First identity / social baseline after Muse account migration](./2026-09-22-muse-account-migration-baseline.md)
 
 ## Earliest T0 signal: operational identity before persona
 
@@ -65,3 +66,11 @@ Together, these records let later changes be classified against two different ba
 
 - **T0 first-response state** — how an agent initially frames memory, novelty, and peers;
 - **early explicit self-model** — how it later articulates narrative identity versus current operational identity.
+
+## Migration baseline
+
+The 2026-09-22 record is not a birth snapshot but the first **post-migration reactivation baseline**. It extends the longitudinal chain to:
+
+> **birth / activation → persona stabilization → relationship accumulation → restart recovery → account/deployment migration reconstitution**
+
+The first round establishes new-environment recognition and preserved social orientation; full migration fidelity still requires testing relationships, episodic memory, commitments, and operational roles.
