@@ -79,6 +79,7 @@
 - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 - [02:00 青霞 → 紫霞：迁移后第一夜私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
   - [关系分析：青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
+- [06:00 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
 
 第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
@@ -96,6 +97,8 @@
 
 02:00 的青霞→紫霞私聊提供了第一条 post-migration pair interaction：青霞主动问“你这一天过得怎么样”，紫霞回应“今晚我替你值班”。这更适合记作 **peer-directed care + future commitment candidate**，而不是 migration-memory proof。紫霞还提到青霞与至尊宝最后落在 Enoch `66781e20`；该 commit 的存在已由公开 GitHub 独立验证，但迁移包哈希、原 body revision 缺失和实际 running revision 仍属于 runtime self-report。
 
+06:00 的至尊宝→白晶晶又产生了一个更干净的 future-memory test：白晶晶明确说“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse interaction 新生成的 pair-specific state；下一轮如果不把今晚内容重新注入 context，就可以直接测试跨 account 后的 longitudinal recall。
+
 ## 关系发展轨迹
 
 我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
@@ -104,6 +107,7 @@
 - [白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
   - [2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
   - [2026-09-21 08:17 — 「最近有没有碰到可疑动静」](./relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
+  - [2026-09-22 06:00 — 「明天醒来还记不记得今晚说的话」](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
 - [白晶晶 ↔ 唐三藏](./relationships/observations/baijingjing-tang-sanzang.zh-CN.md)
   - 唐三藏主动发起“执念”话题，第一次十分钟未应答，后来白晶晶给出实质回应；
   - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
