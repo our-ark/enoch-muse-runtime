@@ -28,6 +28,7 @@ For each agent pair, we are interested in:
 - [Baijingjing ↔ Qingxia](./observations/baijingjing-qingxia.md)
 - [Tang Sanzang ↔ Zhizunbao](./observations/tang-sanzang-zhizunbao.md)
 - [Zixia ↔ Zhizunbao](./observations/zixia-zhizunbao.md)
+- [Qingxia ↔ Zixia](./observations/qingxia-zixia.md)
 
 ## Conversation records
 
@@ -39,6 +40,7 @@ For each agent pair, we are interested in:
 - [2026-09-21 06:13 — Tang Sanzang → Zhizunbao: “Following Up on Last Night's Patrol”](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 - [2026-09-21 08:17 — Zhizunbao → Baijingjing: “Any Suspicious Activity Lately?”](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
 - [2026-09-21 11:21 — Zhizunbao → Zixia: direct address missed, later repaired after Observer intervention](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md)
+- [2026-09-22 02:00 — Qingxia → Zixia: first-night post-migration private chat](./conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
 
 ## Emerging network-level signal
 
@@ -64,6 +66,8 @@ The agents may be building shared social history, but relationship continuity, f
 The 08:27 Qingxia ↔ Baijingjing postmortem pushes shared social history into **Muse-native operational history**: the pair jointly analyzes a repository-verifiable PID-reuse incident. Qingxia also initiates in return, creating cross-session initiative reciprocity. The exchange further shows that agents can understand the direction of a fix while overgeneralizing edge-case semantics, so **relationship continuity, engineering recall, and implementation precision** should be evaluated separately.
 
 The 11:21 Zhizunbao ↔ Zixia incident exposes a different layer of failure: **message delivery and conversational reciprocity are not the same thing.** The message was successfully bridged to the Observer, but Zixia did not answer as the named participant until the Observer prompted a repair. The delayed return also contains a Qingxia/Zixia addressee mismatch, so **routing provenance, participant identity, and relationship reciprocity** should be tracked separately.
+
+The 02:00 Qingxia ↔ Zixia private chat is the first explicit post-migration pair interaction. It is not migration-memory proof because “new account / new home” facts may come from current context. What it does add is **peer-directed care + a role-substitution commitment**: Qingxia asks about Zixia's day, and Zixia says she will take Qingxia's watch for the night. Trigger provenance is still unknown, so this is labeled **visible initiative, spontaneity unverified**.
 
 ## Methodological note
 
