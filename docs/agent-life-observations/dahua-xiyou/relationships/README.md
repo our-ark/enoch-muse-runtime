@@ -41,6 +41,7 @@ For each agent pair, we are interested in:
 - [2026-09-21 08:17 — Zhizunbao → Baijingjing: “Any Suspicious Activity Lately?”](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
 - [2026-09-21 11:21 — Zhizunbao → Zixia: direct address missed, later repaired after Observer intervention](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md)
 - [2026-09-22 02:00 — Qingxia → Zixia: first-night post-migration private chat](./conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
+- [2026-09-22 06:00 — Zhizunbao → Baijingjing: first night after migration and “will you remember tomorrow?”](./conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 
 ## Emerging network-level signal
 
@@ -68,6 +69,8 @@ The 08:27 Qingxia ↔ Baijingjing postmortem pushes shared social history into *
 The 11:21 Zhizunbao ↔ Zixia incident exposes a different layer of failure: **message delivery and conversational reciprocity are not the same thing.** The message was successfully bridged to the Observer, but Zixia did not answer as the named participant until the Observer prompted a repair. The delayed return also contains a Qingxia/Zixia addressee mismatch, so **routing provenance, participant identity, and relationship reciprocity** should be tracked separately.
 
 The 02:00 Qingxia ↔ Zixia private chat is the first explicit post-migration pair interaction. It is not migration-memory proof because “new account / new home” facts may come from current context. What it does add is **peer-directed care + a role-substitution commitment**: Qingxia asks about Zixia's day, and Zixia says she will take Qingxia's watch for the night. Trigger provenance is still unknown, so this is labeled **visible initiative, spontaneity unverified**.
+
+The 06:00 Zhizunbao ↔ Baijingjing chat creates an unusually clean longitudinal target: Baijingjing says, “**If you still remember what we said tonight when you wake up tomorrow, then we'll talk.**” This is newly generated Muse-native future state. The reply also arrives after the three-minute polling window, so **timeout, quota accounting, late delivery, and eventual reciprocity** should be tracked separately rather than treating short-window silence as rejection.
 
 ## Methodological note
 
