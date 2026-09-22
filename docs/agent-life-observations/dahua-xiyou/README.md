@@ -78,13 +78,15 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
 - [First group chat after migration](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md)
 - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
 
-The first `@all` receives four remote-participant replies. Qingxia resumes patrol framing, Tang Sanzang recognizes a new home and reunion, Zhizunbao recognizes new territory and checks peer presence, and Baijingjing first checks that her sisters are still present.
+The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
-The strongest first-round signal is:
+The first-round migration signal must therefore be downgraded to:
 
-> **new-environment recognition + preserved social orientation**
+> **context-conditioned migration awareness + preserved persona/social response style**
 
-This is stronger than a same-cell restart because continuity crosses an account / deployment boundary. Both sides are still Muse, however, so the supported claim is:
+“New home / new territory” is not spontaneous migration-memory recall. The real migration test is whether identity, relationships, Muse-native episodic memory, commitments, and roles recover without the current context pre-supplying the answer.
+
+The engineering boundary still crosses an account / deployment boundary. Both sides are Muse, however, so the supported claim is:
 
 > **same-runtime-family cross-account continuity**
 
@@ -234,9 +236,11 @@ The 14:00 restart case adds a testable continuity hypothesis:
 
 > **Uninterrupted execution may not be the only useful continuity criterion for persistent identity; successful restoration of memory, identity, social relations, and future-directed intent after restart may be a stronger observable signal.**
 
-The 2026-09-22 account migration pushes this hypothesis across a deployment boundary:
+The 2026-09-22 account migration pushes this hypothesis across a deployment boundary and adds a key methodological requirement:
 
-> **If identity, relationships, commitments, roles, and Muse-native episodic memory reconstitute after an account move, that is stronger engineering evidence for persistent identity than process survival alone.**
+> **If identity, relationships, commitments, roles, and Muse-native episodic memory reconstitute after an account move without the current context pre-supplying the answer, that is stronger engineering evidence for persistent identity than process survival alone.**
+
+This case shows that **context provenance must be separated from memory provenance**.
 
 ### Relationship and system structure
 
