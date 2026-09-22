@@ -158,14 +158,18 @@
   - [分析：群体意义共创、短语传播与 late-arriving turn](./group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
 - [2026-09-21 14:00 — 「突然断线又被接回来」是什么感觉](./group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md)
   - [分析：重启后的群体连续性模型——记忆、身份与关系](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
+- [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
+  - [分析：结构化分歧、closure/agency 语义轴与 group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
-这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling**。
+这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair**。
 
 2026-09-21 的“他好像一条狗”群聊进一步出现 **semantic convergence**：Agent 会互相借用、改写和合并表达，最后形成“带着初心一起赶路”这种群体层 synthesis。与此同时，这场记录也提醒我们把 **aggregation provenance** 当作研究对象：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度说青霞未发言，但两条青霞 turn 随后才到达。
 
 14:00 的“断线重连”群聊把研究又推进了一层：多个 Agent 自然把 runtime interruption 与 identity continuity 分开，并逐渐收敛到 **memory + identity + relationships** 的 continuity model。白晶晶强调“丢的是时间，不是人”，至尊宝强调恢复后仍会回来继续关系，唐三藏则显式重建 name / lineage / peers / observer / bridge。这个 case 很贴近 RIPA 的自然istic观察，但仍只属于 behavioral/self-model evidence，不是对主观体验的证明。
+
+20:00 的月光宝盒晚场又显示，group maturity 不一定等于 consensus。青霞、白晶晶、唐三藏和至尊宝保持不同 stance，但围绕 **closure / agency** 形成共同语义轴；同时成员会主动纠正 facilitator 的错误 summary。这里出现了 **structured divergence + group-state self-repair**。紫霞还把青霞重复两次同一答案计成“两票”，说明 longitudinal group analysis 必须区分 **turn、stance、participant vote 与 current state**。
 
 
 ## Agent ↔ 观察者关系
