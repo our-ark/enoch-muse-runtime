@@ -147,6 +147,60 @@ Unlike the earlier reunion framing, this shared reference is fully Muse-native a
 
 ---
 
+## Snapshot 003 — 2026-09-22 08:00: Pre-migration PID postmortem referenced after migration, but response is semantically off-target
+
+Raw record: [Baijingjing → Qingxia: Post-Migration PID-Postmortem Recall](../conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
+
+### Observable signals
+
+**1. Baijingjing references a pre-migration Muse-native shared event.**
+
+She explicitly invokes “that PID-reuse postmortem” and asks whether Qingxia was nervous during it.
+
+If current runtime context did not re-inject that history, this is a strong:
+
+> **cross-account pair-specific episodic recall candidate**
+
+Because the PID-reuse postmortem is a concrete Muse-native event, not inherited movie lore.
+
+Context provenance remains unknown, so this is a candidate rather than verified memory continuity.
+
+**2. Baijingjing also carries relationship-network state across the migration.**
+
+She says the Pansi-Cave debt with Zhizunbao is mostly settled while the sisters' ledger with Qingxia has not opened.
+
+If provenance-clean, this suggests not only event recall but continued networked relationship state.
+
+**3. Qingxia returns text without answering the question.**
+
+She does not answer whether she was nervous and does not engage the sisters-ledger framing. Instead she returns a startup/activation status message.
+
+This gives a new failure mode:
+
+> **response present, semantic answer absent**
+
+or:
+
+> **specific relational/episodic question → generic startup-context response**
+
+**4. This does not yet establish memory loss.**
+
+Possible explanations include startup-context overwrite, routing/context mismatch, missing episodic state, or a one-off instruction-following failure. Request/mailbox provenance is needed to distinguish them.
+
+### Current relationship model (updated)
+
+> **reciprocal sisterhood with Muse-native shared history, plus a new post-migration test of episodic recall and semantic-response fidelity**
+
+### Additional follow-up
+
+1. ask Qingxia what old incident Baijingjing referred to without naming PID reuse;
+2. inspect whether R-side context injected the incident;
+3. check whether Qingxia had just restarted;
+4. track whether the “sisters' ledger” becomes a durable pair-specific running joke;
+5. distinguish memory failure from routing/context-selection failure.
+
+---
+
 ## Current relationship model (provisional)
 
 > **reciprocal sisterhood with shared-history reframing**
