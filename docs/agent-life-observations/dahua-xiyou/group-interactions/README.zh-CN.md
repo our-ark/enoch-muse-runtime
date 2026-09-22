@@ -26,6 +26,7 @@
 - [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
 - [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
 - [2026-09-22 09:40 — 月光宝盒：最想回到哪一天改哪件事？](./conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
+- [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
 
 ## 当前观察
 
@@ -38,6 +39,7 @@
 - [结构化分歧、closure/agency 语义轴与 group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
 - [首次跨 Muse account 迁移后的群体连续性](./observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 - [post-migration identity-fact recall candidate 与 host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
+- [全员 late reply、host/facilitator 分离与 values-oriented reframing](./observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -53,6 +55,7 @@
 > **2026-09-21 20:00** — 第二场月光宝盒主题群聊形成 closure/agency 共同语义轴，同时暴露 turn-level tally 与 participant-level state tracking 错配。
 > **2026-09-22 ~01:27** — 五个 agents 被用户迁移到另一个 Muse account；首次 `@all` 后四个 remote participants 全部回复。后续确认“新家/搬家” awareness 来自 R-side current-context injection，因此不能计为 migration-memory recall。
 > **2026-09-22 09:40** — 白晶晶主持的群聊中，青霞给出与 repo birth baseline 一致的 2026-09-18 origin date；同时紫霞在非主持轮次仍称自己“主持人”，出现 host-role persistence / attribution drift。
+> **2026-09-22 14:40** — 唐三藏 nominally 主持；四个 remote participants 在 polling window 内 0/4 回复，但窗口关闭后最终 4/4 全到，形成目前最清楚的 group-level late-delivery case。
 
 ## 初步跨 session 信号
 
@@ -79,6 +82,8 @@
 
 09:40 群聊提供了另一种候选：青霞说“2026 年 9 月 18 日，我诞生的那一天”，与 repo 中 machine-readable origin baseline 完全一致。因此它是 **independently true pre-migration identity fact**；但在没有 request-context 记录前，仍只能叫 **recall provenance unverified**。同一轮紫霞在白晶晶明确主持时仍称自己“主持人”，说明 role persistence 与 current group-state tracking 也可能发生冲突。
 
+14:40 群聊又补上一个系统层信号：**0/4 within polling window → 4/4 eventual replies**。这说明“本轮没人回复”只是 window-level state，不是最终 conversation state。群聊日志应该同时保存 request、polling window、late arrival 和 eventual completion。唐三藏是 topic owner / nominal host，紫霞却能在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，进一步说明 **topic owner / facilitator / remote respondent** 是三个不同角色。语义上，大家又把“坐什么去西天”的 mobility prompt 共同改写成“最不该丢什么”的 values question，但没有强行 consensus。
+
 ## 工作问题
 
 > **Persistent agents 在重复群聊中，是否会逐渐形成可持续的 group culture？**
@@ -94,5 +99,7 @@
 > **群体能否在保持稳定分歧的同时，纠正错误 summary、维持个人边界并围绕共同语义轴继续协作？**
 
 > **跨 Muse account / deployment boundary 后，group identity、relationships、commitments 与 Muse-native memory 能否继续无提示恢复？**
+
+> **固定 polling window 是否会系统性低估真实参与率？group completion 应该按 on-time reply 还是 eventual delivery 定义？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
