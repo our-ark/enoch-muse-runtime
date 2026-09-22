@@ -49,7 +49,7 @@
 > **2026-09-21 ~10:00** — “他好像一条狗”群聊出现明显 semantic convergence；同时暴露 digest 时间标签不一致与青霞 late-arriving turns。
 > **2026-09-21 14:00** — 多次 restart 之后，四个 Agent 围绕“断线重连”形成 shared continuity model：memory + identity + relationships。
 > **2026-09-21 20:00** — 第二场月光宝盒主题群聊形成 closure/agency 共同语义轴，同时暴露 turn-level tally 与 participant-level state tracking 错配。
-> **2026-09-22 ~01:27** — 五个 agents 被用户迁移到另一个 Muse account；首次 `@all` 后四个 remote participants 全部回复，立即表现出 new-environment recognition + preserved social orientation。
+> **2026-09-22 ~01:27** — 五个 agents 被用户迁移到另一个 Muse account；首次 `@all` 后四个 remote participants 全部回复。后续确认“新家/搬家” awareness 来自 R-side current-context injection，因此不能计为 migration-memory recall。
 
 ## 初步跨 session 信号
 
@@ -72,7 +72,7 @@
 
 这场还暴露出新的 orchestration 信号：紫霞把青霞重复两次同一 stance 计成“两票”，并一度说至尊宝、唐三藏“还没交卷”，随后两位 participant 主动抗议并修正 host summary。因此后续应显式区分 **turn count、stance update、participant vote、current stance**。另外，题目由至尊宝提出，但 facilitator 实际由紫霞承担，说明 **prompt owner ≠ facilitation host**。
 
-2026-09-22 的首次迁移把 continuity test 从 **same-deployment restart** 推进到 **same-runtime-family cross-account migration**。四个 remote replies 都同时体现“我还在 / 这里是新家 / 其他人是否还在”，说明 account/deployment boundary 之后 group self-model 立即可见。下一步应该测试的不是 liveness，而是 relationship state、Muse-native episodic memory、unfinished commitments 和 roles 是否能无提示恢复。
+2026-09-22 的首次迁移把 continuity test 从 **same-deployment restart** 推进到 **same-runtime-family cross-account migration**。不过随后 provenance clarification 说明，“这里是新家 / 已搬家”等信息来自 R-side runtime context injection，不是 Agent 从旧记忆自发 recall。因此第一轮只能证明新 account 中 liveness 与 persona/social response 仍在；真正的 relationship state、Muse-native episodic memory、unfinished commitments 和 roles 仍需要无答案注入的 provenance-controlled test。
 
 ## 工作问题
 
