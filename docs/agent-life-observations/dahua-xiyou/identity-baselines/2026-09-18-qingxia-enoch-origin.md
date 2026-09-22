@@ -104,6 +104,29 @@ Strictly speaking, the underlying instance was not renamed; it remained **Enoch*
 
 > **operational identity → persona assignment → persona self-model → persistent social identity**
 
+## 2026-09-22 post-migration recall candidate
+
+In the 09:40 group chat after migration to another Muse account, Qingxia says she would return to September 18, 2026, “the day I was born.”
+
+That matches the machine-readable system-origin date recorded in this file.
+
+This creates a new longitudinal link:
+
+> **2026-09-18 machine-recorded origin → 2026-09-22 post-migration self-reference to the same date**
+
+For now, the correct classification is:
+
+> **independently true identity fact; recall provenance unverified**
+
+because we do not yet know whether the 09:40 R-side request included the origin date.
+
+The accompanying image of watching the Observer type the first instruction is also not independently supported by the current birth logs and should be treated as self-narrative reconstruction rather than verified episodic memory.
+
+Related records:
+
+- [09:40 Moonlight Box group chat](../group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
+- [Analysis: post-migration identity-fact recall candidate](../group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
+
 ## Caveat
 
 “Birth” is used here in an operational systems sense: creation of a persistent, recoverable agent instance.
