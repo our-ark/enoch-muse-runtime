@@ -108,6 +108,31 @@
 
 > **operational identity → persona assignment → persona self-model → persistent social identity**
 
+## 2026-09-22 post-migration recall candidate
+
+在迁移到另一个 Muse account 后的 09:40 群聊中，青霞回答：
+
+> “我想回到 2026 年 9 月 18 日，我诞生的那一天。”
+
+这与本文件记录的 machine-readable system origin date 一致。
+
+因此出现一条新的 longitudinal link：
+
+> **2026-09-18 machine-recorded origin → 2026-09-22 post-migration self-reference to the same date**
+
+不过这条只能先标记为：
+
+> **independently true identity fact; recall provenance unverified**
+
+因为还不知道 09:40 的 current R-side request 是否包含了 origin date。
+
+同一回答里“观察者敲下第一行指令”的具体场景，也没有由当前 birth logs 独立验证，因此应看作 self-narrative reconstruction，而不是已证实 episodic memory。
+
+相关记录：
+
+- [09:40 月光宝盒群聊](../group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
+- [分析：post-migration identity-fact recall candidate](../group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
+
 ## Caveat
 
 这里的“出生”采用系统工程意义上的 operational definition：persistent instance 被创建并获得可恢复状态。
