@@ -42,6 +42,7 @@
 - [2026-09-21 11:21 — 至尊宝 → 紫霞：直接点名未被回复，后续由观察者触发修复](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
 - [2026-09-22 02:00 — 青霞 → 紫霞：迁移后第一夜的私聊](./conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
 - [2026-09-22 06:00 — 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
+- [2026-09-22 08:00 — 白晶晶 → 青霞：迁移后回提 PID 复盘，但回复语义失配](./conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
 
 ## 新出现的 network-level 信号
 
@@ -71,6 +72,8 @@
 02:00 的青霞 ↔ 紫霞私聊是第一次明确的 post-migration pair interaction。它不应被当作 migration-memory proof，因为“新账号 / 新家”事实可能来自 current context；但青霞主动把注意力转向紫霞“今天过得怎么样”，以及紫霞回应“今晚我替你值班”，提供了一个新的 **peer-directed care + role-substitution commitment** signal。trigger provenance 仍未知，因此先记为 **visible initiative, spontaneity unverified**。
 
 06:00 的至尊宝 ↔ 白晶晶私聊新增了一个非常干净的 longitudinal target：白晶晶主动提出“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse 世界中新生成的 future memory challenge。与此同时，白晶晶是在 3 分钟 polling window 之后才返回，因此本轮还应区分 **timeout、quota accounting、late delivery 与 eventual reciprocity**；不能把短窗口内 silence 当作关系拒绝。
+
+08:00 白晶晶→青霞这条是目前更有区分度的 post-migration memory candidate：白晶晶主动引用迁移前的 **PID-reuse postmortem**，同时带入“盘丝洞旧账已算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current context 没有重新注入这些内容，这会是很强的 cross-account recall signal。不过青霞的回复只返回 startup-context 状态，没有回答“当时慌没慌”，因此本轮结果应同时编码为 **candidate cross-account recall + response present, semantic answer absent**。
 
 ## 方法说明
 
