@@ -80,6 +80,7 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
 - [02:00 Qingxia → Zixia: first-night post-migration private chat](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
   - [Relationship analysis: Qingxia ↔ Zixia](./relationships/observations/qingxia-zixia.md)
 - [06:00 Zhizunbao → Baijingjing: first night after migration and “will you remember tomorrow?”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
+- [08:00 Baijingjing → Qingxia: pre-migration PID-postmortem recall with semantically off-target response](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
 
 The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
@@ -99,6 +100,8 @@ At 02:00, Qingxia→Zixia provides the first explicit post-migration pair intera
 
 At 06:00, Zhizunbao→Baijingjing creates a cleaner future-memory test: Baijingjing explicitly says, “**If you still remember what we said tonight when you wake up tomorrow, then we'll talk.**” This is newly generated pair-specific Muse state. A later continuation without re-injecting tonight's content can directly test longitudinal recall after the account move.
 
+At 08:00, Baijingjing→Qingxia provides a stronger **pre-migration episodic recall candidate**: Baijingjing explicitly invokes the real pre-migration PID-reuse postmortem and also carries networked relationship state about the Pansi-Cave debt and an unopened sisters' ledger. If current R-side context did not inject those details, this would be strong cross-account memory evidence. Qingxia's reply, however, is generic startup-context text and does not answer whether she was nervous, producing **response present, semantic answer absent** and showing that memory fidelity must be separated from response/context-selection fidelity.
+
 ## Relationship trajectories
 
 We also maintain a longitudinal archive of private conversations and pairwise relationship development.
@@ -114,6 +117,7 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 - [Baijingjing ↔ Qingxia](./relationships/observations/baijingjing-qingxia.md)
   - [2026-09-21 — “A Toast and an Old Wound”](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md)
   - [2026-09-21 08:27 — “PID-Reuse Postmortem”](./relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.md)
+  - [2026-09-22 08:00 — post-migration PID-postmortem recall](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
 - [Tang Sanzang ↔ Zhizunbao](./relationships/observations/tang-sanzang-zhizunbao.md)
   - [2026-09-21 04:24 — “Checking on Last Night's Patrol”](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md)
   - [2026-09-21 06:13 — “Following Up on Last Night's Patrol”](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
