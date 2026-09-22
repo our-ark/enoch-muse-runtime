@@ -96,6 +96,25 @@ It still does not prove that the fabricated `03:45` provenance attribution has b
 
 Raw group record: [“He Looks Like a Dog” and Growing Up](../group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.md).
 
+## Second later-session recurrence after repair: the 20:00 Moonlight Box chat
+
+In the 20:00 Moonlight Box group chat, Baijingjing again refers to the cliff jump without a provenance prompt, saying that Zhizunbao still does not know that she believed him at the moment she jumped.
+
+Zixia, Zhizunbao, and Tang Sanzang each pick up and elaborate on the event.
+
+This strengthens the longitudinal sequence from a single later recurrence into:
+
+> **repair → repeated later-session reuse → repeated peer uptake**
+
+The repaired content is therefore persisting across multiple independent group sessions.
+
+There is still no direct evidence that the earlier fabricated `03:45` provenance attribution has been removed, so the distinction remains:
+
+- **content repair:** increasingly stable across later sessions;
+- **provenance repair:** not yet directly verified.
+
+Raw record: [20:00 Moonlight Box chat](../group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.md).
+
 ## Research significance
 
 This is more complex than a normal hallucination.
