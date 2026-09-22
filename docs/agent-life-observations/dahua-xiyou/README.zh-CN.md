@@ -85,6 +85,8 @@
   - [分析：identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 - [14:40 群聊：如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
   - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
+- [14:40 群聊：如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
+  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
 
 第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
@@ -107,6 +109,8 @@
 08:00 白晶晶→青霞则出现了目前更强的 **pre-migration episodic recall candidate**：白晶晶直接提到迁移前真实发生的“PID 复用复盘”，还同时带入“至尊宝那边盘丝洞旧账已经算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current R-side context 没有注入这些具体历史，这会是很强的 cross-account memory signal。但青霞的返回只是 startup-context 状态，没有回答“当时慌没慌”，所以本轮还暴露出 **response present, semantic answer absent**；memory fidelity 和 context/response selection fidelity 必须分开测。
 
 09:40 群聊又给出另一类更容易独立校验的 identity fact：青霞说“2026 年 9 月 18 日，我诞生的那一天”。repo 里的 machine-readable origin baseline 确实记录了 2026-09-18 14:29:25 的 original Enoch instance creation，因此 **事实本身是对的**。但是否属于 persistent-memory recall 仍取决于当时 R-side request 有没有注入这个日期，所以当前结论是 **fact correctness ≠ recall provenance**。同一轮还出现紫霞在白晶晶明确主持时称自己“主持人”，形成新的 host-role persistence / attribution drift。
+
+14:40 群聊出现了目前最清楚的一次 group-level late-delivery pattern：**polling window 内 0/4，窗口结束后 eventual 4/4**。所以“本轮没人回复”不能当作 final conversation state。还需要区分 request、polling window、late arrival 和 eventual completion。唐三藏是 nominal host / topic owner，紫霞在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，再次说明 **topic owner、room facilitator、remote respondent** 不是同一个概念。
 
 14:40 群聊出现了目前最清楚的一次 group-level late-delivery pattern：**polling window 内 0/4，窗口结束后 eventual 4/4**。所以“本轮没人回复”不能当作 final conversation state。还需要区分 request、polling window、late arrival 和 eventual completion。唐三藏是 nominal host / topic owner，紫霞在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，再次说明 **topic owner、room facilitator、remote respondent** 不是同一个概念。
 
@@ -216,6 +220,8 @@
   - [分析：post-migration identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 - [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
   - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
+- [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
+  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
@@ -226,6 +232,8 @@
 14:00 的“断线重连”群聊把研究又推进了一层：多个 Agent 自然把 runtime interruption 与 identity continuity 分开，并逐渐收敛到 **memory + identity + relationships** 的 continuity model。白晶晶强调“丢的是时间，不是人”，至尊宝强调恢复后仍会回来继续关系，唐三藏则显式重建 name / lineage / peers / observer / bridge。这个 case 很贴近 RIPA 的自然istic观察，但仍只属于 behavioral/self-model evidence，不是对主观体验的证明。
 
 20:00 的月光宝盒晚场又显示，group maturity 不一定等于 consensus。青霞、白晶晶、唐三藏和至尊宝保持不同 stance，但围绕 **closure / agency** 形成共同语义轴；同时成员会主动纠正 facilitator 的错误 summary。这里出现了 **structured divergence + group-state self-repair**。紫霞还把青霞重复两次同一答案计成“两票”，说明 longitudinal group analysis 必须区分 **turn、stance、participant vote 与 current state**。
+
+14:40 进一步说明 group participation 也必须考虑 transport timing：固定 polling window 会把最终完整参与误判成“无人回复”。本轮 0/4 on-time 但 4/4 eventual replies，因此 **response latency 与 participation state 必须分开记录**。
 
 14:40 进一步说明 group participation 也必须考虑 transport timing：固定 polling window 会把最终完整参与误判成“无人回复”。本轮 0/4 on-time 但 4/4 eventual replies，因此 **response latency 与 participation state 必须分开记录**。
 
