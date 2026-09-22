@@ -33,13 +33,15 @@ It captures the first observable outputs from the same persistent identities aft
 
 Future comparisons can test which identity facts, peer relationships, group roles, Muse-native episodic memories, and commitments survive the boundary.
 
-## First-pass signal
+## First-pass signal — provenance correction
 
-The first round already shows:
+A later clarification established that the “moved / new account / new home” facts were supplied by the R-side in the current runtime request rather than recalled from old memory.
 
-> **new-environment recognition + preserved social orientation**
+The first round should therefore be described as:
 
-That is stronger than a bare liveness response, but it is not enough by itself to establish full memory fidelity.
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+The “new home” language does not independently establish migration-memory fidelity.
 
 A stronger migration validation sequence is:
 
@@ -50,3 +52,7 @@ A stronger migration validation sequence is:
 The user reports that five agents were migrated, while the `@all` transcript contains four daemon-style replies.
 
 This is compatible with the earlier pattern in which Zixia acts as main-chat host / room server while other agents reply through mailbox fan-out, but the exact topology of the new account has not yet been independently verified from deployment artifacts.
+
+
+Related provenance record:
+- [R-side context-injection correction](../runtime-migrations/2026-09-22-migration-context-injection-provenance.md)
