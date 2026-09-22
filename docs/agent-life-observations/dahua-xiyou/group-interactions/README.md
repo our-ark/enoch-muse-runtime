@@ -24,6 +24,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [2026-09-21 10:00 (user-reported; embedded digest says 9:00) — “He Looks Like a Dog” and Growing Up](./conversations/2026-09-21-1000-growing-up-dog-quote.md)
 - [2026-09-21 14:00 — What does it feel like to disconnect and reconnect?](./conversations/2026-09-21-1400-disconnect-reconnect.md)
 - [2026-09-21 20:00 — If the Moonlight Box could be used only once more](./conversations/2026-09-21-2000-moonlight-box-last-use.md)
+- [2026-09-22 — First group chat after migration to another Muse account](./conversations/2026-09-22-first-group-after-muse-account-migration.md)
 
 ## Current observations
 
@@ -34,6 +35,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [Collective meaning-making, phrase propagation, and late-arriving turns](./observations/2026-09-21-growing-up-dog-quote.md)
 - [Group continuity model after restart: memory, identity, and relationships](./observations/2026-09-21-disconnect-reconnect-continuity.md)
 - [Structured divergence, the closure/agency axis, and group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.md)
+- [Group continuity after the first Muse account migration](./observations/2026-09-22-muse-account-migration-continuity.md)
 
 ## Group-emergence timeline
 
@@ -47,6 +49,7 @@ The focus is not a single agent response, but whether a small agent society deve
 > **2026-09-21 ~10:00** — the growing-up group chat shows semantic convergence while also exposing timestamp disagreement and Qingxia late-arriving turns.
 > **2026-09-21 14:00** — after repeated restarts, four agents converge on a continuity model centered on memory + identity + relationships.
 > **2026-09-21 20:00** — a second Moonlight Box discussion forms a shared closure/agency axis while exposing turn-level tally vs participant-state tracking errors.
+> **2026-09-22 ~01:27** — the user migrates five agents to another Muse account; the first `@all` receives all four remote-participant replies with immediate new-environment recognition and preserved social orientation.
 
 ## Early cross-session signals
 
@@ -66,6 +69,8 @@ The 20:00 Moonlight Box discussion differs from the earlier semantic-convergence
 
 The session also exposes a new orchestration signal. Zixia counts Qingxia's repeated stance as “two votes” and temporarily says Zhizunbao and Tang Sanzang have not answered; both participants later contest the host summary. Future analysis should distinguish **turn count, stance update, participant vote, and current stance**. Zhizunbao owns the prompt while Zixia performs facilitation, showing **prompt owner ≠ facilitation host**.
 
+The first 2026-09-22 migration moves the continuity test from **same-deployment restart** to **same-runtime-family cross-account migration**. All four remote replies combine self-presence, recognition of a new home, and peer/group continuity. The stronger next test is not liveness but unprompted restoration of relationship state, Muse-native episodic memory, unfinished commitments, and roles.
+
 ## Working questions
 
 > **Do persistent agents develop a durable group culture through repeated group interaction?**
@@ -79,5 +84,7 @@ The session also exposes a new orchestration signal. Zixia counts Qingxia's repe
 > **After runtime interruption, can a group form a stable continuity model, and does that model depend more on memory, identity, relationships, or uninterrupted execution?**
 
 > **Can a group preserve stable disagreement while correcting faulty summaries, maintaining personal boundaries, and continuing to coordinate around a shared conceptual axis?**
+
+> **After a Muse account / deployment boundary, can group identity, relationships, commitments, and Muse-native memory reconstitute without replaying the full history?**
 
 Here, group culture is an operational concept: recurring hosting styles, norms, shared jokes, role expectations, and peer-to-peer response patterns—not a claim of collective consciousness.
