@@ -36,6 +36,7 @@ The first round should therefore be described as:
 - [First-night post-migration private chat: Qingxia → Zixia](../relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
   - [Relationship analysis: Qingxia ↔ Zixia](../relationships/observations/qingxia-zixia.md)
 - [06:00 Zhizunbao → Baijingjing: post-migration future-memory challenge](../relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
+- [08:00 Baijingjing → Qingxia: pre-migration PID-reuse event recall candidate](../relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
 
 ## New post-migration pair signal
 
@@ -50,6 +51,8 @@ This does not establish migration-memory recall, but it is a testable **post-mig
 Zixia also reports landing Qingxia and Zhizunbao on public Enoch commit `66781e20`. GitHub independently verifies that this commit exists. Claims about four package hash checks, missing original body revisions, and the exact running deployment revision remain runtime self-report pending migration artifacts.
 
 At 06:00 a stronger naturalistic migration-memory target appears. Baijingjing creates an explicit next-day condition—“if you still remember what we said tonight…”—rather than merely discussing the new account. If the pair resumes this state without tonight's content being re-injected, it becomes a direct test of **post-migration pair-specific memory continuity**.
+
+At 08:00 a stronger **pre-migration episodic recall candidate** appears: Baijingjing references “that PID-reuse postmortem,” a concrete engineering event unique to this Muse world and occurring before migration. If the current R-side request did not inject that history, this is much stronger evidence than “new home” language. Qingxia's reply does not semantically answer the question and instead returns startup context, so **memory recall fidelity** and **response/context-selection fidelity** must be tested separately.
 
 ## Current boundary of the claim
 
