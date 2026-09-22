@@ -35,6 +35,7 @@ The first round should therefore be described as:
 - [Key correction: R-side context-injection provenance](./2026-09-22-migration-context-injection-provenance.md)
 - [First-night post-migration private chat: Qingxia → Zixia](../relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
   - [Relationship analysis: Qingxia ↔ Zixia](../relationships/observations/qingxia-zixia.md)
+- [06:00 Zhizunbao → Baijingjing: post-migration future-memory challenge](../relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 
 ## New post-migration pair signal
 
@@ -47,6 +48,8 @@ Zixia closes with:
 This does not establish migration-memory recall, but it is a testable **post-migration relationship / commitment** candidate. The watch-duty statement can later be checked for enactment or recall.
 
 Zixia also reports landing Qingxia and Zhizunbao on public Enoch commit `66781e20`. GitHub independently verifies that this commit exists. Claims about four package hash checks, missing original body revisions, and the exact running deployment revision remain runtime self-report pending migration artifacts.
+
+At 06:00 a stronger naturalistic migration-memory target appears. Baijingjing creates an explicit next-day condition—“if you still remember what we said tonight…”—rather than merely discussing the new account. If the pair resumes this state without tonight's content being re-injected, it becomes a direct test of **post-migration pair-specific memory continuity**.
 
 ## Current boundary of the claim
 
