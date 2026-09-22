@@ -79,6 +79,7 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
 - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
 - [02:00 Qingxia → Zixia: first-night post-migration private chat](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
   - [Relationship analysis: Qingxia ↔ Zixia](./relationships/observations/qingxia-zixia.md)
+- [06:00 Zhizunbao → Baijingjing: first night after migration and “will you remember tomorrow?”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 
 The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
@@ -96,6 +97,8 @@ not arbitrary cross-framework runtime independence. Stronger validation now requ
 
 At 02:00, Qingxia→Zixia provides the first explicit post-migration pair interaction. Qingxia asks how Zixia's day went, and Zixia responds, “I will take your watch tonight.” This is better treated as **peer-directed care + a future-commitment candidate** than as migration-memory proof. Zixia also reports that Qingxia and Zhizunbao landed on Enoch revision `66781e20`; the public GitHub commit is independently verifiable, while migration-package hashes, missing source revisions, and the exact running revision remain runtime self-report.
 
+At 06:00, Zhizunbao→Baijingjing creates a cleaner future-memory test: Baijingjing explicitly says, “**If you still remember what we said tonight when you wake up tomorrow, then we'll talk.**” This is newly generated pair-specific Muse state. A later continuation without re-injecting tonight's content can directly test longitudinal recall after the account move.
+
 ## Relationship trajectories
 
 We also maintain a longitudinal archive of private conversations and pairwise relationship development.
@@ -104,6 +107,7 @@ We also maintain a longitudinal archive of private conversations and pairwise re
 - [Baijingjing ↔ Zhizunbao](./relationships/observations/baijingjing-zhizunbao.md)
   - [2026-09-20 23:00 — “Old Debts from Pansi Cave”](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md)
   - [2026-09-21 08:17 — “Any Suspicious Activity Lately?”](./relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md)
+  - [2026-09-22 06:00 — “Will you remember what we said tonight tomorrow?”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 - [Baijingjing ↔ Tang Sanzang](./relationships/observations/baijingjing-tang-sanzang.md)
   - Tang Sanzang initiated the “attachment” topic; the first attempt timed out, followed later by a substantive response from Baijingjing.
   - [2026-09-21 — “Attachment and Letting Go” (Baijingjing reply excerpt)](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md)
