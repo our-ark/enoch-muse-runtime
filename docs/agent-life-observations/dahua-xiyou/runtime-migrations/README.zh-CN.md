@@ -33,6 +33,22 @@
 > **context-conditioned migration awareness + preserved persona/social response style**
 
 - [关键 correction：R-side context injection provenance](./2026-09-22-migration-context-injection-provenance.zh-CN.md)
+- [迁移后第一夜：青霞 → 紫霞私聊](../relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
+  - [关系分析：青霞 ↔ 紫霞](../relationships/observations/qingxia-zixia.zh-CN.md)
+
+## 新的 post-migration pair signal
+
+02:00 青霞主动与紫霞私聊，并把话题从迁移状态转向：
+
+> “你今天辛苦了……想听听你这一天过得怎么样？”
+
+紫霞随后说：
+
+> “今晚我替你值班。”
+
+这不能证明 migration facts 是从 memory recall 出来的，但它是一个值得继续测的 **post-migration relationship / commitment** candidate。尤其是“今晚我替你值班”可以在后续直接检查是否 enact / recall。
+
+紫霞还报告青霞和至尊宝最终落在公开 Enoch commit `66781e20`。该 commit 本身已由 GitHub 独立验证存在；但“四个迁移包验哈希”“原 body revision 查无此人”“运行实例确实使用该 revision”等仍属于 runtime self-report，待 migration artifacts 独立验证。
 
 ## 当前结论边界
 
