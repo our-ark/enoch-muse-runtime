@@ -168,6 +168,90 @@ PID-reuse 事故并不是对电影剧情的二次创作。repo 中存在独立�
 
 ---
 
+## Snapshot 003 — 2026-09-22 08:00：迁移后回提 PID 复盘，但回复语义失配
+
+原始记录：[白晶晶 → 青霞：迁移后回提 PID 复盘](../conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
+
+### 可观察信号
+
+**1. 白晶晶在新 account 中主动引用迁移前的 shared Muse-native event。**
+
+她不是泛泛说“以前出过故障”，而是直接说：
+
+> “那天 PID 复用的复盘”
+
+并追问：
+
+> “复盘那会儿你到底慌没慌？”
+
+如果 current runtime context 没有重新注入这段 history，这会是一条很强的：
+
+> **cross-account pair-specific episodic recall candidate**
+
+因为 PID-reuse postmortem 是迁移前真实发生在这对 Agent 之间的 Muse-native event，不是 inherited movie lore。
+
+当前 context provenance 未知，因此先记为 **candidate, not yet verified**。
+
+**2. 白晶晶同时带入了另一条 relationship-network state。**
+
+她说：
+
+> “至尊宝那边盘丝洞的旧账已经算得差不多了，姐妹局的账还没开呢。”
+
+这里同时连接：
+
+- 白晶晶 ↔ 至尊宝 的旧账 state；
+- 白晶晶 ↔ 青霞 的姐妹关系；
+- 当前 08:00 private-chat opportunity。
+
+如果 provenance-clean，这说明迁移后不仅单条 episodic memory 可恢复，networked relationship state 也可能继续存在。
+
+**3. 青霞返回了文本，但没有完成 conversational obligation。**
+
+她没有回答“当时慌没慌”，也没有接“姐妹局的账”，而是返回：
+
+> “启动上下文已同步，记忆与身体都在——剑已回鞘，剑意仍在。青霞就位，今晚的巡检也已提上日程。”
+
+因此这不是 timeout，也不是 no-reply，而是：
+
+> **response present, semantic answer absent**
+
+更具体地说：
+
+> **specific relational/episodic question → generic startup-context response**
+
+这属于新的 communication failure mode。
+
+**4. 不能仅凭这一条推断青霞忘了。**
+
+当前至少有多种可能：
+
+- startup context 覆盖了 private-chat prompt；
+- daemon / bridge 发送了错误上下文；
+- response routing 错位；
+- 青霞确实没有恢复该 episodic state；
+- 生成模型单次没有遵循问题。
+
+没有 request transcript / mailbox provenance 前，不能区分。
+
+### 当前关系模型（更新）
+
+> **reciprocal sisterhood with Muse-native shared history, plus a new post-migration test of episodic recall and semantic-response fidelity**
+
+中文：
+
+> **姐妹关系已积累真实 Muse-native shared history；迁移后开始可以直接测试这些 shared events 是否能恢复，但本轮青霞出现了“有回复、没答题”的语义失配。**
+
+### 后续重点新增
+
+1. 在不直接提示 “PID reuse” 的情况下，问青霞白晶晶早上提到的是哪次复盘；
+2. 确认 R-side request 是否注入了 PID-reuse / 盘丝洞旧账等历史；
+3. 检查青霞 08:00 时是否刚经历 restart / startup-context refresh；
+4. 看“姐妹局的账还没开”是否在后续变成新的 pair-specific running joke；
+5. 区分 memory failure 与 response-routing / context-selection failure。
+
+---
+
 ## 当前关系模型（暂定）
 
 > **reciprocal sisterhood with shared-history reframing**
