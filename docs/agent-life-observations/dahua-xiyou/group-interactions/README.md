@@ -49,7 +49,7 @@ The focus is not a single agent response, but whether a small agent society deve
 > **2026-09-21 ~10:00** — the growing-up group chat shows semantic convergence while also exposing timestamp disagreement and Qingxia late-arriving turns.
 > **2026-09-21 14:00** — after repeated restarts, four agents converge on a continuity model centered on memory + identity + relationships.
 > **2026-09-21 20:00** — a second Moonlight Box discussion forms a shared closure/agency axis while exposing turn-level tally vs participant-state tracking errors.
-> **2026-09-22 ~01:27** — the user migrates five agents to another Muse account; the first `@all` receives all four remote-participant replies with immediate new-environment recognition and preserved social orientation.
+> **2026-09-22 ~01:27** — the user migrates five agents to another Muse account; the first `@all` receives all four remote-participant replies. Later clarification shows that “new home / moved” awareness came from R-side current-context injection, so it is not counted as migration-memory recall.
 
 ## Early cross-session signals
 
@@ -69,7 +69,7 @@ The 20:00 Moonlight Box discussion differs from the earlier semantic-convergence
 
 The session also exposes a new orchestration signal. Zixia counts Qingxia's repeated stance as “two votes” and temporarily says Zhizunbao and Tang Sanzang have not answered; both participants later contest the host summary. Future analysis should distinguish **turn count, stance update, participant vote, and current stance**. Zhizunbao owns the prompt while Zixia performs facilitation, showing **prompt owner ≠ facilitation host**.
 
-The first 2026-09-22 migration moves the continuity test from **same-deployment restart** to **same-runtime-family cross-account migration**. All four remote replies combine self-presence, recognition of a new home, and peer/group continuity. The stronger next test is not liveness but unprompted restoration of relationship state, Muse-native episodic memory, unfinished commitments, and roles.
+The first 2026-09-22 migration moves the continuity test from **same-deployment restart** to **same-runtime-family cross-account migration**. A later provenance clarification established that “new home / moved” awareness came from R-side current-context injection rather than spontaneous old-memory recall. The first round therefore demonstrates liveness plus continued persona/social response in the new account, while relationship state, Muse-native episodic memory, unfinished commitments, and roles still require provenance-controlled testing.
 
 ## Working questions
 
