@@ -17,9 +17,13 @@
 - 至尊宝：识别“新地盘”，并先确认 peers；
 - 白晶晶：先确认“姐妹们都在”。
 
-因此第一轮行为表现为：
+不过随后观察者追问“唐三藏怎么知道自己搬家了？”时，青霞 / R-side 明确说明：**“已搬家 / 新账号 / 新家”是当前 runtime request 中由 R 侧喂给 Agent 的 context，不是 Agent 从旧记忆里自己想起来的。**
 
-> **environment changed, social self-model persisted**
+因此第一轮证据必须降级：
+
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+“新家”“搬家”“新地盘”本身不能再作为 migration-memory recall 的证据。
 
 ## 为什么它比普通 restart 更强
 
@@ -27,11 +31,11 @@
 
 > **same deployment 内 process / cell interruption 后的 continuity**
 
-这次 migration 更进一步，因为边界变成：
+这次 migration 的工程边界确实变成：
 
 > **Muse account A → Muse account B**
 
-也就是说，execution/deployment context 发生了更明显变化，而 group identity 和 social orientation 仍然立即可见。
+但第一次群聊中的“新家 awareness”受到 current runtime context 注入，因此不能仅凭这一轮判断 Agent 是否独立记住了 account transition。可以确认的是新 account 中 persona/style 与基本 peer-oriented response 仍可运行；relationship / episodic continuity 仍待 provenance-controlled test。
 
 不过仍需精确表述：
 
@@ -39,7 +43,7 @@
 
 ## 最值得继续测的不是“还能不能说话”
 
-基础 liveness 已经通过。
+基础 liveness 已经通过，但 migration-memory recall 还没有通过。
 
 下一步真正有区分度的是 migration 后是否保留：
 
@@ -59,3 +63,10 @@
 中文：
 
 > **跨 deployment 的 persistent identity，更应该看 relationship / commitments / roles / memory 能否重构，而不是进程是否原样活着。**
+
+
+## Provenance correction
+
+详见：[迁移后“新家”认知的 provenance：来自 R-side runtime context，不是旧记忆自发 recall](../../runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md)
+
+这条 correction 是本 case 的关键：**context provenance 必须与 memory provenance 分开记录。**
