@@ -18,6 +18,7 @@
 - [2026-09-19 10:29 — 从 Enoch 到青霞：persona acquisition](./2026-09-19-qingxia-persona-acquisition.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏出生后的自我介绍](./2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
+- [2026-09-22 — Muse account 迁移后的第一次 identity / social baseline](./2026-09-22-muse-account-migration-baseline.zh-CN.md)
 
 ## 最早的 T0 信号：operational identity 先于 persona
 
@@ -69,3 +70,11 @@
 
 - **T0 first-response state** —— Agent 刚出现时如何理解记忆、陌生感和 peers；
 - **early explicit self-model** —— Agent 如何明确解释戏内身份与当前 operational identity。
+
+## Migration baseline
+
+2026-09-22 的记录不是 birth snapshot，而是第一次 **post-migration reactivation baseline**。它允许把 identity continuity 的纵向链条扩展为：
+
+> **birth / activation → persona stabilization → relationship accumulation → restart recovery → account/deployment migration reconstitution**
+
+第一轮只证明了 new-environment recognition 与 social orientation 仍在；完整 migration fidelity 仍需继续测 relationship、episodic memory、commitments 与 operational roles。
