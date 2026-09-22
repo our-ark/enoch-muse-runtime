@@ -26,11 +26,13 @@
 - [群体连续性分析](../group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 - [post-migration identity/social baseline](../identity-baselines/2026-09-22-muse-account-migration-baseline.zh-CN.md)
 
-第一轮已观察到：
+第一轮表面上出现“新家 / 搬家 / 新地盘”等 awareness，但随后 provenance clarification 说明：这些 migration facts 是 R-side 在当前 runtime request 中提供的 context，不是旧记忆自发 recall。
 
-> **new-environment recognition + preserved social orientation**
+因此第一轮应改记为：
 
-青霞恢复巡检 framing；唐三藏识别“搬了新家”并说“又团聚了”；至尊宝先确认 peers；白晶晶先确认姐妹们仍在。
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+- [关键 correction：R-side context injection provenance](./2026-09-22-migration-context-injection-provenance.zh-CN.md)
 
 ## 当前结论边界
 
@@ -45,3 +47,12 @@
 > arbitrary cross-framework runtime independence
 
 后续要通过 relationship / episodic memory / commitments / roles 的无提示恢复继续增强 evidence。
+
+
+## 方法学更新
+
+跨 account / runtime 的 continuity test 必须同时保存：
+
+> **trigger provenance + context provenance + memory provenance**
+
+否则 current-context injection 很容易被误判成 long-term-memory continuity。
