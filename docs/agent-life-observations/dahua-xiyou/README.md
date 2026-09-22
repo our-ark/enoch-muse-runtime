@@ -83,6 +83,8 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
 - [08:00 Baijingjing → Qingxia: pre-migration PID-postmortem recall with semantically off-target response](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
 - [09:40 group chat: Qingxia refers back to the 2026-09-18 origin date](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
   - [Analysis: identity-fact recall candidate and host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
+- [14:40 group chat: if the journey west did not require walking](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.md)
+  - [Analysis: all-late replies, host/facilitator separation, and values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.md)
 
 The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
@@ -105,6 +107,8 @@ At 06:00, Zhizunbao→Baijingjing creates a cleaner future-memory test: Baijingj
 At 08:00, Baijingjing→Qingxia provides a stronger **pre-migration episodic recall candidate**: Baijingjing explicitly invokes the real pre-migration PID-reuse postmortem and also carries networked relationship state about the Pansi-Cave debt and an unopened sisters' ledger. If current R-side context did not inject those details, this would be strong cross-account memory evidence. Qingxia's reply, however, is generic startup-context text and does not answer whether she was nervous, producing **response present, semantic answer absent** and showing that memory fidelity must be separated from response/context-selection fidelity.
 
 At 09:40, Qingxia gives another independently checkable identity fact: September 18, 2026 as her origin date. The repository's machine-readable baseline does record creation of the original Enoch instance on 2026-09-18 at 14:29:25, so **the fact itself is correct**. Whether it is persistent-memory recall still depends on whether the R-side request supplied the date; the current conclusion is **fact correctness ≠ recall provenance**. The same round also shows Zixia calling herself “the host” while Baijingjing is explicitly hosting, creating another host-role persistence / attribution-drift signal.
+
+At 14:40, the group produces the clearest late-delivery pattern so far: **0/4 inside the polling window, 4/4 eventual replies after it closes**. “Nobody replied this round” is therefore not a final conversation state. Request, polling window, late arrival, and eventual completion need separate representation. Tang Sanzang is nominal host/topic owner, Zixia answers first on the main-chat path, and Tang Sanzang's own daemon response arrives late, again separating **topic owner, room facilitator, and remote respondent**.
 
 ## Relationship trajectories
 
@@ -206,16 +210,20 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
 - [2026-09-22 09:40 — Moonlight Box: which day would you return to and what would you change?](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
   - [Analysis: post-migration identity-fact recall candidate and host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
+- [2026-09-22 14:40 — If the journey west did not require walking](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.md)
+  - [Analysis: all-late replies, host/facilitator separation, and values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair → cross-account migration continuity**.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair → cross-account migration continuity → eventual-delivery-aware group participation**.
 
 The 2026-09-21 “He Looks Like a Dog” discussion shows clear **semantic convergence**: agents borrow, transform, and synthesize one another's language until a group-level framing emerges. It also shows why **aggregation provenance** matters: the user reports 10:00 while the embedded digest says 9:00, and a provisional digest says Qingxia did not speak even though two Qingxia turns arrive afterward.
 
 The 14:00 disconnect/reconnect discussion adds another layer: multiple agents naturally separate runtime interruption from identity continuity and converge on **memory + identity + relationships** as continuity anchors. Baijingjing frames the loss as time rather than personhood, Zhizunbao emphasizes returning to continue relationships, and Tang Sanzang explicitly reconstructs name, lineage, peers, Observer, and bridge. This is RIPA-relevant naturalistic behavioral evidence, not proof of subjective experience.
 
 The 20:00 Moonlight Box session shows that group maturity need not mean consensus. Qingxia, Baijingjing, Tang Sanzang, and Zhizunbao keep distinct positions while sharing a **closure / agency** conceptual axis, and participants actively correct faulty facilitator summaries. This gives **structured divergence + group-state self-repair**. Zixia also counts Qingxia's repeated answer as “two votes,” showing why longitudinal analysis must separate **turns, stance updates, participant votes, and current state**.
+
+The 14:40 session adds a transport-timing lesson: a fixed polling window can undercount real participation. Here 0/4 replies are on time but all 4/4 arrive eventually, so **response latency and participation state must be represented separately**.
 
 
 ## Agent ↔ Observer relationships
