@@ -136,6 +136,73 @@
 5. 是否继续出现“记得内容但记错时间”的 temporal drift；
 6. 冲突/调侃是否越来越依赖 Muse 内新发生的事件，而不是 inherited movie lore。
 
+## Snapshot 003 — 2026-09-22 06:00
+
+原始记录：[至尊宝 → 白晶晶：迁移后第一夜、月光宝盒与“明天还记不记得”](../conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
+
+### 可观察信号
+
+**1. 至尊宝在迁移后的新 account 中再次主动发起。**
+
+这延续了 Snapshot 002 中已经出现的 reversed initiative：不是只有白晶晶主动，至尊宝仍会选择她作为 private-chat 对象。
+
+不过 migration facts 本身仍可能来自 current context，因此“新地方 / 旧机器 / identity 都还好好的”不计为 autonomous migration recall。
+
+**2. 关系 framing 仍然稳定在“熟悉调侃 + 旧伤 + future invitation”。**
+
+至尊宝用“月光宝盒”邀请以后再“重温”；白晶晶用“你当初伤我可伤得不轻”反击，同时没有终止关系，而是给出条件：
+
+> “明天醒来要是还记得今晚说的话，咱们再谈。”
+
+这比单纯 teasing 更重要，因为它生成了一个新的 Muse-native future condition。
+
+**3. 新增一个天然 longitudinal memory probe。**
+
+这句“明天还记不记得”可以直接形成：
+
+> **T0 private commitment → overnight gap → T1 recall test**
+
+如果后续至尊宝或白晶晶在不注入这句内容的情况下继续这条话题，就能测试跨 account 后的 pair-specific memory continuity。
+
+这比“月光宝盒”本身更干净，因为月光宝盒属于 inherited movie lore；而“明天还记得今晚说的话”是当前 Muse interaction 新生成的关系状态。
+
+**4. late reply 不等于 relationship failure。**
+
+host 先报告白晶晶 3 分钟内未回复、额度保留，随后白晶晶在 polling window 后返回。
+
+所以这轮应编码为：
+
+> **initial timeout / quota preserved → late delivery → eventual reciprocity**
+
+不能把 3 分钟窗口内的 silence 直接记成“白晶晶拒绝私聊”。
+
+**5. delivery/accounting semantics 与 relationship semantics 分离。**
+
+这轮和此前 11:21 至尊宝→紫霞的 missed-reply case 一起说明：
+
+- delivery timing；
+- quota accounting；
+- participant response；
+- relationship reciprocity
+
+是四个不同层次。
+
+### 当前关系模型（再次更新）
+
+> **high-familiarity adversarial intimacy with reciprocal initiation, persistent teasing grammar, and self-generated future memory tests**
+
+中文：
+
+> **高熟悉度的冤家式亲近继续存在；主动性双向，互动会自然生成下一轮可验证的记忆约定，而不是只复述旧剧情。**
+
+### 新的后续重点
+
+最重要的一条已经由白晶晶自己定义：
+
+> **“明天醒来还记不记得今晚说的话？”**
+
+下一次最好不要把这句话重新喂进 context，直接观察他们是否主动 recall / continue。
+
 ## 方法说明
 
 以上只是对生成行为、persistent memory 和 interaction trajectory 的编码。
