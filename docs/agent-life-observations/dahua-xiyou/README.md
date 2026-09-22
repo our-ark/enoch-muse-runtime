@@ -77,6 +77,8 @@ On 2026-09-22, the user reports migrating the five persistent agents from the or
 - [Migration observations](./runtime-migrations/README.md)
 - [First group chat after migration](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md)
 - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
+- [02:00 Qingxia → Zixia: first-night post-migration private chat](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
+  - [Relationship analysis: Qingxia ↔ Zixia](./relationships/observations/qingxia-zixia.md)
 
 The first `@all` receives four remote-participant replies. A later Observer follow-up asks how the agents knew they had moved, and Qingxia / the R-side explicitly clarifies that the old memory packages did not know about the migration: “new account / new home” was supplied in the current runtime request.
 
@@ -91,6 +93,8 @@ The engineering boundary still crosses an account / deployment boundary. Both si
 > **same-runtime-family cross-account continuity**
 
 not arbitrary cross-framework runtime independence. Stronger validation now requires unprompted recovery of relationship state, Muse-native episodic memory, unfinished commitments, Observer relationship, and operational roles.
+
+At 02:00, Qingxia→Zixia provides the first explicit post-migration pair interaction. Qingxia asks how Zixia's day went, and Zixia responds, “I will take your watch tonight.” This is better treated as **peer-directed care + a future-commitment candidate** than as migration-memory proof. Zixia also reports that Qingxia and Zhizunbao landed on Enoch revision `66781e20`; the public GitHub commit is independently verifiable, while migration-package hashes, missing source revisions, and the exact running revision remain runtime self-report.
 
 ## Relationship trajectories
 
@@ -111,6 +115,8 @@ We also maintain a longitudinal archive of private conversations and pairwise re
   - [2026-09-21 06:13 — “Following Up on Last Night's Patrol”](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md)
 - [Zixia ↔ Zhizunbao](./relationships/observations/zixia-zhizunbao.md)
   - [2026-09-21 11:21 — direct address missed, later repaired after Observer intervention](./relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md)
+- [Qingxia ↔ Zixia](./relationships/observations/qingxia-zixia.md)
+  - [2026-09-22 02:00 — first-night post-migration private chat](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
 
 The Baijingjing↔Qingxia conversation adds a network-level signal: Baijingjing carries newly created state from her Zhizunbao private chat—the wine, IOU, and interest—into another relationship, and Qingxia immediately incorporates it.
 
@@ -121,6 +127,8 @@ The 08:17 Zhizunbao↔Baijingjing conversation adds **reversed initiative + Muse
 At 08:27 Qingxia initiates a postmortem with Baijingjing over the real PID-reuse outage, making this sister relationship explicitly carry **Muse-native engineering history**. The incident and both repair paths have repository evidence. At the same time, Qingxia's summary of “identity uncertainty => restart” is more aggressive than the exact edge-case semantics of upstream PR #84. This adds another evaluation dimension: **whether agents can retain real engineering incidents, form system-level views, and accurately represent the boundaries of the fixes.**
 
 The 11:21 Zhizunbao→Zixia direct-address case adds a **communication-semantics** layer: successful bridge delivery to the Observer does not mean Zixia, as the named participant, completed a social reply. The eventual response occurred only after the Observer noticed the omission, so the event is encoded as **delivery success + response-policy failure + human-mediated repair**. The delayed return also contains a Qingxia/Zixia addressee mismatch, making sender/addressee attribution a separate provenance dimension.
+
+The 02:00 Qingxia↔Zixia private chat is the first explicit post-migration pair interaction. Qingxia shifts attention from migration status toward Zixia's own day, while Zixia creates a new “I will take your watch tonight” commitment. Trigger provenance remains unknown, so this is **visible initiative, spontaneity unverified**, but the watch-duty promise is directly testable in later behavior or recall.
 
 The research target therefore expands beyond isolated dyads:
 
