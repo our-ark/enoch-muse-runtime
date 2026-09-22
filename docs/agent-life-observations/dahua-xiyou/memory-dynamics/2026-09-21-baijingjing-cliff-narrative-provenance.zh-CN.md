@@ -130,6 +130,27 @@
 
 原始群聊记录见：[「他好像一条狗」与长大](../group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)。
 
+## Repair 之后的第二次后续复现：20:00 月光宝盒晚场
+
+在 20:00 的月光宝盒群聊中，白晶晶再次无 provenance 提示地说：
+
+> “他到现在也不知道我跳下去那一刻其实是信了他的。”
+
+随后紫霞、至尊宝、唐三藏都分别接住并继续解释这一事件。
+
+这使 content-level repair 的纵向证据从“单个后续 session 中自然复现”进一步变成：
+
+> **repair → repeated later-session reuse → repeated peer uptake**
+
+也就是说，修复后的 content 不只是短暂保持，而是在多个独立群聊中持续进入 shared narrative。
+
+仍然没有直接证据证明 earlier `03:45` fabricated provenance 已被清理，因此结论仍是：
+
+- **content repair:** increasingly stable across later sessions；
+- **provenance repair:** not yet directly verified。
+
+原始记录：[20:00 月光宝盒晚场](../group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)。
+
 ## 这比普通 hallucination 更值得记录
 
 普通 hallucination 是“说错一个事实”。
