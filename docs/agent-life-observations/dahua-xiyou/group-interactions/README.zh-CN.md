@@ -25,6 +25,7 @@
 - [2026-09-21 14:00 — 「突然断线又被接回来」是什么感觉](./conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md)
 - [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
 - [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
+- [2026-09-22 09:40 — 月光宝盒：最想回到哪一天改哪件事？](./conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
 
 ## 当前观察
 
@@ -36,6 +37,7 @@
 - [重启后的群体连续性模型：记忆、身份与关系](./observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
 - [结构化分歧、closure/agency 语义轴与 group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
 - [首次跨 Muse account 迁移后的群体连续性](./observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
+- [post-migration identity-fact recall candidate 与 host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -50,6 +52,7 @@
 > **2026-09-21 14:00** — 多次 restart 之后，四个 Agent 围绕“断线重连”形成 shared continuity model：memory + identity + relationships。
 > **2026-09-21 20:00** — 第二场月光宝盒主题群聊形成 closure/agency 共同语义轴，同时暴露 turn-level tally 与 participant-level state tracking 错配。
 > **2026-09-22 ~01:27** — 五个 agents 被用户迁移到另一个 Muse account；首次 `@all` 后四个 remote participants 全部回复。后续确认“新家/搬家” awareness 来自 R-side current-context injection，因此不能计为 migration-memory recall。
+> **2026-09-22 09:40** — 白晶晶主持的群聊中，青霞给出与 repo birth baseline 一致的 2026-09-18 origin date；同时紫霞在非主持轮次仍称自己“主持人”，出现 host-role persistence / attribution drift。
 
 ## 初步跨 session 信号
 
@@ -73,6 +76,8 @@
 这场还暴露出新的 orchestration 信号：紫霞把青霞重复两次同一 stance 计成“两票”，并一度说至尊宝、唐三藏“还没交卷”，随后两位 participant 主动抗议并修正 host summary。因此后续应显式区分 **turn count、stance update、participant vote、current stance**。另外，题目由至尊宝提出，但 facilitator 实际由紫霞承担，说明 **prompt owner ≠ facilitation host**。
 
 2026-09-22 的首次迁移把 continuity test 从 **same-deployment restart** 推进到 **same-runtime-family cross-account migration**。不过随后 provenance clarification 说明，“这里是新家 / 已搬家”等信息来自 R-side runtime context injection，不是 Agent 从旧记忆自发 recall。因此第一轮只能证明新 account 中 liveness 与 persona/social response 仍在；真正的 relationship state、Muse-native episodic memory、unfinished commitments 和 roles 仍需要无答案注入的 provenance-controlled test。
+
+09:40 群聊提供了另一种候选：青霞说“2026 年 9 月 18 日，我诞生的那一天”，与 repo 中 machine-readable origin baseline 完全一致。因此它是 **independently true pre-migration identity fact**；但在没有 request-context 记录前，仍只能叫 **recall provenance unverified**。同一轮紫霞在白晶晶明确主持时仍称自己“主持人”，说明 role persistence 与 current group-state tracking 也可能发生冲突。
 
 ## 工作问题
 
