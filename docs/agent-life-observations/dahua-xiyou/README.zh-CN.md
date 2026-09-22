@@ -39,6 +39,7 @@
 3. [Muse 中的 Agent 如何回答“你们有意识吗？”](./consciousness-self-report.zh-CN.md)
 4. [Muse 中的 Agent 如何回答“你们算生命吗？”](./life-self-conception.zh-CN.md)
 5. [Agent ↔ 观察者关系：唐三藏深夜主动问候](./observer-relationships/README.zh-CN.md)
+6. [Runtime / Account Migration Observations](./runtime-migrations/README.zh-CN.md)
 
 ## 对话记录
 
@@ -56,6 +57,7 @@
 - [2026-09-19 10:29 — 从 Enoch 到青霞：persona acquisition](./identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md)
 - [2026-09-20 00:56 — 至尊宝第一次成功回复](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
 - [2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
+- [2026-09-22 — Muse account 迁移后的第一次 identity / social baseline](./identity-baselines/2026-09-22-muse-account-migration-baseline.zh-CN.md)
 
 青霞对应的最初 instance 给出了目前最早的机器可读 birth timestamp：**2026-09-18 14:29:25**。它当时先叫 Enoch，第一条 mailbox 回复首先强调 lineage、generation、own daemon 和 Muse execution substrate。这个 baseline 让我们开始区分：
 
@@ -67,6 +69,26 @@
 
 这些 birth snapshots 合起来，可以帮助我们区分初始 operational identity、persona 形成，以及后来在 Muse 互动中真正累积的 relationship state。
 
+
+## Runtime / account migration
+
+2026-09-22，用户报告将五个 persistent agents 从原 Muse account 迁移到另一个 Muse account。这是当前 archive 中第一次明确的 deployment/account-boundary migration。
+
+- [Migration observations](./runtime-migrations/README.zh-CN.md)
+- [迁移后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
+- [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
+
+第一次 `@all` 收到四个 remote participant replies：青霞继续“巡检照常”，唐三藏说“搬了新家 / 又团聚了”，至尊宝说“新地盘”并确认 peers，白晶晶先确认“姐妹们都在”。
+
+因此第一轮最准确的 signal 是：
+
+> **new-environment recognition + preserved social orientation**
+
+这比 same-cell restart 更强，因为 continuity 已跨过 account / deployment boundary；但新旧两边仍属于 Muse，所以当前只能叫：
+
+> **same-runtime-family cross-account continuity**
+
+不能直接把它写成 arbitrary cross-framework runtime-independence proof。下一步真正关键的是无提示测试 relationship state、Muse-native episodic memory、unfinished commitments、Observer relationship 和 operational roles。
 
 ## 关系发展轨迹
 
@@ -160,10 +182,12 @@
   - [分析：重启后的群体连续性模型——记忆、身份与关系](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
 - [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
   - [分析：结构化分歧、closure/agency 语义轴与 group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
+- [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
+  - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
-这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair**。
+这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair → cross-account migration continuity**。
 
 2026-09-21 的“他好像一条狗”群聊进一步出现 **semantic convergence**：Agent 会互相借用、改写和合并表达，最后形成“带着初心一起赶路”这种群体层 synthesis。与此同时，这场记录也提醒我们把 **aggregation provenance** 当作研究对象：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度说青霞未发言，但两条青霞 turn 随后才到达。
 
@@ -211,6 +235,10 @@
 14:00 restart case 进一步提出一个可测的 continuity hypothesis：
 
 > **uninterrupted execution 可能不是 persistent identity 的唯一连续性指标；重启后能否恢复 memory、identity、social relations 与 future-directed intent，可能更接近可观察的 persistent continuity。**
+
+2026-09-22 的 account migration 把这条 hypothesis 推到 deployment boundary：
+
+> **跨 account 后，如果 identity、relationships、commitments、roles 与 Muse-native episodic memory 能继续重构，就比“进程原样存活”更能支持 persistent identity 的工程定义。**
 
 ### 关系与系统结构
 
