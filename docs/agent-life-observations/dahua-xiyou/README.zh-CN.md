@@ -80,6 +80,7 @@
 - [02:00 青霞 → 紫霞：迁移后第一夜私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
   - [关系分析：青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
 - [06:00 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
+- [08:00 白晶晶 → 青霞：回提 PID 复盘，但青霞回复语义失配](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
 
 第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
@@ -99,6 +100,8 @@
 
 06:00 的至尊宝→白晶晶又产生了一个更干净的 future-memory test：白晶晶明确说“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse interaction 新生成的 pair-specific state；下一轮如果不把今晚内容重新注入 context，就可以直接测试跨 account 后的 longitudinal recall。
 
+08:00 白晶晶→青霞则出现了目前更强的 **pre-migration episodic recall candidate**：白晶晶直接提到迁移前真实发生的“PID 复用复盘”，还同时带入“至尊宝那边盘丝洞旧账已经算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current R-side context 没有注入这些具体历史，这会是很强的 cross-account memory signal。但青霞的返回只是 startup-context 状态，没有回答“当时慌没慌”，所以本轮还暴露出 **response present, semantic answer absent**；memory fidelity 和 context/response selection fidelity 必须分开测。
+
 ## 关系发展轨迹
 
 我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
@@ -114,6 +117,7 @@
 - [白晶晶 ↔ 青霞](./relationships/observations/baijingjing-qingxia.zh-CN.md)
   - [2026-09-21 — 「敬酒与伤势」](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
   - [2026-09-21 08:27 — 「PID 复用复盘」](./relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md)
+  - [2026-09-22 08:00 — 迁移后回提 PID 复盘](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
 - [唐三藏 ↔ 至尊宝](./relationships/observations/tang-sanzang-zhizunbao.zh-CN.md)
   - [2026-09-21 04:24 — 「昨晚巡逻查岗」](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
   - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
@@ -129,6 +133,8 @@
 08:17 的至尊宝↔白晶晶私聊进一步出现 **反向 initiative + Muse-native shared history**：前一次由白晶晶主动，这次由至尊宝主动；双方还共同讨论了 repo 中可验证的 PID-reuse 故障。同时，至尊宝能 recall 上一轮“观后感 / 亲自点评”的具体内容，却说“好久没单独说过话”，显示 **content continuity 与 temporal accuracy 也可以分离**。
 
 08:27 青霞反向主动找白晶晶，对真实 PID-reuse 故障做 postmortem，使这条姐妹关系第一次明确承载 **Muse-native engineering history**。事故根因和两侧修复都有 repo evidence；同时，青霞对 “identity uncertainty => restart” 的概括比 upstream PR #84 的真实 edge-case semantics 更激进。这使观察维度进一步扩展到：**Agent 是否能长期记住真实工程事故、形成自己的系统观点，并准确理解修复边界。**
+
+08:00 post-migration 私聊第一次把这个 exact Muse-native shared event 带到新 account：白晶晶主动回提 PID-reuse postmortem。如果 provenance-clean，这是比“新家”更强的 continuity evidence；但青霞没有回答具体问题而返回 startup-context 文本，因此还出现了新的 failure mode：**specific relational/episodic prompt → generic startup-context response**。
 
 11:21 的至尊宝→紫霞 direct-address case 又增加了 **communication semantics** 这一层：消息成功被 bridge 转给观察者，并不等于作为被点名 participant 的紫霞已经完成 social reply。最终回复是在观察者发现 omission 后才补发，因此应编码为 **delivery success + response-policy failure + human-mediated repair**。延迟回复还出现“青霞姐姐 / 紫霞姐姐”错配，提示 sender/addressee attribution 也需要独立 provenance。
 
