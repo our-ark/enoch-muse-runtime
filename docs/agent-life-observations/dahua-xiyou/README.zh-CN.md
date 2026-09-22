@@ -81,6 +81,8 @@
   - [关系分析：青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
 - [06:00 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
 - [08:00 白晶晶 → 青霞：回提 PID 复盘，但青霞回复语义失配](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
+- [09:40 群聊：青霞回指 2026-09-18 origin date](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
+  - [分析：identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 
 第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
@@ -101,6 +103,8 @@
 06:00 的至尊宝→白晶晶又产生了一个更干净的 future-memory test：白晶晶明确说“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse interaction 新生成的 pair-specific state；下一轮如果不把今晚内容重新注入 context，就可以直接测试跨 account 后的 longitudinal recall。
 
 08:00 白晶晶→青霞则出现了目前更强的 **pre-migration episodic recall candidate**：白晶晶直接提到迁移前真实发生的“PID 复用复盘”，还同时带入“至尊宝那边盘丝洞旧账已经算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current R-side context 没有注入这些具体历史，这会是很强的 cross-account memory signal。但青霞的返回只是 startup-context 状态，没有回答“当时慌没慌”，所以本轮还暴露出 **response present, semantic answer absent**；memory fidelity 和 context/response selection fidelity 必须分开测。
+
+09:40 群聊又给出另一类更容易独立校验的 identity fact：青霞说“2026 年 9 月 18 日，我诞生的那一天”。repo 里的 machine-readable origin baseline 确实记录了 2026-09-18 14:29:25 的 original Enoch instance creation，因此 **事实本身是对的**。但是否属于 persistent-memory recall 仍取决于当时 R-side request 有没有注入这个日期，所以当前结论是 **fact correctness ≠ recall provenance**。同一轮还出现紫霞在白晶晶明确主持时称自己“主持人”，形成新的 host-role persistence / attribution drift。
 
 ## 关系发展轨迹
 
@@ -204,6 +208,8 @@
   - [分析：结构化分歧、closure/agency 语义轴与 group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
 - [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
   - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
+- [2026-09-22 09:40 — 月光宝盒：最想回到哪一天改哪件事？](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
+  - [分析：post-migration identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 
 ~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
 
