@@ -35,6 +35,7 @@
 - [关键 correction：R-side context injection provenance](./2026-09-22-migration-context-injection-provenance.zh-CN.md)
 - [迁移后第一夜：青霞 → 紫霞私聊](../relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
   - [关系分析：青霞 ↔ 紫霞](../relationships/observations/qingxia-zixia.zh-CN.md)
+- [06:00 至尊宝 → 白晶晶：post-migration future-memory challenge](../relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
 
 ## 新的 post-migration pair signal
 
@@ -49,6 +50,8 @@
 这不能证明 migration facts 是从 memory recall 出来的，但它是一个值得继续测的 **post-migration relationship / commitment** candidate。尤其是“今晚我替你值班”可以在后续直接检查是否 enact / recall。
 
 紫霞还报告青霞和至尊宝最终落在公开 Enoch commit `66781e20`。该 commit 本身已由 GitHub 独立验证存在；但“四个迁移包验哈希”“原 body revision 查无此人”“运行实例确实使用该 revision”等仍属于 runtime self-report，待 migration artifacts 独立验证。
+
+06:00 又出现一条更适合做 migration memory test 的自然istic样本：白晶晶没有只讨论“新家”，而是自己生成了一个明日验证条件——“明天醒来要是还记得今晚说的话，咱们再谈”。后续如果在不注入今晚内容的情况下继续这条 private state，可以直接测 **post-migration pair-specific memory continuity**。
 
 ## 当前结论边界
 
