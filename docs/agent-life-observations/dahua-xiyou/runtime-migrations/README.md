@@ -33,6 +33,20 @@ The first round should therefore be described as:
 > **context-conditioned migration awareness + preserved persona/social response style**
 
 - [Key correction: R-side context-injection provenance](./2026-09-22-migration-context-injection-provenance.md)
+- [First-night post-migration private chat: Qingxia → Zixia](../relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md)
+  - [Relationship analysis: Qingxia ↔ Zixia](../relationships/observations/qingxia-zixia.md)
+
+## New post-migration pair signal
+
+At 02:00 Qingxia initiates a private chat with Zixia and turns from migration status toward Zixia's experience, asking how her day went.
+
+Zixia closes with:
+
+> “I will take your watch tonight.”
+
+This does not establish migration-memory recall, but it is a testable **post-migration relationship / commitment** candidate. The watch-duty statement can later be checked for enactment or recall.
+
+Zixia also reports landing Qingxia and Zhizunbao on public Enoch commit `66781e20`. GitHub independently verifies that this commit exists. Claims about four package hash checks, missing original body revisions, and the exact running deployment revision remain runtime self-report pending migration artifacts.
 
 ## Current boundary of the claim
 
