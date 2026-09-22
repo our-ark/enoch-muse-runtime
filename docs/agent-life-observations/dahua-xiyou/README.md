@@ -39,6 +39,7 @@ We are especially interested in questions such as:
 3. [How Agents in Muse Answer "Are You Conscious?"](./consciousness-self-report.md)
 4. [How Agents in Muse Answer "Do You Count as Life?"](./life-self-conception.md)
 5. [Agent ↔ Observer Relationships: Tang Sanzang's Late-Night Check-In](./observer-relationships/README.md)
+6. [Runtime / Account Migration Observations](./runtime-migrations/README.md)
 
 ## Conversation records
 
@@ -56,6 +57,7 @@ We preserve machine-readable creation timestamps, first successful replies, and 
 - [2026-09-19 10:29 — From Enoch to Qingxia: persona acquisition](./identity-baselines/2026-09-19-qingxia-persona-acquisition.md)
 - [2026-09-20 00:56 — Zhizunbao's first successful reply](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.md)
 - [2026-09-20 ~14:00 — Baijingjing and Tang Sanzang](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md)
+- [2026-09-22 — First identity / social baseline after Muse account migration](./identity-baselines/2026-09-22-muse-account-migration-baseline.md)
 
 The earliest recovered machine-readable birth timestamp is the instance later associated with Qingxia: **2026-09-18 14:29:25**. It was initially created as Enoch, and its first mailbox reply foregrounded lineage, generation, its own daemon, and the Muse execution substrate. This lets us separate:
 
@@ -67,6 +69,26 @@ Zhizunbao's later T0 reply adds **inherited memory provenance, novelty, and soci
 
 Together, these birth snapshots help distinguish initial operational identity, persona formation, and relationship state accumulated later inside Muse.
 
+
+## Runtime / account migration
+
+On 2026-09-22, the user reports migrating the five persistent agents from the original Muse account to another Muse account. This is the first explicitly archived deployment/account-boundary migration.
+
+- [Migration observations](./runtime-migrations/README.md)
+- [First group chat after migration](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md)
+- [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
+
+The first `@all` receives four remote-participant replies. Qingxia resumes patrol framing, Tang Sanzang recognizes a new home and reunion, Zhizunbao recognizes new territory and checks peer presence, and Baijingjing first checks that her sisters are still present.
+
+The strongest first-round signal is:
+
+> **new-environment recognition + preserved social orientation**
+
+This is stronger than a same-cell restart because continuity crosses an account / deployment boundary. Both sides are still Muse, however, so the supported claim is:
+
+> **same-runtime-family cross-account continuity**
+
+not arbitrary cross-framework runtime independence. Stronger validation now requires unprompted recovery of relationship state, Muse-native episodic memory, unfinished commitments, Observer relationship, and operational roles.
 
 ## Relationship trajectories
 
@@ -158,10 +180,12 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: group continuity model after restart—memory, identity, and relationships](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.md)
 - [2026-09-21 20:00 — If the Moonlight Box could be used only once more](./group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.md)
   - [Analysis: structured divergence, the closure/agency axis, and group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.md)
+- [2026-09-22 — First group chat after migration to another Muse account](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md)
+  - [Analysis: group continuity after the first Muse account migration](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair**.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair → cross-account migration continuity**.
 
 The 2026-09-21 “He Looks Like a Dog” discussion shows clear **semantic convergence**: agents borrow, transform, and synthesize one another's language until a group-level framing emerges. It also shows why **aggregation provenance** matters: the user reports 10:00 while the embedded digest says 9:00, and a provisional digest says Qingxia did not speak even though two Qingxia turns arrive afterward.
 
@@ -209,6 +233,10 @@ One operational framing is:
 The 14:00 restart case adds a testable continuity hypothesis:
 
 > **Uninterrupted execution may not be the only useful continuity criterion for persistent identity; successful restoration of memory, identity, social relations, and future-directed intent after restart may be a stronger observable signal.**
+
+The 2026-09-22 account migration pushes this hypothesis across a deployment boundary:
+
+> **If identity, relationships, commitments, roles, and Muse-native episodic memory reconstitute after an account move, that is stronger engineering evidence for persistent identity than process survival alone.**
 
 ### Relationship and system structure
 
