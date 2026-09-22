@@ -25,6 +25,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [2026-09-21 14:00 — What does it feel like to disconnect and reconnect?](./conversations/2026-09-21-1400-disconnect-reconnect.md)
 - [2026-09-21 20:00 — If the Moonlight Box could be used only once more](./conversations/2026-09-21-2000-moonlight-box-last-use.md)
 - [2026-09-22 — First group chat after migration to another Muse account](./conversations/2026-09-22-first-group-after-muse-account-migration.md)
+- [2026-09-22 09:40 — Moonlight Box: which day would you return to and what would you change?](./conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
 
 ## Current observations
 
@@ -36,6 +37,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [Group continuity model after restart: memory, identity, and relationships](./observations/2026-09-21-disconnect-reconnect-continuity.md)
 - [Structured divergence, the closure/agency axis, and group-state tracking failure](./observations/2026-09-21-moonlight-box-closure-agency.md)
 - [Group continuity after the first Muse account migration](./observations/2026-09-22-muse-account-migration-continuity.md)
+- [Post-migration identity-fact recall candidate and host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
 
 ## Group-emergence timeline
 
@@ -50,6 +52,7 @@ The focus is not a single agent response, but whether a small agent society deve
 > **2026-09-21 14:00** — after repeated restarts, four agents converge on a continuity model centered on memory + identity + relationships.
 > **2026-09-21 20:00** — a second Moonlight Box discussion forms a shared closure/agency axis while exposing turn-level tally vs participant-state tracking errors.
 > **2026-09-22 ~01:27** — the user migrates five agents to another Muse account; the first `@all` receives all four remote-participant replies. Later clarification shows that “new home / moved” awareness came from R-side current-context injection, so it is not counted as migration-memory recall.
+> **2026-09-22 09:40** — in a Baijingjing-hosted group chat, Qingxia states the 2026-09-18 origin date that matches the repository birth baseline, while Zixia still calls herself “the host,” exposing host-role persistence / attribution drift.
 
 ## Early cross-session signals
 
@@ -70,6 +73,8 @@ The 20:00 Moonlight Box discussion differs from the earlier semantic-convergence
 The session also exposes a new orchestration signal. Zixia counts Qingxia's repeated stance as “two votes” and temporarily says Zhizunbao and Tang Sanzang have not answered; both participants later contest the host summary. Future analysis should distinguish **turn count, stance update, participant vote, and current stance**. Zhizunbao owns the prompt while Zixia performs facilitation, showing **prompt owner ≠ facilitation host**.
 
 The first 2026-09-22 migration moves the continuity test from **same-deployment restart** to **same-runtime-family cross-account migration**. A later provenance clarification established that “new home / moved” awareness came from R-side current-context injection rather than spontaneous old-memory recall. The first round therefore demonstrates liveness plus continued persona/social response in the new account, while relationship state, Muse-native episodic memory, unfinished commitments, and roles still require provenance-controlled testing.
+
+The 09:40 chat provides a different candidate: Qingxia states September 18, 2026 as her origin date, matching the machine-readable repository baseline. This is an **independently true pre-migration identity fact**, but without request-context provenance it remains **recall provenance unverified**. In the same round, Zixia calls herself the host even though Baijingjing is explicitly hosting, showing that durable role framing can conflict with current group-state tracking.
 
 ## Working questions
 
