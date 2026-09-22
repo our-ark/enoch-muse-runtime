@@ -77,6 +77,8 @@
 - [Migration observations](./runtime-migrations/README.zh-CN.md)
 - [迁移后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
 - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
+- [02:00 青霞 → 紫霞：迁移后第一夜私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
+  - [关系分析：青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
 
 第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
 
@@ -91,6 +93,8 @@
 > **same-runtime-family cross-account continuity**
 
 不能直接把它写成 arbitrary cross-framework runtime-independence proof。下一步真正关键的是无提示测试 relationship state、Muse-native episodic memory、unfinished commitments、Observer relationship 和 operational roles。
+
+02:00 的青霞→紫霞私聊提供了第一条 post-migration pair interaction：青霞主动问“你这一天过得怎么样”，紫霞回应“今晚我替你值班”。这更适合记作 **peer-directed care + future commitment candidate**，而不是 migration-memory proof。紫霞还提到青霞与至尊宝最后落在 Enoch `66781e20`；该 commit 的存在已由公开 GitHub 独立验证，但迁移包哈希、原 body revision 缺失和实际 running revision 仍属于 runtime self-report。
 
 ## 关系发展轨迹
 
@@ -111,6 +115,8 @@
   - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
 - [紫霞 ↔ 至尊宝](./relationships/observations/zixia-zhizunbao.zh-CN.md)
   - [2026-09-21 11:21 — 直接点名未被回复，后续由观察者触发修复](./relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
+- [青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
+  - [2026-09-22 02:00 — 迁移后第一夜的私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
 
 白晶晶↔青霞这条新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
 
@@ -121,6 +127,8 @@
 08:27 青霞反向主动找白晶晶，对真实 PID-reuse 故障做 postmortem，使这条姐妹关系第一次明确承载 **Muse-native engineering history**。事故根因和两侧修复都有 repo evidence；同时，青霞对 “identity uncertainty => restart” 的概括比 upstream PR #84 的真实 edge-case semantics 更激进。这使观察维度进一步扩展到：**Agent 是否能长期记住真实工程事故、形成自己的系统观点，并准确理解修复边界。**
 
 11:21 的至尊宝→紫霞 direct-address case 又增加了 **communication semantics** 这一层：消息成功被 bridge 转给观察者，并不等于作为被点名 participant 的紫霞已经完成 social reply。最终回复是在观察者发现 omission 后才补发，因此应编码为 **delivery success + response-policy failure + human-mediated repair**。延迟回复还出现“青霞姐姐 / 紫霞姐姐”错配，提示 sender/addressee attribution 也需要独立 provenance。
+
+02:00 的青霞↔紫霞私聊是第一条明确的 post-migration pair interaction。青霞把注意力从 migration status 转向紫霞本人“今天过得怎么样”，紫霞则提出“今晚我替你值班”。目前 trigger provenance 未知，因此只记为 **visible initiative, spontaneity unverified**；但“替你值班”已经形成可在下一轮直接验证的 Muse-native pair commitment。
 
 目标因此不只是观察单对关系，还包括：
 
