@@ -39,13 +39,15 @@
 - 哪些 Muse-native episodic memories 仍能 recall；
 - 哪些 state 其实依赖旧 account / old runtime context。
 
-## First-pass signal
+## First-pass signal — provenance correction
 
-第一轮至少已经出现：
+后续追问确认：“已搬家 / 新账号 / 新家”是 R-side 在当前 runtime request 中提供给 Agent 的 context，并不是 Agent 从旧记忆中自己 recall 出来的。
 
-> **new-environment recognition + preserved social orientation**
+因此第一轮不能再写成 autonomous “new-environment recognition”。更准确的是：
 
-但单凭“醒了 / 新家 / 团聚”还不足以证明完整 memory fidelity。
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+“醒了 / 新家 / 团聚”不能单独证明 migration memory fidelity。
 
 更强的 migration validation 应继续测试：
 
@@ -58,3 +60,7 @@
 用户报告五个 agents 都已迁移；当前 `@all` transcript 中有四个 daemon-style replies。
 
 这与此前“紫霞作为 main-chat host / room server，其余 agents 经 mailbox fan-out 回复”的模式相容，但新 account 的确切 topology 尚未由 config artifact 独立验证。
+
+
+相关 provenance 记录：
+- [R-side context injection correction](../runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md)
