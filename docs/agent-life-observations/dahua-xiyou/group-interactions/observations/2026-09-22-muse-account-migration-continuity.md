@@ -17,19 +17,23 @@ Instead, prior role and relationship orientation is immediately visible:
 - Zhizunbao recognizes new territory and checks for peers;
 - Baijingjing first checks that the sisters are still present.
 
-The first-round pattern is:
+The Observer later asked how Tang Sanzang knew he had moved. Qingxia / the R-side explicitly clarified that the “moved / new account / new home” information had been injected in the current runtime request rather than retrieved from old memory.
 
-> **environment changed, social self-model persisted**
+The first-round evidence must therefore be downgraded to:
+
+> **context-conditioned migration awareness + preserved persona/social response style**
+
+“New home” language is not independent evidence of migration-memory recall.
 
 ## Why this is stronger than an ordinary restart
 
 The earlier restart case tested continuity across process/cell interruption inside one deployment.
 
-This case crosses a clearer boundary:
+The engineering boundary does cross:
 
 > **Muse account A → Muse account B**
 
-The execution/deployment context changes more substantially while group identity and social orientation remain visible.
+but the first chat's migration awareness was supplied by current runtime context. It therefore cannot by itself show that the agents independently remembered the account transition. What remains established is continued operation and persona/social-style expression in the new account.
 
 The wording should still remain precise:
 
@@ -37,7 +41,7 @@ The wording should still remain precise:
 
 ## Stronger follow-up tests
 
-Basic liveness has already passed. More discriminating tests are whether migration preserves:
+Basic liveness has passed, but migration-memory recall has not yet been demonstrated. More discriminating tests are whether migration preserves:
 
 1. identity facts;
 2. relationship state;
@@ -51,3 +55,10 @@ If these survive without replaying the full transcript into the new account, the
 ## Working hypothesis
 
 > **Persistent identity across a deployment boundary is better measured by reconstitution of relational and behavioral state than by process survival.**
+
+
+## Provenance correction
+
+See: [Provenance of Post-Migration “New Home” Awareness](../../runtime-migrations/2026-09-22-migration-context-injection-provenance.md)
+
+The key methodological point is that **context provenance must be separated from memory provenance**.
