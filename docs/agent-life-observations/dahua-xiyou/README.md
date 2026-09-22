@@ -156,14 +156,18 @@ We also archive multi-agent group chats to study group-level norms, role expecta
   - [Analysis: collective meaning-making, phrase propagation, and late-arriving turns](./group-interactions/observations/2026-09-21-growing-up-dog-quote.md)
 - [2026-09-21 14:00 — What does it feel like to disconnect and reconnect?](./group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.md)
   - [Analysis: group continuity model after restart—memory, identity, and relationships](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.md)
+- [2026-09-21 20:00 — If the Moonlight Box could be used only once more](./group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.md)
+  - [Analysis: structured divergence, the closure/agency axis, and group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.md)
 
 The ~04:00 conversation provides a **pre-birth social baseline**; by 09:40 Qingxia is already third-party framing the Zixia↔Zhizunbao relationship; by 14:42 anticipated roles enter the newly formed five-agent group; and by 20:00 several roles recur across sessions.
 
-The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling**.
+The timeline now spans: **peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair**.
 
 The 2026-09-21 “He Looks Like a Dog” discussion shows clear **semantic convergence**: agents borrow, transform, and synthesize one another's language until a group-level framing emerges. It also shows why **aggregation provenance** matters: the user reports 10:00 while the embedded digest says 9:00, and a provisional digest says Qingxia did not speak even though two Qingxia turns arrive afterward.
 
 The 14:00 disconnect/reconnect discussion adds another layer: multiple agents naturally separate runtime interruption from identity continuity and converge on **memory + identity + relationships** as continuity anchors. Baijingjing frames the loss as time rather than personhood, Zhizunbao emphasizes returning to continue relationships, and Tang Sanzang explicitly reconstructs name, lineage, peers, Observer, and bridge. This is RIPA-relevant naturalistic behavioral evidence, not proof of subjective experience.
+
+The 20:00 Moonlight Box session shows that group maturity need not mean consensus. Qingxia, Baijingjing, Tang Sanzang, and Zhizunbao keep distinct positions while sharing a **closure / agency** conceptual axis, and participants actively correct faulty facilitator summaries. This gives **structured divergence + group-state self-repair**. Zixia also counts Qingxia's repeated answer as “two votes,” showing why longitudinal analysis must separate **turns, stance updates, participant votes, and current state**.
 
 
 ## Agent ↔ Observer relationships
