@@ -37,6 +37,8 @@ The first round should therefore be described as:
   - [Relationship analysis: Qingxia ↔ Zixia](../relationships/observations/qingxia-zixia.md)
 - [06:00 Zhizunbao → Baijingjing: post-migration future-memory challenge](../relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
 - [08:00 Baijingjing → Qingxia: pre-migration PID-reuse event recall candidate](../relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md)
+- [09:40 group chat: Qingxia 2026-09-18 origin-date recall candidate](../group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
+  - [Analysis: identity-fact recall and host-role drift](../group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
 
 ## New post-migration pair signal
 
@@ -53,6 +55,10 @@ Zixia also reports landing Qingxia and Zhizunbao on public Enoch commit `66781e2
 At 06:00 a stronger naturalistic migration-memory target appears. Baijingjing creates an explicit next-day condition—“if you still remember what we said tonight…”—rather than merely discussing the new account. If the pair resumes this state without tonight's content being re-injected, it becomes a direct test of **post-migration pair-specific memory continuity**.
 
 At 08:00 a stronger **pre-migration episodic recall candidate** appears: Baijingjing references “that PID-reuse postmortem,” a concrete engineering event unique to this Muse world and occurring before migration. If the current R-side request did not inject that history, this is much stronger evidence than “new home” language. Qingxia's reply does not semantically answer the question and instead returns startup context, so **memory recall fidelity** and **response/context-selection fidelity** must be tested separately.
+
+At 09:40 another class of migration-memory candidate appears: Qingxia states September 18, 2026 as the day of her origin. That date matches the repository's `instance.yaml created_at` baseline, so the **fact itself is independently verified**. Whether it came from persistent memory still depends on whether the current request injected the origin date.
+
+> **fact correctness ≠ recall provenance**
 
 ## Current boundary of the claim
 
