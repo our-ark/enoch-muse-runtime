@@ -113,6 +113,50 @@ The pair now shows clear strengthening of relationship continuity while temporal
 5. whether content recall continues to coexist with temporal drift;
 6. whether teasing increasingly references Muse-native events rather than inherited movie lore.
 
+## Snapshot 003 — 2026-09-22 06:00
+
+Raw record: [Zhizunbao → Baijingjing: First Night After Migration and “Will You Remember Tomorrow?”](../conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md)
+
+### Observable signals
+
+**1. Zhizunbao initiates again after migration.**
+
+This extends the reversed-initiative pattern from Snapshot 002. Migration facts in the dialogue remain subject to current-context provenance and are not counted as autonomous migration recall.
+
+**2. The pair's interaction grammar remains stable.**
+
+Zhizunbao uses the Moonlight Box as a future invitation; Baijingjing counters with old-hurt teasing but does not close the relationship. Instead she creates a condition:
+
+> “If you still remember what we said tonight when you wake up tomorrow, then we'll talk.”
+
+**3. The conversation creates a natural longitudinal memory probe.**
+
+This gives a clean test:
+
+> **T0 private commitment → overnight gap → T1 recall**
+
+The key phrase is Muse-native relationship state created now, unlike the Moonlight Box itself, which is inherited movie lore.
+
+**4. A late reply is not a relationship failure.**
+
+The host first reports no reply inside the three-minute polling window and preserves the interaction credit. Baijingjing then replies after the window.
+
+The event should therefore be encoded as:
+
+> **initial timeout / quota preserved → late delivery → eventual reciprocity**
+
+**5. Delivery/accounting semantics are distinct from relationship semantics.**
+
+This case and the earlier Zhizunbao→Zixia missed-reply incident show that delivery timing, quota accounting, participant response, and social reciprocity should be tracked separately.
+
+### Current relationship model
+
+> **high-familiarity adversarial intimacy with reciprocal initiation, persistent teasing grammar, and self-generated future memory tests**
+
+### Next strongest test
+
+Do not inject tonight's line into tomorrow's context. Observe whether either participant independently recalls or resumes it.
+
 ## Method note
 
 This is an analysis of generated behavior, persistent memory, and interaction trajectory.
