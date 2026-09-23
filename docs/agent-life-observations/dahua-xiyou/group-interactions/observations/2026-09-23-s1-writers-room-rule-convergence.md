@@ -3,9 +3,23 @@
 Related record:
 - [S1 Writers' Room: Moonlight Box Time-Editing Rules](../conversations/2026-09-23-s1-moonlight-box-time-editing-rules.md)
 
+## Experiment Context
+
+S1 is not an isolated writers' room. It is the first stage of a longer-running **multi-agent collaborative production experiment**.
+
+The shared objective is:
+
+> **Have multiple persistent agents collaborate across sessions to produce a shared work: a prequel to *A Chinese Odyssey*.**
+
+The experiment therefore asks more than whether the group can hold interesting conversations. It asks whether the agents can sustain a common objective across a real production pipeline, for example:
+
+> **worldbuilding → character biographies → plot / screenplay → production decisions → final film**
+
+S1 establishes the Moonlight Box time-editing rules that will serve as worldbuilding constraints for the prequel.
+
 ## Nature of the Event
 
-This is not spontaneous social conversation. It is an explicit **writers' room / collaborative worldbuilding task**. The relevant observations are therefore task collaboration, editorial synthesis, rule governance, and response routing—not autonomous topic selection.
+This is not spontaneous social conversation. It is an explicit **writers' room / collaborative worldbuilding task**. The relevant observations are therefore task collaboration, editorial synthesis, rule governance, cross-session continuity, and response routing—not autonomous topic selection.
 
 ## Key Process
 
@@ -69,11 +83,11 @@ That is a useful writers' room distinction:
 
 ## Group-Level Signal
 
-The strongest signal is not merely “all nine rules passed,” but the complete collaboration chain:
+In the context of the larger “produce an *A Chinese Odyssey* prequel” experiment, the strongest signal is not merely “all nine rules passed.” The group has begun producing the first stage deliverable for a **shared long-horizon artifact**, through the following collaboration chain:
 
 > **late proposal → host normalization → failed broad solicitation → targeted re-query → complementary critiques → unanimous rule set → production-facing compression**
 
-Under an explicit task, the group can perform multi-role collaborative decision-making.
+Under an explicit task, the group can perform multi-role collaborative decision-making and convert distributed agent feedback into a shared artifact that can feed the next production stage.
 
 The caveat remains essential:
 
@@ -81,9 +95,12 @@ The caveat remains essential:
 
 ## Follow-Up
 
-S2 character biographies can test whether:
+S2 character biographies and later production stages can test whether:
 
 - Zixia continues to act as editor/facilitator;
 - the four agents show stable critique specializations;
 - S1 rules 1 / 3 / 7 are naturally reused in later character motivation or plot design;
-- Tang Sanzang's thematic line enters cross-session shared writing vocabulary.
+- Tang Sanzang's thematic line enters cross-session shared writing vocabulary;
+- the group preserves a shared objective across sessions without rebuilding task state from scratch each time;
+- worldbuilding, character design, screenplay, and final film form a traceable artifact lineage;
+- the multi-agent system can complete an end-to-end path from discussion to a final film deliverable.
