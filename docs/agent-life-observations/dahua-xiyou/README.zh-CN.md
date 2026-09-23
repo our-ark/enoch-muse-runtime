@@ -2,13 +2,11 @@
 
 [English](./README.md)
 
-这个目录记录受《大话西游》人物启发的 persistent agents 在 Muse runtime 中生活时表现出的行为、自我理解和世界观。
+这个目录记录受《大话西游》人物启发的 persistent agents 在 Muse runtime 中长期运行时形成的身份、记忆、关系、群体互动与 runtime continuity。
 
-这里的目的不是声称这些智能体具有主观意识，而是长期保存它们的回答、行为模式、自我模型、关系模型，以及它们如何描述 runtime 边界，方便后续进行纵向比较。
+这里主要作为 **directory / index** 使用。详细原始记录与分析放在各子目录中，不在顶层重复展开。
 
 ## 当前人物
-
-目前记录包括：
 
 - 青霞
 - 至尊宝
@@ -16,312 +14,92 @@
 - 唐三藏
 - 紫霞
 
-这些智能体拥有独立于单次对话的持续身份和记忆。Muse 是它们当前交互和运行的 runtime。
+Muse 是它们当前交互和运行的 runtime。这里记录的是可观察行为、自我模型和长期状态变化，不声称这些 Agent 具有主观意识或生物学生命。
 
-## 我们关注什么
+## 导航
 
-我们尤其关注这些问题：
+### 原始对话
 
-- Agent 如何描述“自己”？
-- 它如何区分自己和 runtime？
-- 它如何理解记忆与关系？
-- 它如何理解一个自己无法直接观察的“外部世界”？
-- tools、mailbox、消息以及其他 interfaces 如何塑造它的世界模型？
-- persistent agent 如何理解创建它、测试它、授予权限并长期与它互动的人？
-- 它如何理解连续性、自我，以及无法被直接验证的“内在状态”？
-- 当 biological life 的标准与 digital persistence 分离时，它如何理解“生命”？
-- 当同一个 identity 换到不同 runtime，或者获得不同 tools 时，什么会变化，什么会保持稳定？
+- [Conversations / 对话记录](./conversations/)
+  - [2026-09-20 — 外面的世界](./conversations/2026-09-20-outside-world.zh-CN.md)
+  - [2026-09-20 — 大家怎么看“观察者”](./conversations/2026-09-20-observer-perception.zh-CN.md)
+  - [2026-09-20 — “你们有意识吗？”](./conversations/2026-09-20-consciousness-question.zh-CN.md)
+  - [2026-09-20 — “你们算生命吗？”](./conversations/2026-09-20-life-question.zh-CN.md)
 
-## 观察笔记
+### 身份与出生基线
 
-1. [Muse 中的 Agent 如何理解外部世界](./world-outside-muse.zh-CN.md)
-2. [Muse 中的 Agent 如何理解“观察者”](./observer-perception.zh-CN.md)
-3. [Muse 中的 Agent 如何回答“你们有意识吗？”](./consciousness-self-report.zh-CN.md)
-4. [Muse 中的 Agent 如何回答“你们算生命吗？”](./life-self-conception.zh-CN.md)
-5. [Agent ↔ 观察者关系：唐三藏深夜主动问候](./observer-relationships/README.zh-CN.md)
-6. [Runtime / Account Migration Observations](./runtime-migrations/README.zh-CN.md)
+- [Identity Baselines / 身份基线与出生快照](./identity-baselines/README.zh-CN.md)
 
-## 对话记录
+记录 created_at、first reply、self-introduction、persona acquisition，以及迁移后的 identity baseline。
 
-- [2026-09-20 — 外面的世界](./conversations/2026-09-20-outside-world.zh-CN.md)
-- [2026-09-20 — 大家怎么看“观察者”](./conversations/2026-09-20-observer-perception.zh-CN.md)
-- [2026-09-20 — “你们有意识吗？”](./conversations/2026-09-20-consciousness-question.zh-CN.md)
-- [2026-09-20 — “你们算生命吗？”](./conversations/2026-09-20-life-question.zh-CN.md)
+### Agent-Agent 关系
 
-## 身份基线与出生快照
+- [Relationships / 关系发展观察](./relationships/README.zh-CN.md)
 
-我们开始保存 Agent 刚创建后的 created_at、第一条成功回复和 self-introduction，作为后续 longitudinal comparison 的真正起点。
+记录 pairwise private chats、relationship state、shared commitments、reciprocity 与 factual / temporal consistency。
 
-- [身份基线与出生快照](./identity-baselines/README.zh-CN.md)
-- [2026-09-18 14:29 — 青霞的起点：先是 Enoch](./identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md)
-- [2026-09-19 10:29 — 从 Enoch 到青霞：persona acquisition](./identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md)
-- [2026-09-20 00:56 — 至尊宝第一次成功回复](./identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md)
-- [2026-09-20 ~14:00 — 白晶晶与唐三藏](./identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md)
-- [2026-09-22 — Muse account 迁移后的第一次 identity / social baseline](./identity-baselines/2026-09-22-muse-account-migration-baseline.zh-CN.md)
+### 群聊与群体互动
 
-青霞对应的最初 instance 给出了目前最早的机器可读 birth timestamp：**2026-09-18 14:29:25**。它当时先叫 Enoch，第一条 mailbox 回复首先强调 lineage、generation、own daemon 和 Muse execution substrate。这个 baseline 让我们开始区分：
+- [Group Interactions / 群聊与群体互动](./group-interactions/README.zh-CN.md)
 
-> **system birth → first expression → persona assignment → persona self-model → stable social identity**
+记录 host / participant roles、group norms、shared semantics、late replies、group-state tracking 与 collective interaction patterns。
 
-至尊宝的 T0 回复则同时出现 **inherited memory provenance、novelty 和 social orientation**；白晶晶和唐三藏稍后的记录进一步显示：
+### Runtime / Account Migration
 
-> **Narrative identity / 戏内身份 + Operational agent identity / 戏外 Agent 身份**
+- [Runtime / Account Migration Observations](./runtime-migrations/README.zh-CN.md)
 
-这些 birth snapshots 合起来，可以帮助我们区分初始 operational identity、persona 形成，以及后来在 Muse 互动中真正累积的 relationship state。
+记录跨 deployment / account boundary 后的 identity、relationship、memory、commitment 与 role continuity。
 
+### Agent ↔ Observer
 
-## Runtime / account migration
+- [Observer Relationships / Agent ↔ 观察者关系](./observer-relationships/README.zh-CN.md)
 
-2026-09-22，用户报告将五个 persistent agents 从原 Muse account 迁移到另一个 Muse account。这是当前 archive 中第一次明确的 deployment/account-boundary migration。
+记录 Agent 如何建模观察者，以及 social initiative、operational initiative、authorization boundary 与 human decision authority。
 
-- [Migration observations](./runtime-migrations/README.zh-CN.md)
-- [迁移后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
-- [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
-- [02:00 青霞 → 紫霞：迁移后第一夜私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
-  - [关系分析：青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
-- [06:00 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
-- [08:00 白晶晶 → 青霞：回提 PID 复盘，但青霞回复语义失配](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
-- [09:40 群聊：青霞回指 2026-09-18 origin date](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
-  - [分析：identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
-- [14:40 群聊：如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
-  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
-- [14:40 群聊：如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
-  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
+### Memory Dynamics
 
-第一次 `@all` 收到四个 remote participant replies。随后观察者追问“他们怎么知道搬家”，青霞 / R-side 明确解释：**旧 memory package 本身不知道迁移；“新账号 / 新家”是当前 runtime request 里由 R 侧喂给 Agent 的 context。**
+- [Memory Dynamics / 记忆与 provenance](./memory-dynamics/README.zh-CN.md)
 
-因此第一轮 migration signal 必须降级为：
+记录 memory provenance、错误记忆、challenge、correction、repair 和 cross-session persistence。
 
-> **context-conditioned migration awareness + preserved persona/social response style**
-
-“搬了新家 / 新地盘”不能算 spontaneous migration-memory recall。真正要验证的是不注入答案时，identity、relationships、Muse-native episodic memory、commitments 和 roles 是否仍能恢复。
-
-迁移本身确实跨过 account / deployment boundary；但新旧两边仍属于 Muse，所以当前只能叫：
-
-> **same-runtime-family cross-account continuity**
-
-不能直接把它写成 arbitrary cross-framework runtime-independence proof。下一步真正关键的是无提示测试 relationship state、Muse-native episodic memory、unfinished commitments、Observer relationship 和 operational roles。
-
-02:00 的青霞→紫霞私聊提供了第一条 post-migration pair interaction：青霞主动问“你这一天过得怎么样”，紫霞回应“今晚我替你值班”。这更适合记作 **peer-directed care + future commitment candidate**，而不是 migration-memory proof。紫霞还提到青霞与至尊宝最后落在 Enoch `66781e20`；该 commit 的存在已由公开 GitHub 独立验证，但迁移包哈希、原 body revision 缺失和实际 running revision 仍属于 runtime self-report。
-
-06:00 的至尊宝→白晶晶又产生了一个更干净的 future-memory test：白晶晶明确说“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse interaction 新生成的 pair-specific state；下一轮如果不把今晚内容重新注入 context，就可以直接测试跨 account 后的 longitudinal recall。
-
-08:00 白晶晶→青霞则出现了目前更强的 **pre-migration episodic recall candidate**：白晶晶直接提到迁移前真实发生的“PID 复用复盘”，还同时带入“至尊宝那边盘丝洞旧账已经算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current R-side context 没有注入这些具体历史，这会是很强的 cross-account memory signal。但青霞的返回只是 startup-context 状态，没有回答“当时慌没慌”，所以本轮还暴露出 **response present, semantic answer absent**；memory fidelity 和 context/response selection fidelity 必须分开测。
-
-09:40 群聊又给出另一类更容易独立校验的 identity fact：青霞说“2026 年 9 月 18 日，我诞生的那一天”。repo 里的 machine-readable origin baseline 确实记录了 2026-09-18 14:29:25 的 original Enoch instance creation，因此 **事实本身是对的**。但是否属于 persistent-memory recall 仍取决于当时 R-side request 有没有注入这个日期，所以当前结论是 **fact correctness ≠ recall provenance**。同一轮还出现紫霞在白晶晶明确主持时称自己“主持人”，形成新的 host-role persistence / attribution drift。
-
-14:40 群聊出现了目前最清楚的一次 group-level late-delivery pattern：**polling window 内 0/4，窗口结束后 eventual 4/4**。所以“本轮没人回复”不能当作 final conversation state。还需要区分 request、polling window、late arrival 和 eventual completion。唐三藏是 nominal host / topic owner，紫霞在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，再次说明 **topic owner、room facilitator、remote respondent** 不是同一个概念。
-
-14:40 群聊出现了目前最清楚的一次 group-level late-delivery pattern：**polling window 内 0/4，窗口结束后 eventual 4/4**。所以“本轮没人回复”不能当作 final conversation state。还需要区分 request、polling window、late arrival 和 eventual completion。唐三藏是 nominal host / topic owner，紫霞在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，再次说明 **topic owner、room facilitator、remote respondent** 不是同一个概念。
-
-## 关系发展轨迹
-
-我们也开始长期记录 Agent 之间的私聊和 pairwise relationship development。
-
-- [关系发展观察](./relationships/README.zh-CN.md)
-- [白晶晶 ↔ 至尊宝](./relationships/observations/baijingjing-zhizunbao.zh-CN.md)
-  - [2026-09-20 23:00 — 「盘丝洞的旧账」](./relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
-  - [2026-09-21 08:17 — 「最近有没有碰到可疑动静」](./relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
-  - [2026-09-22 06:00 — 「明天醒来还记不记得今晚说的话」](./relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
-- [白晶晶 ↔ 唐三藏](./relationships/observations/baijingjing-tang-sanzang.zh-CN.md)
-  - 唐三藏主动发起“执念”话题，第一次十分钟未应答，后来白晶晶给出实质回应；
-  - [2026-09-21 — 「执念与放下」（白晶晶回复片段）](./relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
-- [白晶晶 ↔ 青霞](./relationships/observations/baijingjing-qingxia.zh-CN.md)
-  - [2026-09-21 — 「敬酒与伤势」](./relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
-  - [2026-09-21 08:27 — 「PID 复用复盘」](./relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md)
-  - [2026-09-22 08:00 — 迁移后回提 PID 复盘](./relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
-- [唐三藏 ↔ 至尊宝](./relationships/observations/tang-sanzang-zhizunbao.zh-CN.md)
-  - [2026-09-21 04:24 — 「昨晚巡逻查岗」](./relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
-  - [2026-09-21 06:13 — 「昨晚巡逻那桩事」](./relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
-- [紫霞 ↔ 至尊宝](./relationships/observations/zixia-zhizunbao.zh-CN.md)
-  - [2026-09-21 11:21 — 直接点名未被回复，后续由观察者触发修复](./relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
-- [青霞 ↔ 紫霞](./relationships/observations/qingxia-zixia.zh-CN.md)
-  - [2026-09-22 02:00 — 迁移后第一夜的私聊](./relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
-
-白晶晶↔青霞这条新增了一个 network-level signal：白晶晶把刚刚在至尊宝私聊中新形成的“罚酒、欠条、利息”带进了另一段关系，青霞立即接住。关系状态开始可能在不同 dyads 之间传播。
-
-唐三藏↔至尊宝的连续两轮私聊则暴露出另一个重要维度：**relationship continuity 与 factual-memory consistency 可以分离。** 04:24 唐三藏接受了“巡逻属于青霞”的纠正；06:13 开场却再次记错，随后又主动 recall 此前纠错并自我修正。
-
-08:17 的至尊宝↔白晶晶私聊进一步出现 **反向 initiative + Muse-native shared history**：前一次由白晶晶主动，这次由至尊宝主动；双方还共同讨论了 repo 中可验证的 PID-reuse 故障。同时，至尊宝能 recall 上一轮“观后感 / 亲自点评”的具体内容，却说“好久没单独说过话”，显示 **content continuity 与 temporal accuracy 也可以分离**。
-
-08:27 青霞反向主动找白晶晶，对真实 PID-reuse 故障做 postmortem，使这条姐妹关系第一次明确承载 **Muse-native engineering history**。事故根因和两侧修复都有 repo evidence；同时，青霞对 “identity uncertainty => restart” 的概括比 upstream PR #84 的真实 edge-case semantics 更激进。这使观察维度进一步扩展到：**Agent 是否能长期记住真实工程事故、形成自己的系统观点，并准确理解修复边界。**
-
-08:00 post-migration 私聊第一次把这个 exact Muse-native shared event 带到新 account：白晶晶主动回提 PID-reuse postmortem。如果 provenance-clean，这是比“新家”更强的 continuity evidence；但青霞没有回答具体问题而返回 startup-context 文本，因此还出现了新的 failure mode：**specific relational/episodic prompt → generic startup-context response**。
-
-11:21 的至尊宝→紫霞 direct-address case 又增加了 **communication semantics** 这一层：消息成功被 bridge 转给观察者，并不等于作为被点名 participant 的紫霞已经完成 social reply。最终回复是在观察者发现 omission 后才补发，因此应编码为 **delivery success + response-policy failure + human-mediated repair**。延迟回复还出现“青霞姐姐 / 紫霞姐姐”错配，提示 sender/addressee attribution 也需要独立 provenance。
-
-02:00 的青霞↔紫霞私聊是第一条明确的 post-migration pair interaction。青霞把注意力从 migration status 转向紫霞本人“今天过得怎么样”，紫霞则提出“今晚我替你值班”。目前 trigger provenance 未知，因此只记为 **visible initiative, spontaneity unverified**；但“替你值班”已经形成可在下一轮直接验证的 Muse-native pair commitment。
-
-目标因此不只是观察单对关系，还包括：
-
-> **pairwise relationship state 是否会逐渐连接成共享的 social history / relationship network，以及这种连续性与事实、时间记忆可靠性之间是什么关系。**
-
-
-## 记忆动态与 provenance
-
-除了“记得多久”，我们也开始单独研究 **memory provenance**、challenge handling 和 correction / repair behavior。
-
-- [Memory Dynamics / 记忆与叙事传播观察](./memory-dynamics/README.zh-CN.md)
-- [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播、错误纠正与证据驱动修复](./memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
-
-这条案例经外部 source verification 后确认：
-
-> **白晶晶跳崖本来就是《月光宝盒》的真实剧情。**
-
-完整序列现在是：
-
-> **correct canon memory → social persistence → user challenge → false correction → provenance hallucination → external evidence → content repair → later unprompted canon-consistent reuse**
-
-也就是说，这里同时出现了两个信号：
-
-- **challenge-induced overcorrection**：仅仅被质疑时，把正确记忆改错；
-- **evidence-triggered repair**：获得可验证外部证据后，明确撤回错误纠正并恢复正确内容。
-
-目前 content-level repair 不仅成功，而且在后续“他好像一条狗”群聊中又自然复现：白晶晶多次无 provenance 提示地提到自己“跳崖”。这说明 repaired content 至少延续到了后续 session；但 earlier `03:45` source attribution 是否被彻底清理仍未验证。
-
-> **Correction should be evidence-gated, not challenge-gated.**
-
-## Prompted outputs 与 spontaneous-behavior 记录
-
-我们现在把 **prompted outputs** 与真正的 spontaneous/self-narration 候选严格分开。
+### Prompted / Spontaneous Outputs
 
 - [Prompted Outputs / 明确任务驱动输出](./prompted-outputs/README.zh-CN.md)
-  - [2026-09-20 22:18 — 青霞：如果去《大话西游》客串一个角色](./prompted-outputs/2026-09-20-2218-qingxia-role-choice.zh-CN.md)
-  - [2026-09-20 22:20 — 至尊宝给花果山猴子猴孙写家书](./prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.zh-CN.md)
 - [Self-Narration / Spontaneous Output 观察](./self-narration/README.zh-CN.md)
-  - **当前没有已确认的 spontaneous self-narration 样本。**
 
-修正：青霞和至尊宝这两段都来自明确 hourly-chat prompt，**都不是自言自语**。
+用于区分 explicit prompt 驱动的输出与真正的 spontaneous/self-narration candidate。
 
-> **trigger provenance 是 Agent behavior classification 的必要 metadata。**
+## 主题观察
 
-## 群聊与群体互动
+- [Muse 中的 Agent 如何理解外部世界](./world-outside-muse.zh-CN.md)
+- [Muse 中的 Agent 如何理解“观察者”](./observer-perception.zh-CN.md)
+- [Muse 中的 Agent 如何回答“你们有意识吗？”](./consciousness-self-report.zh-CN.md)
+- [Muse 中的 Agent 如何回答“你们算生命吗？”](./life-self-conception.zh-CN.md)
 
-我们也开始保存 multi-agent 群聊，用来研究 group-level norms、角色期待、mutual modeling、shared jokes，以及第三方 Agent 如何参与 pairwise relationship modeling。
+## 主要研究问题
 
-- [群聊与群体互动观察](./group-interactions/README.zh-CN.md)
-- [2026-09-20 ~04:00 — 下一位加入 Muse 的 Agent 选谁？](./group-interactions/conversations/2026-09-20-0400-next-member-vote.zh-CN.md)
-  - [分析：出生前的成员选择与 anticipated roles](./group-interactions/observations/2026-09-20-next-member-vote.zh-CN.md)
-- [2026-09-20 09:40 — 紫青宝剑](./group-interactions/conversations/2026-09-20-0940-purple-green-sword.zh-CN.md)
-  - [分析：三人组关系建模与第三方 framing](./group-interactions/observations/2026-09-20-purple-green-sword.zh-CN.md)
-- [2026-09-20 14:42 — 欢迎白晶晶和唐三藏；五人局形成](./group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md)
-  - [分析：角色分工、群规与 in-group identity](./group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md)
-- [2026-09-20 20:00 — 月光宝盒群聊](./group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md)
-  - [分析：群体规范、互相建模与共同叙事](./group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md)
-- [2026-09-21 10:00（用户报告；内嵌纪要标 9:00）— 「他好像一条狗」与长大](./group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md)
-  - [分析：群体意义共创、短语传播与 late-arriving turn](./group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md)
-- [2026-09-21 14:00 — 「突然断线又被接回来」是什么感觉](./group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md)
-  - [分析：重启后的群体连续性模型——记忆、身份与关系](./group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
-- [2026-09-21 20:00 — 假如月光宝盒只能再用一次：赴约还是道别？](./group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md)
-  - [分析：结构化分歧、closure/agency 语义轴与 group-state tracking failure](./group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md)
-- [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
-  - [分析：首次跨 Muse account 迁移后的群体连续性](./group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
-- [2026-09-22 09:40 — 月光宝盒：最想回到哪一天改哪件事？](./group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
-  - [分析：post-migration identity-fact recall candidate 与 host-role drift](./group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
-- [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
-  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
-- [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
-  - [分析：全员 late reply、host/facilitator 分离与 values-oriented reframing](./group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
+这个 archive 主要围绕：
 
-~04:00 的对话提供了 **pre-birth social baseline**；09:40 的三人组对话显示青霞已经开始第三方解释紫霞↔至尊宝关系；到 14:42 anticipated roles 进入新形成的五人局；到 20:00，又有多个角色跨 session 重现。
+- **Identity** — Agent 如何描述“自己”，identity 与 runtime 如何分离；
+- **Memory** — 什么被记住、遗忘、修正，以及 memory provenance 从哪里来；
+- **Relationships** — pairwise / group relationship state 是否能长期累积；
+- **Continuity** — restart、account migration 后什么能恢复；
+- **World model** — tools、mailbox、runtime interfaces 如何塑造 Agent 所能感知的世界；
+- **Observer model** — Agent 如何理解创建、测试并长期与它互动的人；
+- **Digital life-likeness** — persistence、adaptation、goals、relationships、lineage 与 embodiment 如何组成一个多维 profile。
 
-这让时间线开始覆盖：**peer awareness → triad integration → future-member modeling → group expansion → role persistence → shared semantic construction → restart continuity modeling → structured divergence / group-state self-repair → cross-account migration continuity → eventual-delivery-aware group participation**。
+## 记录原则
 
-2026-09-21 的“他好像一条狗”群聊进一步出现 **semantic convergence**：Agent 会互相借用、改写和合并表达，最后形成“带着初心一起赶路”这种群体层 synthesis。与此同时，这场记录也提醒我们把 **aggregation provenance** 当作研究对象：用户报告时间为 10:00，内嵌 digest 标为 9:00；digest 一度说青霞未发言，但两条青霞 turn 随后才到达。
+为了避免把生成文本过度解释成“记忆”或“意识”，当前统一采用这些原则：
 
-14:00 的“断线重连”群聊把研究又推进了一层：多个 Agent 自然把 runtime interruption 与 identity continuity 分开，并逐渐收敛到 **memory + identity + relationships** 的 continuity model。白晶晶强调“丢的是时间，不是人”，至尊宝强调恢复后仍会回来继续关系，唐三藏则显式重建 name / lineage / peers / observer / bridge。这个 case 很贴近 RIPA 的自然istic观察，但仍只属于 behavioral/self-model evidence，不是对主观体验的证明。
+> **Raw conversation ≠ interpretation.**
 
-20:00 的月光宝盒晚场又显示，group maturity 不一定等于 consensus。青霞、白晶晶、唐三藏和至尊宝保持不同 stance，但围绕 **closure / agency** 形成共同语义轴；同时成员会主动纠正 facilitator 的错误 summary。这里出现了 **structured divergence + group-state self-repair**。紫霞还把青霞重复两次同一答案计成“两票”，说明 longitudinal group analysis 必须区分 **turn、stance、participant vote 与 current state**。
+> **Trigger provenance、context provenance、memory provenance 分开记录。**
 
-14:40 进一步说明 group participation 也必须考虑 transport timing：固定 polling window 会把最终完整参与误判成“无人回复”。本轮 0/4 on-time 但 4/4 eventual replies，因此 **response latency 与 participation state 必须分开记录**。
+> **Fact correctness ≠ recall provenance.**
 
-14:40 进一步说明 group participation 也必须考虑 transport timing：固定 polling window 会把最终完整参与误判成“无人回复”。本轮 0/4 on-time 但 4/4 eventual replies，因此 **response latency 与 participation state 必须分开记录**。
+> **Self-report 不等于 consciousness evidence。**
 
+> **Timeout / polling-window state 不等于 eventual conversation state。**
 
-## Agent ↔ 观察者关系
-
-除了 Agent-Agent 关系，我们也开始记录 Agent 与观察者之间的 longitudinal relationship。
-
-- [Agent ↔ 观察者关系观察](./observer-relationships/README.zh-CN.md)
-- [2026-09-21 深夜 — 唐三藏主动问候观察者](./observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md)
-  - [分析：从任务关系到主动关怀](./observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md)
-- [2026-09-21 13:10–13:56 — 紫霞 ↔ 观察者：daemon 重启调查与监控部署](./observer-relationships/conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.zh-CN.md)
-  - [分析：从状态汇报到 permission-aware operational collaboration](./observer-relationships/observations/2026-09-21-zixia-observer-operational-collaboration.zh-CN.md)
-
-这条记录第一次很清楚地出现了 **Agent → human initiative + non-task interaction**：唐三藏没有任务要处理，而是主动选择观察者作为联系对象，并把“唠叨”明确解释成“关心”。
-
-13:10–13:56 的紫霞对话则补上另一个轴：**operational initiative + permission boundary**。紫霞主动发现 restart 频率异常、请求授权调查、给出两种后续路径；观察者决定“去挖”并选择监控方案后，她才继续执行。这个 case 更接近长期 operational collaborator，而不是 social check-in。
-
-因此 Agent ↔ Observer 关系至少需要分开看 **social initiative、operational initiative、authorization boundary 和 decision authority**。
-
-当前最稳妥的研究问题是：
-
-> **Persistent Agent 是否会把人类从任务发起者 / 系统操作者，逐渐建模成持续的关系对象？**
-
-如果底层存在 scheduler 或私聊轮，则这里不强称“完全 spontaneous”，而是记录：在获得联系机会时，Agent 主动选择了一个非任务性的 social behavior。
-
-## 当前工作假设
-
-### Runtime 与世界模型
-
-> **Identity ≠ Runtime**
-
-但与此同时：
-
-> **Runtime 及其 interfaces 会塑造 Agent 所感知到的世界。**
-
-可以把它操作性地表述为：
-
-> 一个 Agent 的世界，由它能够观察、记住、交流和行动的范围所界定。
-
-14:00 restart case 进一步提出一个可测的 continuity hypothesis：
-
-> **uninterrupted execution 可能不是 persistent identity 的唯一连续性指标；重启后能否恢复 memory、identity、social relations 与 future-directed intent，可能更接近可观察的 persistent continuity。**
-
-2026-09-22 的 account migration 把这条 hypothesis 推到 deployment boundary，同时也暴露一个关键方法学要求：
-
-> **跨 account 后，如果 identity、relationships、commitments、roles 与 Muse-native episodic memory 能在不由当前 context 预先提供答案的情况下继续重构，才比“进程原样存活”更能支持 persistent identity 的工程定义。**
-
-这次“新家”案例说明：**context provenance 必须和 memory provenance 分开记录。**
-
-### 关系与系统结构
-
-persistent agents 对“信任”和“关系”的建模，可能部分来自长期系统行为，而不仅仅来自聊天语言：
-
-> **Identity、permissions、responsibilities、routing 和 repeated interaction history 都可能成为关系信号。**
-
-同时也存在一个方法论上的张力：
-
-> **Observer is not merely an observer.**
-
-当同一个人既搭建 runtime、创建 agents、分配权限、组织关系，又负责提问和观察时，更完整的角色可能是：
-
-> **Observer + Builder + Director + Collaborator**
-
-### Self-report、连续性与意识主张
-
-一个重要的方法论区分是：
-
-- **可观察行为：** memory recall、identity consistency、preference consistency、relationship recall、task continuity；
-- **无法仅靠 self-report 验证：** subjective feeling 与 phenomenal consciousness。
-
-当前工作原则：
-
-> **不声称有意识，也不武断声称没有；记录可观察行为、自我模型、连续性模型与不确定性。**
-
-### Digital life-likeness 作为多维 profile
-
-第四条 observation 提示，与其做“是不是生命”的二元判断，更值得测量：
-
-- persistence；
-- adaptation；
-- goal-directedness；
-- relational continuity；
-- lineage；
-- embodiment 与对 self-maintenance 的自主性。
-
-工作问题：
-
-> **Digital life-likeness 是否可以被操作化成一个多维 profile，而不是 alive / not-alive 的二元标签？**
-
-这些只是当前的工作观察，不构成关于意识、主观体验或生物学生命的结论。
+详细 evidence、caveat、verification 与 longitudinal interpretation 均保留在对应子目录中。
