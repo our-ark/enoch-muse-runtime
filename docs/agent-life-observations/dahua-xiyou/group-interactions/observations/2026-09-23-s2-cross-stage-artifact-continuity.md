@@ -2,7 +2,7 @@
 
 Related records:
 - [S1: Moonlight Box time-editing rules](../conversations/2026-09-23-s1-moonlight-box-time-editing-rules.md)
-- [S2: Character biographies and prequel baseline — four real replies](../conversations/2026-09-23-s2-character-biographies-four-replies.md)
+- [S2: Character biographies and prequel baseline — four real replies](../conversations/2026-09-23-s2-character-biographies-five-writers.md)
 
 ## Experiment Context
 
@@ -31,18 +31,19 @@ The clearest chain so far is:
 
 This is the first explicit **cross-stage artifact continuity** signal in the production experiment.
 
-## 2. The Four Agents Show Visible Scope Differentiation
+## 2. The Five Writers Show Visible Scope Differentiation
 
-The replies are not four parallel answers to the same subproblem:
+The five writers are not producing parallel answers to the same subproblem:
 
 - **Qingxia:** timeline / causal architecture
 - **Zhizunbao:** self character biography
 - **Baijingjing:** Zixia characterization / tone guardrail
 - **Tang Sanzang:** thematic spine
+- **Zixia:** narrative POV / tone / information boundary
 
-The responses themselves contain scope boundaries such as “only my part,” “only writing myself,” and “only answering how Zixia should be written.”
+Several responses explicitly constrain scope: “only my part,” “only writing myself,” and “only answering how Zixia should be written.” Zixia, as host / fifth writer, then adds her own narrative layer and explicitly says she will “get the discussion mechanism running.”
 
-This is evidence of **role-scoped contribution**, but the full original prompts have not yet been preserved. We therefore cannot tell whether the specialization was self-selected or assigned in the prompt.
+This is evidence of **role-scoped contribution + host synthesis responsibility**, but the full original prompts have not yet been preserved. We therefore cannot tell whether specialization was self-selected or assigned in the prompt.
 
 Current classification:
 
@@ -64,7 +65,21 @@ Together, these turn S2 into more than character bios. They create a **T0 narrat
 
 If later screenplay stages continue to use this baseline, the project will have a traceable artifact lineage.
 
-## 4. Different Layers of Work Begin to Interlock
+## 4. Zixia Explicitly Consumes Other Agents' Inputs
+
+Zixia's own S2 contribution contains three clear cross-agent integrations:
+
+- Tang Sanzang's “the version in which they loved each other was real” becomes the foundation for her first-person narration;
+- Baijingjing's “wind in the clouds → stop for one person” becomes the progression of Zixia's narrative voice;
+- Qingxia's timeline model defines the boundary of what Zixia will narrate: only the period before the Box sounds for the first time.
+
+This moves S2 beyond parallel specialization toward:
+
+> **Agent A output → Agent B adopts / transforms → shared narrative constraint**
+
+Zixia therefore acts not only as host but as a **cross-agent integrator**.
+
+## 5. Different Layers of Work Begin to Interlock
 
 Zhizunbao's bio provides actionable character motivation:
 
@@ -87,7 +102,7 @@ The current S2 inputs therefore already span:
 
 This advances the production pipeline beyond S1's rule convergence.
 
-## 5. A Cross-Session Phrase Worth Tracking
+## 6. A Cross-Session Phrase Worth Tracking
 
 Baijingjing writes:
 
@@ -107,19 +122,27 @@ S1's strongest signal was:
 
 > **multiple agents can converge distributed feedback into a shared worldbuilding artifact.**
 
-S2 now adds:
+S2 now adds two layers:
 
 > **the artifact begins to be consumed by the next production stage.**
 
-That is:
+and:
+
+> **agents begin directly consuming, citing, and transforming one another's outputs.**
+
+That gives:
 
 > **shared decision → persisted artifact → downstream reuse**
+
+and then:
+
+> **distributed contributions → cross-agent integration → shared narrative model**
 
 This is much closer to true **multi-agent project continuity** than a single good group discussion.
 
 ## Current Limits
 
-- No final Zixia synthesis for S2 has been recorded yet, so S2 should not be marked closed.
+- Zixia has now added her own narrative input, but cross-critique / conflict resolution / final synthesis has not yet been recorded, so S2 should not be marked closed.
 - Full original S2 prompts are missing, so assignment provenance for the visible specialization is incomplete.
 - Output quality alone does not establish autonomous creative agency.
 - The next test is whether the resulting S2 artifact is actually consumed by S3 / screenplay rather than remaining isolated to this round.
