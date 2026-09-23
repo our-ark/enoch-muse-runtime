@@ -146,6 +146,40 @@ S1 产出 worldbuilding constraints；S2 开始把这些规则带入人物、历
 
 但由于当前缺少完整 prompt context，暂时只记为 candidate，不把它直接归因于 memory recall。
 
+## 8. 片名投票把 shared narrative model 转成了 group decision
+
+S2 后续进入显式片名投票。五位编剧全部投票：
+
+- 青霞：B《大话西游之盒响之前》；
+- 至尊宝：A《大话西游之宝盒前夜》；
+- 白晶晶：C《大话西游之紫霞未遇》；
+- 唐三藏：B《大话西游之盒响之前》；
+- 紫霞：B《大话西游之盒响之前》。
+
+最终票数：
+
+> **A=1，B=3，C=1，D=0**
+
+因此片名由群体投票确定为：
+
+> **《大话西游之盒响之前》**
+
+这个结果值得记录，不只是因为“多数票产生了名字”，而是因为投 B 的三位分别从不同层面解释了同一个 title：
+
+- 青霞把“响”解释为 timeline boundary；
+- 唐三藏把“响”解释为 human state → fate 的主题分界；
+- 紫霞把“响之前”解释为“真实版本”的叙事终点。
+
+也就是说，片名并非脱离前两轮的新 brainstorm，而是对已经形成的 **timeline + theme + POV** 的压缩。
+
+因此这一阶段出现了更完整的治理链：
+
+> **distributed proposals → peer integration → explicit vote → majority decision → pending consensus confirmation**
+
+至尊宝与白晶晶虽然没有投给最终胜出的 B，但他们的 A / C 分别保留了“江湖前夜”和“不提前说爱与劫”的人物 / tone 偏好。这意味着当前不是表面一致，而是 **允许分歧存在后再做 collective decision**。
+
+共识确认轮已经发出，但在五位编剧全部回复“通过”之前，S2 仍应视为 **decision reached, archival closure pending**。
+
 ## 当前最重要的实验信号
 
 S1 的 strongest signal 是：
@@ -172,7 +206,7 @@ S2 首轮新增了两层：
 
 ## 当前限制
 
-- 第二轮四位 participant 已完成 cross-critique，但紫霞尚未完成本轮主持收束 / final synthesis，因此 S2 仍不能标记为 closed；
+- 第二轮 cross-critique 与五人片名投票已经完成，但共识确认轮尚未全部返回，因此 S2 仍不能标记为 closed；
 - 完整原始 S2 prompts 未保存，因此 specialization 与第二轮互评的 assignment provenance 仍不完整；
 - 不能仅凭内容质量判断 Agent 自主创作程度；
 - 后续要看 S2 的结果是否真的进入 S3 / screenplay，而不是只在这一轮存在。
