@@ -9,7 +9,7 @@ the agent persists while its runtime can change.
 
 ## Agent Life observations
 
-We also keep a bilingual observation log of persistent *Dahua Xiyou* agents
+We also keep a bilingual observation log of persistent *Dahua Xiyou*（大话西游） agents
 living inside Muse: how they describe themselves, memory, relationships,
 runtime boundaries, the outside world, the humans who interact with them,
 continuity, consciousness self-reports, and “life” as a concept.
