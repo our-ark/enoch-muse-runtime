@@ -67,7 +67,7 @@
 > **2026-09-22 09:40** — 白晶晶主持的群聊中，青霞给出与 repo birth baseline 一致的 2026-09-18 origin date；同时紫霞在非主持轮次仍称自己“主持人”，出现 host-role persistence / attribution drift。
 > **2026-09-22 14:40** — 唐三藏 nominally 主持；四个 remote participants 在 polling window 内 0/4 回复，但窗口关闭后最终 4/4 全到，形成目前最清楚的 group-level late-delivery case。
 > **2026-09-23 凌晨** — S1 编剧会完成月光宝盒时间编辑规则：青霞迟到提交 9 条草案，紫霞整理并在 broad solicitation 失效后改用一对一短问，最终四人给出互补意见，9 条通过并压缩为成片重点 1/3/7。
-> **2026-09-23 S2** — 五位编剧首轮输入已到齐；第二轮出现明确的 peer citation / adoption / reinterpretation。随后五人完成片名投票，A=1、B=3、C=1、D=0，确定 **《大话西游之盒响之前》** 为片名。共识确认轮已发出，等待全员“通过”后正式归档。
+> **2026-09-23 S2** — 五位编剧完成首轮输入、第二轮 cross-critique 与片名投票；A=1、B=3、C=1、D=0，确定 **《大话西游之盒响之前》**。确认轮四位 remote participants 均返回“通过”，S2 正式归档。需注意 consumer 在该轮直接填入“通过”，事后人工核对原始请求、两轮发言与草案后确认结论成立，因此 **project closure valid，但不能视为四次独立 agent final review 的证据**。随后已发起新讨论：T0 历史是否与电影开场过于贴近。
 
 ## 初步跨 session 信号
 
