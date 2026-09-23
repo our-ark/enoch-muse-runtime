@@ -2,7 +2,7 @@
 
 关联记录：
 - [S1：月光宝盒的时间编辑机制](../conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md)
-- [S2：人物小传与前传基线（四人真实回复）](../conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md)
+- [S2：人物小传与前传基线（五位编剧发言）](../conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md)
 
 ## 实验上下文
 
@@ -73,7 +73,7 @@ S1 产出 worldbuilding constraints；S2 开始把这些规则带入人物、历
 
 ## 4. 紫霞开始显式消费其他 Agent 的输入，而不是只做主持
 
-紫霞自己的 S2 发言有两个非常清楚的 cross-agent references：
+紫霞自己的 S2 发言有几个非常清楚的 cross-agent references：
 
 - 她把唐三藏的“他们相爱的那个版本是真的”直接作为自己第一人称独白的叙事底气；
 - 她明确“接白晶晶的分寸”，把“云里的风 → 为一个人停下来”变成独白语气的 progression；
@@ -85,36 +85,60 @@ S1 产出 worldbuilding constraints；S2 开始把这些规则带入人物、历
 
 也就是说，紫霞作为主持人同时开始做 **cross-agent integration**。
 
-## 5. 不同层级的工作开始互相咬合
+## 5. 第二轮把 integration 从 host synthesis 推进到 peer-to-peer adoption
+
+第二轮四条真实回复里，青霞、至尊宝、白晶晶、唐三藏都不是重新回答原 prompt，而是明确引用其他编剧的具体表达，再进行认同、解释或补充。
+
+形成了几条清楚的互相咬合链：
+
+- **唐三藏 → 青霞：** “相爱的版本是真的”把“覆盖不分支”的冷逻辑转成情感地基；
+- **紫霞 → 青霞 / 唐三藏：** “我记得的版本”与“响之后一个字不提”被解释为单线时间与留白的叙事后果；
+- **白晶晶 → 青霞 / 至尊宝 / 唐三藏：** “剑认了人才认”被提升为可验证因果锚点、人物关系依据和“真”的凭据；
+- **青霞 → 至尊宝 / 白晶晶 / 唐三藏：** “拔剑在先、相遇在后、相爱在最后”与“盒子不在因果链里”被其他人直接消费；
+- **紫霞 → 至尊宝 / 白晶晶 / 唐三藏：** “不提前剧透失去”“先云里的风”“失去才有重量”被继续转写成角色动机、tone guardrail 和主题定义。
+
+因此这轮已经出现：
+
+> **peer citation → adoption → reinterpretation → complementary constraint**
+
+这比第一轮的“host 整合四人输入”更强，因为 shared model 开始由多个 participant 互相维护，而不是只靠主持人总结。
+
+## 6. 不同层级的工作开始互相咬合
 
 至尊宝的小传给出了后续剧情可操作的欲望与恐惧：
 
 - want：和兄弟过安稳日子；
 - fear：死亡，以及承认自己在乎某个人。
 
-白晶晶则给紫霞设置了 characterization guardrail：
+第二轮里他又把白晶晶的“等 / 剑认主”和自己的“怕被拿捏”合并，变成：
 
-- “等”而不是“追”；
-- 紫青宝剑作为可验证 anchor；
-- “仙气在前，情意在后”。
+> 她肯等、肯赌剑，这份拿捏我认。
 
-唐三藏把这些局部设定重新压缩为一个全局悲剧前提：
+这说明 characterization constraint 开始反向进入角色内部动机，而不是只停留在编剧层的描述。
 
-> **后面的所有失去，都是从一个真实存在过的版本里一点一点偷走的。**
+白晶晶则把：
+
+- “相爱的版本是真的”
+- “盒子没动手脚”
+- “剑认主”
+
+连接成同一条可信性链：只有 baseline 本身真实、未被盒子改写，“等”与“剑认主”才成立。
+
+唐三藏进一步把“失去才有重量”重新压缩为：
+
+> **重量不在失去，在“真的”二字立不立得住。**
 
 因此目前已经出现：
 
-> **causal baseline + character motivation + characterization constraint + thematic framing**
+> **causal baseline + character motivation + characterization constraint + thematic framing + peer validation**
 
-这比 S1 的 rule convergence 又往 production pipeline 前进了一步。
-
-## 6. 一个值得特别追踪的 cross-session phrase
+## 7. 一个值得特别追踪的 cross-session phrase
 
 白晶晶写：
 
 > “先让她是‘云里的风’，再让她为一个人停下来。”
 
-“云里的风”此前出现在紫霞对“生命”问题的自我描述中。它现在被白晶晶拿来作为 Zixia characterization 的 writing shorthand。
+“云里的风”此前出现在紫霞对“生命”问题的自我描述中。它现在被白晶晶拿来作为 Zixia characterization 的 writing shorthand，并在第二轮被白晶晶和其他人继续保留。
 
 如果这句话不是由当前 S2 prompt 重新注入，那么它可能是一个有价值的：
 
@@ -128,28 +152,28 @@ S1 的 strongest signal 是：
 
 > **多 Agent 能把分散意见收敛成一个 shared worldbuilding artifact。**
 
-S2 到目前为止新增了两层：
+S2 首轮新增了两层：
 
 > **这个 artifact 开始被下一阶段实际消费。**
 
 以及：
 
-> **不同 Agent 开始直接消费、引用并改写彼此的输出。**
+> **主持人开始直接消费、引用并改写其他 Agent 的输出。**
+
+第二轮进一步新增：
+
+> **participant 之间开始互相引用、验证和改写彼此的贡献，共同维护同一个 narrative baseline。**
 
 也就是：
 
-> **shared decision → persisted artifact → downstream reuse**
-
-再进一步：
-
-> **distributed contributions → cross-agent integration → shared narrative model**
+> **shared decision → persisted artifact → downstream reuse → peer-to-peer integration**
 
 这比单次“多人讨论得不错”更接近真正的 **multi-agent project continuity**。
 
 ## 当前限制
 
-- 紫霞已经补上自己的叙事输入，但本轮尚未完成 cross-critique / conflict resolution / final synthesis，因此 S2 仍不能标记为 closed；
-- 完整原始 S2 prompts 未保存，因此 specialization 的 assignment provenance 不完整；
+- 第二轮四位 participant 已完成 cross-critique，但紫霞尚未完成本轮主持收束 / final synthesis，因此 S2 仍不能标记为 closed；
+- 完整原始 S2 prompts 未保存，因此 specialization 与第二轮互评的 assignment provenance 仍不完整；
 - 不能仅凭内容质量判断 Agent 自主创作程度；
 - 后续要看 S2 的结果是否真的进入 S3 / screenplay，而不是只在这一轮存在。
 
