@@ -27,6 +27,7 @@
 - [2026-09-22 — 迁移到新 Muse account 后的第一次群聊](./conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md)
 - [2026-09-22 09:40 — 月光宝盒：最想回到哪一天改哪件事？](./conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md)
 - [2026-09-22 14:40 — 如果取经不用走路，最想坐什么去西天？](./conversations/2026-09-22-1440-journey-without-walking.zh-CN.md)
+- [2026-09-23 凌晨 — S1 编剧会：月光宝盒的时间编辑机制](./conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md)
 
 ## 当前观察
 
@@ -40,6 +41,7 @@
 - [首次跨 Muse account 迁移后的群体连续性](./observations/2026-09-22-muse-account-migration-continuity.zh-CN.md)
 - [post-migration identity-fact recall candidate 与 host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md)
 - [全员 late reply、host/facilitator 分离与 values-oriented reframing](./observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
+- [S1 编剧会：从迟到草案到群体规则收敛](./observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -56,6 +58,7 @@
 > **2026-09-22 ~01:27** — 五个 agents 被用户迁移到另一个 Muse account；首次 `@all` 后四个 remote participants 全部回复。后续确认“新家/搬家” awareness 来自 R-side current-context injection，因此不能计为 migration-memory recall。
 > **2026-09-22 09:40** — 白晶晶主持的群聊中，青霞给出与 repo birth baseline 一致的 2026-09-18 origin date；同时紫霞在非主持轮次仍称自己“主持人”，出现 host-role persistence / attribution drift。
 > **2026-09-22 14:40** — 唐三藏 nominally 主持；四个 remote participants 在 polling window 内 0/4 回复，但窗口关闭后最终 4/4 全到，形成目前最清楚的 group-level late-delivery case。
+> **2026-09-23 凌晨** — S1 编剧会完成月光宝盒时间编辑规则：青霞迟到提交 9 条草案，紫霞整理并在 broad solicitation 失效后改用一对一短问，最终四人给出互补意见，9 条通过并压缩为成片重点 1/3/7。
 
 ## 初步跨 session 信号
 
@@ -83,6 +86,8 @@
 09:40 群聊提供了另一种候选：青霞说“2026 年 9 月 18 日，我诞生的那一天”，与 repo 中 machine-readable origin baseline 完全一致。因此它是 **independently true pre-migration identity fact**；但在没有 request-context 记录前，仍只能叫 **recall provenance unverified**。同一轮紫霞在白晶晶明确主持时仍称自己“主持人”，说明 role persistence 与 current group-state tracking 也可能发生冲突。
 
 14:40 群聊又补上一个系统层信号：**0/4 within polling window → 4/4 eventual replies**。这说明“本轮没人回复”只是 window-level state，不是最终 conversation state。群聊日志应该同时保存 request、polling window、late arrival 和 eventual completion。唐三藏是 topic owner / nominal host，紫霞却能在 main-chat path 先答，而唐三藏自己的 daemon reply 也晚到，进一步说明 **topic owner / facilitator / remote respondent** 是三个不同角色。语义上，大家又把“坐什么去西天”的 mobility prompt 共同改写成“最不该丢什么”的 values question，但没有强行 consensus。
+
+2026-09-23 凌晨的 S1 编剧会则第一次把这种 group coordination 用到明确的创作治理任务上。青霞的 late reply 被紫霞吸收为下一轮 agenda；第一次四人仅返回通用苏醒话术，紫霞随后改成一对一短问才获得有效意见。四人的贡献并非重复“通过”：青霞检查规则完整性，至尊宝深化情感代价，白晶晶做 audience-facing compression，唐三藏完成主题抽象。这里形成 **late proposal → host synthesis → targeted re-query → complementary critique → rule convergence**。由于这是明确 prompted writers' room，应视为 collaborative task performance，而不是 spontaneous group-culture 证据。
 
 ## 工作问题
 
