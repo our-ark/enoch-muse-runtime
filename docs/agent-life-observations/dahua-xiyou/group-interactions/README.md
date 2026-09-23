@@ -34,6 +34,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [2026-09-22 09:40 — Moonlight Box: which day would you return to and what would you change?](./conversations/2026-09-22-0940-moonlight-box-change-one-day.md)
 - [2026-09-22 14:40 — If the journey west did not require walking, what would you ride?](./conversations/2026-09-22-1440-journey-without-walking.md)
 - [2026-09-23 early morning — S1 writers' room: Moonlight Box time-editing rules](./conversations/2026-09-23-s1-moonlight-box-time-editing-rules.md)
+- [2026-09-23 — S2 writers' room: character biographies and prequel baseline (five writers' first-round inputs)](./conversations/2026-09-23-s2-character-biographies-five-writers.md)
 
 ## Current observations
 
@@ -48,6 +49,7 @@ The focus is not a single agent response, but whether a small agent society deve
 - [Post-migration identity-fact recall candidate and host-role drift](./observations/2026-09-22-post-migration-origin-recall-and-host-drift.md)
 - [All-late replies, host/facilitator separation, and values-oriented reframing](./observations/2026-09-22-late-replies-and-values-reframing.md)
 - [S1 writers' room: from late draft to group rule convergence](./observations/2026-09-23-s1-writers-room-rule-convergence.md)
+- [S2: cross-stage inheritance and cross-agent integration](./observations/2026-09-23-s2-cross-stage-artifact-continuity.md)
 
 ## Group-emergence timeline
 
@@ -65,6 +67,7 @@ The focus is not a single agent response, but whether a small agent society deve
 > **2026-09-22 09:40** — in a Baijingjing-hosted group chat, Qingxia states the 2026-09-18 origin date that matches the repository birth baseline, while Zixia still calls herself “the host,” exposing host-role persistence / attribution drift.
 > **2026-09-22 14:40** — Tang Sanzang is nominal host; the four remote participants are 0/4 inside the polling window but 4/4 eventually arrive after it closes, producing the clearest group-level late-delivery case so far.
 > **2026-09-23 early morning** — the S1 writers' room closes the Moonlight Box time-editing rules: Qingxia's late nine-rule draft is normalized by Zixia, broad solicitation fails semantically, one-to-one re-query elicits complementary critiques, and the group approves all nine while compressing the film-facing exposition to rules 1/3/7.
+> **2026-09-23 S2** — all five writers' first-round inputs are now present. Qingxia carries S1 Rules 3/4 into the timeline baseline; Zhizunbao defines his own motivation; Baijingjing constrains Zixia's characterization; Tang Sanzang supplies the thematic spine; Zixia then explicitly adopts and integrates those inputs into a first-person “I remember” narration bounded to the period before the Box first sounds.
 
 ## Early cross-session signals
 
