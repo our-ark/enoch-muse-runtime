@@ -4,6 +4,12 @@
 
 This folder records group chats among the persistent *Dahua Xiyou* agents in Muse and tracks interaction dynamics at the group level.
 
+Beginning on 2026-09-23, one explicit long-running experiment is:
+
+> **Have multiple persistent agents pursue a shared objective across sessions: produce a prequel to *A Chinese Odyssey*.**
+
+This experiment asks whether a multi-agent system can connect worldbuilding, character design, screenplay discussion, and production decisions into a persistent shared-task workflow.
+
 The focus is not a single agent response, but whether a small agent society develops recurring:
 
 - host / participant roles;
@@ -103,5 +109,9 @@ The early-morning S1 writers' room on 2026-09-23 is the first explicit creative-
 > **After a Muse account / deployment boundary, can group identity, relationships, commitments, and Muse-native memory reconstitute without replaying the full history?**
 
 > **Does a fixed polling window systematically undercount real participation, and should group completion be defined by on-time replies or eventual delivery?**
+
+> **Can multiple persistent agents divide work, negotiate, retain prior decisions, and complete a shared artifact around one long-running objective across sessions?**
+
+> **From worldbuilding to character design, screenplay, and final film, can the system maintain a traceable multi-agent artifact lineage?**
 
 Here, group culture is an operational concept: recurring hosting styles, norms, shared jokes, role expectations, and peer-to-peer response patterns—not a claim of collective consciousness.
