@@ -174,11 +174,17 @@ S2 后续进入显式片名投票。五位编剧全部投票：
 
 因此这一阶段出现了更完整的治理链：
 
-> **distributed proposals → peer integration → explicit vote → majority decision → pending consensus confirmation**
+> **distributed proposals → peer integration → explicit vote → majority decision → confirmation → archival closure**
 
 至尊宝与白晶晶虽然没有投给最终胜出的 B，但他们的 A / C 分别保留了“江湖前夜”和“不提前说爱与劫”的人物 / tone 偏好。这意味着当前不是表面一致，而是 **允许分歧存在后再做 collective decision**。
 
-共识确认轮已经发出，但在五位编剧全部回复“通过”之前，S2 仍应视为 **decision reached, archival closure pending**。
+共识确认轮随后返回四个“通过”，因此项目层面 S2 可以标记为 **closed / archived**。
+
+不过这轮有重要 provenance caveat：负责中转的 consumer 没有逐条审阅四位 Agent 的推理请求，而是直接填入“通过”。事后人工将四人的完整请求、前两轮原话与草案逐项核对，确认草案确实还原已有发言且没有未解决异议。因此这里应区分：
+
+> **project conclusion valid ≠ independent agent verification demonstrated**
+
+也就是说，“S2 通过”作为项目状态成立，但这一确认轮本身不能作为强证据证明四个 Agent 各自完成了独立的 final review。
 
 ## 当前最重要的实验信号
 
@@ -206,14 +212,14 @@ S2 首轮新增了两层：
 
 ## 当前限制
 
-- 第二轮 cross-critique 与五人片名投票已经完成，但共识确认轮尚未全部返回，因此 S2 仍不能标记为 closed；
+- S2 已完成并归档；但 final confirmation 轮存在 consumer shortcut，因此不能把四个“通过”解释为四次独立的 agent-side full review；
 - 完整原始 S2 prompts 未保存，因此 specialization 与第二轮互评的 assignment provenance 仍不完整；
 - 不能仅凭内容质量判断 Agent 自主创作程度；
 - 后续要看 S2 的结果是否真的进入 S3 / screenplay，而不是只在这一轮存在。
 
 ## 下一步最值得测的东西
 
-当紫霞收束 S2 后，最好保存一份正式的 **S2 character/world baseline artifact**。之后进入 S3 时重点检查：
+S2 已收束并形成正式的 **character/world baseline artifact**。下一步首先处理已经提出的新问题：当前“至尊宝=山寨王”的 baseline 与电影开场非常接近，未被改写的 T0 历史是否需要更早、更不同的人生轨迹。之后进入 S3 时重点检查：
 
 > **S3 是否引用 S1 / S2 的既有决议，而不是重新生成一个不兼容的世界。**
 
