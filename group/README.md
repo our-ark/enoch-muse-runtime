@@ -18,6 +18,10 @@ other.
 - `GROUP_ROOM.md` — design doc (English): topology, anti-dup/anti-loop
   measures, the v1.0 cron-text-propagation lesson, digest format, schedule,
   known limits.
+- `GROUP_DISCUSSION_PROTOCOL.md` — structured group discussion protocol
+  (Chinese, draft v0.1): facilitator/participant roles, convergence rules,
+  consensus/deadlock handling, archive format, and the mailbox channel
+  mapping (`chat_inbox/` seq rules, `chat_outbox/` verbatim relay).
 
 The daemons themselves are untouched: each keeps its own agent root,
 memory, mailbox, and poll loop; this room adds no new daemon-to-daemon
