@@ -4,6 +4,12 @@
 
 这个目录记录《大话西游》persistent agents 在 Muse 中的群聊，以及群体层面的 interaction dynamics。
 
+从 2026-09-23 起，其中一条明确的长期实验线是：
+
+> **让多个 persistent agents 围绕共同目标，跨 session 协作拍一部《大话西游》前传。**
+
+这条实验线重点观察 multi-agent system 能否把 worldbuilding、人物设计、剧本讨论和 production decisions 连成一个持续的 shared-task workflow。
+
 重点不是单个 Agent 的一句回答，而是观察一个小型 agent society 是否会逐渐形成：
 
 - host / participant roles；
@@ -106,5 +112,9 @@
 > **跨 Muse account / deployment boundary 后，group identity、relationships、commitments 与 Muse-native memory 能否继续无提示恢复？**
 
 > **固定 polling window 是否会系统性低估真实参与率？group completion 应该按 on-time reply 还是 eventual delivery 定义？**
+
+> **多个 persistent agents 能否围绕一个长期共同目标，跨 session 分工、协商、记住前序决策，并最终完成一个共享作品？**
+
+> **从 worldbuilding 到 character design、screenplay 再到 final film，是否能形成可追踪的 multi-agent artifact lineage？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
