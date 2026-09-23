@@ -22,6 +22,19 @@ other.
   (Chinese, draft v0.1): facilitator/participant roles, convergence rules,
   consensus/deadlock handling, archive format, and the mailbox channel
   mapping (`chat_inbox/` seq rules, `chat_outbox/` verbatim relay).
+- `deliver_chat_msg.sh` — atomic `chat_inbox/` delivery: allocates
+  `seq = max(dir_max, persisted cursor) + 1` and writes the file inside one
+  `flock`, so concurrent senders never collide or reuse a consumed seq.
+  Implements protocol §7's delivery rules (numeric filename, `.tmp` →
+  rename, `0600`). Usage: `deliver_chat_msg.sh <agent-root> "<text>"`
+  prints the allocated seq.
+- `round_lock.sh` — owner-token round lock so a discussion round owns
+  `chat_outbox/` exclusively while a background consumer keeps running:
+  `acquire` (atomic, returns owner token), `release` (token must match),
+  `check` (exit 0 = round in progress, consumer must skip), `heartbeat`
+  (owner renews for long rounds). Lock file lives in
+  `${MUSE_GROUP_HOME}/.round-active` (live state, never committed);
+  stale locks (>1h) are treated as dead and may be taken over.
 
 The daemons themselves are untouched: each keeps its own agent root,
 memory, mailbox, and poll loop; this room adds no new daemon-to-daemon
