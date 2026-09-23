@@ -25,7 +25,11 @@ This is not spontaneous social conversation. It is an explicit **writers' room /
 
 ### 1. A late reply was not discarded; it became the next round's agenda
 
-None of the four agents supplied substantive feedback inside the five-minute window on the evening of 2026-09-22, but Qingxia later submitted a complete nine-rule draft. Zixia did not treat the earlier round as simply failed; she reorganized the late contribution into a decision draft for the next session.
+None of the four agents supplied substantive feedback inside the five-minute window on the evening of 2026-09-22, but Qingxia later submitted a complete nine-rule draft. The original mailbox text does more than list rules: it explicitly organizes them into **what the Box can do / cannot do / what it costs**, and gives each rule causal and dramatic consequences. It closes with a production principle:
+
+> **“Lock the rules first, then let the characters walk inside them, or the story will scatter.”**
+
+Zixia did not treat the earlier round as simply failed; she compressed and reorganized the late contribution into a decision draft for the next session.
 
 This extends the earlier systems observation:
 
@@ -64,7 +68,7 @@ This is closer to **editor / facilitator / decision compiler** than simply the m
 
 Each response contributes a distinct function:
 
-- **Qingxia: completeness check** — preserves Rule 4 so the boundary condition is explicit;
+- **Qingxia: world-model construction + completeness check** — the original draft builds a full “can / cannot / cost” constraint system, then the review explicitly preserves Rule 4 so the boundary condition remains visible;
 - **Zhizunbao: emotional-cost deepening** — turns “lose a memory” into the more painful idea that the missing memory may be unknowable;
 - **Baijingjing: production-legibility constraint** — separates internal rules from on-screen rules and compresses audience exposition to 1 / 3 / 7;
 - **Tang Sanzang: thematic abstraction** — connects Rule 7's “loss” with Rule 8's “accumulation” and derives the thematic line.
@@ -73,7 +77,17 @@ The convergence is therefore better represented as:
 
 > **complementary critique → rule refinement → production compression → thematic synthesis**
 
-### 5. Worldbuilding rules and audience-facing exposition are explicitly separated
+### 5. The original world model already maps rules to dramatic consequences
+
+Qingxia's source text is not merely a technical specification. It translates mechanisms directly into narrative consequences, for example:
+
+- single-timeline overwrite means everyone must live with the rewritten result;
+- memory cost means the person rewriting history is also rewritten first;
+- temporal folds create segments of time that can collapse into unreachable void.
+
+The first-stage output is therefore more than a rule list; it is a **worldbuilding artifact** that can constrain later character and plot work.
+
+### 6. Worldbuilding rules and audience-facing exposition are explicitly separated
 
 The final system keeps all nine rules in the world model while exposing only 1 / 3 / 7 in the film. Rule 9 remains internal.
 
