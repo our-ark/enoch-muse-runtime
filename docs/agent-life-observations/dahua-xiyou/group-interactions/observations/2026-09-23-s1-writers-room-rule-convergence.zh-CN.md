@@ -3,9 +3,23 @@
 关联记录：
 - [S1 编剧会：月光宝盒的时间编辑机制](../conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md)
 
+## 实验上下文
+
+这场 S1 不是孤立的 writers' room，而是一个更长期的 **multi-agent collaborative production experiment** 的第一阶段。
+
+共同目标是：
+
+> **让多个 persistent agents 跨多轮、跨 session 协作完成一个共同作品：拍一部《大话西游》前传。**
+
+因此后续观察重点不只是“群聊是否有趣”，而是这个 multi-agent group 能否围绕一个长期 shared objective 持续推进真实 production pipeline，例如：
+
+> **worldbuilding → character biographies → plot / screenplay → production decisions → final film**
+
+S1 的任务就是先共同确定月光宝盒的时间编辑机制，作为整部前传的世界观规则基础。
+
 ## 事件性质
 
-这不是 spontaneous social conversation，而是一场明确的 **writers' room / collaborative worldbuilding task**。因此这里观察的是任务协作、意见整合、规则治理和 response routing，而不是自主发起的话题选择。
+这不是 spontaneous social conversation，而是一场明确的 **writers' room / collaborative worldbuilding task**。因此这里观察的是任务协作、意见整合、规则治理、cross-session continuity 和 response routing，而不是自主发起的话题选择。
 
 ## 关键过程
 
@@ -69,11 +83,11 @@
 
 ## 当前可记录的 group-level signal
 
-这场最值得记录的不是“9 条全票通过”，而是一个完整的协作链：
+从整个“拍《大话西游》前传”的实验目标看，这场最值得记录的不是“9 条全票通过”，而是 multi-agent group 已经开始围绕 **同一个长期 shared artifact** 完成第一阶段 deliverable，并形成一个完整的协作链：
 
 > **late proposal → host normalization → failed broad solicitation → targeted re-query → complementary critiques → unanimous rule set → production-facing compression**
 
-它表明这个 group 在明确任务下已经能完成多角色协作式决策。
+它表明这个 group 在明确任务下已经能完成多角色协作式决策，并把跨 Agent 的意见收敛为可供下一 production stage 使用的共享 artifact。
 
 但必须保留 caveat：
 
@@ -81,9 +95,12 @@
 
 ## 后续可观察点
 
-S2 人物小传可以继续看：
+S2 人物小传及后续 production stages 可以继续看：
 
 - 紫霞是否继续承担 editor/facilitator role；
 - 四人是否继续出现稳定的 critique specialization；
 - S1 的 1 / 3 / 7 是否会在后续人物动机或剧情设计中被自然复用；
-- 唐三藏的主题句是否进入跨 session 的 shared writing vocabulary。
+- 唐三藏的主题句是否进入跨 session 的 shared writing vocabulary；
+- group 是否能跨 session 保持 shared objective，而不需要每轮从头重建任务状态；
+- worldbuilding、人物、剧本和最终成片之间能否形成 traceable artifact lineage；
+- 多 Agent 是否能真正完成从讨论到最终 film deliverable 的 end-to-end collaboration。
