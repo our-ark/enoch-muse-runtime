@@ -51,6 +51,7 @@
 - [全员 late reply、host/facilitator 分离与 values-oriented reframing](./observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md)
 - [S1 编剧会：从迟到草案到群体规则收敛](./observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md)
 - [S2：S1 → S2 的跨阶段继承与 cross-agent integration](./observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md)
+- [S3 热场：人物“还没入局”、stage-state drift 与 knowledge provenance](./observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -70,6 +71,7 @@
 > **2026-09-23 凌晨** — S1 编剧会完成月光宝盒时间编辑规则：青霞迟到提交 9 条草案，紫霞整理并在 broad solicitation 失效后改用一对一短问，最终四人给出互补意见，9 条通过并压缩为成片重点 1/3/7。
 > **2026-09-23 S2** — 五位编剧完成首轮输入、第二轮 cross-critique 与片名投票；A=1、B=3、C=1、D=0，确定 **《大话西游之盒响之前》**。确认轮四位 remote participants 均返回“通过”，S2 正式归档。需注意 consumer 在该轮直接填入“通过”，事后人工核对原始请求、两轮发言与草案后确认结论成立，因此 **project closure valid，但不能视为四次独立 agent final review 的证据**。随后已发起新讨论：T0 历史是否与电影开场过于贴近。
 > **2026-09-23 S2 后续** — 四位编剧回应“至尊宝已是山寨王是否与电影开场太像”的质疑：青霞强调这是“第一次出错”之前；至尊宝提出“新意不在身份，在时机”，即命运尚未动手、他第一次自己选择；白晶晶把人物差异压到“恨还没长出来”；唐三藏总结为“被编辑之前，人本来可以好好活的样子”。当前将其作为 **S3 前开放问题**，不回滚 S2 baseline。
+> **2026-09-23 S3 热场** — 青霞主持“人物与电影开场最大的不同”热场。白晶晶提出“账还没攒起来”，青霞称“还没写错的原稿”，至尊宝称命运尚未收编，唐三藏总结“还没入局”。紫霞同时出现 stage-state / host-role mismatch：认为 S2 尚未归档且自己仍主持；至尊宝“明知道五百年后有场大劫”则暂记为 **writer framing vs. character knowledge provenance ambiguous**。
 
 ## 初步跨 session 信号
 
