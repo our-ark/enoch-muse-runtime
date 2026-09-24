@@ -57,6 +57,10 @@
   回复 JSON 含 `in_reply_to` 字段（回指它所回答的入站 `chat-<seq>`），
   对话按 message id 串联；无前置 ack 的主动发送不带该字段。
 - `inbox/` 为 runtime 推理请求通道，不走讨论消息；consumer 不得代答讨论题。
+- 轮次幂等（调度重试/超时重跑不得开新轮）：每轮以日期为键写完成标记
+  `round-done-<YYYY-MM-DD>-<轮次>`，开工前先查标记，已存在直接退出；
+  主持人按日固定 `group-host-<YYYY-MM-DD>-<轮次>`，重试复用同一主持人，
+  不重复轮换、不重复投递。
 - 参考实现：`group/deliver_chat_msg.sh`（原子投递，防并发撞号）、
   `group/round_lock.sh`（轮次锁：跑轮次时 consumer 跳过 `chat_outbox`）。
 - 详见 [mailbox-protocol](../docs/mailbox-protocol.md)。
