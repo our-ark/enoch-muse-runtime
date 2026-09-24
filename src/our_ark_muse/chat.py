@@ -27,6 +27,7 @@ from __future__ import annotations
 import os
 import time
 import uuid
+from contextvars import ContextVar
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -54,6 +55,18 @@ __all__ = [
 #: The single conversation this surface exposes. Muse chat is one shared
 #: surface; per-user routing is the delivery layer's job, not the daemon's.
 CONVERSATION_ID: ConversationId = "muse-chat"
+
+# Inbound message the daemon is currently handling, as seen by
+# ``send_read_ack`` (which Enoch's ``_dispatch_chat_event`` calls first,
+# before any reply is generated). ``send_message`` attaches it as
+# ``in_reply_to`` so every outbound reply points at the inbound message it
+# answers, and a conversation can be threaded by message id.
+# Semantics: the value persists until the *next* ack, so progress updates
+# ("still working…") stay threaded under the same inbound event. Sends that
+# happen with no prior ack (proactive notifications) carry no ``in_reply_to``.
+_PENDING_IN_REPLY_TO: ContextVar[str | None] = ContextVar(
+    "our_ark_muse_pending_in_reply_to", default=None
+)
 
 
 @dataclass(frozen=True)
@@ -204,15 +217,16 @@ class MuseChatClient:
     ) -> MessageId | None:
         _, outbox = _chat_dirs()
         message_id = uuid.uuid4().hex
-        _atomic_write_json(
-            outbox / f"{message_id}.json",
-            {
-                "message_id": message_id,
-                "conversation_id": str(conversation_id),
-                "text": text,
-                "created_at": time.time(),
-            },
-        )
+        payload: dict[str, Any] = {
+            "message_id": message_id,
+            "conversation_id": str(conversation_id),
+            "text": text,
+            "created_at": time.time(),
+        }
+        reply_to = _PENDING_IN_REPLY_TO.get()
+        if reply_to:
+            payload["in_reply_to"] = reply_to
+        _atomic_write_json(outbox / f"{message_id}.json", payload)
         return message_id
 
     def edit_message(
@@ -243,6 +257,9 @@ class MuseChatClient:
     ) -> None:
         # Record the ack where the delivery layer can surface it (e.g. a
         # reaction in Muse chat). Best-effort; never fails the turn.
+        # Also tracks "which inbound message is being handled" so that
+        # send_message can thread replies via in_reply_to.
+        _PENDING_IN_REPLY_TO.set(str(message_id))
         inbox, _ = _chat_dirs()
         try:
             _atomic_write_json(

@@ -51,6 +51,8 @@
 - 序号规则：`max(目录最大数字序号, 持久化 cursor) + 1`，绝不复用旧序号；
   删除文件不会回退 cursor（daemon 的 `receive()` 只返回 `seq > cursor` 的文件）。
 - 参与人回复经 `chat_outbox/`，主持人逐字转述并打 `.delivered`。
+  回复 JSON 含 `in_reply_to` 字段（回指它所回答的入站 `chat-<seq>`），
+  对话按 message id 串联；无前置 ack 的主动发送不带该字段。
 - `inbox/` 为 runtime 推理请求通道，不走讨论消息；consumer 不得代答讨论题。
 - 参考实现：`group/deliver_chat_msg.sh`（原子投递，防并发撞号）、
   `group/round_lock.sh`（轮次锁：跑轮次时 consumer 跳过 `chat_outbox`）。

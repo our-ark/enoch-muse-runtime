@@ -24,9 +24,23 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 # Enoch's provider-kit is a local source tree, not an installed package.
-sys.path.insert(
-    0, "/home/hatch/workspace/enoch-experiment/libraries/provider-kit/src"
-)
+# Resolved portably: ENOCH_SRC env, then ~/enoch-body, then the legacy path.
+def _provider_kit_src() -> str:
+    candidates = []
+    env_src = os.environ.get("ENOCH_SRC")
+    if env_src:
+        candidates.append(Path(env_src) / "libraries" / "provider-kit" / "src")
+    candidates.append(Path.home() / "enoch-body" / "libraries" / "provider-kit" / "src")
+    candidates.append(
+        Path("/home/hatch/workspace/enoch-experiment/libraries/provider-kit/src")
+    )
+    for candidate in candidates:
+        if (candidate / "our_ark_provider_kit").is_dir():
+            return str(candidate)
+    raise RuntimeError("provider-kit src not found; set ENOCH_SRC")
+
+
+sys.path.insert(0, _provider_kit_src())
 
 from our_ark_muse import (  # noqa: E402
     CONVERSATION_ID,

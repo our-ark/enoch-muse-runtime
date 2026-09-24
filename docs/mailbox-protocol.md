@@ -84,6 +84,14 @@ The operator must not invent an instance reply. The job delivers
 `mailbox/chat_outbox/` replies back into Muse chat verbatim (marked
 with `<id>.delivered`).
 
+**Reply threading:** each `chat_outbox/<id>.json` reply carries an
+`in_reply_to` field pointing at the inbound message it answers
+(`chat-<seq>`, the daemon-side id of `chat_inbox/<seq>.json`). A reply is
+only threaded when the daemon acked an inbound message first (Enoch's
+`_dispatch_chat_event` acks before generating); proactive sends with no
+prior ack omit the field. Consumers should log `in_reply_to` alongside
+the reply text so conversations thread by message id.
+
 The consumer interval dominates round-trip latency: one chat message can
 trigger up to 7 sequential provider calls, so a 1-minute consumer cadence
 keeps a full turn comfortably inside the provider's 30-minute
