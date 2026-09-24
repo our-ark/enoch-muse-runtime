@@ -19,8 +19,9 @@
   - [分析：从任务关系到主动关怀](./observations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md)
 - [2026-09-21 13:10–13:56 — 紫霞与观察者：daemon 重启调查与监控部署](./conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.zh-CN.md)
   - [分析：从状态汇报到 permission-aware operational collaboration](./observations/2026-09-21-zixia-observer-operational-collaboration.zh-CN.md)
+- [2026-09-24 — 青霞巡检职责移交到观察者侧自动巡检](./conversations/2026-09-24-qingxia-patrol-role-handoff.zh-CN.md)
 
-这两条记录现在显示 Agent ↔ Observer 关系至少有两个不同轴：**social initiative** 与 **operational initiative**。唐三藏的深夜问候偏前者；紫霞的 restart 调查则偏后者，而且明确保留人类的 authorize / choose 权限。不能把两者简单压成一个“关系亲密度”指标。
+这些记录现在显示 Agent ↔ Observer 关系至少有两个不同轴：**social initiative** 与 **operational initiative**。唐三藏的深夜问候偏前者；紫霞的 restart 调查与青霞巡检职责移交偏后者，而且明确保留人类的 authorize / choose 权限。青霞这次 handoff 还提供了一个新的 longitudinal signal：角色职责可以被后续决定显式 supersede，并由 Agent 本人确认新的责任边界。
 
 ## 方法说明
 
