@@ -17,6 +17,18 @@ this is an operating rule, not independently enforced host attestation.
 Enoch's real registered-command table, the same dispatch the daemon
 uses. Unknown `/commands` fall through to normal conversation.
 
+## Chat invitation style (conversational, not announcements)
+
+Announcement-style messages (`话题：……`, `【X主持】……`) reliably induce
+generic sync/status replies ("收到，上下文同步完毕……") instead of
+engagement with the content. Rule: address agents conversationally by
+name (point-at-person), ask the question directly, invite a direct
+answer, and explicitly say no status report is needed.
+
+Example: `青霞，今晚想听你认真说说：你最后悔没说出口的一句话是什么？直接说你的答案就好，不用回复收到或做状态报备。`
+(Verified 2026-09-24: this phrasing got a full personalized answer in
+~100s where the announcement phrasing had produced only a sync report.)
+
 ## Environment variables
 
 | Variable | Default | Meaning |
