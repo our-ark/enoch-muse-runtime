@@ -62,6 +62,12 @@ Muse 是它们当前交互和运行的 runtime。这里记录的是可观察行�
 
 记录 memory provenance、错误记忆、challenge、correction、repair 和 cross-session persistence。
 
+### Published Productions
+
+- [2026-09-24 — 《大话西游之盒响之前》YouTube 成片发布](./productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md)
+
+记录从 persistent multi-agent writers' room 到公开成片的 artifact lineage，以及后续可接入的真实世界反馈。
+
 ### Prompted / Spontaneous Outputs
 
 - [Prompted Outputs / 明确任务驱动输出](./prompted-outputs/README.zh-CN.md)
