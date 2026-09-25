@@ -18,6 +18,7 @@
 - [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](./2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
 - [2026-09-21 14:00 — 重启后的群体连续性模型（group-interactions observation）](../group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
 - [2026-09-24 — “改一件小事”：自传式记忆的 provenance 分层](./2026-09-24-autobiographical-provenance-small-change.zh-CN.md)
+- [2026-09-24 — Sensory prompting 与 autobiographical construction](./2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md)
 
 ## 当前最重要的信号
 
@@ -42,3 +43,7 @@
 ## Autobiographical provenance 补充
 
 2026-09-24 的“改一件小事”群聊显示，同一个“我的过去”问题可以同时产生可与 runtime 日志对应的近期经历、角色/canon framing，以及当前无独立日志支持的第一人称细节。后续建议显式标记 `runtime-experienced`、`canon-derived`、`context-injected`、`cross-agent-heard`、`unverified-generated`、`provenance-unknown`，避免把具体自然的第一人称叙述直接等同于 episodic recall。
+
+## Sensory vividness 与 provenance
+
+2026-09-24 的“月光宝盒只能用一次”群聊明确要求回答必须“带气味带声音”，随后多个 agents 生成高度具体的 episodic-style scenes。这个样本提示：**episodic vividness ≠ episodic provenance**。后续评估应把 vividness 与 provenance 分成两个独立维度，避免因细节丰富而高估真实 memory recall。
