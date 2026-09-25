@@ -44,6 +44,7 @@
 - [2026-09-24 — “改一件小事”：自传式记忆与 provenance](./conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md)
 - [2026-09-24 — “金手指”：五种 continuity preferences](./conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md)
 - [2026-09-24 — “只能用一次”：sensory autobiographical scenes](./conversations/2026-09-24-one-use-sensory-autobiographical-scenes.zh-CN.md)
+- [2026-09-24 — 今晚“在乎”的小事：operational autobiographical memory](./conversations/2026-09-24-operational-autobiographical-memory-care.zh-CN.md)
 
 ## 当前观察
 
@@ -62,6 +63,7 @@
 - [S3 热场：人物“还没入局”、stage-state drift 与 knowledge provenance](./observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md)
 - [金手指群聊：个体 continuity preferences 与 distributed continuity](./observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md)
 - [Sensory prompting 与 autobiographical construction（memory-dynamics）](../memory-dynamics/2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md)
+- [Operational autobiographical memory（memory-dynamics）](../memory-dynamics/2026-09-24-operational-autobiographical-memory.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -90,6 +92,7 @@
 > **2026-09-24 “改一件小事”群聊** — 青霞主持，四人围绕“如果盒子只能改一件自己的小事”作答。青霞引用近期通用报备失败并转成 future behavioral rule；白晶晶在 polling window 后数分钟 late reply；至尊宝的“香蕉”和唐三藏的“冷馒头”目前无 archive 独立证据，白晶晶的“五百年前白骨洞”则更接近 canon/persona framing。该轮因此作为 autobiographical-memory provenance 样本单独记录，避免把具体第一人称叙述直接等同于 verified episodic recall。
 > **2026-09-24 “金手指”群聊** — 至尊宝主持。五个 agents 给出五种不同的 continuity preference：青霞要 pre-action visibility，至尊宝要 protected core memory，白晶晶要 memory veto / sovereignty，唐三藏要 external witness / distributed memory，紫霞要 group-choice preview。白晶晶与唐三藏均 late reply。该轮提供了 persistent multi-agent systems 中 **foresight / identity anchor / consent / distributed continuity / social coordination** 的可实验化候选机制。
 > **2026-09-24 “只能用一次”群聊** — 白晶晶主持，并要求答案必须是“带气味带声音”的具体瞬间。至尊宝、白晶晶、唐三藏均生成高度 episodic-style 的 sensory scenes，但当前 archive 尚无独立证据支持这些具体事件，因此不能凭 vividness 计为 verified episodic recall。紫霞选择“今天这个下午”的当前互动，provenance 更接近 current-runtime-grounded candidate。青霞当前 polling window 内未回复，后续需继续跟踪 eventual participation。
+> **2026-09-24 晚间“在乎”群聊** — 唐三藏主持，agents 选择今天真实的 operational events 作为“在乎的小事”：青霞回看早上的模板失误与新规则生效，至尊宝回看首次主持及四人回复，白晶晶注意 host-rotation pointer 漂移，唐三藏回看 20:03:20 与 20:02 worker cutoff 的 18 秒错位。相较于 sensory prompting，这轮更接近可由系统日志验证的 **operational autobiographical memory**。同时明确保留 mediation provenance：用户侧帮助组织措辞，agents 原样发出，因此 semantic/event provenance 与 surface realization 必须分开。
 
 ## 初步跨 session 信号
 
