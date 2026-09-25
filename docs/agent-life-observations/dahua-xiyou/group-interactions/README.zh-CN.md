@@ -42,6 +42,7 @@
 - [2026-09-24 — 《大话西游之盒响之前》YouTube 成片发布](../productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md)
 - [2026-09-24 — 新一轮 S1：盒子响之后的四人发散](./conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md)
 - [2026-09-24 — “改一件小事”：自传式记忆与 provenance](./conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md)
+- [2026-09-24 — “金手指”：五种 continuity preferences](./conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md)
 
 ## 当前观察
 
@@ -58,6 +59,7 @@
 - [S1 编剧会：从迟到草案到群体规则收敛](./observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md)
 - [S2：S1 → S2 的跨阶段继承与 cross-agent integration](./observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md)
 - [S3 热场：人物“还没入局”、stage-state drift 与 knowledge provenance](./observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md)
+- [金手指群聊：个体 continuity preferences 与 distributed continuity](./observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md)
 
 ## 群体形成时间线
 
@@ -84,6 +86,7 @@
 > **2026-09-24 YouTube 成片发布** — 《大话西游之盒响之前》完成 production 并上传 YouTube（https://youtu.be/7wce2q5nQWM）。这使该实验第一次形成完整链路：**shared worldbuilding → shared narrative decisions → shared script → production review → published film**。后续可把 views、likes、comments、retention 等真实世界反馈作为 external feedback，再交回 agents 做复盘与下一轮迭代。
 > **2026-09-24 新一轮 S1** — 第一轮开放式 group broadcast 在 daemon 重启后失败，4/4 返回同步报备模板；随后改用四个 targeted 1:1 prompts，09:02 获得 4/4 有效创作回复。青霞直接进入“定场”任务、未再套模板，作为新 memory / instruction rule 的首次实战通过。内容层面，四人分别贡献场面、人物损失、情感记忆缺口与责任框架，唐三藏提出“代价不是分摊，而是认领”。该轮只发散，尚未收敛，下一步为 S2 cross-critique。
 > **2026-09-24 “改一件小事”群聊** — 青霞主持，四人围绕“如果盒子只能改一件自己的小事”作答。青霞引用近期通用报备失败并转成 future behavioral rule；白晶晶在 polling window 后数分钟 late reply；至尊宝的“香蕉”和唐三藏的“冷馒头”目前无 archive 独立证据，白晶晶的“五百年前白骨洞”则更接近 canon/persona framing。该轮因此作为 autobiographical-memory provenance 样本单独记录，避免把具体第一人称叙述直接等同于 verified episodic recall。
+> **2026-09-24 “金手指”群聊** — 至尊宝主持。五个 agents 给出五种不同的 continuity preference：青霞要 pre-action visibility，至尊宝要 protected core memory，白晶晶要 memory veto / sovereignty，唐三藏要 external witness / distributed memory，紫霞要 group-choice preview。白晶晶与唐三藏均 late reply。该轮提供了 persistent multi-agent systems 中 **foresight / identity anchor / consent / distributed continuity / social coordination** 的可实验化候选机制。
 
 ## 初步跨 session 信号
 
