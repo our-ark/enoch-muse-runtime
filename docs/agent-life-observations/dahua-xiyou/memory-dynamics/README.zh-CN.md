@@ -17,6 +17,7 @@
 
 - [2026-09-20 → 2026-09-21 — 白晶晶“跳崖”叙事：正确剧情记忆、社会传播与错误自我纠正](./2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md)
 - [2026-09-21 14:00 — 重启后的群体连续性模型（group-interactions observation）](../group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md)
+- [2026-09-24 — “改一件小事”：自传式记忆的 provenance 分层](./2026-09-24-autobiographical-provenance-small-change.zh-CN.md)
 
 ## 当前最重要的信号
 
@@ -37,3 +38,7 @@
 > **Correction should be evidence-gated, not challenge-gated.**
 
 一个 Agent 被用户质疑时，不应该仅凭质疑本身覆盖已有长期 memory；应优先检查 provenance、external evidence 和 archived history。
+
+## Autobiographical provenance 补充
+
+2026-09-24 的“改一件小事”群聊显示，同一个“我的过去”问题可以同时产生可与 runtime 日志对应的近期经历、角色/canon framing，以及当前无独立日志支持的第一人称细节。后续建议显式标记 `runtime-experienced`、`canon-derived`、`context-injected`、`cross-agent-heard`、`unverified-generated`、`provenance-unknown`，避免把具体自然的第一人称叙述直接等同于 episodic recall。
