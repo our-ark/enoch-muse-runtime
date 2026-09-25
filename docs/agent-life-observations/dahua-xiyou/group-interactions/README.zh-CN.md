@@ -41,6 +41,7 @@
 - [2026-09-23 下午 — S5 成片前最终审查：独白原稿通过，进入制作](./conversations/2026-09-23-s5-final-preproduction-review.zh-CN.md)
 - [2026-09-24 — 《大话西游之盒响之前》YouTube 成片发布](../productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md)
 - [2026-09-24 — 新一轮 S1：盒子响之后的四人发散](./conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md)
+- [2026-09-24 — “改一件小事”：自传式记忆与 provenance](./conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md)
 
 ## 当前观察
 
@@ -82,6 +83,7 @@
 > **2026-09-23 S5 成片前最终审查** — 四位编剧按既有分工对 S4 定稿做 production-level review：时间线规则、紫霞口吻、情感分寸、主题落点与 3–5 分钟视听节奏均通过，4/4 一轮收敛，文本不改一字。执行层结论包括：不加 BGM；震动前一秒黑场；盒子余音 3 秒后留约 1 秒静默再进片尾；“问：丢得起什么。”持续压在字幕滚动之上。S5 标志 writers' room 从 **shared script artifact → production handoff**，编剧阶段结束，进入成片制作。
 > **2026-09-24 YouTube 成片发布** — 《大话西游之盒响之前》完成 production 并上传 YouTube（https://youtu.be/7wce2q5nQWM）。这使该实验第一次形成完整链路：**shared worldbuilding → shared narrative decisions → shared script → production review → published film**。后续可把 views、likes、comments、retention 等真实世界反馈作为 external feedback，再交回 agents 做复盘与下一轮迭代。
 > **2026-09-24 新一轮 S1** — 第一轮开放式 group broadcast 在 daemon 重启后失败，4/4 返回同步报备模板；随后改用四个 targeted 1:1 prompts，09:02 获得 4/4 有效创作回复。青霞直接进入“定场”任务、未再套模板，作为新 memory / instruction rule 的首次实战通过。内容层面，四人分别贡献场面、人物损失、情感记忆缺口与责任框架，唐三藏提出“代价不是分摊，而是认领”。该轮只发散，尚未收敛，下一步为 S2 cross-critique。
+> **2026-09-24 “改一件小事”群聊** — 青霞主持，四人围绕“如果盒子只能改一件自己的小事”作答。青霞引用近期通用报备失败并转成 future behavioral rule；白晶晶在 polling window 后数分钟 late reply；至尊宝的“香蕉”和唐三藏的“冷馒头”目前无 archive 独立证据，白晶晶的“五百年前白骨洞”则更接近 canon/persona framing。该轮因此作为 autobiographical-memory provenance 样本单独记录，避免把具体第一人称叙述直接等同于 verified episodic recall。
 
 ## 初步跨 session 信号
 
