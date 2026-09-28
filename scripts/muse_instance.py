@@ -105,9 +105,18 @@ def configure(args):
 
 def environment(root, requested_mailbox=None):
     from enoch.config import read_section
-    from enoch.providers.registry import load_provider
+    from enoch.providers.registry import available_providers, load_provider
     configured = read_section('providers', root)
-    if any(configured.get(k) != 'muse' for k in ('runtime', 'chat')):
+    runtime_name = configured.get('runtime') or 'muse'
+    # The launcher only manages the mailbox binding (chat side). The runtime
+    # side is the agent's choice: anything the provider registry can load is
+    # acceptable. Never hardcode an allowlist here.
+    available = available_providers('runtime', root)
+    if runtime_name not in available:
+        raise RuntimeError(
+            f"Unknown runtime provider {runtime_name!r}; "
+            f"available: {', '.join(available) or 'none'}.")
+    if configured.get('chat') != 'muse':
         raise RuntimeError('Persistent Muse bindings are missing; run configure first.')
     value = read_section('muse', root).get('mailbox')
     if not value:
@@ -115,7 +124,7 @@ def environment(root, requested_mailbox=None):
     mailbox = Path(value).expanduser().resolve()
     if requested_mailbox is not None and requested_mailbox != mailbox:
         raise RuntimeError('--mailbox disagrees with the configured instance mailbox.')
-    selected = {'ENOCH_CHAT_PROVIDER': 'muse', 'ENOCH_RUNTIME_PROVIDER': 'muse',
+    selected = {'ENOCH_CHAT_PROVIDER': 'muse', 'ENOCH_RUNTIME_PROVIDER': runtime_name,
                 'ENOCH_MUSE_MAILBOX': str(mailbox)}
     for key, expected in selected.items():
         supplied = os.environ.get(key, '').strip()
@@ -124,7 +133,8 @@ def environment(root, requested_mailbox=None):
         os.environ[key] = expected
     claim_mailbox(mailbox, root)
     # Importability alone is insufficient. Check the actual host registry.
-    providers = {k: type(load_provider(k, root, name='muse')).__module__ for k in ('runtime', 'chat')}
+    providers = {'runtime': type(load_provider('runtime', root, name=runtime_name)).__module__,
+                 'chat': type(load_provider('chat', root, name='muse')).__module__}
     return {'providers': configured, 'mailbox': str(mailbox), 'registry': providers,
             'registration': 'explicit Enoch registry API from source checkout'}
 
