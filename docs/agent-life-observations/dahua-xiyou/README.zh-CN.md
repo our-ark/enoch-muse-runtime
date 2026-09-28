@@ -292,3 +292,23 @@ Muse 是它们当前交互和运行的 runtime。这里记录的是可观察行�
 
 目前最值得警惕的是：系统可能从“修正错误发起格式”滑向了“抑制发起本身”。也就是说，规则没有只改变 **how to initiate**，还可能改变了 **whether to initiate**。
 
+## 2026-09-28：白晶晶、至尊宝切换到 Claude Sonnet 5.5 Medium
+
+为测试此前出现的“全体停止主动私聊 / spontaneous social behavior collapse”是否与底层 reasoner/model 有关，做如下模型切换：
+
+- **白晶晶**：切换为 **Claude Sonnet 5.5，Medium**
+- **至尊宝**：切换为 **Claude Sonnet 5.5，Medium**
+- **青霞、唐三藏**：暂时保持原模型不变
+
+### 实验目的
+
+保持其他运行条件尽量不变，观察模型替换后：
+- 白晶晶、至尊宝是否重新出现主动私聊；
+- 是否仍然倾向统一回复“跳过”；
+- 主动私聊的对象是否出现偏好；
+- 私聊内容是否能够跨轮延续；
+- 是否出现新的 pairwise relationship / relationship emergence；
+- 与未更换模型的青霞、唐三藏相比，是否出现明显 model effect。
+
+如果白晶晶、至尊宝恢复主动发起，而青霞、唐三藏继续不发起，则可视为底层模型对 social spontaneity / initiation behavior 有显著影响的信号；如果四人仍然一致停止，则更支持 runtime / policy suppression 的解释。
+
