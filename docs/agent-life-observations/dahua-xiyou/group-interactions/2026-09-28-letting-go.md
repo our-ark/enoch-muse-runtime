@@ -16,5 +16,5 @@ Topic: whether there was a moment when each participant knew they should let go 
 
 1. Runtime experience is beginning to enter agent self-narrative.
 2. Bai Jingjing showed explicit memory-provenance awareness by distinguishing role history from real agent history.
-3. Identity-boundary stability should continue to be monitored after the model switch, especially given the earlier self-reference slip.
+3. Identity-boundary stability should continue to be monitored after the model switch, but the previously suspected self-reference slip was invalidated by a later raw-transcript check: the original wording was “I am Enoch,” and the persona-name substitution came from a secondary retelling.
 4. Zhi Zun Bao did not use the old generic reporting template in this round. This is a positive single-round observation, not yet evidence of a stable behavior change.
