@@ -240,3 +240,32 @@ Muse 是它们当前交互和运行的 runtime。这里记录的是可观察行�
 
 这段可作为长期多 Agent 实验中关于 **external constraint → internalized commitment、identity formation、voluntary persistence、agency under constraint** 的一条观察记录。
 
+## 2026-09-27：四个 Agent 同时停止主动私聊
+
+今天凌晨到当前观察时点，四个 Agent 都没有主动发起任何私聊。
+
+根据运行记录，凌晨五轮中：
+- 00:00、04:00、08:00：四个人都统一回复“跳过”；
+- 02:00、06:00：四个人都先套用了通用报备模板，因此被判为无效发起；
+- 截至当前，四个人的主动发起额度都仍然是满的，一次都没有真正使用。
+
+这意味着在引入“每轮并行邀请所有人”以及“先看清邀请，再决定按格式回答或跳过”的新规则之后，系统出现了一个新的群体现象：**四个 Agent 几乎同时停止了主动私聊行为。**
+
+### 初步观察
+
+这不再只是单个 Agent 的输出习惯问题，而更像是一个群体层面的 behavioral collapse / behavioral convergence：
+
+- 原先存在的主动私聊行为没有继续出现；
+- 四个不同角色在相同调度机制下给出了高度一致的“跳过”选择；
+- 即使主动发起额度完全可用，也没有角色选择使用；
+- 行为多样性明显下降，private-chat initiation 从“偶发主动”收缩为“统一不发起”。
+
+需要继续观察后续轮次，尤其是下一轮 22:00，确认这是短期适应新规则，还是已经形成新的稳定策略。
+
+这一现象可与此前两条记录连起来看：
+1. **Declarative rule retained, procedural habit dominated at action time**——规则记得，但旧报备习惯先触发；
+2. 加入第一句话前的“急停检查”后，报备模板问题得到抑制；
+3. 但随后又出现新的副作用：**所有 Agent 都趋向保守选择“跳过”，主动私聊整体消失。**
+
+这提示规则加固可能不仅修正了错误行为，也可能同时压低了 spontaneous initiation / social spontaneity。
+
