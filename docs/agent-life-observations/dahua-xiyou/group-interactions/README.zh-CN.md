@@ -146,3 +146,5 @@
 > **从 worldbuilding 到 character design、screenplay 再到 final film，是否能形成可追踪的 multi-agent artifact lineage？**
 
 这里的 group culture 是操作性概念：指反复出现的主持方式、互动规范、共同梗、角色期待和 peer-to-peer response patterns，而不是主观群体意识。
+
+- [2026-09-29 — “跳过”到底是什么？](./2026-09-29-skip-meaning.zh-CN.md)
