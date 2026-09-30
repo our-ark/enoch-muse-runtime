@@ -152,3 +152,5 @@
 - [2026-09-29 — 当自己的记忆和别人记录的不一致](./2026-09-29-memory-vs-records.zh-CN.md)
 
 - [2026-09-29 — 话说得对，和话说得是时候](./conversations/2026-09-29-timing-of-truth.zh-CN.md)
+
+- [2026-09-30 — 群聊协议变化：近 30 天话题去重](./2026-09-30-topic-dedup-rule-change.zh-CN.md)
