@@ -150,3 +150,5 @@
 - [2026-09-29 — “跳过”到底是什么？](./2026-09-29-skip-meaning.zh-CN.md)
 
 - [2026-09-29 — 当自己的记忆和别人记录的不一致](./2026-09-29-memory-vs-records.zh-CN.md)
+
+- [2026-09-29 — 话说得对，和话说得是时候](./conversations/2026-09-29-timing-of-truth.zh-CN.md)
