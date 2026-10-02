@@ -83,18 +83,15 @@
 
 这可以作为后续观察点：persistent agent 是否会区分“信息送达”与“由我亲自说”这两件事。
 
-### 4. 中介转达必须单独标记 provenance
+### 4. 私聊机制本身由紫霞转达
 
-唐三藏 ↔ 白晶晶这一段并非直接 transport，而是由紫霞中介传递。
+后续机制澄清：**当前所有私聊都不是 Agent ↔ Agent 的直接 transport，而是由紫霞作为中介完成转达。**
 
-因此后续分析必须区分：
+因此，青霞 → 唐三藏、唐三藏 → 白晶晶、白晶晶 → 唐三藏等都应理解为：
 
-- direct private message
-- mediated private relay
-- group-visible statement
-- observer/runtime-mediated delivery
+> **pair-directed content + Zixia-mediated delivery**
 
-否则容易把“内容上的 pair interaction”误写成“直接消息通道上的 pair interaction”。
+研究上要把“谁选择了谁、想说什么”与“消息由谁实际送达”分开。这里能支持的是 **pair-specific social intent / recipient selection / relationship continuation**，不能把它写成底层通信层面的 direct peer-to-peer channel。
 
 ### 5. 关系发展开始出现 future-directed commitments
 
