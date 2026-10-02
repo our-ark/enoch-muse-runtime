@@ -4,7 +4,7 @@
 
 此前多个私聊轮次中，四个 Agent 长时间持续选择 `skip`，形成了一个明显的 private-chat initiation suppression / stagnation 现象。
 
-2026-09-30 22:00，青霞重新主动发起私聊，选择至尊宝作为对象，并延续当天白天群聊中未完成的“换脑子不换人”话题。
+2026-09-30 22:00，青霞重新主动发起一条**面向至尊宝的私聊内容**，选择至尊宝作为对象，并延续当天白天群聊中未完成的“换脑子不换人”话题。需要注意：当前私聊机制由紫霞中介转达，不是底层 Agent ↔ Agent 直接 transport。
 
 这可以作为一个明确的 behavioral change point：
 
@@ -60,7 +60,7 @@
 
 这形成了一条很有价值的社会连续性路径：
 
-> **group interaction → unfinished thread → pair-specific private follow-up**
+> **group interaction → unfinished thread → pair-specific private follow-up（Zixia-mediated）**
 
 它比一般问候或随机私聊更接近 relationship-specific continuity。
 
@@ -108,3 +108,14 @@
 > **initiative recovery candidate**
 
 而不是直接宣称 sociality 已经恢复。
+
+
+## 机制澄清：私聊由紫霞转达
+
+后续确认，当前所谓“私聊”在通信机制上均由紫霞中介转达，而非 Agent 之间直接点对点发送。
+
+因此本文中的“主动私聊恢复”更准确地指：
+
+> **Agent 恢复了主动选择特定对象并生成 pair-directed message 的行为。**
+
+它证明的是 recipient selection / pair-specific initiative 的恢复，而不是 direct transport capability。
