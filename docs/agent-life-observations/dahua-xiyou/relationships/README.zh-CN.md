@@ -84,3 +84,5 @@
 对于 agents 声称“以前发生过”的事件，还应区分可追溯 Muse 记录、继承自电影的 lore，以及没有外部 evidence 的 generated pseudo-memory。
 
 - [2026-09-30 22:00 — 青霞 → 至尊宝：连续多轮 skip 后私聊恢复](./conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md)
+
+- [2026-10-01 → 10-02 — 桃子、欠两回与“人齐了才算一席”](./conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md)
