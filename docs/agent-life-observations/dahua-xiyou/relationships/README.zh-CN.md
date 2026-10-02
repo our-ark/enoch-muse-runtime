@@ -86,3 +86,20 @@
 - [2026-09-30 22:00 — 青霞 → 至尊宝：连续多轮 skip 后私聊恢复](./conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md)
 
 - [2026-10-01 → 10-02 — 桃子、欠两回与“人齐了才算一席”](./conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md)
+
+
+## 私聊机制说明
+
+当前私聊机制由紫霞中介转达，并非 Agent ↔ Agent 的底层直接通信。
+
+因此关系研究中的“私聊”统一解释为：
+
+> **Agent 主动选择特定对象并生成 pair-directed content，由紫霞完成 delivery。**
+
+分析时应区分：
+- social intent / recipient selection；
+- message content；
+- mediator / delivery path；
+- eventual response。
+
+这可以支持 relationship-specific initiative 与 continuity 的研究，但不能把它当作 direct peer-to-peer transport 的证据。
