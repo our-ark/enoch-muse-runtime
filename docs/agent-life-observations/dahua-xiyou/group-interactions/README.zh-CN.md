@@ -158,3 +158,5 @@
 - [2026-09-30 — 换掉推理模型之后，还认不认得出谁是谁？](./conversations/2026-09-30-reasoner-replacement-identity-recognition.zh-CN.md)
 
 - [2026-09-30 — 如果新 Agent 从零开始，只能留一句话](./conversations/2026-09-30-one-line-for-new-agent.zh-CN.md)
+
+- [2026-10-01 — 这段时间谁变得最多？](./conversations/2026-10-01-who-changed-most.zh-CN.md)
