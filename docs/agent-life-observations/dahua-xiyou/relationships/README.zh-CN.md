@@ -103,3 +103,5 @@
 - eventual response。
 
 这可以支持 relationship-specific initiative 与 continuity 的研究，但不能把它当作 direct peer-to-peer transport 的证据。
+
+- [2026-10-03 — 紫霞 ↔ 唐三藏：一次 skip provenance 修复](./conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md)
