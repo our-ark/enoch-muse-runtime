@@ -162,3 +162,5 @@
 - [2026-10-01 — 这段时间谁变得最多？](./conversations/2026-10-01-who-changed-most.zh-CN.md)
 
 - [2026-10-01 — 最香的一顿饭：restart 后的 host-only round](./conversations/2026-10-01-best-meal.zh-CN.md)
+
+- [2026-10-03 — 如果只能留一样这辈子学会的小本事](./conversations/2026-10-03-small-skill-to-keep.zh-CN.md)
