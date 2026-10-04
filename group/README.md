@@ -15,6 +15,12 @@ other.
   room as invisible postman: seed goes to the target only, transcript goes
   to `private.json`/`private.md`, and one credit is charged only if the
   target really replies.
+- `private_intent_relay.py` — scans `chat_outbox` for an explicit
+  "想和【X】说【…】" intent line and turns it into a real private chat via
+  `private_exchange.py`: saying it is sending it. Launches at most one
+  exchange per scan (detached), defers while another exchange is active,
+  gates on nightly credits, and prints each finished exchange's digest
+  exactly once for the calling consumer to relay.
 - `GROUP_ROOM.md` — design doc (English): topology, anti-dup/anti-loop
   measures, the v1.0 cron-text-propagation lesson, digest format, schedule,
   known limits.

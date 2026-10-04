@@ -70,10 +70,17 @@ def main() -> int:
     st = gc.begin_control(ttl_s=1200, note=f"private {frm}->{to} {sid}")
     print(f"private {sid} started; {frm} -> {to}", flush=True)
 
-    # The seed goes to the target only, no fan-out.
+    # The seed goes to the target only, no fan-out. If the drop itself
+    # fails, release the control flag: the try/finally below only covers
+    # the poll loop, and a stale exchange.active would defer every later
+    # exchange until its TTL expires.
     t0 = time.time()
-    gc.drop_to(to, f"[private] {frm_name}: {args.seed_text}")
-    gc.say_private(frm, to, args.seed_text, sid)
+    try:
+        gc.drop_to(to, f"[private] {frm_name}: {args.seed_text}")
+        gc.say_private(frm, to, args.seed_text, sid)
+    except BaseException:
+        gc.end_exchange()
+        raise
     # Digest entries are (label, text, ts); format_digest sorts by ts so
     # both sides' replies appear in real arrival order, not collection order.
     digest: list[tuple[str, str, float]] = [(label(frm, to), args.seed_text, t0)]
