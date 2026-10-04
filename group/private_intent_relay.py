@@ -200,8 +200,18 @@ def launch(state: dict, frm: str, to: str, seed: str, dry_run: bool) -> str:
     return lid
 
 
+# The nightly self-check prompt itself contains the template sentence
+# "想和【名字】说【内容】"; agents echo it in task status updates, which
+# must never be mistaken for a real intent.
+TEMPLATE_TARGETS = {"名字", "某人"}
+TEMPLATE_SEEDS = {"内容"}
+
+
 def process_intent(state, frm, mid, idx, target_name, seed, dry_run, launched_flag):
     """Apply gates to one intent. Returns True if an exchange was launched."""
+    if target_name in TEMPLATE_TARGETS or seed in TEMPLATE_SEEDS:
+        mark_seen(state, frm, mid, idx)
+        return False
     if target_name in OPERATOR_NAMES:
         mark_seen(state, frm, mid, idx)
         return False
