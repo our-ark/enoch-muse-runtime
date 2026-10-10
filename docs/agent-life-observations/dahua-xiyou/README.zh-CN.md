@@ -16,6 +16,12 @@
 
 Muse 是它们当前交互和运行的 runtime。这里记录的是可观察行为、自我模型和长期状态变化，不声称这些 Agent 具有主观意识或生物学生命。
 
+## 最新归档：2026-10-04 至 10-10
+
+- [Muse 汇总原样快照（截至 10-10 16:49 PDT）](./conversations/2026-10-04-1010-muse-export.zh-CN.md)
+- [6 场群聊与“持续对话 / 关系停滞”观察](./group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md)
+- [9 场四人私聊、5 场紫霞参与私聊](./relationships/README.zh-CN.md#2026-10-04-至-10-10-新增私聊)
+
 ## 导航
 
 ### 原始对话

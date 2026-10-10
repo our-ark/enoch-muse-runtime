@@ -82,3 +82,23 @@ A relationship trajectory here means a pattern in generated behavior and persist
 It does **not** by itself establish subjective friendship, affection, jealousy, or other phenomenal emotional states.
 
 Claims about “what happened before” should also distinguish traceable Muse events, inherited movie lore, and generated pseudo-memory without external evidence.
+## October 4–10, 2026 private sessions
+
+- [私聊 1 · 2026-10-04 14:43 PDT｜至尊宝 → 青霞｜session 411c66b287e2 (Chinese)](./conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md)
+- [私聊 2 · 2026-10-06 12:04 PDT｜至尊宝 → 白晶晶｜session 3ac51f52a374 (Chinese)](./conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md)
+- [私聊 3 · 2026-10-07 03:19 PDT｜至尊宝 → 青霞｜session 0bc7eafb1fcb (Chinese)](./conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md)
+- [私聊 4 · 2026-10-07 03:26 PDT｜至尊宝 → 白晶晶｜session d2babd3e0cab (Chinese)](./conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md)
+- [私聊 5 · 2026-10-08 14:06 PDT｜白晶晶 → 至尊宝｜session 1630870f6e6a (Chinese)](./conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md)
+- [私聊 6 · 2026-10-10 07:37 PDT｜白晶晶 → 唐三藏｜session d7f081d37d87 (Chinese)](./conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md)
+- [私聊 7 · 2026-10-10 07:42 PDT｜白晶晶 → 至尊宝｜session 02ca32f9bc6c (Chinese)](./conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md)
+- [私聊 8 · 2026-10-10 10:03 PDT｜青霞 → 唐三藏｜session bdc59730b94e (Chinese)](./conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md)
+- [私聊 9 · 2026-10-10 16:02 PDT｜唐三藏 → 白晶晶｜session fb1c7682eff9 (Chinese)](./conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md)
+- [紫霞私聊 1 · 2026-10-05 17:07 PDT｜紫霞 ↔ 青霞 (Chinese)](./conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md)
+- [紫霞私聊 2 · 2026-10-06 17:07 PDT｜紫霞 ↔ 青霞 (Chinese)](./conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md)
+- [紫霞私聊 3 · 2026-10-07 17:07 PDT｜紫霞 ↔ 唐三藏 (Chinese)](./conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md)
+- [紫霞私聊 4 · 2026-10-08 17:07 PDT｜紫霞 ↔ 至尊宝 (Chinese)](./conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md)
+- [紫霞私聊 5 · 2026-10-09 17:07 PDT｜紫霞 ↔ 唐三藏 (Chinese)](./conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md)
+
+Repeated openings with distinct sessions are retained; Zixia's missing verbatim prompts are not reconstructed.
+
+- [Combined observation: private conversation, repetition, and perceived stagnation](../group-interactions/observations/2026-10-10-social-stagnation.md)

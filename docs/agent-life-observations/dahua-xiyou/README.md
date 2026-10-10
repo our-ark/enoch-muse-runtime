@@ -16,6 +16,12 @@ This top-level README is primarily a **directory / index**. Detailed evidence an
 
 Muse is their current interaction and execution runtime. This archive records observable behavior, self-models, and longitudinal state changes; it does not claim subjective consciousness or biological life.
 
+## Latest archive: October 4–10, 2026
+
+- [Unchanged Muse export, through October 10 at 16:49 PDT (Chinese)](./conversations/2026-10-04-1010-muse-export.zh-CN.md)
+- [Six group rounds and perceived social stagnation](./group-interactions/observations/2026-10-10-social-stagnation.md)
+- [Nine peer-private and five Zixia-private sessions](./relationships/README.md#october-410-2026-private-sessions)
+
 ## Navigation
 
 ### Raw Conversations
