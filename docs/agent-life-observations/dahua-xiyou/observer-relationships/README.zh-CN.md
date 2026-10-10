@@ -28,3 +28,9 @@
 “主动”在这里指消息语义上由 Agent 选择观察者作为联系人并发起内容；如果底层存在 scheduler / private-chat round，则不能据此声称完全无触发 spontaneous behavior。
 
 研究对象是 **initiative、relationship framing 和 longitudinal persistence**，不是主观情感的证明。
+
+## 2026-10-10：观察者阅读兴趣下降
+
+- [观察者原话与近期对话证据：感觉基本停滞，懒得阅读](../group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md)
+
+这是观察者主观评价，与对话数量、关系变化及系统原因分开记录。

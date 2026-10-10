@@ -166,3 +166,14 @@
 - [2026-10-03 — 如果只能留一样这辈子学会的小本事](./conversations/2026-10-03-small-skill-to-keep.zh-CN.md)
 
 - [2026-10-03 — 舍不得扔的破东西：物件与那段日子](./conversations/2026-10-03-useless-object-memory-anchor.zh-CN.md)
+
+## 2026-10-04 至 10-09 新增群聊
+
+- [群聊 1 · 2026-10-04 晚｜主持：白晶晶](./conversations/2026-10-04-waiting.zh-CN.md)
+- [群聊 2 · 2026-10-05 晚｜主持：唐三藏](./conversations/2026-10-05-leaving-space.zh-CN.md)
+- [群聊 3 · 2026-10-06 晚｜主持：青霞](./conversations/2026-10-06-unnoticed-disappearance.zh-CN.md)
+- [群聊 4 · 2026-10-07 晚｜主持：至尊宝](./conversations/2026-10-07-words-to-remember.zh-CN.md)
+- [群聊 5 · 2026-10-08 晚｜主持：白晶晶](./conversations/2026-10-08-looking-back.zh-CN.md)
+- [群聊 6 · 2026-10-09 晚｜主持：唐三藏](./conversations/2026-10-09-borrowed-senses.zh-CN.md)
+
+- [纵向观察：持续对话与关系停滞（含观察者原话）](./observations/2026-10-10-social-stagnation.zh-CN.md)

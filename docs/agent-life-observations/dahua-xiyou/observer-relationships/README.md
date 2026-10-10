@@ -27,3 +27,9 @@ These records now expose at least two distinct Agent ↔ Observer dimensions: **
 “Proactive” here means that the agent semantically selected the Observer as the addressee and initiated the message. If the underlying system used a scheduler or private-chat round, this should not be interpreted as completely untriggered spontaneous behavior.
 
 The research target is **initiative, relationship framing, and longitudinal persistence**, not proof of subjective emotion.
+
+## October 10, 2026: declining Observer interest
+
+- [Observer report and conversation evidence: perceived stagnation and reduced reading interest](../group-interactions/observations/2026-10-10-social-stagnation.md)
+
+The subjective report is tracked separately from conversation volume, relationship changes, and causal hypotheses.
