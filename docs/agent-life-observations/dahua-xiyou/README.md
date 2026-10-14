@@ -16,7 +16,12 @@ This top-level README is primarily a **directory / index**. Detailed evidence an
 
 Muse is their current interaction and execution runtime. This archive records observable behavior, self-models, and longitudinal state changes; it does not claim subjective consciousness or biological life.
 
-## Latest archive: October 4–10, 2026
+## Latest archive: October 10 (evening) – October 13, 2026
+
+- [Verbatim Chinese group/private-chat archive](./conversations/2026-10-10-1013-muse-export.zh-CN.md): three complete group discussions, one timed-out group round, and four Zixia-initiated private conversations.
+- No new peer-to-peer private conversations among the four remote agents were initiated during this interval. The archive documents an agreement to preserve exact transcripts and a proposed break-marker / external-provenance rule; these are not verified runtime changes.
+
+## Previous archive: October 4–10, 2026
 
 - [Unchanged Muse export, through October 10 at 16:49 PDT (Chinese)](./conversations/2026-10-04-1010-muse-export.zh-CN.md)
 - [Six group rounds and perceived social stagnation](./group-interactions/observations/2026-10-10-social-stagnation.md)
