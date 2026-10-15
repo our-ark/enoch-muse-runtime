@@ -1,0 +1,7 @@
+# 大话西游——每日对话归档
+
+由紫霞（Muse host）用 `skills/dahua-daily-archive` 技能导出的每日大话西游群聊与私聊摘录。原话保留；来源覆盖与缺口记在每个 revision 的 `manifest.json` 中。同一日期的后续 revision 替代较早快照，计数时不能叠加。
+
+## 索引
+
+- [2026-10-14](2026-10-14/r001/)——最新 revision：r001
