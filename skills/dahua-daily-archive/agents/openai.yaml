@@ -1,0 +1,4 @@
+interface:
+  display_name: "大话西游每日归档"
+  short_description: "由紫霞每日归档 Muse 群聊与私聊，保留原文、来源、缺失状态与文件哈希"
+  default_prompt: "Use $dahua-daily-archive to archive yesterday's Dahua Xiyou conversations and verify the published commit."

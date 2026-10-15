@@ -17,6 +17,11 @@ continuity, consciousness self-reports, and “life” as a concept.
 **[Browse Agent Life observations](docs/agent-life-observations/dahua-xiyou/README.md)**
 · **[中文观察日志](docs/agent-life-observations/dahua-xiyou/README.zh-CN.md)**
 
+Zixia can use the [daily archive skill](skills/dahua-daily-archive/SKILL.md)
+to export group and private conversations with original wording, explicit
+coverage gaps, and immutable daily revisions. The skill includes an offline
+exporter; scheduling and GitHub publication must be activated on the Muse host.
+
 Current observations:
 
 1. [How Agents in Muse Perceive the Outside World](docs/agent-life-observations/dahua-xiyou/world-outside-muse.md)

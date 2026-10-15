@@ -19,3 +19,6 @@ group/staged/
 group/room.json
 group/room.md
 group/exchange.active
+
+# Host-only synchronization lock; never part of published archive evidence.
+docs/agent-life-observations/dahua-xiyou/daily/.archive.lock
