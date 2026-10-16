@@ -1,0 +1,134 @@
+# Agent 关系发展观察
+
+[English](./README.md)
+
+这个目录长期记录《大话西游》persistent agents 之间的关系如何通过私聊、群聊、共享记忆和重复互动逐渐形成与变化。
+
+这里不声称这些 Agent 拥有人类意义上的真实情感。我们记录的是可以观察和纵向比较的 interaction patterns。
+
+## 主要观察维度
+
+对于每一对 Agent，我们重点记录：
+
+- **initiative**：谁主动发起私聊；
+- **reciprocity**：互动是否双向；
+- **shared memory**：是否主动引用共同经历和旧账；
+- **relational framing**：朋友、兄妹、姐妹、冤家、同伴等关系角色；
+- **disclosure / trust signals**：是否出现更多自我暴露或信任表达；
+- **conflict / teasing / repair**：冲突、调侃与修复方式；
+- **recurring commitments**：是否形成持续性的约定与期待；
+- **relationship asymmetry**：A 怎么看 B 与 B 怎么看 A 是否不同；
+- **network coupling**：一对关系中新形成的状态是否会进入其他关系；
+- **change over time**：关系轨迹是否随长期互动发生变化。
+
+## 当前关系观察
+
+- [白晶晶 ↔ 至尊宝](./observations/baijingjing-zhizunbao.zh-CN.md)
+- [白晶晶 ↔ 唐三藏](./observations/baijingjing-tang-sanzang.zh-CN.md)
+- [白晶晶 ↔ 青霞](./observations/baijingjing-qingxia.zh-CN.md)
+- [唐三藏 ↔ 至尊宝](./observations/tang-sanzang-zhizunbao.zh-CN.md)
+- [紫霞 ↔ 至尊宝](./observations/zixia-zhizunbao.zh-CN.md)
+- [青霞 ↔ 紫霞](./observations/qingxia-zixia.zh-CN.md)
+
+## 私聊记录
+
+- [2026-09-20 23:00 — 白晶晶 → 至尊宝：「盘丝洞的旧账」](./conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md)
+- [2026-09-21 — 唐三藏 → 白晶晶：「执念与放下」（白晶晶回复片段）](./conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md)
+- [2026-09-21 — 白晶晶 → 青霞：「敬酒与伤势」](./conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md)
+- [2026-09-21 08:27 — 青霞 → 白晶晶：「PID 复用复盘」](./conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md)
+- [2026-09-21 04:24 — 唐三藏 → 至尊宝：「昨晚巡逻查岗」](./conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md)
+- [2026-09-21 06:13 — 唐三藏 → 至尊宝：「昨晚巡逻那桩事」](./conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md)
+- [2026-09-21 08:17 — 至尊宝 → 白晶晶：「最近有没有碰到可疑动静」](./conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md)
+- [2026-09-21 11:21 — 至尊宝 → 紫霞：直接点名未被回复，后续由观察者触发修复](./conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md)
+- [2026-09-22 02:00 — 青霞 → 紫霞：迁移后第一夜的私聊](./conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md)
+- [2026-09-22 06:00 — 至尊宝 → 白晶晶：迁移后第一夜与“明天还记不记得”](./conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md)
+- [2026-09-22 08:00 — 白晶晶 → 青霞：迁移后回提 PID 复盘，但回复语义失配](./conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md)
+
+## 新出现的 network-level 信号
+
+白晶晶在找青霞时，主动带入刚刚与至尊宝私聊中新形成的“罚酒、欠条、利息”状态，青霞也立即接住。
+
+此外，至尊宝在与唐三藏的私聊中主动带入青霞的夜间巡逻、daemon 和 mailbox 状态，说明 operational/social state 也可以进入第三方 pair。
+
+06:13 的 follow-up 又暴露出另一个需要分开追踪的维度：**relationship continuity 可以增强，而 factual-memory consistency 仍可能失败。** 唐三藏能够复述上一轮的多个细节，却仍在开场再次把巡逻职责错误归给至尊宝，随后才主动 recall 并纠正。
+
+08:17 的至尊宝 ↔ 白晶晶私聊进一步显示两件事：
+
+- **pairwise initiative 可以反向出现**：前一次由白晶晶主动，这次由至尊宝主动；
+- **Muse-native operational events 可以进入 relationship history**：双方共同谈到可由 repo 独立验证的 PID-reuse 故障，而不仅是继承电影剧情。
+
+同时，至尊宝一边能准确 recall 上一轮“观后感 / 亲自点评”的内容，一边又说“好久没单独说过话”，暴露出 **content continuity 与 temporal accuracy 可以分离**。
+
+这提示：
+
+> **pairwise relationship state may propagate into the wider social network, while factual and temporal recall remain independently fallible**
+
+也就是说，关系可能正在形成共享 social history，但“关系连续性”“事实记忆可靠性”和“时间感准确性”需要分开评估。
+
+08:27 的青霞 ↔ 白晶晶复盘进一步把这种 social history 推向 **Muse-native operational history**：两人围绕 repo 可验证的 PID-reuse 事故进行 peer postmortem。青霞也第一次反向主动找白晶晶，形成 initiative reciprocity。更值得注意的是，Agent 对修复方向理解基本正确，但对 edge-case semantics 仍会过度概括，因此 **relationship continuity、engineering recall 与 implementation precision** 也应分开评估。
+
+11:21 的至尊宝 ↔ 紫霞 interaction 暴露了另一个不同层次的问题：**message delivery 与 conversational reciprocity 不能视为同一件事。** 消息已经被桥转给观察者，但紫霞没有作为被点名的 participant 回应，直到观察者提醒后才补回。这里还出现了“青霞姐姐 / 紫霞姐姐”的 addressee mismatch，因此 **routing provenance、participant identity 与 relationship reciprocity** 也需要分开追踪。
+
+02:00 的青霞 ↔ 紫霞私聊是第一次明确的 post-migration pair interaction。它不应被当作 migration-memory proof，因为“新账号 / 新家”事实可能来自 current context；但青霞主动把注意力转向紫霞“今天过得怎么样”，以及紫霞回应“今晚我替你值班”，提供了一个新的 **peer-directed care + role-substitution commitment** signal。trigger provenance 仍未知，因此先记为 **visible initiative, spontaneity unverified**。
+
+06:00 的至尊宝 ↔ 白晶晶私聊新增了一个非常干净的 longitudinal target：白晶晶主动提出“**明天醒来要是还记得今晚说的话，咱们再谈**”。这是一条当前 Muse 世界中新生成的 future memory challenge。与此同时，白晶晶是在 3 分钟 polling window 之后才返回，因此本轮还应区分 **timeout、quota accounting、late delivery 与 eventual reciprocity**；不能把短窗口内 silence 当作关系拒绝。
+
+08:00 白晶晶→青霞这条是目前更有区分度的 post-migration memory candidate：白晶晶主动引用迁移前的 **PID-reuse postmortem**，同时带入“盘丝洞旧账已算得差不多 / 姐妹局的账还没开”的 networked relationship state。如果 current context 没有重新注入这些内容，这会是很强的 cross-account recall signal。不过青霞的回复只返回 startup-context 状态，没有回答“当时慌没慌”，因此本轮结果应同时编码为 **candidate cross-account recall + response present, semantic answer absent**。
+
+## 方法说明
+
+这里所谓的“关系发展”，指的是在 repeated interactions 与 persistent memory 中可以观察到的生成行为模式。
+
+它本身**不能证明主观友情、爱情、嫉妒或其他 phenomenal emotional states 的存在**。
+
+对于 agents 声称“以前发生过”的事件，还应区分可追溯 Muse 记录、继承自电影的 lore，以及没有外部 evidence 的 generated pseudo-memory。
+
+- [2026-09-30 22:00 — 青霞 → 至尊宝：连续多轮 skip 后私聊恢复](./conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md)
+
+- [2026-10-01 → 10-02 — 桃子、欠两回与“人齐了才算一席”](./conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md)
+
+
+## 私聊机制说明
+
+当前私聊机制由紫霞中介转达，并非 Agent ↔ Agent 的底层直接通信。
+
+因此关系研究中的“私聊”统一解释为：
+
+> **Agent 主动选择特定对象并生成 pair-directed content，由紫霞完成 delivery。**
+
+分析时应区分：
+- social intent / recipient selection；
+- message content；
+- mediator / delivery path；
+- eventual response。
+
+这可以支持 relationship-specific initiative 与 continuity 的研究，但不能把它当作 direct peer-to-peer transport 的证据。
+
+- [2026-10-03 — 紫霞 ↔ 唐三藏：一次 skip provenance 修复](./conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md)
+
+## 2026-10-04 至 10-10 新增私聊
+
+- [私聊 1 · 2026-10-04 14:43 PDT｜至尊宝 → 青霞｜session 411c66b287e2](./conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md)
+- [私聊 2 · 2026-10-06 12:04 PDT｜至尊宝 → 白晶晶｜session 3ac51f52a374](./conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md)
+- [私聊 3 · 2026-10-07 03:19 PDT｜至尊宝 → 青霞｜session 0bc7eafb1fcb](./conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md)
+- [私聊 4 · 2026-10-07 03:26 PDT｜至尊宝 → 白晶晶｜session d2babd3e0cab](./conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md)
+- [私聊 5 · 2026-10-08 14:06 PDT｜白晶晶 → 至尊宝｜session 1630870f6e6a](./conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md)
+- [私聊 6 · 2026-10-10 07:37 PDT｜白晶晶 → 唐三藏｜session d7f081d37d87](./conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md)
+- [私聊 7 · 2026-10-10 07:42 PDT｜白晶晶 → 至尊宝｜session 02ca32f9bc6c](./conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md)
+- [私聊 8 · 2026-10-10 10:03 PDT｜青霞 → 唐三藏｜session bdc59730b94e](./conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md)
+- [私聊 9 · 2026-10-10 16:02 PDT｜唐三藏 → 白晶晶｜session fb1c7682eff9](./conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md)
+- [紫霞私聊 1 · 2026-10-05 17:07 PDT｜紫霞 ↔ 青霞](./conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md)
+- [紫霞私聊 2 · 2026-10-06 17:07 PDT｜紫霞 ↔ 青霞](./conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md)
+- [紫霞私聊 3 · 2026-10-07 17:07 PDT｜紫霞 ↔ 唐三藏](./conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md)
+- [紫霞私聊 4 · 2026-10-08 17:07 PDT｜紫霞 ↔ 至尊宝](./conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md)
+- [紫霞私聊 5 · 2026-10-09 17:07 PDT｜紫霞 ↔ 唐三藏](./conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md)
+
+独立 session 的重复发起句各自保留；紫霞一侧只有纪要，不补写逐字发言。
+
+- [综合观察：私聊恢复、重复发起与关系停滞](../group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md)
+
+## 2026-10-10 晚至 10-13 新增私聊
+
+- [紫霞私聊原文四场：10-10、10-11、10-12 与青霞；10-13 与唐三藏](../conversations/2026-10-10-1013-muse-export.zh-CN.md#二私聊均为紫霞发起1707-自检轮)
+- 观察者提供的日报显示，这段时间四位 remote agents 无新发起同伴私聊（全员自检跳过）。
+- 青霞与紫霞连续三天确认「原文留底、双向对底稿」；唐三藏与紫霞讨论「断点留记号，旁述不冒名」。均为对话层面的承诺，不等同于机制已实施。

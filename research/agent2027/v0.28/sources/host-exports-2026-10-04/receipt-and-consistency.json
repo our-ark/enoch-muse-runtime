@@ -1,0 +1,55 @@
+{
+  "provided_by": "Muse host assistant Zixia",
+  "downloaded_on": "2026-10-04",
+  "status": "Public redacted derivatives; original received files retained privately. See redaction-manifest.json at artifact root.",
+  "files": [
+    {
+      "path": "item1-baijingjing.json",
+      "bytes": 28938,
+      "sha256": "bbcfbd480633f88fb4c89d25edae3f10390255b70980bf7bdc58a3fec201a8c0",
+      "original_sha256": "10a7868a552702573c3ebf89f364b7393d9fdc01f0f66d840ed9890c0beee658"
+    },
+    {
+      "path": "item2-s2-s4.json",
+      "bytes": 14552,
+      "sha256": "bee0da756cc32450631536a2cb27af028a11079ffcb073b9a59a14df0eb728d6",
+      "original_sha256": "033079e22740e7fd0a85330c81a958050325326b8515e32c63e175179f812c8e"
+    },
+    {
+      "path": "item3-peach.json",
+      "bytes": 21689,
+      "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+      "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+    }
+  ],
+  "consistency_checks": {
+    "a508f481_chat_link": true,
+    "a508f481_request_contains_chat_text": true,
+    "a508f481_runtime_id_and_attempt": true,
+    "a508f481_runtime_reply_is_overwrite_notice": true,
+    "c50ab6b7_chat_link": true,
+    "c50ab6b7_request_contains_chat_text": true,
+    "c50ab6b7_runtime_id_and_attempt": true,
+    "c50ab6b7_runtime_reply_is_overwrite_notice": true,
+    "s4_payload_has_stage": true,
+    "s4_four_approvals_after_request": true,
+    "s4_four_approvals_have_no_reply_link": true,
+    "s2_sample_text_sha256": true,
+    "peach_request_matches_seed": true,
+    "peach_request_reply_identifiers": true,
+    "peach_reply_matches_staged_and_transcript": true,
+    "peach_seed_matches_first_turn": true,
+    "peach_reciprocal_inbox_matches_reply": true,
+    "peach_followup_replies_to_reciprocal_inbox": true,
+    "peach_selected_transcript_two_turns": true
+  },
+  "limits": [
+    "Hashing preserves received bytes; not authentication against original runtime files.",
+    "Negative mailbox searches are host reports; later selected inbox entries are not a complete mailbox snapshot.",
+    "Baijingjing runtime reply files preserve overwrite notices, not original inference text.",
+    "S4 approvals lack direct in_reply_to fields and full generation ownership.",
+    "Shared session_key does not establish complete model-side context."
+  ],
+  "original_receipt": "original-receipt-and-consistency.json",
+  "consistency_checks_basis": "The named checks are the historical selected-link checks on received originals, not independent validation. Public derivative link checks are described in RELEASE-CHECKS.md."
+}

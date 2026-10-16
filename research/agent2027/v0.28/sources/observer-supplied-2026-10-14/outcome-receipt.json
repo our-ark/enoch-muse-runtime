@@ -1,0 +1,13 @@
+{
+  "received_on": "2026-10-14",
+  "source_type": "direct observer clarification in the paper discussion",
+  "not_a_repository_snapshot": true,
+  "scope": "Exact quoted user statement, with provenance and analytical annotations; no original activity logs or pre/post counts supplied.",
+  "files": [
+    {
+      "path": "sources/observer-supplied-2026-10-14/private-chat-switch-outcome.zh-CN.md",
+      "bytes": 907,
+      "sha256": "57e9992defa61f0f4463aa8669c5f0e381fbce5757ad3b7ba16ec6796454bbbb"
+    }
+  ]
+}

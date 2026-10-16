@@ -1,0 +1,13 @@
+{
+  "received_on": "2026-10-14",
+  "source_type": "deployment-history account supplied in the paper discussion by the observer",
+  "not_a_repository_snapshot": true,
+  "scope": "locally preserved account with a provenance header; Markdown whitespace normalized; no original configuration or runtime logs supplied",
+  "files": [
+    {
+      "path": "sources/observer-supplied-2026-10-14/runtime-provider-history.zh-CN.md",
+      "bytes": 3232,
+      "sha256": "b55bcff0d16ce665e7bc6492fc44acdcb42b614e0a88ebbe01feb2df6c3a4246"
+    }
+  ]
+}

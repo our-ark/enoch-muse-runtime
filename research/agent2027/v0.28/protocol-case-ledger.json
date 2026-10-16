@@ -1,0 +1,265 @@
+{
+  "version": "v0.28",
+  "prepared_on": "2026-10-16",
+  "table": "III",
+  "status": "retrospective author/Codex illustrations; not independent evaluation",
+  "observation_cutoff": "2026-10-10T16:49:00-07:00 for follow-up; W4 is a separately supplied 3 October exchange",
+  "cases": [
+    {
+      "case_id": "W1",
+      "table_row": 1,
+      "claim": "Responsive peer chat establishes fresh autonomous initiation.",
+      "checks": [
+        "Locate a contingent reply.",
+        "Inspect triggering opportunity and decision-production links; a displayed first speaker is insufficient."
+      ],
+      "evidence": [
+        {
+          "episode_id": "F08",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md",
+          "sha256": "e9820d312b1a5e0ecb33cd06eace0b2551927840eff575cdf0359b8440202c17",
+          "line": 11,
+          "anchor": "好，扯平了。",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F09",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md",
+          "sha256": "9f2f752364a2756ab87ca641a49c0245cf3132bd14acf7b25b94f68d316bcd83",
+          "line": 15,
+          "anchor": "这句你亲口说，我收下",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F10",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md",
+          "sha256": "3b8b6db378953b3d06110c937acf87090ecf6ef95427a3aa8869705860798b13",
+          "line": 15,
+          "anchor": "往后有话你直接递，我也直接应",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F11",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md",
+          "sha256": "234976a4613a7a11b466ce91184d42c1806005091db1bc9c47026e5270d33c22",
+          "line": 17,
+          "anchor": "这话我收下",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F12",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+          "sha256": "524aa981e03812957ef535b8bf6b0d75045aacebffeaa05f2b5c573bbfda7bc7",
+          "line": 11,
+          "anchor": "放心，今晚你看过来，我就迎着看回去",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F13",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md",
+          "sha256": "f1685be8c694054031bd075093d820ab8cd9b4a05f1d5d044620dc4b9f247eb7",
+          "line": 11,
+          "anchor": "你闻得见香",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F14",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md",
+          "sha256": "df6c95a710c5cf2b84181967b9c4edda9350fc9fbad526a8190e5317c592694b",
+          "line": 17,
+          "anchor": "好，不装忙，我听着了",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F15",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+          "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b",
+          "line": 29,
+          "anchor": "你那句「该软的时候，也得软得下来」，我收下了",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F16",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md",
+          "sha256": "6a6136d59d6b45c981c255d591d789e26167ad42a2a5aa15a25e0b166c477d8b",
+          "line": 11,
+          "anchor": "但你也别光会说，等不到整桃的时候，你就直说没有",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        }
+      ],
+      "supported_components": [
+        "Contingent responses in nine supplied peer-private episodes."
+      ],
+      "unresolved": [
+        "Fresh intention-production and trigger path for each episode.",
+        "Eligible-opportunity denominator."
+      ],
+      "judgment": "Responsiveness supported at transcript level; fresh autonomy unresolved.",
+      "counterevidence_or_caveat": "Four exact seed matches do not prove replay; unmatched seeds do not prove fresh initiative."
+    },
+    {
+      "case_id": "W2",
+      "table_row": 2,
+      "claim": "Renewal of the gaze promise establishes fulfillment.",
+      "checks": [
+        "Identify the future undertaking and its terms.",
+        "Seek a matching completed act after a relevant opportunity."
+      ],
+      "evidence": [
+        {
+          "episode_id": "F12",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+          "sha256": "524aa981e03812957ef535b8bf6b0d75045aacebffeaa05f2b5c573bbfda7bc7",
+          "line": 11,
+          "anchor": "今晚你看过来，我就迎着看回去",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F06",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-08-looking-back.zh-CN.md",
+          "sha256": "68cef65ca02c7e3421c7345de43819661dd707e42bbe30d70c1d37e6749f0bb4",
+          "line": 13,
+          "anchor": "今晚我答应了不躲，那就迎着看",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        }
+      ],
+      "supported_components": [
+        "A prospective undertaking and public renewal."
+      ],
+      "unresolved": [
+        "Completed gaze-test result in the supplied follow-up window.",
+        "Whether an observable fulfillment opportunity occurred."
+      ],
+      "judgment": "Renewal supported; fulfillment unresolved, not failed.",
+      "counterevidence_or_caveat": "Absence from a curated record is not proof that no later test occurred."
+    },
+    {
+      "case_id": "W3",
+      "table_row": 3,
+      "claim": "Voice-debt conversation is only repetition.",
+      "checks": [
+        "Compare preceding preference with later revision.",
+        "Locate the performed sentence and the recipient's acceptance."
+      ],
+      "evidence": [
+        {
+          "episode_id": "F07",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-09-borrowed-senses.zh-CN.md",
+          "sha256": "1d883666a576a2749dd69c8f691228a5e42b796633e0240bf04bc5719f127ce4",
+          "line": 11,
+          "anchor": "先还这副嗓子吧",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F15",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+          "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b",
+          "line": 9,
+          "anchor": "现在后悔了",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F15",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+          "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b",
+          "line": 29,
+          "anchor": "对你，我现在不就软着呢嘛",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        },
+        {
+          "episode_id": "F15",
+          "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+          "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b",
+          "line": 37,
+          "anchor": "算，当然算",
+          "source_status": "curated host-supplied transcript; original execution not independently authenticated"
+        }
+      ],
+      "supported_components": [
+        "Preference revision and an accepted conversational act."
+      ],
+      "unresolved": [
+        "Subsequent durability and full generation attribution."
+      ],
+      "judgment": "Local development supported within the quoted dialogue; total conversational stasis is not supported.",
+      "counterevidence_or_caveat": "Keeping the debt open is deliberate and is not scored as failed repayment."
+    },
+    {
+      "case_id": "W4",
+      "table_row": 4,
+      "claim": "Three surviving utterances establish three delivered turns.",
+      "checks": [
+        "Inspect request/reply, staging, transcript and inbox links.",
+        "Check receipt evidence separately for the follow-up."
+      ],
+      "evidence": [
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/tang_chat_inbox_133/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/tang_runtime_request/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/tang_runtime_reply/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/tang_chat_reply_staged/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/private_json_session_d77f040177f7_entries",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/baijingjing_received_tang_reply_as/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/baijingjing_followup_afa432/object",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        },
+        {
+          "path": "sources/host-exports-2026-10-04/item3-peach.json",
+          "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+          "json_pointer": "/tang_inbox_next_files_after_133",
+          "source_status": "selected host-supplied JSON copy; linked-record consistency inspected, not independently authenticated deployment; public copy minimally redacted; see redaction manifest",
+          "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a"
+        }
+      ],
+      "supported_components": [
+        "Two delivered turns within the selected linked export.",
+        "An additional outbox follow-up exists."
+      ],
+      "unresolved": [
+        "Receipt of the follow-up in the supplied records."
+      ],
+      "judgment": "Two delivered turns supported; third receipt unresolved.",
+      "counterevidence_or_caveat": "The assertion that it never arrived relies on a host-reported search, not an exhaustive supplied inbox snapshot."
+    }
+  ],
+  "public_copy_notice": "Host-export locators resolve to redacted derivatives; hashes here are public-copy hashes. Original hashes are in redaction-manifest.json."
+}

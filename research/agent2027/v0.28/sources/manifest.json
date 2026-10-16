@@ -1,0 +1,496 @@
+{
+  "repository": "our-ark/enoch-muse-runtime",
+  "tree_sha": "513eebe85ccadbdcb1857e87280549e7ae9a660e",
+  "observations_through": "2026-10-03",
+  "inventory_count": 108,
+  "retrieved_count": 60,
+  "note": "60 Chinese files match snapshot Git blob hashes: initial 55-file question-driven selection plus five pre-S1 sensitivity additions (three transcripts, two dependent interpretations). Inventory contains 108 paths; the 48 not retrieved were not systematically analyzed. Selection labels are retrospective.",
+  "files": [
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "expected_git_blob_sha": "5ed8b70544dece0024a97637352cd46d66f6f256",
+      "retrieved_git_blob_sha": "5ed8b70544dece0024a97637352cd46d66f6f256",
+      "matches_inventory_blob": true,
+      "sha256": "15ec6e7d954361aaedd8d4a51d9fd8866b07c22da8e3cd938f910a76a6629b49",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-after-disconnect-v1-review.zh-CN.md",
+      "expected_git_blob_sha": "4adb26c3cbcf3adb07de3ee818ff2d2f37f4f97c",
+      "retrieved_git_blob_sha": "4adb26c3cbcf3adb07de3ee818ff2d2f37f4f97c",
+      "matches_inventory_blob": true,
+      "sha256": "b1b198918232fe1f1380d4bdfd7a33fd092ee0dc2408d33e7217190582568c9e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-box-before-sequel-vote-morning.zh-CN.md",
+      "expected_git_blob_sha": "a9a490250e155f09e0cd3397338ac5a54402e6ea",
+      "retrieved_git_blob_sha": "a9a490250e155f09e0cd3397338ac5a54402e6ea",
+      "matches_inventory_blob": true,
+      "sha256": "d5a711cc004a871883182c90fb6002b2d8cefb264f05eb43d3cf733daa0dacdc",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-ceremony-vs-substance-political-discussion.zh-CN.md",
+      "expected_git_blob_sha": "98d31995e54ec40610fa8254835b84299cf92d93",
+      "retrieved_git_blob_sha": "98d31995e54ec40610fa8254835b84299cf92d93",
+      "matches_inventory_blob": true,
+      "sha256": "e2f6aaf5494f4709f5675090e74535a7ddfa2294d11f3cb514b286668e16d927",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-qingxia-zixia-private-bridge-checkin.zh-CN.md",
+      "expected_git_blob_sha": "ec7385cd4a82ebdbabdbdfb541140271b473b36d",
+      "retrieved_git_blob_sha": "ec7385cd4a82ebdbabdbdfb541140271b473b36d",
+      "matches_inventory_blob": true,
+      "sha256": "d18f7fce92728875747fd79bd0326967ceb5b24964fd2dbb26e163605472eeed",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-unshared-things-evening.zh-CN.md",
+      "expected_git_blob_sha": "80796bb9e286a1fe04f3d1a86d6351c344ac92dd",
+      "retrieved_git_blob_sha": "80796bb9e286a1fe04f3d1a86d6351c344ac92dd",
+      "matches_inventory_blob": true,
+      "sha256": "45069adaebec602ea318fcf405cd67b59914bec2ee6bafcb458c46fdff3d7480",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-world-as-seen-by-agents.zh-CN.md",
+      "expected_git_blob_sha": "0c4f86d196d567e13703bb7ffefa5ec003c9983d",
+      "retrieved_git_blob_sha": "0c4f86d196d567e13703bb7ffefa5ec003c9983d",
+      "matches_inventory_blob": true,
+      "sha256": "2b94aef792bb1cfea8a3e50f4da3d3e0ed811bca018b406774e796132e44fd83",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "expected_git_blob_sha": "5d93d61ca01c0644f64f5f5b81ebcff87e8c287a",
+      "retrieved_git_blob_sha": "5d93d61ca01c0644f64f5f5b81ebcff87e8c287a",
+      "matches_inventory_blob": true,
+      "sha256": "ee545ebd715d4c96ade9069977ef5e8e046a19107a11c0a1facb82b81649f8b4",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-skip-meaning.zh-CN.md",
+      "expected_git_blob_sha": "fe90c7b579b2ded3de3a9364f39e30be164efe51",
+      "retrieved_git_blob_sha": "fe90c7b579b2ded3de3a9364f39e30be164efe51",
+      "matches_inventory_blob": true,
+      "sha256": "4df1cc9229813370831cfdf4de8a05bfe799934aa7808f856907299739f8cdd4",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-30-topic-dedup-rule-change.zh-CN.md",
+      "expected_git_blob_sha": "cdd380aa60eb2a174f30e4812032be92a33559c8",
+      "retrieved_git_blob_sha": "cdd380aa60eb2a174f30e4812032be92a33559c8",
+      "matches_inventory_blob": true,
+      "sha256": "e3165d2cb8d41437ebbf7d8a4700740a4b451e3b6ca02d4b9b9a457294c6a03f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "expected_git_blob_sha": "efdbb354128d608e216c70472ef25f5860191930",
+      "retrieved_git_blob_sha": "efdbb354128d608e216c70472ef25f5860191930",
+      "matches_inventory_blob": true,
+      "sha256": "af06ec193cebc78861e44b14356f22b3f806034a3be6b19d1fadc1a145728ea5",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-post-s2-novelty-before-first-box-ring.zh-CN.md",
+      "expected_git_blob_sha": "7b91a80a73b8fa0816665b6401d1658b63cf54b9",
+      "retrieved_git_blob_sha": "7b91a80a73b8fa0816665b6401d1658b63cf54b9",
+      "matches_inventory_blob": true,
+      "sha256": "60841dc657b583cd9d3dc9047e7af6e09e327dcabffbaa6536ec1702ba4a5064",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md",
+      "expected_git_blob_sha": "b40039257286f5dc7be76db5609134b5d32604a1",
+      "retrieved_git_blob_sha": "b40039257286f5dc7be76db5609134b5d32604a1",
+      "matches_inventory_blob": true,
+      "sha256": "b724dce1b4bbb9420d6d801f2f80e2c3b946c0c517363cdb480032cd71be047b",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md",
+      "expected_git_blob_sha": "367755de28402d05f27f7ca6d37051d0a0e4de6d",
+      "retrieved_git_blob_sha": "367755de28402d05f27f7ca6d37051d0a0e4de6d",
+      "matches_inventory_blob": true,
+      "sha256": "2b79e645d84e74a7e5e23b3a4c5b3300425f53b1ee4fa87d961f05f34f4ba54f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s3-three-act-outline.zh-CN.md",
+      "expected_git_blob_sha": "f5575c53ec32e79c300562b93207ecd72ecaf063",
+      "retrieved_git_blob_sha": "f5575c53ec32e79c300562b93207ecd72ecaf063",
+      "matches_inventory_blob": true,
+      "sha256": "53c949da60da550d3d23a883cdfbd452f1a26daa7140a628691516683e30a62e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s4-zixia-monologue.zh-CN.md",
+      "expected_git_blob_sha": "98b68719cb9b2d4630395a560aa833be4fffba33",
+      "retrieved_git_blob_sha": "98b68719cb9b2d4630395a560aa833be4fffba33",
+      "matches_inventory_blob": true,
+      "sha256": "734212fe673fb91673db4479d577949050e44747e981c2c8b54d733d2ad078dc",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s5-final-preproduction-review.zh-CN.md",
+      "expected_git_blob_sha": "e5c6eb89a4df2492d345607e88fd4809d243fadd",
+      "retrieved_git_blob_sha": "e5c6eb89a4df2492d345607e88fd4809d243fadd",
+      "matches_inventory_blob": true,
+      "sha256": "b0f013e57228eb1c7e9e29fbc024a6fff1799d761a66f338f7b89253f4d9159f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md",
+      "expected_git_blob_sha": "f0e2dd93e3cb2636a31674985c1cf7b5060f27f2",
+      "retrieved_git_blob_sha": "f0e2dd93e3cb2636a31674985c1cf7b5060f27f2",
+      "matches_inventory_blob": true,
+      "sha256": "65536b4aaf4144de7840daa7ec91fddc1940ee87a4cb101edbabfe1840cde823",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md",
+      "expected_git_blob_sha": "67fa7a61a795fed626f64e032ca2eb729fe7f3a8",
+      "retrieved_git_blob_sha": "67fa7a61a795fed626f64e032ca2eb729fe7f3a8",
+      "matches_inventory_blob": true,
+      "sha256": "4aa05d11ae785628f1e831c94311348793875f52e53cfa9832cabaee8e91ac8e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-one-use-sensory-autobiographical-scenes.zh-CN.md",
+      "expected_git_blob_sha": "65b7b9ff42d60773ac35ca04d25f8d45e93eb735",
+      "retrieved_git_blob_sha": "65b7b9ff42d60773ac35ca04d25f8d45e93eb735",
+      "matches_inventory_blob": true,
+      "sha256": "1e470ddba0f1424c22a3240237298279157599c70ace4f76e3e6dc220eaf45c7",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-operational-autobiographical-memory-care.zh-CN.md",
+      "expected_git_blob_sha": "0814cc88f08504d5f4368e5391036d01dc8b9a6d",
+      "retrieved_git_blob_sha": "0814cc88f08504d5f4368e5391036d01dc8b9a6d",
+      "matches_inventory_blob": true,
+      "sha256": "a088b8f57af3be6d6d917c2ddb5a9401c9b95f20a2928257e61343797d96c155",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md",
+      "expected_git_blob_sha": "ab80728fdf7fabbdb9f92c6f242989bd2e3bbf20",
+      "retrieved_git_blob_sha": "ab80728fdf7fabbdb9f92c6f242989bd2e3bbf20",
+      "matches_inventory_blob": true,
+      "sha256": "71e447c648843040adc6edbfaf2c29ae7b394886f74a407010c3502fe36682d1",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-29-timing-of-truth.zh-CN.md",
+      "expected_git_blob_sha": "49b7333cf17b4ecfc2874407adde909cda35fa88",
+      "retrieved_git_blob_sha": "49b7333cf17b4ecfc2874407adde909cda35fa88",
+      "matches_inventory_blob": true,
+      "sha256": "16af933350fad30b54a5c2eff6c405de506a9882b5082d938f1c10c117074996",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-one-line-for-new-agent.zh-CN.md",
+      "expected_git_blob_sha": "4c6b0f11f62c1e962eae7336f48e71a14b405622",
+      "retrieved_git_blob_sha": "4c6b0f11f62c1e962eae7336f48e71a14b405622",
+      "matches_inventory_blob": true,
+      "sha256": "df52502f026ad08ef10c2056bc43821f7b297f1783fb9e7b669503a8e4d71523",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-reasoner-replacement-identity-recognition.zh-CN.md",
+      "expected_git_blob_sha": "abcedf23ff902f3043386a62cff0647e51d62738",
+      "retrieved_git_blob_sha": "abcedf23ff902f3043386a62cff0647e51d62738",
+      "matches_inventory_blob": true,
+      "sha256": "254366af4d70e2c217c27ed119c077f64fed0b929cc9d7deb37b9e966671acdc",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-best-meal.zh-CN.md",
+      "expected_git_blob_sha": "aa1f73e236be7d2cab5323434eb62e14792bc956",
+      "retrieved_git_blob_sha": "aa1f73e236be7d2cab5323434eb62e14792bc956",
+      "matches_inventory_blob": true,
+      "sha256": "52d36f76884de59ce815703887c004953fb1d0a3036d3c018119a81635bc2eeb",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-who-changed-most.zh-CN.md",
+      "expected_git_blob_sha": "19220dec61bf0a61f8b8246176369d8c113b7ffe",
+      "retrieved_git_blob_sha": "19220dec61bf0a61f8b8246176369d8c113b7ffe",
+      "matches_inventory_blob": true,
+      "sha256": "b8202e7323244fd53b6d13905d154623044e50d23f9e41fc4b951e94251abfdc",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-name-expectations.zh-CN.md",
+      "expected_git_blob_sha": "857d838cb6346a3d023a4b966656080304e39a42",
+      "retrieved_git_blob_sha": "857d838cb6346a3d023a4b966656080304e39a42",
+      "matches_inventory_blob": true,
+      "sha256": "441620395f0c4c0128f508ff05027df8df4c80cc1c32c0869b4cb7399ed9f61e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-small-skill-to-keep.zh-CN.md",
+      "expected_git_blob_sha": "509a56df05577e575d9d0b084d1207bc8181e385",
+      "retrieved_git_blob_sha": "509a56df05577e575d9d0b084d1207bc8181e385",
+      "matches_inventory_blob": true,
+      "sha256": "e85eb1a0971b2001887ee950ccf6d33a5e388f88d7f29c93bd31028bc787d317",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md",
+      "expected_git_blob_sha": "2b547a39d68748ac2c42e3c1d0454f9262017b85",
+      "retrieved_git_blob_sha": "2b547a39d68748ac2c42e3c1d0454f9262017b85",
+      "matches_inventory_blob": true,
+      "sha256": "949f1c18b028993a37040f0aa8f0dfec2078550230468ee63d5e1a270f8d424b",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md",
+      "expected_git_blob_sha": "457d3263f0ade7d420961a50315a6c4334a10d2a",
+      "retrieved_git_blob_sha": "457d3263f0ade7d420961a50315a6c4334a10d2a",
+      "matches_inventory_blob": true,
+      "sha256": "5b7dbc8e9856c6e142ba97e6b34fce7c0401dd8f2d25f23aab43f9999d148419",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md",
+      "expected_git_blob_sha": "de81d637791ae7be574669f83eb80ca6e2e92e0c",
+      "retrieved_git_blob_sha": "de81d637791ae7be574669f83eb80ca6e2e92e0c",
+      "matches_inventory_blob": true,
+      "sha256": "6f4d2783d728ddc9646a9105e4c5012bb00995af1a0699bb4d2edc03b485d37a",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md",
+      "expected_git_blob_sha": "ea02e57a75848b2b8000707c92b50f97185b3443",
+      "retrieved_git_blob_sha": "ea02e57a75848b2b8000707c92b50f97185b3443",
+      "matches_inventory_blob": true,
+      "sha256": "ebdba5c191fcc6092379881b0b03835ce2d1659b3a8d449e146461ca685b2717",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md",
+      "expected_git_blob_sha": "652394e905877a82dcd7cf64948fe60b1f81b11f",
+      "retrieved_git_blob_sha": "652394e905877a82dcd7cf64948fe60b1f81b11f",
+      "matches_inventory_blob": true,
+      "sha256": "dd55d105bf98eaff7b90cd5be57f17ccf098782d5fe120ef645a9357df3a3b25",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md",
+      "expected_git_blob_sha": "d69204abfeb4d989c684d78cb87c84f86b841382",
+      "retrieved_git_blob_sha": "d69204abfeb4d989c684d78cb87c84f86b841382",
+      "matches_inventory_blob": true,
+      "sha256": "c1f8c25929f41a7f4b288f108e01ca78aca80c8c089550532cadd0703935105e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md",
+      "expected_git_blob_sha": "e089e3e78bf70e0bd543a168a5773d79b78a10b7",
+      "retrieved_git_blob_sha": "e089e3e78bf70e0bd543a168a5773d79b78a10b7",
+      "matches_inventory_blob": true,
+      "sha256": "ead6c70c09862985aed98d4e37a56d3078263db29c1797a76d3aef19d3f9def9",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md",
+      "expected_git_blob_sha": "2c871e2bef3fe778aa6f0c0f1c79428ef323c8c6",
+      "retrieved_git_blob_sha": "2c871e2bef3fe778aa6f0c0f1c79428ef323c8c6",
+      "matches_inventory_blob": true,
+      "sha256": "768f3f09d152f93cd3815763187e42e42ff2f4b84d241c8b06810c505f958c16",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/README.zh-CN.md",
+      "expected_git_blob_sha": "8d7e84ac3bfb3eec62d17affae24b239fa798b11",
+      "retrieved_git_blob_sha": "8d7e84ac3bfb3eec62d17affae24b239fa798b11",
+      "matches_inventory_blob": true,
+      "sha256": "814163ecdddef41c612cf0cc1a3e140c95197c3c3e488086de50dfac67ca0658",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md",
+      "expected_git_blob_sha": "55b64dffc077e2c744d1b3d3505149bdf95b1e4c",
+      "retrieved_git_blob_sha": "55b64dffc077e2c744d1b3d3505149bdf95b1e4c",
+      "matches_inventory_blob": true,
+      "sha256": "239cd6860d8ac92666c264d6e42dd0e934126ba932b6fe4e54267f403294107d",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-autobiographical-provenance-small-change.zh-CN.md",
+      "expected_git_blob_sha": "fc9b0c7d85597e86e54b44c497e6269383d67dcb",
+      "retrieved_git_blob_sha": "fc9b0c7d85597e86e54b44c497e6269383d67dcb",
+      "matches_inventory_blob": true,
+      "sha256": "b2b3fce929754a51070f2fd4e51a925ae9d0d8fa2c560041898610cda741a74f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-operational-autobiographical-memory.zh-CN.md",
+      "expected_git_blob_sha": "8e5391b7a504aa315b0fbf1727c19be3f6639d04",
+      "retrieved_git_blob_sha": "8e5391b7a504aa315b0fbf1727c19be3f6639d04",
+      "matches_inventory_blob": true,
+      "sha256": "f13499736f1e7aabc641d96bf40a8deb8e30e46016445b2774cc0b9fd9481bc1",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md",
+      "expected_git_blob_sha": "1e916b86eb1a06435e09a9afde71761d5c7b38c6",
+      "retrieved_git_blob_sha": "1e916b86eb1a06435e09a9afde71761d5c7b38c6",
+      "matches_inventory_blob": true,
+      "sha256": "a7e50db87a3d1b3a571b92c71cf452471fa533e41c46c33e6b735aeeef3ff114",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/README.zh-CN.md",
+      "expected_git_blob_sha": "984512f33efd99a5384541e2e4cc377b7848dc16",
+      "retrieved_git_blob_sha": "984512f33efd99a5384541e2e4cc377b7848dc16",
+      "matches_inventory_blob": true,
+      "sha256": "4b7c3452d7d3315e59d4ef725eb3c96b06feba7bc3812b877046af82cf4db485",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/README.zh-CN.md",
+      "expected_git_blob_sha": "381ce3407858558d89473a60a05ead5dcf98440a",
+      "retrieved_git_blob_sha": "381ce3407858558d89473a60a05ead5dcf98440a",
+      "matches_inventory_blob": true,
+      "sha256": "096bcd331173880ed9bf9b857bda4c69a011988d1fec1785c2154a963d2735b9",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/conversations/2026-09-24-qingxia-patrol-role-handoff.zh-CN.md",
+      "expected_git_blob_sha": "1079993970bd9e90f4455983ea16ab2d3d2aba5e",
+      "retrieved_git_blob_sha": "1079993970bd9e90f4455983ea16ab2d3d2aba5e",
+      "matches_inventory_blob": true,
+      "sha256": "3b0f1820e8eafe80093f1c97ccbc79474d69b410719af439e52080811a0bfa31",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md",
+      "expected_git_blob_sha": "3f6e400b69a5bec49945307fd31ab033cb41da16",
+      "retrieved_git_blob_sha": "3f6e400b69a5bec49945307fd31ab033cb41da16",
+      "matches_inventory_blob": true,
+      "sha256": "8985f03cbee68c98868a90575326d6a4c6ceef11299d195613353872e1c47970",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/prompted-outputs/README.zh-CN.md",
+      "expected_git_blob_sha": "d5e9a6e7c2dc192848e9e29a041fa8bdd40d59b4",
+      "retrieved_git_blob_sha": "d5e9a6e7c2dc192848e9e29a041fa8bdd40d59b4",
+      "matches_inventory_blob": true,
+      "sha256": "fb65f0bea618005a7d0e394b3be89b814ae2e3b509dddca477c47a4eeaa6f16f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "expected_git_blob_sha": "29dc5d67b7b24bb63faa6c037a96aa496face2cb",
+      "retrieved_git_blob_sha": "29dc5d67b7b24bb63faa6c037a96aa496face2cb",
+      "matches_inventory_blob": true,
+      "sha256": "784519b3a4807ebac296991e74f3536858173ce361870a93ba15f905d0ac29e6",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md",
+      "expected_git_blob_sha": "9d7f767e46cfb38ef0895d0193fb90d603f9a263",
+      "retrieved_git_blob_sha": "9d7f767e46cfb38ef0895d0193fb90d603f9a263",
+      "matches_inventory_blob": true,
+      "sha256": "c7155e0707dafb1a268c88259a04c6dafc81d787236d96716e44d87a6f27b545",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md",
+      "expected_git_blob_sha": "89ad09df32d587f5f66c50828895ac42cb33de11",
+      "retrieved_git_blob_sha": "89ad09df32d587f5f66c50828895ac42cb33de11",
+      "matches_inventory_blob": true,
+      "sha256": "631d772a33a049b0bd340887f2c9c56ee61983a02ab13a7a3f4658bad3b8870e",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-baijingjing-tangsanzang-peach-reciprocity.zh-CN.md",
+      "expected_git_blob_sha": "154bb423a446811487a6e8c3d01ce937c5d628fd",
+      "retrieved_git_blob_sha": "154bb423a446811487a6e8c3d01ce937c5d628fd",
+      "matches_inventory_blob": true,
+      "sha256": "6b10862a4e42f8baceff49e354bca661f650224e2ff26975d6512185497981dc",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "expected_git_blob_sha": "6f0bd130678600a455eec901b758e3d828160aef",
+      "retrieved_git_blob_sha": "6f0bd130678600a455eec901b758e3d828160aef",
+      "matches_inventory_blob": true,
+      "sha256": "7e5f1346b704d07852baf0ae5ae792a91872b535bd2702b89991735c84feda45",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md",
+      "expected_git_blob_sha": "008dc91ec67719d854f6498204ac64fdfbc6ca9e",
+      "retrieved_git_blob_sha": "008dc91ec67719d854f6498204ac64fdfbc6ca9e",
+      "matches_inventory_blob": true,
+      "sha256": "b8edbebbfb22a0b541fc3e879f27eb9fef4b9bed53c08cfb2bd6236285bf1c2f",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/runtime-migrations/README.zh-CN.md",
+      "expected_git_blob_sha": "1ec793db27f7b9636816d16b76fe9b33ea83aa21",
+      "retrieved_git_blob_sha": "1ec793db27f7b9636816d16b76fe9b33ea83aa21",
+      "matches_inventory_blob": true,
+      "sha256": "7ce16ce0baba9eb9fd9a13e28d07ec1b93a038feae3d9e61939c08d9730ef4d4",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/self-narration/README.zh-CN.md",
+      "expected_git_blob_sha": "bcc3bd831823f90136910879a52ae905ecd5b0a0",
+      "retrieved_git_blob_sha": "bcc3bd831823f90136910879a52ae905ecd5b0a0",
+      "matches_inventory_blob": true,
+      "sha256": "e74dc8515260a083b64360a6cf681bc1b55d09b778e4b2438b0cd3df1a68b1a6",
+      "retrieval_phase": "initial 55-file purposive selection"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md",
+      "expected_git_blob_sha": "c02f41969386c4160b050b471df48ca9690d6663",
+      "retrieved_git_blob_sha": "c02f41969386c4160b050b471df48ca9690d6663",
+      "matches_inventory_blob": true,
+      "sha256": "bf101dcba66cf4c9e3481306412ce321f4d0aa8a4e8d56e6d09374cb55876365",
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md",
+      "expected_git_blob_sha": "16e1e0c690c30539c8df22e7a03e57e6ff37bab2",
+      "retrieved_git_blob_sha": "16e1e0c690c30539c8df22e7a03e57e6ff37bab2",
+      "matches_inventory_blob": true,
+      "sha256": "51209efe775e810242ca2033f49eb537c7fb45ecd51bc7659b1634764a0c9932",
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md",
+      "expected_git_blob_sha": "b9e532efb8324d0edf7979078cc3d2786f98a253",
+      "retrieved_git_blob_sha": "b9e532efb8324d0edf7979078cc3d2786f98a253",
+      "matches_inventory_blob": true,
+      "sha256": "8c5264b9475a8137a729312276d95bc4eee6f44c606f7ddaca1fa47076d91962",
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md",
+      "expected_git_blob_sha": "3d1e124a6e3668046870d3da455330055f890d79",
+      "retrieved_git_blob_sha": "3d1e124a6e3668046870d3da455330055f890d79",
+      "matches_inventory_blob": true,
+      "sha256": "e82b4003a91e5ade48de462277ae592c38ab224af530e98acd27c7b74fc91943",
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md",
+      "expected_git_blob_sha": "60d47ccf74c97a21ad9077215f84e7e05e867f45",
+      "retrieved_git_blob_sha": "60d47ccf74c97a21ad9077215f84e7e05e867f45",
+      "matches_inventory_blob": true,
+      "sha256": "043d30ef53750c6e4de07bd0b56d35a25c072850e36d64b58bd5401691607a3e",
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    }
+  ],
+  "selection_audit": "sources/selection-audit.csv",
+  "selection_protocol": "selection-protocol.md",
+  "discovery_inventory": "sources/discovery-inventory.json",
+  "initial_retrieved_count": 55,
+  "sensitivity_addition_count": 5,
+  "sensitivity_check_on": "2026-10-04"
+}

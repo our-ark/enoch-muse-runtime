@@ -1,0 +1,143 @@
+{
+  "template_version": "0.3",
+  "paper_version": "v0.28",
+  "purpose": "Blank analyst record; not the exporter schema, an observed event, or an automatic semantic evaluator. Null means unknown or not yet supplied.",
+  "study": {
+    "study_id": null,
+    "observation_window": null,
+    "timezone": null,
+    "eligibility_rule": null
+  },
+  "events": [
+    {
+      "analytical_event_id": null,
+      "event_type": null,
+      "actor": null,
+      "recipient": null,
+      "original_ids": {
+        "session_id": null,
+        "message_id": null,
+        "request_id": null
+      },
+      "event_time": {
+        "value": null,
+        "precision": "unknown",
+        "timezone": null,
+        "source_locator": null
+      },
+      "source_recording_time": {
+        "value": null,
+        "precision": "unknown",
+        "timezone": null,
+        "source_locator": null
+      },
+      "export_time": {
+        "value": null,
+        "precision": "unknown",
+        "timezone": null,
+        "source_locator": null
+      },
+      "source": {
+        "locator": null,
+        "version": null,
+        "sha256": null,
+        "verification_profile": {
+          "source_basis": null,
+          "copy_integrity": "unchecked",
+          "linked_records_inspected": false,
+          "independent_deployment_verification": false,
+          "coverage": "not_attested",
+          "known_omissions": []
+        }
+      },
+      "opportunity": {
+        "eligibility": "unknown",
+        "gates": [
+          {
+            "gate": "G1_decision_invocation",
+            "status": "unknown",
+            "source_locator": null,
+            "verification_profile": null
+          },
+          {
+            "gate": "G2_inference_available",
+            "status": "unknown",
+            "source_locator": null,
+            "verification_profile": null
+          },
+          {
+            "gate": "G3_permission_and_target",
+            "status": "unknown",
+            "source_locator": null,
+            "verification_profile": null
+          },
+          {
+            "gate": "G4_quota_available",
+            "status": "unknown",
+            "source_locator": null,
+            "verification_profile": null
+          },
+          {
+            "gate": "G5_route_and_window",
+            "status": "unknown",
+            "source_locator": null,
+            "verification_profile": null
+          }
+        ],
+        "observation_complete": "unknown",
+        "outcome": "unknown",
+        "supporting_locators": []
+      },
+      "trigger": {
+        "scheduling_source": "unknown",
+        "interaction_trigger": "unknown",
+        "decision_producer": "unknown",
+        "supporting_locators": []
+      },
+      "related_event_links": [],
+      "commitment_terms": {
+        "undertaking": null,
+        "addressee": null,
+        "conditions": [],
+        "audience_restriction": null,
+        "deadline": null
+      },
+      "text_locator": null,
+      "operational_event_subtype": null
+    }
+  ],
+  "claim_assessments": [
+    {
+      "analytical_claim_id": null,
+      "claim": null,
+      "required_evidence": [],
+      "linked_event_ids": [],
+      "status": "unknown",
+      "supported_components": [],
+      "unresolved_requirements": [],
+      "conflicting_evidence": [],
+      "source_qualification": null,
+      "rationale": null,
+      "observation_cutoff": null,
+      "coder": null,
+      "independent_review_status": "not_performed",
+      "supersedes": null
+    }
+  ],
+  "allowed_event_types": [
+    "opportunity",
+    "intention",
+    "dispatch",
+    "receipt",
+    "response",
+    "commitment",
+    "consequence",
+    "operational_event"
+  ],
+  "allowed_claim_statuses": [
+    "observed",
+    "not_observed_in_available_records",
+    "unknown",
+    "not_applicable"
+  ]
+}

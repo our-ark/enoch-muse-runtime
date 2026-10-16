@@ -1,0 +1,48 @@
+{
+  "repository": "https://github.com/our-ark/enoch-muse-runtime",
+  "commit": "9040c218b615af6a6cd001e03c61c0d9034e2c33",
+  "retrieved_at_utc": "2026-10-16T04:48:06.899244+00:00",
+  "scope": "Implementation and first archive illustration; excluded from the frozen 27-session analytical corpus. Git copy fidelity, not deployment authentication.",
+  "files": [
+    {
+      "path": "skills/dahua-daily-archive/SKILL.md",
+      "sha256": "a710e75e9d1d97cb28eb63ba50f4320e717fd2dae15a93b19eddac96cb501d3a",
+      "bytes": 4284
+    },
+    {
+      "path": "skills/dahua-daily-archive/scripts/export_day.py",
+      "sha256": "61cbca6d8454d9d45d19decb6efca0f315e1f126fa83c53742966c2bfd53203c",
+      "bytes": 12640
+    },
+    {
+      "path": "skills/dahua-daily-archive/references/sources.md",
+      "sha256": "acaba2f547b390e48958f7f0c9f515a801c362819244cb33c0c5b076bca12d18",
+      "bytes": 4718
+    },
+    {
+      "path": "skills/dahua-daily-archive/references/operation.md",
+      "sha256": "62d3780dc88bb21a0c858b6f0357063a47473b4b72172ea6bd982486b8d2bd4d",
+      "bytes": 4064
+    },
+    {
+      "path": "tests/test_daily_archive.py",
+      "sha256": "2e80f8686849167870bf7294154b7ed83211090b51a0d75c47a48c4055b3cd82",
+      "bytes": 6006
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/records.json",
+      "sha256": "1d42ee5a96ea85e9dfae34b5a7df20bfebeb2ec93bc731c2024f9a94c59dfb51",
+      "bytes": 17696
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/conversations.zh-CN.md",
+      "sha256": "c0eee1f050dfa1f07a493d2e1627b31245d1b1a694a52900aeaaa76fd8724ffa",
+      "bytes": 12253
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/manifest.json",
+      "sha256": "1cdb1fa12d9520b0c06a66def44ebdd071bcb3e2e2a100d314fea6e0924bec9f",
+      "bytes": 1444
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "received_on": "2026-10-14",
+  "source": "Direct observer clarification in this paper discussion",
+  "local_path": "sources/observer-supplied-2026-10-14/sonnet-target-clarification.zh-CN.md",
+  "bytes": 656,
+  "sha256": "334a6d4a56f4fcd2b2ddfeeac457f55b3f75b4e8042664ef88fefab14fd04fc2",
+  "qualification": "Hashes the received clarification, not an original configuration or execution log. The default-Opus explanation is explicitly uncertain."
+}

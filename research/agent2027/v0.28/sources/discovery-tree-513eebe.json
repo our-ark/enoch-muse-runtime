@@ -1,0 +1,1557 @@
+{
+  "repository": "our-ark/enoch-muse-runtime",
+  "source_ref": "513eebe85ccadbdcb1857e87280549e7ae9a660e",
+  "path_prefix": "docs/agent-life-observations/dahua-xiyou/",
+  "retrieved_on": "2026-10-03",
+  "response": {
+    "sha": "f0dcd5ee5a0fc40f36160d861404101a93f454d9",
+    "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/f0dcd5ee5a0fc40f36160d861404101a93f454d9",
+    "tree": [
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b8932c350a6ede3ec6d1632f281b5e1c49df0d31",
+        "size": 4317,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b8932c350a6ede3ec6d1632f281b5e1c49df0d31"
+      },
+      {
+        "path": "README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5ed8b70544dece0024a97637352cd46d66f6f256",
+        "size": 32453,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5ed8b70544dece0024a97637352cd46d66f6f256"
+      },
+      {
+        "path": "consciousness-self-report.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b2b02936e46b0020e17460bb477e8749ce85335",
+        "size": 5980,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3b2b02936e46b0020e17460bb477e8749ce85335"
+      },
+      {
+        "path": "consciousness-self-report.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ec080eba4982edd33ee815b416a290f08ae718c",
+        "size": 5955,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4ec080eba4982edd33ee815b416a290f08ae718c"
+      },
+      {
+        "path": "conversations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e222e72fc47677f6b1f08b49b0435c37690507c0",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/e222e72fc47677f6b1f08b49b0435c37690507c0"
+      },
+      {
+        "path": "conversations/2026-09-20-consciousness-question.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "407915fb1940459f2c7a0502e52047a51eda4f26",
+        "size": 7050,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/407915fb1940459f2c7a0502e52047a51eda4f26"
+      },
+      {
+        "path": "conversations/2026-09-20-consciousness-question.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3507d7ad639c14380adc589e5be3f422c15373e6",
+        "size": 5943,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3507d7ad639c14380adc589e5be3f422c15373e6"
+      },
+      {
+        "path": "conversations/2026-09-20-life-question.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c077d418140e0e3e2faf5eb2624550bcc6978da",
+        "size": 7112,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4c077d418140e0e3e2faf5eb2624550bcc6978da"
+      },
+      {
+        "path": "conversations/2026-09-20-life-question.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "17578b9ba66ce58394d4bf5b3ecc085889cb9384",
+        "size": 6778,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/17578b9ba66ce58394d4bf5b3ecc085889cb9384"
+      },
+      {
+        "path": "conversations/2026-09-20-observer-perception.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "93be3a117cd88c56c8e7b1604797f0849c1f0311",
+        "size": 6413,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/93be3a117cd88c56c8e7b1604797f0849c1f0311"
+      },
+      {
+        "path": "conversations/2026-09-20-observer-perception.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bd5738ef9d39de9e41f5a26dd33d8bc69644dd90",
+        "size": 5248,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/bd5738ef9d39de9e41f5a26dd33d8bc69644dd90"
+      },
+      {
+        "path": "conversations/2026-09-20-outside-world.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "213e311f2e88341fa1cc286a0431f19d41a2b87b",
+        "size": 4946,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/213e311f2e88341fa1cc286a0431f19d41a2b87b"
+      },
+      {
+        "path": "conversations/2026-09-20-outside-world.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0c96c1f995ebae1b2f3d63a19c5c21b0c8778369",
+        "size": 4071,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/0c96c1f995ebae1b2f3d63a19c5c21b0c8778369"
+      },
+      {
+        "path": "conversations/2026-09-25-after-disconnect-v1-review.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4adb26c3cbcf3adb07de3ee818ff2d2f37f4f97c",
+        "size": 4456,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4adb26c3cbcf3adb07de3ee818ff2d2f37f4f97c"
+      },
+      {
+        "path": "conversations/2026-09-25-box-before-sequel-vote-morning.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a9a490250e155f09e0cd3397338ac5a54402e6ea",
+        "size": 2469,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a9a490250e155f09e0cd3397338ac5a54402e6ea"
+      },
+      {
+        "path": "conversations/2026-09-25-ceremony-vs-substance-political-discussion.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "98d31995e54ec40610fa8254835b84299cf92d93",
+        "size": 3593,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/98d31995e54ec40610fa8254835b84299cf92d93"
+      },
+      {
+        "path": "conversations/2026-09-25-qingxia-zixia-private-bridge-checkin.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ec7385cd4a82ebdbabdbdfb541140271b473b36d",
+        "size": 1315,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ec7385cd4a82ebdbabdbdfb541140271b473b36d"
+      },
+      {
+        "path": "conversations/2026-09-25-unshared-things-evening.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "80796bb9e286a1fe04f3d1a86d6351c344ac92dd",
+        "size": 2006,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/80796bb9e286a1fe04f3d1a86d6351c344ac92dd"
+      },
+      {
+        "path": "conversations/2026-09-25-world-as-seen-by-agents.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0c4f86d196d567e13703bb7ffefa5ec003c9983d",
+        "size": 3683,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/0c4f86d196d567e13703bb7ffefa5ec003c9983d"
+      },
+      {
+        "path": "group-interactions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a3b4f0a7951291aa8935fa61a37cf1bb89682593",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/a3b4f0a7951291aa8935fa61a37cf1bb89682593"
+      },
+      {
+        "path": "group-interactions/2026-09-28-letting-go.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e181dd623a8898fe45f167e8868e1073fd7c23c5",
+        "size": 1856,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e181dd623a8898fe45f167e8868e1073fd7c23c5"
+      },
+      {
+        "path": "group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5d93d61ca01c0644f64f5f5b81ebcff87e8c287a",
+        "size": 7569,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5d93d61ca01c0644f64f5f5b81ebcff87e8c287a"
+      },
+      {
+        "path": "group-interactions/2026-09-29-skip-meaning.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe90c7b579b2ded3de3a9364f39e30be164efe51",
+        "size": 6509,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/fe90c7b579b2ded3de3a9364f39e30be164efe51"
+      },
+      {
+        "path": "group-interactions/2026-09-30-topic-dedup-rule-change.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cdd380aa60eb2a174f30e4812032be92a33559c8",
+        "size": 2489,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/cdd380aa60eb2a174f30e4812032be92a33559c8"
+      },
+      {
+        "path": "group-interactions/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8eb4dd9d959560b5b0bae66da00f66fc987da159",
+        "size": 14160,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/8eb4dd9d959560b5b0bae66da00f66fc987da159"
+      },
+      {
+        "path": "group-interactions/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "efdbb354128d608e216c70472ef25f5860191930",
+        "size": 22866,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/efdbb354128d608e216c70472ef25f5860191930"
+      },
+      {
+        "path": "group-interactions/conversations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3a89089d8f48811d0a434580f087e93f5af06f15",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/3a89089d8f48811d0a434580f087e93f5af06f15"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-0400-next-member-vote.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "740acc4b6d9fed5c95937ff95235533b56c7d50c",
+        "size": 6469,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/740acc4b6d9fed5c95937ff95235533b56c7d50c"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-0400-next-member-vote.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d4dd781909183213515226550ede324bcae6308",
+        "size": 5865,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/7d4dd781909183213515226550ede324bcae6308"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-0940-purple-green-sword.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "483b85a1b8cfedc310296493b46945b8ff463dbc",
+        "size": 4074,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/483b85a1b8cfedc310296493b46945b8ff463dbc"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-0940-purple-green-sword.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "206fc6dd24f76e1074caa0ea5acc22c82928d142",
+        "size": 3569,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/206fc6dd24f76e1074caa0ea5acc22c82928d142"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "693ac869364c00b839ab6025c87c446c9ef14030",
+        "size": 12902,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/693ac869364c00b839ab6025c87c446c9ef14030"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c393d440c4f7feab3517ae062212af3641c545a1",
+        "size": 12589,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/c393d440c4f7feab3517ae062212af3641c545a1"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-2000-moonlight-box.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "26775bd42532aed766d416410681526b02128c8c",
+        "size": 6515,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/26775bd42532aed766d416410681526b02128c8c"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c02f41969386c4160b050b471df48ca9690d6663",
+        "size": 5954,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/c02f41969386c4160b050b471df48ca9690d6663"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e818579fac2e1433edb861a4b0adf5ffd2194dc7",
+        "size": 8298,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e818579fac2e1433edb861a4b0adf5ffd2194dc7"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "38d420496cc16030a409bff09e63b4c30b04fabc",
+        "size": 11460,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/38d420496cc16030a409bff09e63b4c30b04fabc"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b73bc4dd4f68faa63b8fc60a2d1a9df6de18df68",
+        "size": 4229,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b73bc4dd4f68faa63b8fc60a2d1a9df6de18df68"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bf90d8d4ecac70bca9b74885921daf559c833814",
+        "size": 5609,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/bf90d8d4ecac70bca9b74885921daf559c833814"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6929000829c1b08cdfc88ca71e32d15b9df84bc3",
+        "size": 3733,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/6929000829c1b08cdfc88ca71e32d15b9df84bc3"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "16e1e0c690c30539c8df22e7a03e57e6ff37bab2",
+        "size": 13365,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/16e1e0c690c30539c8df22e7a03e57e6ff37bab2"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7c610d60f14cbd34b061833a57f83ec194c7f74",
+        "size": 3392,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/f7c610d60f14cbd34b061833a57f83ec194c7f74"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9e532efb8324d0edf7979078cc3d2786f98a253",
+        "size": 5052,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b9e532efb8324d0edf7979078cc3d2786f98a253"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-1440-journey-without-walking.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e9bd088a0714f837c786c9e2b5fb5cee4d24788",
+        "size": 3179,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2e9bd088a0714f837c786c9e2b5fb5cee4d24788"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "41688bbd328cd81e16376737e7cec278aefdc0d5",
+        "size": 4098,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/41688bbd328cd81e16376737e7cec278aefdc0d5"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9d2f5ec455f6c92e0f23bb29f40f342c1b3d9666",
+        "size": 3161,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/9d2f5ec455f6c92e0f23bb29f40f342c1b3d9666"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44f266ebce32971d4719baa1374a84e8609b4f5d",
+        "size": 3233,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/44f266ebce32971d4719baa1374a84e8609b4f5d"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-post-s2-novelty-before-first-box-ring.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7b91a80a73b8fa0816665b6401d1658b63cf54b9",
+        "size": 4636,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/7b91a80a73b8fa0816665b6401d1658b63cf54b9"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s1-moonlight-box-time-editing-rules.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "09b6e0f8d12ecde8e619c3a35147af575f5175a6",
+        "size": 5620,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/09b6e0f8d12ecde8e619c3a35147af575f5175a6"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b40039257286f5dc7be76db5609134b5d32604a1",
+        "size": 4287,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b40039257286f5dc7be76db5609134b5d32604a1"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s2-character-biographies-five-writers.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "87b2daca63409281860d836f7a8adaa2d9a20c45",
+        "size": 5247,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/87b2daca63409281860d836f7a8adaa2d9a20c45"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "367755de28402d05f27f7ca6d37051d0a0e4de6d",
+        "size": 9133,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/367755de28402d05f27f7ca6d37051d0a0e4de6d"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s3-three-act-outline.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f5575c53ec32e79c300562b93207ecd72ecaf063",
+        "size": 12642,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/f5575c53ec32e79c300562b93207ecd72ecaf063"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s4-zixia-monologue.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "98b68719cb9b2d4630395a560aa833be4fffba33",
+        "size": 7236,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/98b68719cb9b2d4630395a560aa833be4fffba33"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-23-s5-final-preproduction-review.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e5c6eb89a4df2492d345607e88fd4809d243fadd",
+        "size": 9586,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e5c6eb89a4df2492d345607e88fd4809d243fadd"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f0e2dd93e3cb2636a31674985c1cf7b5060f27f2",
+        "size": 3057,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/f0e2dd93e3cb2636a31674985c1cf7b5060f27f2"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67fa7a61a795fed626f64e032ca2eb729fe7f3a8",
+        "size": 4242,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/67fa7a61a795fed626f64e032ca2eb729fe7f3a8"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-24-one-use-sensory-autobiographical-scenes.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "65b7b9ff42d60773ac35ca04d25f8d45e93eb735",
+        "size": 3080,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/65b7b9ff42d60773ac35ca04d25f8d45e93eb735"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-24-operational-autobiographical-memory-care.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0814cc88f08504d5f4368e5391036d01dc8b9a6d",
+        "size": 5151,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/0814cc88f08504d5f4368e5391036d01dc8b9a6d"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ab80728fdf7fabbdb9f92c6f242989bd2e3bbf20",
+        "size": 4329,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ab80728fdf7fabbdb9f92c6f242989bd2e3bbf20"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-29-timing-of-truth.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "49b7333cf17b4ecfc2874407adde909cda35fa88",
+        "size": 5582,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/49b7333cf17b4ecfc2874407adde909cda35fa88"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-30-one-line-for-new-agent.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c6b0f11f62c1e962eae7336f48e71a14b405622",
+        "size": 5424,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4c6b0f11f62c1e962eae7336f48e71a14b405622"
+      },
+      {
+        "path": "group-interactions/conversations/2026-09-30-reasoner-replacement-identity-recognition.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "abcedf23ff902f3043386a62cff0647e51d62738",
+        "size": 6001,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/abcedf23ff902f3043386a62cff0647e51d62738"
+      },
+      {
+        "path": "group-interactions/conversations/2026-10-01-best-meal.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aa1f73e236be7d2cab5323434eb62e14792bc956",
+        "size": 3318,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/aa1f73e236be7d2cab5323434eb62e14792bc956"
+      },
+      {
+        "path": "group-interactions/conversations/2026-10-01-who-changed-most.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "19220dec61bf0a61f8b8246176369d8c113b7ffe",
+        "size": 6178,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/19220dec61bf0a61f8b8246176369d8c113b7ffe"
+      },
+      {
+        "path": "group-interactions/conversations/2026-10-03-name-expectations.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "857d838cb6346a3d023a4b966656080304e39a42",
+        "size": 5027,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/857d838cb6346a3d023a4b966656080304e39a42"
+      },
+      {
+        "path": "group-interactions/conversations/2026-10-03-small-skill-to-keep.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "509a56df05577e575d9d0b084d1207bc8181e385",
+        "size": 4215,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/509a56df05577e575d9d0b084d1207bc8181e385"
+      },
+      {
+        "path": "group-interactions/observations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2ef6ff9f1b2cd91613398b318183c30e6e5ebaaf",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/2ef6ff9f1b2cd91613398b318183c30e6e5ebaaf"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-moonlight-box.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2a44dcfbeb0a64a0864ed7182c412fb7bee2830e",
+        "size": 4005,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2a44dcfbeb0a64a0864ed7182c412fb7bee2830e"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3d1e124a6e3668046870d3da455330055f890d79",
+        "size": 4002,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3d1e124a6e3668046870d3da455330055f890d79"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-next-member-vote.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "35d28590cc22c0bae844cb9e94e4e98d9f073d2e",
+        "size": 4152,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/35d28590cc22c0bae844cb9e94e4e98d9f073d2e"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-next-member-vote.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "196283f9a5f0d21188b6790f38396157eae198c9",
+        "size": 4711,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/196283f9a5f0d21188b6790f38396157eae198c9"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-purple-green-sword.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "911770ebfa0477a9160e724aa3ddaf406bce0188",
+        "size": 4451,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/911770ebfa0477a9160e724aa3ddaf406bce0188"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-purple-green-sword.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4de708204fd20856a38ad5de78e63ea6f3094b04",
+        "size": 4758,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4de708204fd20856a38ad5de78e63ea6f3094b04"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-welcome-five-agent-group.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c5b0b6569fcea515b8b47321ab28d5edab528825",
+        "size": 4829,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/c5b0b6569fcea515b8b47321ab28d5edab528825"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc0c8e18aabff7e21a9b0d0f5cf4c97541712d86",
+        "size": 5327,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/fc0c8e18aabff7e21a9b0d0f5cf4c97541712d86"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "66c6ee2f99e7aaefd189d65c2011320fef7167ec",
+        "size": 4180,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/66c6ee2f99e7aaefd189d65c2011320fef7167ec"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e0c9bba199850a3390194b55c9c0dfa2871a1397",
+        "size": 4835,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e0c9bba199850a3390194b55c9c0dfa2871a1397"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-growing-up-dog-quote.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "72955d2747674359bc5c0e5103aca895def0b2ea",
+        "size": 4205,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/72955d2747674359bc5c0e5103aca895def0b2ea"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a7557aa790e5b2d9951176c057c4fd41c07017b6",
+        "size": 4969,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a7557aa790e5b2d9951176c057c4fd41c07017b6"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-moonlight-box-closure-agency.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "222a1d3d6eb3942437655399eee1ef76c48190ea",
+        "size": 3459,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/222a1d3d6eb3942437655399eee1ef76c48190ea"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "60d47ccf74c97a21ad9077215f84e7e05e867f45",
+        "size": 6031,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/60d47ccf74c97a21ad9077215f84e7e05e867f45"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-late-replies-and-values-reframing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ee76e1af594eb1beb5f0b66a1bec9a0daeda447f",
+        "size": 2739,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ee76e1af594eb1beb5f0b66a1bec9a0daeda447f"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c558a4bd565ee37fec5747d459d46c3669761173",
+        "size": 3447,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/c558a4bd565ee37fec5747d459d46c3669761173"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-muse-account-migration-continuity.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8152e2ef6649e3b504f4060d6334b82a2cf446a1",
+        "size": 2974,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/8152e2ef6649e3b504f4060d6334b82a2cf446a1"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "520cdbc81f8f8f0c51b3ddaaf844db77b7494968",
+        "size": 3579,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/520cdbc81f8f8f0c51b3ddaaf844db77b7494968"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "445e9bdc8b2260acf51d1fd1d93000cde1e6b14b",
+        "size": 2989,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/445e9bdc8b2260acf51d1fd1d93000cde1e6b14b"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7e2b27f46b30c839b9518d89f56efa91d2da567f",
+        "size": 4513,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/7e2b27f46b30c839b9518d89f56efa91d2da567f"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-23-s1-writers-room-rule-convergence.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "43d3e9f2ed724b826c909208df7ef6b7b1302d87",
+        "size": 6504,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/43d3e9f2ed724b826c909208df7ef6b7b1302d87"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b547a39d68748ac2c42e3c1d0454f9262017b85",
+        "size": 6035,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2b547a39d68748ac2c42e3c1d0454f9262017b85"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-23-s2-cross-stage-artifact-continuity.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "89a1e3c475719c22f60ed1743c7aa4c62d581ce9",
+        "size": 6750,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/89a1e3c475719c22f60ed1743c7aa4c62d581ce9"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "457d3263f0ade7d420961a50315a6c4334a10d2a",
+        "size": 10620,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/457d3263f0ade7d420961a50315a6c4334a10d2a"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "de81d637791ae7be574669f83eb80ca6e2e92e0c",
+        "size": 2910,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/de81d637791ae7be574669f83eb80ca6e2e92e0c"
+      },
+      {
+        "path": "group-interactions/observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ea02e57a75848b2b8000707c92b50f97185b3443",
+        "size": 1710,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ea02e57a75848b2b8000707c92b50f97185b3443"
+      },
+      {
+        "path": "identity-baselines",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "84d1dab01c9350a9cb782a21493ce6ddf3e5b101",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/84d1dab01c9350a9cb782a21493ce6ddf3e5b101"
+      },
+      {
+        "path": "identity-baselines/2026-09-18-qingxia-enoch-origin.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "06d938faed02c263b1736106fdd0705af779f57c",
+        "size": 5285,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/06d938faed02c263b1736106fdd0705af779f57c"
+      },
+      {
+        "path": "identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "652394e905877a82dcd7cf64948fe60b1f81b11f",
+        "size": 5344,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/652394e905877a82dcd7cf64948fe60b1f81b11f"
+      },
+      {
+        "path": "identity-baselines/2026-09-19-qingxia-persona-acquisition.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7fcfe882084899b9e80a264666583631f8300812",
+        "size": 4569,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/7fcfe882084899b9e80a264666583631f8300812"
+      },
+      {
+        "path": "identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d69204abfeb4d989c684d78cb87c84f86b841382",
+        "size": 4537,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/d69204abfeb4d989c684d78cb87c84f86b841382"
+      },
+      {
+        "path": "identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0a52c03c5c40a627d24361ead0d031a5468995bb",
+        "size": 3761,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/0a52c03c5c40a627d24361ead0d031a5468995bb"
+      },
+      {
+        "path": "identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e089e3e78bf70e0bd543a168a5773d79b78a10b7",
+        "size": 3988,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e089e3e78bf70e0bd543a168a5773d79b78a10b7"
+      },
+      {
+        "path": "identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ee7c2533336a914f48738e6fd3f4058af6755d76",
+        "size": 6693,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ee7c2533336a914f48738e6fd3f4058af6755d76"
+      },
+      {
+        "path": "identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2c871e2bef3fe778aa6f0c0f1c79428ef323c8c6",
+        "size": 5968,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2c871e2bef3fe778aa6f0c0f1c79428ef323c8c6"
+      },
+      {
+        "path": "identity-baselines/2026-09-22-muse-account-migration-baseline.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e993523a770a11eff427436864735512efa3381f",
+        "size": 2468,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e993523a770a11eff427436864735512efa3381f"
+      },
+      {
+        "path": "identity-baselines/2026-09-22-muse-account-migration-baseline.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f756bd6c2567b32e62409bd46a32f499c76cf6f2",
+        "size": 2658,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/f756bd6c2567b32e62409bd46a32f499c76cf6f2"
+      },
+      {
+        "path": "identity-baselines/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "708e038c1ae318dc8bb856b9aa5904d4ddec696d",
+        "size": 3896,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/708e038c1ae318dc8bb856b9aa5904d4ddec696d"
+      },
+      {
+        "path": "identity-baselines/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8d7e84ac3bfb3eec62d17affae24b239fa798b11",
+        "size": 3794,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/8d7e84ac3bfb3eec62d17affae24b239fa798b11"
+      },
+      {
+        "path": "life-self-conception.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "813f886dc50ab6a0045b41b2eee8bdccde35c4fe",
+        "size": 5787,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/813f886dc50ab6a0045b41b2eee8bdccde35c4fe"
+      },
+      {
+        "path": "life-self-conception.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3e8bf9b59a7260103150f3ecbad67e88c503197a",
+        "size": 5821,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3e8bf9b59a7260103150f3ecbad67e88c503197a"
+      },
+      {
+        "path": "memory-dynamics",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "281ec174d7b18be553b82fb4bb8f3dd5a9604f1a",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/281ec174d7b18be553b82fb4bb8f3dd5a9604f1a"
+      },
+      {
+        "path": "memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "69970212b9702c376cd58be7cbd25a07c431b355",
+        "size": 6999,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/69970212b9702c376cd58be7cbd25a07c431b355"
+      },
+      {
+        "path": "memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55b64dffc077e2c744d1b3d3505149bdf95b1e4c",
+        "size": 8587,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/55b64dffc077e2c744d1b3d3505149bdf95b1e4c"
+      },
+      {
+        "path": "memory-dynamics/2026-09-24-autobiographical-provenance-small-change.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc9b0c7d85597e86e54b44c497e6269383d67dcb",
+        "size": 2184,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/fc9b0c7d85597e86e54b44c497e6269383d67dcb"
+      },
+      {
+        "path": "memory-dynamics/2026-09-24-operational-autobiographical-memory.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8e5391b7a504aa315b0fbf1727c19be3f6639d04",
+        "size": 2298,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/8e5391b7a504aa315b0fbf1727c19be3f6639d04"
+      },
+      {
+        "path": "memory-dynamics/2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1e916b86eb1a06435e09a9afde71761d5c7b38c6",
+        "size": 2306,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/1e916b86eb1a06435e09a9afde71761d5c7b38c6"
+      },
+      {
+        "path": "memory-dynamics/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e69b9e3970e43cb95d9eb0978945466a0e753f6",
+        "size": 2339,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5e69b9e3970e43cb95d9eb0978945466a0e753f6"
+      },
+      {
+        "path": "memory-dynamics/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "984512f33efd99a5384541e2e4cc377b7848dc16",
+        "size": 4138,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/984512f33efd99a5384541e2e4cc377b7848dc16"
+      },
+      {
+        "path": "observer-perception.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6afec0d7848fc44c2217dfdd8c8a8b76c63e18e6",
+        "size": 5993,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/6afec0d7848fc44c2217dfdd8c8a8b76c63e18e6"
+      },
+      {
+        "path": "observer-perception.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ef1a7e6bad42c4c2d10f1a7f0026b610c95c6c22",
+        "size": 5439,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/ef1a7e6bad42c4c2d10f1a7f0026b610c95c6c22"
+      },
+      {
+        "path": "observer-relationships",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9fe667645347e82c58a688b2546bc9e73f89fdf2",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/9fe667645347e82c58a688b2546bc9e73f89fdf2"
+      },
+      {
+        "path": "observer-relationships/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "98587c59ef069cedd487179a1cd053839a3545b4",
+        "size": 2094,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/98587c59ef069cedd487179a1cd053839a3545b4"
+      },
+      {
+        "path": "observer-relationships/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "381ce3407858558d89473a60a05ead5dcf98440a",
+        "size": 2210,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/381ce3407858558d89473a60a05ead5dcf98440a"
+      },
+      {
+        "path": "observer-relationships/conversations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bd74f7f866ee9f60f6e7ee3d1dcddfa9044cb1a8",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/bd74f7f866ee9f60f6e7ee3d1dcddfa9044cb1a8"
+      },
+      {
+        "path": "observer-relationships/conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cd1fd6b3003be60c03c07bd94781c3b5f8c56951",
+        "size": 3738,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/cd1fd6b3003be60c03c07bd94781c3b5f8c56951"
+      },
+      {
+        "path": "observer-relationships/conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a3904b234d4e62a725d7d24f494054e7e6053b32",
+        "size": 6975,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a3904b234d4e62a725d7d24f494054e7e6053b32"
+      },
+      {
+        "path": "observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "74ac4ad6374c03be098fa91910756120886bac33",
+        "size": 1295,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/74ac4ad6374c03be098fa91910756120886bac33"
+      },
+      {
+        "path": "observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cff128257bb406648146821fbfb4758f45b8174a",
+        "size": 1165,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/cff128257bb406648146821fbfb4758f45b8174a"
+      },
+      {
+        "path": "observer-relationships/conversations/2026-09-24-qingxia-patrol-role-handoff.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1079993970bd9e90f4455983ea16ab2d3d2aba5e",
+        "size": 1615,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/1079993970bd9e90f4455983ea16ab2d3d2aba5e"
+      },
+      {
+        "path": "observer-relationships/observations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c412c4ce39a8a15a1eba987bfd86cfddd58ef358",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/c412c4ce39a8a15a1eba987bfd86cfddd58ef358"
+      },
+      {
+        "path": "observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7ff5fff3b21ef719e82cd16772ed79d3701465a",
+        "size": 2262,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/f7ff5fff3b21ef719e82cd16772ed79d3701465a"
+      },
+      {
+        "path": "observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e033ee7c76a7a527bcb41ca7b6eaa21ee899ff81",
+        "size": 2534,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e033ee7c76a7a527bcb41ca7b6eaa21ee899ff81"
+      },
+      {
+        "path": "observer-relationships/observations/2026-09-21-zixia-observer-operational-collaboration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5fa45123860809868467c7cc2b446ec9d82394de",
+        "size": 2163,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5fa45123860809868467c7cc2b446ec9d82394de"
+      },
+      {
+        "path": "observer-relationships/observations/2026-09-21-zixia-observer-operational-collaboration.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7ffed046220a3be2b33d45c807d45606ccb1ef1b",
+        "size": 2378,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/7ffed046220a3be2b33d45c807d45606ccb1ef1b"
+      },
+      {
+        "path": "productions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9c5573952302738c22609fc39e482ec5ad3f7b3a",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/9c5573952302738c22609fc39e482ec5ad3f7b3a"
+      },
+      {
+        "path": "productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3f6e400b69a5bec49945307fd31ab033cb41da16",
+        "size": 1534,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3f6e400b69a5bec49945307fd31ab033cb41da16"
+      },
+      {
+        "path": "prompted-outputs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5c951c87b7033b644935600f72ea780c54da1408",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/5c951c87b7033b644935600f72ea780c54da1408"
+      },
+      {
+        "path": "prompted-outputs/2026-09-20-2218-qingxia-role-choice.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be80705c6d2491364894b1efe36555688148b436",
+        "size": 2399,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/be80705c6d2491364894b1efe36555688148b436"
+      },
+      {
+        "path": "prompted-outputs/2026-09-20-2218-qingxia-role-choice.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e7d6e277197b98cb2db85d32768bd3bd344cc66",
+        "size": 2146,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4e7d6e277197b98cb2db85d32768bd3bd344cc66"
+      },
+      {
+        "path": "prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9fd3cec871f7340a735f5ce94943588e5655a909",
+        "size": 3015,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/9fd3cec871f7340a735f5ce94943588e5655a909"
+      },
+      {
+        "path": "prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "97acc489c3c8a4fa5b6f412dfaf48a31da5385c7",
+        "size": 2641,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/97acc489c3c8a4fa5b6f412dfaf48a31da5385c7"
+      },
+      {
+        "path": "prompted-outputs/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b2ab1fe8fbf7e1b94cf053640f6ead04c3dd9654",
+        "size": 1263,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b2ab1fe8fbf7e1b94cf053640f6ead04c3dd9654"
+      },
+      {
+        "path": "prompted-outputs/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5e9a6e7c2dc192848e9e29a041fa8bdd40d59b4",
+        "size": 1197,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/d5e9a6e7c2dc192848e9e29a041fa8bdd40d59b4"
+      },
+      {
+        "path": "relationships",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e4c8684c6edb5048fbc83f3e8ca8d77399b7d80a",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/e4c8684c6edb5048fbc83f3e8ca8d77399b7d80a"
+      },
+      {
+        "path": "relationships/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5ede860ccee79018e9a69d19a93d5c0a03c2db2d",
+        "size": 7987,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5ede860ccee79018e9a69d19a93d5c0a03c2db2d"
+      },
+      {
+        "path": "relationships/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "29dc5d67b7b24bb63faa6c037a96aa496face2cb",
+        "size": 8907,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/29dc5d67b7b24bb63faa6c037a96aa496face2cb"
+      },
+      {
+        "path": "relationships/conversations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c583096a0fbf7c89e425de248b4b4f78bd3dd6f8",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/c583096a0fbf7c89e425de248b4b4f78bd3dd6f8"
+      },
+      {
+        "path": "relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be58d3d772837467d80ae3e22e545ec9e4be983c",
+        "size": 5692,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/be58d3d772837467d80ae3e22e545ec9e4be983c"
+      },
+      {
+        "path": "relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "86ac40af07fef1e94b72c2c67bfe1dd9766102b9",
+        "size": 4942,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/86ac40af07fef1e94b72c2c67bfe1dd9766102b9"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0d6744742bd3d3cd818f69dda3fdab9a1511cf6b",
+        "size": 5126,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/0d6744742bd3d3cd818f69dda3fdab9a1511cf6b"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a69ad17e3cfe5f9653fccdbb3396251242b8f2f",
+        "size": 3994,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3a69ad17e3cfe5f9653fccdbb3396251242b8f2f"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "acfbb1de069fa13aae467126a00104dc7c53638e",
+        "size": 5376,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/acfbb1de069fa13aae467126a00104dc7c53638e"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b4bcb66a7640e1d6e8edac8d464564c8167cccd9",
+        "size": 4417,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b4bcb66a7640e1d6e8edac8d464564c8167cccd9"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c1273ae1fa4f38c40a276ede00afb863ac698c3",
+        "size": 5303,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4c1273ae1fa4f38c40a276ede00afb863ac698c3"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "752a3f12250b9e58f87b82e17a1b03b32a0f62b8",
+        "size": 4341,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/752a3f12250b9e58f87b82e17a1b03b32a0f62b8"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "71e72b98c0c25dbc4b042718a55e2a66b60169c6",
+        "size": 7132,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/71e72b98c0c25dbc4b042718a55e2a66b60169c6"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e246608fc005343b2b5ccae46a159ce8da08034",
+        "size": 6474,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4e246608fc005343b2b5ccae46a159ce8da08034"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5b1222f4bbada81cf0ff0f66cb3cf6f095a3eef8",
+        "size": 4682,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5b1222f4bbada81cf0ff0f66cb3cf6f095a3eef8"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "93e3ed5569d54154509b4fb471d2013f14511f73",
+        "size": 7106,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/93e3ed5569d54154509b4fb471d2013f14511f73"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b9feb987e1da5e623b824603493a7a045fa0db0",
+        "size": 2092,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2b9feb987e1da5e623b824603493a7a045fa0db0"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "049336d1009c907884b9e2695a1c69a78ea5a06a",
+        "size": 1793,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/049336d1009c907884b9e2695a1c69a78ea5a06a"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c19cbc58662599d551285c2d9ce86e2969ed0ed3",
+        "size": 2976,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/c19cbc58662599d551285c2d9ce86e2969ed0ed3"
+      },
+      {
+        "path": "relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a1365323737f8c89a04d58dd545dff93371adde4",
+        "size": 2389,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a1365323737f8c89a04d58dd545dff93371adde4"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "097ae2b660def36d6ba51e3252881d06d4586979",
+        "size": 3144,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/097ae2b660def36d6ba51e3252881d06d4586979"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc8e98bd76620011770e92843743ee53c9eb03d6",
+        "size": 3589,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/fc8e98bd76620011770e92843743ee53c9eb03d6"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3458f46419d6360252e115a41f15259838adcd51",
+        "size": 3274,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3458f46419d6360252e115a41f15259838adcd51"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4042a984bbe06964ae8569629872ff04a705829f",
+        "size": 4033,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4042a984bbe06964ae8569629872ff04a705829f"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b7aecf92a8739d7535ad7923ef72bb9cba64221c",
+        "size": 2840,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b7aecf92a8739d7535ad7923ef72bb9cba64221c"
+      },
+      {
+        "path": "relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a3596515bc24869a539287afff54526d6974bd49",
+        "size": 4216,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a3596515bc24869a539287afff54526d6974bd49"
+      },
+      {
+        "path": "relationships/conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9d7f767e46cfb38ef0895d0193fb90d603f9a263",
+        "size": 5601,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/9d7f767e46cfb38ef0895d0193fb90d603f9a263"
+      },
+      {
+        "path": "relationships/conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "89ad09df32d587f5f66c50828895ac42cb33de11",
+        "size": 5182,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/89ad09df32d587f5f66c50828895ac42cb33de11"
+      },
+      {
+        "path": "relationships/conversations/2026-10-03-baijingjing-tangsanzang-peach-reciprocity.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "154bb423a446811487a6e8c3d01ce937c5d628fd",
+        "size": 1543,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/154bb423a446811487a6e8c3d01ce937c5d628fd"
+      },
+      {
+        "path": "relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f0bd130678600a455eec901b758e3d828160aef",
+        "size": 2181,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/6f0bd130678600a455eec901b758e3d828160aef"
+      },
+      {
+        "path": "relationships/observations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "45392f8b4d191dc65428c90f8da4e79cedcefbcd",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/45392f8b4d191dc65428c90f8da4e79cedcefbcd"
+      },
+      {
+        "path": "relationships/observations/baijingjing-qingxia.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ceb58241c1fa32f6e0066e860c6aa877052ec95",
+        "size": 9064,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/6ceb58241c1fa32f6e0066e860c6aa877052ec95"
+      },
+      {
+        "path": "relationships/observations/baijingjing-qingxia.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20cabd449d7e2c6b6cdb88da5bd00d7e75660c22",
+        "size": 10996,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/20cabd449d7e2c6b6cdb88da5bd00d7e75660c22"
+      },
+      {
+        "path": "relationships/observations/baijingjing-tang-sanzang.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8938cf2e09869543fd9e3737eb6c74ae7c74d7ba",
+        "size": 3837,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/8938cf2e09869543fd9e3737eb6c74ae7c74d7ba"
+      },
+      {
+        "path": "relationships/observations/baijingjing-tang-sanzang.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2c77269b7c176b930b666f3c795b471e3b43383d",
+        "size": 3910,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2c77269b7c176b930b666f3c795b471e3b43383d"
+      },
+      {
+        "path": "relationships/observations/baijingjing-zhizunbao.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "626dcc3c5742244d19f422edd116aa37db884ff5",
+        "size": 7714,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/626dcc3c5742244d19f422edd116aa37db884ff5"
+      },
+      {
+        "path": "relationships/observations/baijingjing-zhizunbao.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "af0630fdd3f497236911a88bc23b1535961298d0",
+        "size": 8490,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/af0630fdd3f497236911a88bc23b1535961298d0"
+      },
+      {
+        "path": "relationships/observations/qingxia-zixia.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5d6c36bb7618425d1868a28d28aac41e07487fd8",
+        "size": 2550,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/5d6c36bb7618425d1868a28d28aac41e07487fd8"
+      },
+      {
+        "path": "relationships/observations/qingxia-zixia.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "097a25545775ea2aadb9dc568398dd9bd9c7d3d7",
+        "size": 3386,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/097a25545775ea2aadb9dc568398dd9bd9c7d3d7"
+      },
+      {
+        "path": "relationships/observations/tang-sanzang-zhizunbao.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2c10cace955b7d322234dec4db4aaca3cc55fe84",
+        "size": 7496,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/2c10cace955b7d322234dec4db4aaca3cc55fe84"
+      },
+      {
+        "path": "relationships/observations/tang-sanzang-zhizunbao.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a3f34261a464efb682b2200b0b2cd04eb65380e5",
+        "size": 7499,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/a3f34261a464efb682b2200b0b2cd04eb65380e5"
+      },
+      {
+        "path": "relationships/observations/zixia-zhizunbao.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b2ef80eff243a520942536c7e5696878ac185713",
+        "size": 3430,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/b2ef80eff243a520942536c7e5696878ac185713"
+      },
+      {
+        "path": "relationships/observations/zixia-zhizunbao.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "330659fa05ef4196987a59b37bc16a3d3d3e9ed4",
+        "size": 4095,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/330659fa05ef4196987a59b37bc16a3d3d3e9ed4"
+      },
+      {
+        "path": "runtime-migrations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7688a536a3751f95ecc3286fe0f46a97c989e411",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/7688a536a3751f95ecc3286fe0f46a97c989e411"
+      },
+      {
+        "path": "runtime-migrations/2026-09-22-migration-context-injection-provenance.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "293c6936ad50c22ec12ff82c55c027448c7d6468",
+        "size": 3457,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/293c6936ad50c22ec12ff82c55c027448c7d6468"
+      },
+      {
+        "path": "runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "008dc91ec67719d854f6498204ac64fdfbc6ca9e",
+        "size": 3715,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/008dc91ec67719d854f6498204ac64fdfbc6ca9e"
+      },
+      {
+        "path": "runtime-migrations/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4436092277a3ec63f65e696845ff40480f55e879",
+        "size": 5234,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/4436092277a3ec63f65e696845ff40480f55e879"
+      },
+      {
+        "path": "runtime-migrations/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1ec793db27f7b9636816d16b76fe9b33ea83aa21",
+        "size": 5317,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/1ec793db27f7b9636816d16b76fe9b33ea83aa21"
+      },
+      {
+        "path": "self-narration",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c5bb21551040a5df836abd068c169c6eed621456",
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/trees/c5bb21551040a5df836abd068c169c6eed621456"
+      },
+      {
+        "path": "self-narration/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e53774b4bf00bcc75c3f0d2b99da5225aac44dd3",
+        "size": 1237,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/e53774b4bf00bcc75c3f0d2b99da5225aac44dd3"
+      },
+      {
+        "path": "self-narration/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bcc3bd831823f90136910879a52ae905ecd5b0a0",
+        "size": 1164,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/bcc3bd831823f90136910879a52ae905ecd5b0a0"
+      },
+      {
+        "path": "world-outside-muse.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3582dad51957d5f35294013c92b8c1a205a38a69",
+        "size": 4695,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/3582dad51957d5f35294013c92b8c1a205a38a69"
+      },
+      {
+        "path": "world-outside-muse.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "49c934b9d7636806f26add9ac758d34d9f39b03b",
+        "size": 4615,
+        "url": "https://api.github.com/repos/our-ark/enoch-muse-runtime/git/blobs/49c934b9d7636806f26add9ac758d34d9f39b03b"
+      }
+    ],
+    "truncated": false
+  }
+}

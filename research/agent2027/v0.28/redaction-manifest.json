@@ -1,0 +1,212 @@
+{
+  "version": "v0.28",
+  "prepared_on": "2026-10-16",
+  "status": "Public redacted derivatives; original bytes are not distributed.",
+  "policy": "Replace one host-specific absolute prefix consistently; redact two copies of one operator preference. No other source values change.",
+  "originals_retained_privately": true,
+  "originals_independently_verifiable_from_public_package": false,
+  "preserved": [
+    "dialogue text",
+    "experimental intervention rules",
+    "character settings and research-relevant memory",
+    "timestamps",
+    "request/message/session/attempt identifiers",
+    "relative paths and per-agent separation"
+  ],
+  "files": [
+    {
+      "path": "sources/host-exports-2026-10-04/item1-baijingjing.json",
+      "original_sha256": "10a7868a552702573c3ebf89f364b7393d9fdc01f0f66d840ed9890c0beee658",
+      "original_bytes": 29114,
+      "public_sha256": "bbcfbd480633f88fb4c89d25edae3f10390255b70980bf7bdc58a3fec201a8c0",
+      "public_bytes": 28938,
+      "changes": [
+        {
+          "json_pointer": "/a508f481/chat_request_received/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/a508f481/chat_reply_original/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/a508f481/runtime_request/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/a508f481/runtime_request/object/message",
+          "kind": "operator_preference",
+          "decoded_message_line": 31,
+          "replacement_text": "[REDACTED: operator communication preference; not used in the analyzed claims]"
+        },
+        {
+          "json_pointer": "/a508f481/runtime_request/object/cwd",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/a508f481/runtime_request/object/state_root",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/a508f481/runtime_reply_as_surviving/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/chat_request_received/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/chat_reply_original/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/runtime_request/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/runtime_request/object/cwd",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/runtime_request/object/state_root",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/c50ab6b7/runtime_reply_as_surviving/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        }
+      ]
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/item2-s2-s4.json",
+      "original_sha256": "033079e22740e7fd0a85330c81a958050325326b8515e32c63e175179f812c8e",
+      "original_bytes": 14642,
+      "public_sha256": "bee0da756cc32450631536a2cb27af028a11079ffcb073b9a59a14df0eb728d6",
+      "public_bytes": 14552,
+      "changes": [
+        {
+          "json_pointer": "/s2_confirmation_ask_full_text_sample/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/s3_convergence_ask_full_text/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/s4_title_ask_full_text/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/s4_discussion_ask_full_text/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/s4_convergence_ask_full_text/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/four_pass_chat_outbox_originals/青霞/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/four_pass_chat_outbox_originals/至尊宝/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/four_pass_chat_outbox_originals/白晶晶/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/four_pass_chat_outbox_originals/唐三藏/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        }
+      ]
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/item3-peach.json",
+      "original_sha256": "41ea36ce8a123e5633880a7062b4aae54a86ad87973058916793c21fcd11e81a",
+      "original_bytes": 21845,
+      "public_sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8",
+      "public_bytes": 21689,
+      "changes": [
+        {
+          "json_pointer": "/tang_chat_inbox_133/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_runtime_request/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_runtime_request/object/message",
+          "kind": "operator_preference",
+          "decoded_message_line": 31,
+          "replacement_text": "[REDACTED: operator communication preference; not used in the analyzed claims]"
+        },
+        {
+          "json_pointer": "/tang_runtime_request/object/cwd",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_runtime_request/object/state_root",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_runtime_reply/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_chat_reply_staged/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/baijingjing_received_tang_reply_as/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/baijingjing_followup_afa432/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_inbox_next_files_after_133/0/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        },
+        {
+          "json_pointer": "/tang_inbox_next_files_after_133/1/source_path",
+          "kind": "host_path_prefix",
+          "replacement_prefix": "<HOST_ROOT>"
+        }
+      ]
+    }
+  ]
+}

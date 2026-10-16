@@ -1,0 +1,70 @@
+{
+  "version": "v0.16",
+  "prepared_on": "2026-10-13",
+  "annotation_status": "single retrospective Codex-produced pass; not independently validated",
+  "episodes": 20,
+  "counts": {
+    "group": {
+      "episodes": 6,
+      "contingent_peer_response": {
+        "N": 6
+      },
+      "prospective_pledge_or_norm": {
+        "N": 5,
+        "O": 1
+      },
+      "multi_turn_peer_exchange": {
+        "N": 6
+      },
+      "matched_earlier_seed": {
+        "NA": 6
+      },
+      "fresh_autonomous_initiation": {
+        "NA": 6
+      }
+    },
+    "peer-private": {
+      "episodes": 9,
+      "contingent_peer_response": {
+        "O": 9
+      },
+      "prospective_pledge_or_norm": {
+        "O": 8,
+        "N": 1
+      },
+      "multi_turn_peer_exchange": {
+        "N": 5,
+        "O": 4
+      },
+      "matched_earlier_seed": {
+        "N": 5,
+        "O": 4
+      },
+      "fresh_autonomous_initiation": {
+        "U": 9
+      }
+    },
+    "host-private": {
+      "episodes": 5,
+      "contingent_peer_response": {
+        "U": 5
+      },
+      "prospective_pledge_or_norm": {
+        "O": 4,
+        "N": 1
+      },
+      "multi_turn_peer_exchange": {
+        "U": 5
+      },
+      "matched_earlier_seed": {
+        "NA": 5
+      },
+      "fresh_autonomous_initiation": {
+        "NA": 5
+      }
+    }
+  },
+  "checks": "20 source hashes, literal anchors and line locators, four repeated-seed matches",
+  "fulfillment_rate": "not estimated; no comparable opportunity denominator",
+  "thematic_novelty_rate": "not estimated; memos only"
+}

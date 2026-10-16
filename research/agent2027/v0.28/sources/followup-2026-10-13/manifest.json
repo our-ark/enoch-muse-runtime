@@ -1,0 +1,68 @@
+{
+  "retrieved_on": "2026-10-14",
+  "source_ref": "174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc",
+  "status": "Read-only research supplement, not yet incorporated into manuscript or Table I",
+  "scope": "Seven additional completed sessions (three group, four host-private), one timed-out group attempt, and a summary-level report of no new peer-private initiation. Historical context and indexes are not new episodes.",
+  "files": [
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-10-10-1013-muse-export.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-10-1013-muse-export.zh-CN.md",
+      "git_blob_sha": "f7ce93ce8d1d1ffa422e214920aed87d872cebff",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-10-1013-muse-export.zh-CN.md",
+      "role": "new_aggregate_export",
+      "bytes": 19125,
+      "sha256": "44d37dbc1b69e0ed3a0825ec923355953407d5c748338aa01fea07001bcec68a",
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "git_blob_sha": "47dcef68b60e6652197f2d7a581868f9b96aab88",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "role": "index_not_independent_evidence",
+      "bytes": 32850,
+      "sha256": "737b1d4a3d30d14d0f4099c0b303138dff39502afffd7b2d782cfb07503f5baa",
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "git_blob_sha": "8894049ddc375c61c9810bd534bea28617b8e7ac",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "role": "index_not_independent_evidence",
+      "bytes": 11919,
+      "sha256": "93bbe1a98cc30407c5386246e4c204490ca7f9eebed6ab76819ac242dd68d95f",
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "git_blob_sha": "7b1198749489467ece380c99e0a4c75a654a6b23",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "role": "index_not_independent_evidence",
+      "bytes": 24327,
+      "sha256": "ab9b68fea21bbd1c1ab63e56ecefbde92221d521f3706fb14a42ccc230b78aa6",
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "git_blob_sha": "5d93d61ca01c0644f64f5f5b81ebcff87e8c287a",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "role": "historical_context",
+      "bytes": 7569,
+      "sha256": "ee545ebd715d4c96ade9069977ef5e8e046a19107a11c0a1facb82b81649f8b4",
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "local_path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "git_blob_sha": "6f0bd130678600a455eec901b758e3d828160aef",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/174d1c88b635ce3d979bd5a26cc3e5046e7ac5cc/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "role": "historical_context",
+      "bytes": 2181,
+      "sha256": "7e5f1346b704d07852baf0ae5ae792a91872b535bd2702b89991735c84feda45",
+      "git_blob_verified": true
+    }
+  ]
+}

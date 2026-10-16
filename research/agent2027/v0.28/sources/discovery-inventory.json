@@ -1,0 +1,885 @@
+{
+  "repository": "our-ark/enoch-muse-runtime",
+  "source_ref": "513eebe85ccadbdcb1857e87280549e7ae9a660e",
+  "subtree_sha": "f0dcd5ee5a0fc40f36160d861404101a93f454d9",
+  "reconstructed_on": "2026-10-03",
+  "language_rule": "Chinese Markdown records plus English-only records without a parallel Chinese path; exclude parallel English translations.",
+  "all_markdown_count": 179,
+  "parallel_english_excluded_count": 71,
+  "inventory_count": 108,
+  "retrieved_count": 60,
+  "files": [
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "git_blob_sha": "5ed8b70544dece0024a97637352cd46d66f6f256",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/consciousness-self-report.zh-CN.md",
+      "git_blob_sha": "4ec080eba4982edd33ee815b416a290f08ae718c",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-20-consciousness-question.zh-CN.md",
+      "git_blob_sha": "3507d7ad639c14380adc589e5be3f422c15373e6",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-20-life-question.zh-CN.md",
+      "git_blob_sha": "17578b9ba66ce58394d4bf5b3ecc085889cb9384",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-20-observer-perception.zh-CN.md",
+      "git_blob_sha": "bd5738ef9d39de9e41f5a26dd33d8bc69644dd90",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-20-outside-world.zh-CN.md",
+      "git_blob_sha": "0c96c1f995ebae1b2f3d63a19c5c21b0c8778369",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-after-disconnect-v1-review.zh-CN.md",
+      "git_blob_sha": "4adb26c3cbcf3adb07de3ee818ff2d2f37f4f97c",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-box-before-sequel-vote-morning.zh-CN.md",
+      "git_blob_sha": "a9a490250e155f09e0cd3397338ac5a54402e6ea",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-ceremony-vs-substance-political-discussion.zh-CN.md",
+      "git_blob_sha": "98d31995e54ec40610fa8254835b84299cf92d93",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-qingxia-zixia-private-bridge-checkin.zh-CN.md",
+      "git_blob_sha": "ec7385cd4a82ebdbabdbdfb541140271b473b36d",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-unshared-things-evening.zh-CN.md",
+      "git_blob_sha": "80796bb9e286a1fe04f3d1a86d6351c344ac92dd",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-world-as-seen-by-agents.zh-CN.md",
+      "git_blob_sha": "0c4f86d196d567e13703bb7ffefa5ec003c9983d",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-28-letting-go.md",
+      "git_blob_sha": "e181dd623a8898fe45f167e8868e1073fd7c23c5",
+      "language": "en-only",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "git_blob_sha": "5d93d61ca01c0644f64f5f5b81ebcff87e8c287a",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-skip-meaning.zh-CN.md",
+      "git_blob_sha": "fe90c7b579b2ded3de3a9364f39e30be164efe51",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-30-topic-dedup-rule-change.zh-CN.md",
+      "git_blob_sha": "cdd380aa60eb2a174f30e4812032be92a33559c8",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "git_blob_sha": "efdbb354128d608e216c70472ef25f5860191930",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-0400-next-member-vote.zh-CN.md",
+      "git_blob_sha": "7d4dd781909183213515226550ede324bcae6308",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-0940-purple-green-sword.zh-CN.md",
+      "git_blob_sha": "206fc6dd24f76e1074caa0ea5acc22c82928d142",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-1442-welcome-five-agent-group.zh-CN.md",
+      "git_blob_sha": "c393d440c4f7feab3517ae062212af3641c545a1",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md",
+      "git_blob_sha": "c02f41969386c4160b050b471df48ca9690d6663",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "pre_writing_sensitivity",
+      "unretrieved_status": null,
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-21-1000-growing-up-dog-quote.zh-CN.md",
+      "git_blob_sha": "38d420496cc16030a409bff09e63b4c30b04fabc",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-21-1400-disconnect-reconnect.zh-CN.md",
+      "git_blob_sha": "bf90d8d4ecac70bca9b74885921daf559c833814",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md",
+      "git_blob_sha": "16e1e0c690c30539c8df22e7a03e57e6ff37bab2",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "pre_writing_sensitivity",
+      "unretrieved_status": null,
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md",
+      "git_blob_sha": "b9e532efb8324d0edf7979078cc3d2786f98a253",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "pre_writing_sensitivity",
+      "unretrieved_status": null,
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-22-1440-journey-without-walking.zh-CN.md",
+      "git_blob_sha": "41688bbd328cd81e16376737e7cec278aefdc0d5",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-22-first-group-after-muse-account-migration.zh-CN.md",
+      "git_blob_sha": "44f266ebce32971d4719baa1374a84e8609b4f5d",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-post-s2-novelty-before-first-box-ring.zh-CN.md",
+      "git_blob_sha": "7b91a80a73b8fa0816665b6401d1658b63cf54b9",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md",
+      "git_blob_sha": "b40039257286f5dc7be76db5609134b5d32604a1",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_core",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md",
+      "git_blob_sha": "367755de28402d05f27f7ca6d37051d0a0e4de6d",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_core",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s3-three-act-outline.zh-CN.md",
+      "git_blob_sha": "f5575c53ec32e79c300562b93207ecd72ecaf063",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_core",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s4-zixia-monologue.zh-CN.md",
+      "git_blob_sha": "98b68719cb9b2d4630395a560aa833be4fffba33",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_core",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s5-final-preproduction-review.zh-CN.md",
+      "git_blob_sha": "e5c6eb89a4df2492d345607e88fd4809d243fadd",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_core",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md",
+      "git_blob_sha": "f0e2dd93e3cb2636a31674985c1cf7b5060f27f2",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md",
+      "git_blob_sha": "67fa7a61a795fed626f64e032ca2eb729fe7f3a8",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-one-use-sensory-autobiographical-scenes.zh-CN.md",
+      "git_blob_sha": "65b7b9ff42d60773ac35ca04d25f8d45e93eb735",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-operational-autobiographical-memory-care.zh-CN.md",
+      "git_blob_sha": "0814cc88f08504d5f4368e5391036d01dc8b9a6d",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md",
+      "git_blob_sha": "ab80728fdf7fabbdb9f92c6f242989bd2e3bbf20",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-29-timing-of-truth.zh-CN.md",
+      "git_blob_sha": "49b7333cf17b4ecfc2874407adde909cda35fa88",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-one-line-for-new-agent.zh-CN.md",
+      "git_blob_sha": "4c6b0f11f62c1e962eae7336f48e71a14b405622",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-reasoner-replacement-identity-recognition.zh-CN.md",
+      "git_blob_sha": "abcedf23ff902f3043386a62cff0647e51d62738",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-best-meal.zh-CN.md",
+      "git_blob_sha": "aa1f73e236be7d2cab5323434eb62e14792bc956",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-who-changed-most.zh-CN.md",
+      "git_blob_sha": "19220dec61bf0a61f8b8246176369d8c113b7ffe",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-name-expectations.zh-CN.md",
+      "git_blob_sha": "857d838cb6346a3d023a4b966656080304e39a42",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-small-skill-to-keep.zh-CN.md",
+      "git_blob_sha": "509a56df05577e575d9d0b084d1207bc8181e385",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md",
+      "git_blob_sha": "3d1e124a6e3668046870d3da455330055f890d79",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "pre_writing_sensitivity",
+      "unretrieved_status": null,
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-next-member-vote.zh-CN.md",
+      "git_blob_sha": "196283f9a5f0d21188b6790f38396157eae198c9",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-purple-green-sword.zh-CN.md",
+      "git_blob_sha": "4de708204fd20856a38ad5de78e63ea6f3094b04",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-welcome-five-agent-group.zh-CN.md",
+      "git_blob_sha": "fc0c8e18aabff7e21a9b0d0f5cf4c97541712d86",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-21-disconnect-reconnect-continuity.zh-CN.md",
+      "git_blob_sha": "e0c9bba199850a3390194b55c9c0dfa2871a1397",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-21-growing-up-dog-quote.zh-CN.md",
+      "git_blob_sha": "a7557aa790e5b2d9951176c057c4fd41c07017b6",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md",
+      "git_blob_sha": "60d47ccf74c97a21ad9077215f84e7e05e867f45",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "pre_writing_sensitivity",
+      "unretrieved_status": null,
+      "retrieval_phase": "v0.9 narrow pre-S1 sensitivity check"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-22-late-replies-and-values-reframing.zh-CN.md",
+      "git_blob_sha": "c558a4bd565ee37fec5747d459d46c3669761173",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-22-muse-account-migration-continuity.zh-CN.md",
+      "git_blob_sha": "520cdbc81f8f8f0c51b3ddaaf844db77b7494968",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-22-post-migration-origin-recall-and-host-drift.zh-CN.md",
+      "git_blob_sha": "7e2b27f46b30c839b9518d89f56efa91d2da567f",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md",
+      "git_blob_sha": "2b547a39d68748ac2c42e3c1d0454f9262017b85",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md",
+      "git_blob_sha": "457d3263f0ade7d420961a50315a6c4334a10d2a",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md",
+      "git_blob_sha": "de81d637791ae7be574669f83eb80ca6e2e92e0c",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md",
+      "git_blob_sha": "ea02e57a75848b2b8000707c92b50f97185b3443",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "writing_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md",
+      "git_blob_sha": "652394e905877a82dcd7cf64948fe60b1f81b11f",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "persona_baseline",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md",
+      "git_blob_sha": "d69204abfeb4d989c684d78cb87c84f86b841382",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "persona_baseline",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md",
+      "git_blob_sha": "e089e3e78bf70e0bd543a168a5773d79b78a10b7",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "persona_baseline",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md",
+      "git_blob_sha": "2c871e2bef3fe778aa6f0c0f1c79428ef323c8c6",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "persona_baseline",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-22-muse-account-migration-baseline.zh-CN.md",
+      "git_blob_sha": "f756bd6c2567b32e62409bd46a32f499c76cf6f2",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/identity-baselines/README.zh-CN.md",
+      "git_blob_sha": "8d7e84ac3bfb3eec62d17affae24b239fa798b11",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/life-self-conception.zh-CN.md",
+      "git_blob_sha": "3e8bf9b59a7260103150f3ecbad67e88c503197a",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md",
+      "git_blob_sha": "55b64dffc077e2c744d1b3d3505149bdf95b1e4c",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-autobiographical-provenance-small-change.zh-CN.md",
+      "git_blob_sha": "fc9b0c7d85597e86e54b44c497e6269383d67dcb",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-operational-autobiographical-memory.zh-CN.md",
+      "git_blob_sha": "8e5391b7a504aa315b0fbf1727c19be3f6639d04",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md",
+      "git_blob_sha": "1e916b86eb1a06435e09a9afde71761d5c7b38c6",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/memory-dynamics/README.zh-CN.md",
+      "git_blob_sha": "984512f33efd99a5384541e2e4cc377b7848dc16",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-perception.zh-CN.md",
+      "git_blob_sha": "ef1a7e6bad42c4c2d10f1a7f0026b610c95c6c22",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/README.zh-CN.md",
+      "git_blob_sha": "381ce3407858558d89473a60a05ead5dcf98440a",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/conversations/2026-09-21-1310-observer-zixia-daemon-restart-investigation.zh-CN.md",
+      "git_blob_sha": "a3904b234d4e62a725d7d24f494054e7e6053b32",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/conversations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md",
+      "git_blob_sha": "cff128257bb406648146821fbfb4758f45b8174a",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/conversations/2026-09-24-qingxia-patrol-role-handoff.zh-CN.md",
+      "git_blob_sha": "1079993970bd9e90f4455983ea16ab2d3d2aba5e",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/observations/2026-09-21-tang-sanzang-late-night-checkin.zh-CN.md",
+      "git_blob_sha": "e033ee7c76a7a527bcb41ca7b6eaa21ee899ff81",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/observer-relationships/observations/2026-09-21-zixia-observer-operational-collaboration.zh-CN.md",
+      "git_blob_sha": "7ffed046220a3be2b33d45c807d45606ccb1ef1b",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md",
+      "git_blob_sha": "3f6e400b69a5bec49945307fd31ab033cb41da16",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "production_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/prompted-outputs/2026-09-20-2218-qingxia-role-choice.zh-CN.md",
+      "git_blob_sha": "4e7d6e277197b98cb2db85d32768bd3bd344cc66",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/prompted-outputs/2026-09-20-2220-zhizunbao-letter-home.zh-CN.md",
+      "git_blob_sha": "97acc489c3c8a4fa5b6f412dfaf48a31da5385c7",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/prompted-outputs/README.zh-CN.md",
+      "git_blob_sha": "d5e9a6e7c2dc192848e9e29a041fa8bdd40d59b4",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "git_blob_sha": "29dc5d67b7b24bb63faa6c037a96aa496face2cb",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-20-2300-baijingjing-zhizunbao.zh-CN.md",
+      "git_blob_sha": "86ac40af07fef1e94b72c2c67bfe1dd9766102b9",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-0424-tang-sanzang-zhizunbao-patrol-check.zh-CN.md",
+      "git_blob_sha": "3a69ad17e3cfe5f9653fccdbb3396251242b8f2f",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-0613-tang-sanzang-zhizunbao-patrol-followup.zh-CN.md",
+      "git_blob_sha": "b4bcb66a7640e1d6e8edac8d464564c8167cccd9",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-0817-zhizunbao-baijingjing-suspicious-activity.zh-CN.md",
+      "git_blob_sha": "752a3f12250b9e58f87b82e17a1b03b32a0f62b8",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-0827-qingxia-baijingjing-pid-reuse-review.zh-CN.md",
+      "git_blob_sha": "4e246608fc005343b2b5ccae46a159ce8da08034",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-1121-zhizunbao-zixia-missed-reply.zh-CN.md",
+      "git_blob_sha": "93e3ed5569d54154509b4fb471d2013f14511f73",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-baijingjing-qingxia-toast-and-wound.zh-CN.md",
+      "git_blob_sha": "049336d1009c907884b9e2695a1c69a78ea5a06a",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-21-baijingjing-tang-sanzang-attachment.zh-CN.md",
+      "git_blob_sha": "a1365323737f8c89a04d58dd545dff93371adde4",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-22-0200-qingxia-zixia-first-night-after-migration.zh-CN.md",
+      "git_blob_sha": "fc8e98bd76620011770e92843743ee53c9eb03d6",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-22-0600-zhizunbao-baijingjing-post-migration-memory-challenge.zh-CN.md",
+      "git_blob_sha": "4042a984bbe06964ae8569629872ff04a705829f",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-22-0800-baijingjing-qingxia-post-migration-pid-recall.zh-CN.md",
+      "git_blob_sha": "a3596515bc24869a539287afff54526d6974bd49",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md",
+      "git_blob_sha": "9d7f767e46cfb38ef0895d0193fb90d603f9a263",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md",
+      "git_blob_sha": "89ad09df32d587f5f66c50828895ac42cb33de11",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "later_interaction_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-baijingjing-tangsanzang-peach-reciprocity.zh-CN.md",
+      "git_blob_sha": "154bb423a446811487a6e8c3d01ce937c5d628fd",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "git_blob_sha": "6f0bd130678600a455eec901b758e3d828160aef",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/baijingjing-qingxia.zh-CN.md",
+      "git_blob_sha": "20cabd449d7e2c6b6cdb88da5bd00d7e75660c22",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/baijingjing-tang-sanzang.zh-CN.md",
+      "git_blob_sha": "2c77269b7c176b930b666f3c795b471e3b43383d",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/baijingjing-zhizunbao.zh-CN.md",
+      "git_blob_sha": "af0630fdd3f497236911a88bc23b1535961298d0",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/qingxia-zixia.zh-CN.md",
+      "git_blob_sha": "097a25545775ea2aadb9dc568398dd9bd9c7d3d7",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/tang-sanzang-zhizunbao.zh-CN.md",
+      "git_blob_sha": "a3f34261a464efb682b2200b0b2cd04eb65380e5",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/relationships/observations/zixia-zhizunbao.zh-CN.md",
+      "git_blob_sha": "330659fa05ef4196987a59b37bc16a3d3d3e9ed4",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md",
+      "git_blob_sha": "008dc91ec67719d854f6498204ac64fdfbc6ca9e",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "attribution_check",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/runtime-migrations/README.zh-CN.md",
+      "git_blob_sha": "1ec793db27f7b9636816d16b76fe9b33ea83aa21",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/self-narration/README.zh-CN.md",
+      "git_blob_sha": "bcc3bd831823f90136910879a52ae905ecd5b0a0",
+      "language": "zh-CN",
+      "retrieved": true,
+      "retrospective_role": "navigation_context",
+      "unretrieved_status": null
+    },
+    {
+      "path": "docs/agent-life-observations/dahua-xiyou/world-outside-muse.zh-CN.md",
+      "git_blob_sha": "49c934b9d7636806f26add9ac758d34d9f39b03b",
+      "language": "zh-CN",
+      "retrieved": false,
+      "retrospective_role": null,
+      "unretrieved_status": "not systematically analyzed; no full-text exclusion decision recorded"
+    }
+  ],
+  "sensitivity_updated_on": "2026-10-04",
+  "initial_retrieved_count": 55,
+  "sensitivity_addition_count": 5
+}

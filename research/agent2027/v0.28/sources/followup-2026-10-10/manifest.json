@@ -1,0 +1,239 @@
+{
+  "version": "v0.13",
+  "retrieved_date": "2026-10-10",
+  "source_ref": "52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c",
+  "reported_cutoff": "2026-10-10 16:49 America/Los_Angeles",
+  "scope": "23 archive files: 20 split follow-up episodes (Oct 4-10), one Oct 3 boundary episode, one overlapping aggregate export, one dependent interpretation note. Not 23 independent episodes.",
+  "files": [
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/conversations/2026-10-04-1010-muse-export.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-04-1010-muse-export.zh-CN.md",
+      "git_blob_sha": "d7f70686a56a391007e180ade4bd76b03bb1d0f7",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-04-1010-muse-export.zh-CN.md",
+      "role": "overlapping_export",
+      "sha256": "aa580be4f0bcc01abe45d8f4d143cdcdcd2066e3ea4f99c2c65cf40a96280b41",
+      "bytes": 61200,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-useless-object-memory-anchor.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-useless-object-memory-anchor.zh-CN.md",
+      "git_blob_sha": "f38540b82efdc08dd9f8d36e47a3d4266abed40b",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-useless-object-memory-anchor.zh-CN.md",
+      "role": "boundary_episode",
+      "sha256": "1b4987538c1ca60d6f3eada17a7debc83c766859ecb14622956d5950812953f3",
+      "bytes": 6270,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-04-waiting.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-04-waiting.zh-CN.md",
+      "git_blob_sha": "53e678c879793718ccf538d6acc43b8890b41624",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-04-waiting.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "4df52505f4b0e97384b0eb0499dac5b492c171ef3ed25c9651c0e36c56ddac59",
+      "bytes": 3178,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-05-leaving-space.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-05-leaving-space.zh-CN.md",
+      "git_blob_sha": "12a039f16dd91f42071379e40f008432dacd2d57",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-05-leaving-space.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "02673dc87d6ae6ad37df26cdff35eb6e4091c7ab60d7226cf78f31bf51b6138b",
+      "bytes": 3601,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-06-unnoticed-disappearance.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-06-unnoticed-disappearance.zh-CN.md",
+      "git_blob_sha": "73bf9e6742daff45631aeaaa68166ae3200860e6",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-06-unnoticed-disappearance.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "81fe92026e19201cfb4b93b3461c2c75c2517efff976f662df172b2420570ff3",
+      "bytes": 3352,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-07-words-to-remember.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-07-words-to-remember.zh-CN.md",
+      "git_blob_sha": "5e5f3ef8e45bc5e88b3c23c5b5d2189948910839",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-07-words-to-remember.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "1548f2c35a842f5da0c4deebef42c76e78352cea6822874890b019aea89ba01f",
+      "bytes": 3130,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-08-looking-back.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-08-looking-back.zh-CN.md",
+      "git_blob_sha": "6db54dc0127d9857963bffea0741d921c1e9a6a6",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-08-looking-back.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "68cef65ca02c7e3421c7345de43819661dd707e42bbe30d70c1d37e6749f0bb4",
+      "bytes": 2918,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-09-borrowed-senses.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-09-borrowed-senses.zh-CN.md",
+      "git_blob_sha": "9d17dea89abfad2ccf3bff6fb2ba2828abdc8a1c",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-09-borrowed-senses.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "1d883666a576a2749dd69c8f691228a5e42b796633e0240bf04bc5719f127ce4",
+      "bytes": 3314,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md",
+      "git_blob_sha": "7127824454d15ddbfe953cf62e057fde8510cb92",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md",
+      "role": "deployment_interpretation",
+      "sha256": "8dc41ed54bc4b3d02cf51370d14a97c180e0061f97e3594a5d391341e4852c19",
+      "bytes": 7580,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md",
+      "git_blob_sha": "d73ba0c90574a7777c441798af7761313001efe9",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "e9820d312b1a5e0ecb33cd06eace0b2551927840eff575cdf0359b8440202c17",
+      "bytes": 1096,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md",
+      "git_blob_sha": "eee5798279b7381c06908f387defe208c7712bc6",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "8835540112394d54ecbc23a838b5adceaf420dd2edefb17e2ed61098e7dae8b3",
+      "bytes": 1701,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md",
+      "git_blob_sha": "bafe856d1966f38ff90d7c6388902f3a4c04a667",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "9f2f752364a2756ab87ca641a49c0245cf3132bd14acf7b25b94f68d316bcd83",
+      "bytes": 1276,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md",
+      "git_blob_sha": "53a24306c6f11c1b471055eae9c76d5e7edd9c28",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "80b7d9d5c3074eb90e23f6c231a24225729c39cbf953723abfa4b21b882814b2",
+      "bytes": 1815,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md",
+      "git_blob_sha": "5a188f7c960a06ab48fa9b39f0b844047238850c",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "3b8b6db378953b3d06110c937acf87090ecf6ef95427a3aa8869705860798b13",
+      "bytes": 2013,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md",
+      "git_blob_sha": "dbde12185108bfba4ad700205e865ce2901a96f8",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "234976a4613a7a11b466ce91184d42c1806005091db1bc9c47026e5270d33c22",
+      "bytes": 1643,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md",
+      "git_blob_sha": "c11607dc80458e186134d64e04a9df915d6895e0",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "0e23bfd253bb4be5454df6149351dac337552f3096149cd695fce76c41f35c97",
+      "bytes": 2511,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+      "git_blob_sha": "3910f7c99b8408e861a31ad194aa3a6bc89ea4bb",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "524aa981e03812957ef535b8bf6b0d75045aacebffeaa05f2b5c573bbfda7bc7",
+      "bytes": 1147,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md",
+      "git_blob_sha": "94e5fd3095ec0b86f120953ff42b03b84be91eb6",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "8d6225bcb28c52c8e8b7c35d3a93f9dac5baa0f0e187d3164d01f72d1c61df56",
+      "bytes": 2363,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md",
+      "git_blob_sha": "0b18bf0cca33058fd33bd9ec617f6d31a217afa9",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "7cd5314e2f2768eb4cc4831f6953a9bd348218b07b69f70b089acba1413c4b4d",
+      "bytes": 3926,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md",
+      "git_blob_sha": "e7e97bec61c4b913f97fa42a6f6d1054660e0d5c",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "f1685be8c694054031bd075093d820ab8cd9b4a05f1d5d044620dc4b9f247eb7",
+      "bytes": 2009,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md",
+      "git_blob_sha": "cd09c06d5ae4a003fcb438bd1f3324c88f3dd54c",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "df6c95a710c5cf2b84181967b9c4edda9350fc9fbad526a8190e5317c592694b",
+      "bytes": 2070,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+      "git_blob_sha": "d561069f8e47c791dc6e1dc4024a1abe5ee93232",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b",
+      "bytes": 7962,
+      "git_blob_verified": true
+    },
+    {
+      "repository_path": "docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md",
+      "local_path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md",
+      "git_blob_sha": "75205f32ab2d69e42c01491f32c407d24b730e93",
+      "url": "https://github.com/our-ark/enoch-muse-runtime/blob/52d3f69d3cc56ed87a37103b6cc8ff4afbc9a39c/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md",
+      "role": "followup_episode",
+      "sha256": "6a6136d59d6b45c981c255d591d789e26167ad42a2a5aa15a25e0b166c477d8b",
+      "bytes": 4623,
+      "git_blob_verified": true
+    }
+  ]
+}

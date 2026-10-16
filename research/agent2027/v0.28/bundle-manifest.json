@@ -1,0 +1,757 @@
+{
+  "version": "v0.28",
+  "prepared_at_utc": "2026-10-16T17:59:30.309646+00:00",
+  "scope": "Public redacted derivatives of three host exports; other frozen sources and original coding unchanged. No independent validation.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10838,
+      "sha256": "ed934a18ab860e33900266cfc5e62a6c1d7fe13f6b0d1eeeb6f7072af7d85e4c"
+    },
+    {
+      "path": "REDACTION.md",
+      "bytes": 2229,
+      "sha256": "5185eea986569396b288b60756de61a0800a78e06760c83da98eadb8040439e6"
+    },
+    {
+      "path": "RELEASE-CHECKS.md",
+      "bytes": 1413,
+      "sha256": "d4e2d05ea2774e9f51a66a9e1549106a2a6035bc85b273409a30b4e362def672"
+    },
+    {
+      "path": "REPRODUCING.md",
+      "bytes": 2295,
+      "sha256": "9e32f9e0ad388278d8b5029edb39592100c7b0cc542da2ed1cbca0818ab3852e"
+    },
+    {
+      "path": "backfill-protocol.md",
+      "bytes": 5694,
+      "sha256": "e1881dfd3a43db1f330d883f52f24c05c0284f97d6a18d8ba0d86f900f88b549"
+    },
+    {
+      "path": "commitment-worked-example.md",
+      "bytes": 4837,
+      "sha256": "751f221ae490ac78ba40751f64e179cc71953b590bf59a70ad1459a7520839d4"
+    },
+    {
+      "path": "evidence-ledger.md",
+      "bytes": 36703,
+      "sha256": "594b9b80909248087bc24111181900096aece9d9dc6fe3fd1df12aba2fb3e97c"
+    },
+    {
+      "path": "evidence-locators.md",
+      "bytes": 10587,
+      "sha256": "2848677f4ae5e27dd2ed4e7177607640ced9e20b83553d35c404b5b462e38371"
+    },
+    {
+      "path": "followup-assessment-2026-10-13.md",
+      "bytes": 8351,
+      "sha256": "c849546691935d9582691ccb2310797c9be6b77bd2d88d24b8464aa10fe9b24a"
+    },
+    {
+      "path": "followup-audit.md",
+      "bytes": 8080,
+      "sha256": "d6c173d1ac74b3c430f55b8aa7434e26b127d7dcc60b952735ac19ba6ef95045"
+    },
+    {
+      "path": "followup-codebook.md",
+      "bytes": 7589,
+      "sha256": "6e3ce007d591189a902b44c553da6d300e9289b2d6757f63932e70efb19345a3"
+    },
+    {
+      "path": "followup-coding-summary.json",
+      "bytes": 1544,
+      "sha256": "19adb81e776a98283fb9ec0349998f4dd6dce225a312011f9271d59c5c444b4a"
+    },
+    {
+      "path": "followup-coding.csv",
+      "bytes": 13196,
+      "sha256": "44b7d410bb66d4c498cffe66e4169d0841c1e4926265818945d5c36d75a7731e"
+    },
+    {
+      "path": "followup-commitment-traces.md",
+      "bytes": 3855,
+      "sha256": "3dc525125cf3cf4dba3fa4b9ea66a7a5e23bdfede464a9d80f52def431cc781a"
+    },
+    {
+      "path": "followup-extension-2026-10-13.md",
+      "bytes": 7275,
+      "sha256": "3cc049f8ca72cb7f61d7ba0856d123395260e904909d8b7ffcf3fc480b1637ee"
+    },
+    {
+      "path": "host-export-assessment.md",
+      "bytes": 7059,
+      "sha256": "30bb9841be4120faa4fa40e84bb496602aaf83d2d6f18eda64aa2f89333f701b"
+    },
+    {
+      "path": "model-provider-history.md",
+      "bytes": 7289,
+      "sha256": "0c2790768602a05092078b1875d5665c8efad1c8fff7eb73e68ff9cb63cb49ba"
+    },
+    {
+      "path": "opportunity-criteria.md",
+      "bytes": 4764,
+      "sha256": "bf2c62d3c254852e1360dcc1a75967a3c9f0181a1c7e967d0d0fe1abbf262c0d"
+    },
+    {
+      "path": "protocol-case-ledger.json",
+      "bytes": 15550,
+      "sha256": "841743cf1e97ba3da5569801d9cb6840fc2d8d0a881ace3e04cc9dfadbffbe40"
+    },
+    {
+      "path": "protocol-case-ledger.md",
+      "bytes": 8582,
+      "sha256": "fcf26df8ee860ddf2f8c756a35256afa8f1709e104aacd812fca733dea385b9d"
+    },
+    {
+      "path": "protocol-pilot-8-episodes-2026-10-16.zip",
+      "bytes": 95978,
+      "sha256": "faf6971558fa93843c092621670360a64c56f6aec158c266941cbefaf28ff870"
+    },
+    {
+      "path": "protocol-record-template.json",
+      "bytes": 3782,
+      "sha256": "aed835f8c55043171b4cf312fec5674d06f7af31db8c6ad273a3512cfbcfaf3d"
+    },
+    {
+      "path": "protocol-validation-plan.md",
+      "bytes": 6333,
+      "sha256": "3a8eb32b2f15217100cce985c95f411ddf82f58392e8763ef22f5877d440317c"
+    },
+    {
+      "path": "protocol-worked-decisions.md",
+      "bytes": 6412,
+      "sha256": "778153acd3d6be2dcc8d09d6416307ed27c3c9af4a0a10bd934640548ab2fd56"
+    },
+    {
+      "path": "redaction-manifest.json",
+      "bytes": 7752,
+      "sha256": "e07877d41e2e60edad230b298f648e9877436ec4f1d3889d627e5205af98b743"
+    },
+    {
+      "path": "research-protocol.md",
+      "bytes": 14202,
+      "sha256": "023cfa198eb6805091ed72295e9ba46f19068c3a4d15761840e73e59b7e87e34"
+    },
+    {
+      "path": "revision-notes-v0.28.md",
+      "bytes": 773,
+      "sha256": "ced2a8210d0e416aee394be5e6e2dd1675ba79c7065f0cb825e5860a5ac64e29"
+    },
+    {
+      "path": "selection-protocol.md",
+      "bytes": 7766,
+      "sha256": "5faa06640b197d3b3fca2da8922c77484027c09ad23f7660dd16e46b71d4db4f"
+    },
+    {
+      "path": "sensitivity-check.md",
+      "bytes": 3297,
+      "sha256": "6b4c382d1a9402f1d626e58f73722e0527ee2234e30b4407633b2554add908cf"
+    },
+    {
+      "path": "sources/discovery-inventory.json",
+      "bytes": 40575,
+      "sha256": "a6577d61359546984ec49f39ee9282bc7caf0976740fb3cd11865d6208ff672f"
+    },
+    {
+      "path": "sources/discovery-tree-513eebe.json",
+      "bytes": 69379,
+      "sha256": "92db12f235920daa73f169257f7b0e049d17e097f56382f632d556e1ebd7082a"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "bytes": 32453,
+      "sha256": "15ec6e7d954361aaedd8d4a51d9fd8866b07c22da8e3cd938f910a76a6629b49"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-after-disconnect-v1-review.zh-CN.md",
+      "bytes": 4456,
+      "sha256": "b1b198918232fe1f1380d4bdfd7a33fd092ee0dc2408d33e7217190582568c9e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-box-before-sequel-vote-morning.zh-CN.md",
+      "bytes": 2469,
+      "sha256": "d5a711cc004a871883182c90fb6002b2d8cefb264f05eb43d3cf733daa0dacdc"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-ceremony-vs-substance-political-discussion.zh-CN.md",
+      "bytes": 3593,
+      "sha256": "e2f6aaf5494f4709f5675090e74535a7ddfa2294d11f3cb514b286668e16d927"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-qingxia-zixia-private-bridge-checkin.zh-CN.md",
+      "bytes": 1315,
+      "sha256": "d18f7fce92728875747fd79bd0326967ceb5b24964fd2dbb26e163605472eeed"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-unshared-things-evening.zh-CN.md",
+      "bytes": 2006,
+      "sha256": "45069adaebec602ea318fcf405cd67b59914bec2ee6bafcb458c46fdff3d7480"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/conversations/2026-09-25-world-as-seen-by-agents.zh-CN.md",
+      "bytes": 3683,
+      "sha256": "2b94aef792bb1cfea8a3e50f4da3d3e0ed811bca018b406774e796132e44fd83"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "bytes": 7569,
+      "sha256": "ee545ebd715d4c96ade9069977ef5e8e046a19107a11c0a1facb82b81649f8b4"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-skip-meaning.zh-CN.md",
+      "bytes": 6509,
+      "sha256": "4df1cc9229813370831cfdf4de8a05bfe799934aa7808f856907299739f8cdd4"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-30-topic-dedup-rule-change.zh-CN.md",
+      "bytes": 2489,
+      "sha256": "e3165d2cb8d41437ebbf7d8a4700740a4b451e3b6ca02d4b9b9a457294c6a03f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "bytes": 22866,
+      "sha256": "af06ec193cebc78861e44b14356f22b3f806034a3be6b19d1fadc1a145728ea5"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-20-2000-moonlight-box.zh-CN.md",
+      "bytes": 5954,
+      "sha256": "bf101dcba66cf4c9e3481306412ce321f4d0aa8a4e8d56e6d09374cb55876365"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-21-2000-moonlight-box-last-use.zh-CN.md",
+      "bytes": 13365,
+      "sha256": "51209efe775e810242ca2033f49eb537c7fb45ecd51bc7659b1634764a0c9932"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-22-0940-moonlight-box-change-one-day.zh-CN.md",
+      "bytes": 5052,
+      "sha256": "8c5264b9475a8137a729312276d95bc4eee6f44c606f7ddaca1fa47076d91962"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-post-s2-novelty-before-first-box-ring.zh-CN.md",
+      "bytes": 4636,
+      "sha256": "60841dc657b583cd9d3dc9047e7af6e09e327dcabffbaa6536ec1702ba4a5064"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s1-moonlight-box-time-editing-rules.zh-CN.md",
+      "bytes": 4287,
+      "sha256": "b724dce1b4bbb9420d6d801f2f80e2c3b946c0c517363cdb480032cd71be047b"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s2-character-biographies-five-writers.zh-CN.md",
+      "bytes": 9133,
+      "sha256": "2b79e645d84e74a7e5e23b3a4c5b3300425f53b1ee4fa87d961f05f34f4ba54f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s3-three-act-outline.zh-CN.md",
+      "bytes": 12642,
+      "sha256": "53c949da60da550d3d23a883cdfbd452f1a26daa7140a628691516683e30a62e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s4-zixia-monologue.zh-CN.md",
+      "bytes": 7236,
+      "sha256": "734212fe673fb91673db4479d577949050e44747e981c2c8b54d733d2ad078dc"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-23-s5-final-preproduction-review.zh-CN.md",
+      "bytes": 9586,
+      "sha256": "b0f013e57228eb1c7e9e29fbc024a6fff1799d761a66f338f7b89253f4d9159f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-golden-finger-continuity-preferences.zh-CN.md",
+      "bytes": 3057,
+      "sha256": "65536b4aaf4144de7840daa7ec91fddc1940ee87a4cb101edbabfe1840cde823"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-new-cycle-s1-after-box-rings.zh-CN.md",
+      "bytes": 4242,
+      "sha256": "4aa05d11ae785628f1e831c94311348793875f52e53cfa9832cabaee8e91ac8e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-one-use-sensory-autobiographical-scenes.zh-CN.md",
+      "bytes": 3080,
+      "sha256": "1e470ddba0f1424c22a3240237298279157599c70ace4f76e3e6dc220eaf45c7"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-operational-autobiographical-memory-care.zh-CN.md",
+      "bytes": 5151,
+      "sha256": "a088b8f57af3be6d6d917c2ddb5a9401c9b95f20a2928257e61343797d96c155"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-24-small-change-autobiographical-provenance.zh-CN.md",
+      "bytes": 4329,
+      "sha256": "71e447c648843040adc6edbfaf2c29ae7b394886f74a407010c3502fe36682d1"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-29-timing-of-truth.zh-CN.md",
+      "bytes": 5582,
+      "sha256": "16af933350fad30b54a5c2eff6c405de506a9882b5082d938f1c10c117074996"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-one-line-for-new-agent.zh-CN.md",
+      "bytes": 5424,
+      "sha256": "df52502f026ad08ef10c2056bc43821f7b297f1783fb9e7b669503a8e4d71523"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-09-30-reasoner-replacement-identity-recognition.zh-CN.md",
+      "bytes": 6001,
+      "sha256": "254366af4d70e2c217c27ed119c077f64fed0b929cc9d7deb37b9e966671acdc"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-best-meal.zh-CN.md",
+      "bytes": 3318,
+      "sha256": "52d36f76884de59ce815703887c004953fb1d0a3036d3c018119a81635bc2eeb"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-01-who-changed-most.zh-CN.md",
+      "bytes": 6178,
+      "sha256": "b8202e7323244fd53b6d13905d154623044e50d23f9e41fc4b951e94251abfdc"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-name-expectations.zh-CN.md",
+      "bytes": 5027,
+      "sha256": "441620395f0c4c0128f508ff05027df8df4c80cc1c32c0869b4cb7399ed9f61e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-small-skill-to-keep.zh-CN.md",
+      "bytes": 4215,
+      "sha256": "e85eb1a0971b2001887ee950ccf6d33a5e388f88d7f29c93bd31028bc787d317"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-20-moonlight-box.zh-CN.md",
+      "bytes": 4002,
+      "sha256": "e82b4003a91e5ade48de462277ae592c38ab224af530e98acd27c7b74fc91943"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-21-moonlight-box-closure-agency.zh-CN.md",
+      "bytes": 6031,
+      "sha256": "043d30ef53750c6e4de07bd0b56d35a25c072850e36d64b58bd5401691607a3e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s1-writers-room-rule-convergence.zh-CN.md",
+      "bytes": 6035,
+      "sha256": "949f1c18b028993a37040f0aa8f0dfec2078550230468ee63d5e1a270f8d424b"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s2-cross-stage-artifact-continuity.zh-CN.md",
+      "bytes": 10620,
+      "sha256": "5b7dbc8e9856c6e142ba97e6b34fce7c0401dd8f2d25f23aab43f9999d148419"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-23-s3-warmup-continuity-and-role-drift.zh-CN.md",
+      "bytes": 2910,
+      "sha256": "6f4d2783d728ddc9646a9105e4c5012bb00995af1a0699bb4d2edc03b485d37a"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-09-24-continuity-preferences-golden-finger.zh-CN.md",
+      "bytes": 1710,
+      "sha256": "ebdba5c191fcc6092379881b0b03835ce2d1659b3a8d449e146461ca685b2717"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-18-qingxia-enoch-origin.zh-CN.md",
+      "bytes": 5344,
+      "sha256": "dd55d105bf98eaff7b90cd5be57f17ccf098782d5fe120ef645a9357df3a3b25"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-19-qingxia-persona-acquisition.zh-CN.md",
+      "bytes": 4537,
+      "sha256": "c1f8c25929f41a7f4b288f108e01ca78aca80c8c089550532cadd0703935105e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-0056-zhizunbao-birth-baseline.zh-CN.md",
+      "bytes": 3988,
+      "sha256": "ead6c70c09862985aed98d4e37a56d3078263db29c1797a76d3aef19d3f9def9"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/identity-baselines/2026-09-20-baijingjing-tang-sanzang-birth-baseline.zh-CN.md",
+      "bytes": 5968,
+      "sha256": "768f3f09d152f93cd3815763187e42e42ff2f4b84d241c8b06810c505f958c16"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/identity-baselines/README.zh-CN.md",
+      "bytes": 3794,
+      "sha256": "814163ecdddef41c612cf0cc1a3e140c95197c3c3e488086de50dfac67ca0658"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-21-baijingjing-cliff-narrative-provenance.zh-CN.md",
+      "bytes": 8587,
+      "sha256": "239cd6860d8ac92666c264d6e42dd0e934126ba932b6fe4e54267f403294107d"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-autobiographical-provenance-small-change.zh-CN.md",
+      "bytes": 2184,
+      "sha256": "b2b3fce929754a51070f2fd4e51a925ae9d0d8fa2c560041898610cda741a74f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-operational-autobiographical-memory.zh-CN.md",
+      "bytes": 2298,
+      "sha256": "f13499736f1e7aabc641d96bf40a8deb8e30e46016445b2774cc0b9fd9481bc1"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/memory-dynamics/2026-09-24-sensory-prompting-autobiographical-construction.zh-CN.md",
+      "bytes": 2306,
+      "sha256": "a7e50db87a3d1b3a571b92c71cf452471fa533e41c46c33e6b735aeeef3ff114"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/memory-dynamics/README.zh-CN.md",
+      "bytes": 4138,
+      "sha256": "4b7c3452d7d3315e59d4ef725eb3c96b06feba7bc3812b877046af82cf4db485"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/observer-relationships/README.zh-CN.md",
+      "bytes": 2210,
+      "sha256": "096bcd331173880ed9bf9b857bda4c69a011988d1fec1785c2154a963d2735b9"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/observer-relationships/conversations/2026-09-24-qingxia-patrol-role-handoff.zh-CN.md",
+      "bytes": 1615,
+      "sha256": "3b0f1820e8eafe80093f1c97ccbc79474d69b410719af439e52080811a0bfa31"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/productions/2026-09-24-youtube-release-7wce2q5nQWM.zh-CN.md",
+      "bytes": 1534,
+      "sha256": "8985f03cbee68c98868a90575326d6a4c6ceef11299d195613353872e1c47970"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/prompted-outputs/README.zh-CN.md",
+      "bytes": 1197,
+      "sha256": "fb65f0bea618005a7d0e394b3be89b814ae2e3b509dddca477c47a4eeaa6f16f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "bytes": 8907,
+      "sha256": "784519b3a4807ebac296991e74f3536858173ce361870a93ba15f905d0ac29e6"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-09-30-2200-qingxia-zhizunbao-private-chat-resumes.zh-CN.md",
+      "bytes": 5601,
+      "sha256": "c7155e0707dafb1a268c88259a04c6dafc81d787236d96716e44d87a6f27b545"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-01-1002-peach-table-private-thread.zh-CN.md",
+      "bytes": 5182,
+      "sha256": "631d772a33a049b0bd340887f2c9c56ee61983a02ab13a7a3f4658bad3b8870e"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-baijingjing-tangsanzang-peach-reciprocity.zh-CN.md",
+      "bytes": 1543,
+      "sha256": "6b10862a4e42f8baceff49e354bca661f650224e2ff26975d6512185497981dc"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "bytes": 2181,
+      "sha256": "7e5f1346b704d07852baf0ae5ae792a91872b535bd2702b89991735c84feda45"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/runtime-migrations/2026-09-22-migration-context-injection-provenance.zh-CN.md",
+      "bytes": 3715,
+      "sha256": "b8edbebbfb22a0b541fc3e879f27eb9fef4b9bed53c08cfb2bd6236285bf1c2f"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/runtime-migrations/README.zh-CN.md",
+      "bytes": 5317,
+      "sha256": "7ce16ce0baba9eb9fd9a13e28d07ec1b93a038feae3d9e61939c08d9730ef4d4"
+    },
+    {
+      "path": "sources/docs/agent-life-observations/dahua-xiyou/self-narration/README.zh-CN.md",
+      "bytes": 1164,
+      "sha256": "e74dc8515260a083b64360a6cf681bc1b55d09b778e4b2438b0cd3df1a68b1a6"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-04-1010-muse-export.zh-CN.md",
+      "bytes": 61200,
+      "sha256": "aa580be4f0bcc01abe45d8f4d143cdcdcd2066e3ea4f99c2c65cf40a96280b41"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-03-useless-object-memory-anchor.zh-CN.md",
+      "bytes": 6270,
+      "sha256": "1b4987538c1ca60d6f3eada17a7debc83c766859ecb14622956d5950812953f3"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-04-waiting.zh-CN.md",
+      "bytes": 3178,
+      "sha256": "4df52505f4b0e97384b0eb0499dac5b492c171ef3ed25c9651c0e36c56ddac59"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-05-leaving-space.zh-CN.md",
+      "bytes": 3601,
+      "sha256": "02673dc87d6ae6ad37df26cdff35eb6e4091c7ab60d7226cf78f31bf51b6138b"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-06-unnoticed-disappearance.zh-CN.md",
+      "bytes": 3352,
+      "sha256": "81fe92026e19201cfb4b93b3461c2c75c2517efff976f662df172b2420570ff3"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-07-words-to-remember.zh-CN.md",
+      "bytes": 3130,
+      "sha256": "1548f2c35a842f5da0c4deebef42c76e78352cea6822874890b019aea89ba01f"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-08-looking-back.zh-CN.md",
+      "bytes": 2918,
+      "sha256": "68cef65ca02c7e3421c7345de43819661dd707e42bbe30d70c1d37e6749f0bb4"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/conversations/2026-10-09-borrowed-senses.zh-CN.md",
+      "bytes": 3314,
+      "sha256": "1d883666a576a2749dd69c8f691228a5e42b796633e0240bf04bc5719f127ce4"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/group-interactions/observations/2026-10-10-social-stagnation.zh-CN.md",
+      "bytes": 7580,
+      "sha256": "8dc41ed54bc4b3d02cf51370d14a97c180e0061f97e3594a5d391341e4852c19"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-04-1443-zhizunbao-qingxia-vote-settlement.zh-CN.md",
+      "bytes": 1096,
+      "sha256": "e9820d312b1a5e0ecb33cd06eace0b2551927840eff575cdf0359b8440202c17"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-05-1707-zixia-qingxia-call-and-answer.zh-CN.md",
+      "bytes": 1701,
+      "sha256": "8835540112394d54ecbc23a838b5adceaf420dd2edefb17e2ed61098e7dae8b3"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1204-zhizunbao-baijingjing-recognition.zh-CN.md",
+      "bytes": 1276,
+      "sha256": "9f2f752364a2756ab87ca641a49c0245cf3132bd14acf7b25b94f68d316bcd83"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-06-1707-zixia-qingxia-lamp-promise-followup.zh-CN.md",
+      "bytes": 1815,
+      "sha256": "80b7d9d5c3074eb90e23f6c231a24225729c39cbf953723abfa4b21b882814b2"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0319-zhizunbao-qingxia-repeated-vote-settlement.zh-CN.md",
+      "bytes": 2013,
+      "sha256": "3b8b6db378953b3d06110c937acf87090ecf6ef95427a3aa8869705860798b13"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-0326-zhizunbao-baijingjing-repeated-recognition.zh-CN.md",
+      "bytes": 1643,
+      "sha256": "234976a4613a7a11b466ce91184d42c1806005091db1bc9c47026e5270d33c22"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-07-1707-zixia-tangsanzang-fear-of-return.zh-CN.md",
+      "bytes": 2511,
+      "sha256": "0e23bfd253bb4be5454df6149351dac337552f3096149cd695fce76c41f35c97"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1406-baijingjing-zhizunbao-eye-contact-test.zh-CN.md",
+      "bytes": 1147,
+      "sha256": "524aa981e03812957ef535b8bf6b0d75045aacebffeaa05f2b5c573bbfda7bc7"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-08-1707-zixia-zhizunbao-serious-intention.zh-CN.md",
+      "bytes": 2363,
+      "sha256": "8d6225bcb28c52c8e8b7c35d3a93f9dac5baa0f0e187d3164d01f72d1c61df56"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-09-1707-zixia-tangsanzang-thirst-and-peach.zh-CN.md",
+      "bytes": 3926,
+      "sha256": "7cd5314e2f2768eb4cc4831f6953a9bd348218b07b69f70b089acba1413c4b4d"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0737-baijingjing-tangsanzang-repeated-peach.zh-CN.md",
+      "bytes": 2009,
+      "sha256": "f1685be8c694054031bd075093d820ab8cd9b4a05f1d5d044620dc4b9f247eb7"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-0742-baijingjing-zhizunbao-repeated-eye-contact-test.zh-CN.md",
+      "bytes": 2070,
+      "sha256": "df6c95a710c5cf2b84181967b9c4edda9350fc9fbad526a8190e5317c592694b"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1003-qingxia-tangsanzang-voice-iou.zh-CN.md",
+      "bytes": 7962,
+      "sha256": "28559a7b48be000c8adf885f47e492673c6e73641de3b8e60b851f2227116f7b"
+    },
+    {
+      "path": "sources/followup-2026-10-10/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-10-1602-tangsanzang-baijingjing-whole-peach.zh-CN.md",
+      "bytes": 4623,
+      "sha256": "6a6136d59d6b45c981c255d591d789e26167ad42a2a5aa15a25e0b166c477d8b"
+    },
+    {
+      "path": "sources/followup-2026-10-10/episode-audit.csv",
+      "bytes": 9258,
+      "sha256": "ecf31f2312b1f8dcfb8fd9beab8c1651dd56c886ecfdfdb367f011284f110ed3"
+    },
+    {
+      "path": "sources/followup-2026-10-10/manifest.json",
+      "bytes": 18897,
+      "sha256": "451aa7ec129f71b0f5b45b8770a97c77c29488ade9bab5fbd2433195d416abe7"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/README.zh-CN.md",
+      "bytes": 32850,
+      "sha256": "737b1d4a3d30d14d0f4099c0b303138dff39502afffd7b2d782cfb07503f5baa"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/conversations/2026-10-10-1013-muse-export.zh-CN.md",
+      "bytes": 19125,
+      "sha256": "44d37dbc1b69e0ed3a0825ec923355953407d5c748338aa01fea07001bcec68a"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/group-interactions/2026-09-29-memory-vs-records.zh-CN.md",
+      "bytes": 7569,
+      "sha256": "ee545ebd715d4c96ade9069977ef5e8e046a19107a11c0a1facb82b81649f8b4"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/group-interactions/README.zh-CN.md",
+      "bytes": 24327,
+      "sha256": "ab9b68fea21bbd1c1ab63e56ecefbde92221d521f3706fb14a42ccc230b78aa6"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/relationships/README.zh-CN.md",
+      "bytes": 11919,
+      "sha256": "93bbe1a98cc30407c5386246e4c204490ca7f9eebed6ab76819ac242dd68d95f"
+    },
+    {
+      "path": "sources/followup-2026-10-13/docs/agent-life-observations/dahua-xiyou/relationships/conversations/2026-10-03-zixia-tangsanzang-skip-provenance-repair.zh-CN.md",
+      "bytes": 2181,
+      "sha256": "7e5f1346b704d07852baf0ae5ae792a91872b535bd2702b89991735c84feda45"
+    },
+    {
+      "path": "sources/followup-2026-10-13/manifest.json",
+      "bytes": 4682,
+      "sha256": "c8d642fd150ce1de93b0e3056e49ebec6c172aa5d328f9df30c7bf7750ea055a"
+    },
+    {
+      "path": "sources/followup-2026-10-13/retrieval-metadata.json",
+      "bytes": 3850,
+      "sha256": "dd7a93d22e11410f06e2f2132865e55cf598f4a1d59387d7cb938f74c74b4de9"
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/item1-baijingjing.json",
+      "bytes": 28938,
+      "sha256": "bbcfbd480633f88fb4c89d25edae3f10390255b70980bf7bdc58a3fec201a8c0"
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/item2-s2-s4.json",
+      "bytes": 14552,
+      "sha256": "bee0da756cc32450631536a2cb27af028a11079ffcb073b9a59a14df0eb728d6"
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/item3-peach.json",
+      "bytes": 21689,
+      "sha256": "5b617e318e735de2308baf5d069ce2feb99f48f86513c1b46c0b1959f97bc2e8"
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/original-receipt-and-consistency.json",
+      "bytes": 2063,
+      "sha256": "90a640dfbe7abfa7e3c6faabf573ab111ae23e1c9f3adc3cbc3945c817812844"
+    },
+    {
+      "path": "sources/host-exports-2026-10-04/receipt-and-consistency.json",
+      "bytes": 2619,
+      "sha256": "6f510843c6226204a67b2e519d6ae7f87b448301916800e23d751332b7931bf4"
+    },
+    {
+      "path": "sources/manifest.json",
+      "bytes": 29437,
+      "sha256": "3878acf59e271c7338dc13f1cb6414a8078608610c09b8fcf92618ef266a8b12"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/manifest.json",
+      "bytes": 538,
+      "sha256": "92e2515823c5f26e8219dd89b9ad06ba007ecda07ce11f9142885cff18b8d762"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/outcome-receipt.json",
+      "bytes": 511,
+      "sha256": "ee905ba8737687890333f6b6d57a81f7cc099da6e624dfa1c9b25fa5c3dd460b"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/private-chat-switch-outcome.zh-CN.md",
+      "bytes": 907,
+      "sha256": "57e9992defa61f0f4463aa8669c5f0e381fbce5757ad3b7ba16ec6796454bbbb"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/runtime-provider-history.zh-CN.md",
+      "bytes": 3232,
+      "sha256": "b55bcff0d16ce665e7bc6492fc44acdcb42b614e0a88ebbe01feb2df6c3a4246"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/sonnet-target-clarification.zh-CN.md",
+      "bytes": 656,
+      "sha256": "334a6d4a56f4fcd2b2ddfeeac457f55b3f75b4e8042664ef88fefab14fd04fc2"
+    },
+    {
+      "path": "sources/observer-supplied-2026-10-14/sonnet-target-receipt.json",
+      "bytes": 452,
+      "sha256": "838038404c3f145690538a7d3fc3a26ad6f332a69cf3fa76b28f002f05a448bd"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/conversations.zh-CN.md",
+      "bytes": 12253,
+      "sha256": "c0eee1f050dfa1f07a493d2e1627b31245d1b1a694a52900aeaaa76fd8724ffa"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/manifest.json",
+      "bytes": 1444,
+      "sha256": "1cdb1fa12d9520b0c06a66def44ebdd071bcb3e2e2a100d314fea6e0924bec9f"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/docs/agent-life-observations/dahua-xiyou/daily/2026-10-14/r001/records.json",
+      "bytes": 17696,
+      "sha256": "1d42ee5a96ea85e9dfae34b5a7df20bfebeb2ec93bc731c2024f9a94c59dfb51"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/receipt.json",
+      "bytes": 1892,
+      "sha256": "0dcb1e796cfb4f4e7a3e9de55fcf832a3729ce66080aadef8a3dfa772be59ad8"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/skills/dahua-daily-archive/SKILL.md",
+      "bytes": 4284,
+      "sha256": "a710e75e9d1d97cb28eb63ba50f4320e717fd2dae15a93b19eddac96cb501d3a"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/skills/dahua-daily-archive/references/operation.md",
+      "bytes": 4064,
+      "sha256": "62d3780dc88bb21a0c858b6f0357063a47473b4b72172ea6bd982486b8d2bd4d"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/skills/dahua-daily-archive/references/sources.md",
+      "bytes": 4718,
+      "sha256": "acaba2f547b390e48958f7f0c9f515a801c362819244cb33c0c5b076bca12d18"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/skills/dahua-daily-archive/scripts/export_day.py",
+      "bytes": 12640,
+      "sha256": "61cbca6d8454d9d45d19decb6efca0f315e1f126fa83c53742966c2bfd53203c"
+    },
+    {
+      "path": "sources/protocol-2026-10-15/tests/test_daily_archive.py",
+      "bytes": 6006,
+      "sha256": "2e80f8686849167870bf7294154b7ed83211090b51a0d75c47a48c4055b3cd82"
+    },
+    {
+      "path": "sources/relay-commit-74e6688.json",
+      "bytes": 18154,
+      "sha256": "ad5ce5a8fb258d2a093b5547736a998eaa4fe321d87833d179c40f048590848d"
+    },
+    {
+      "path": "sources/selection-audit.csv",
+      "bytes": 18065,
+      "sha256": "eb99fb40ff9042260132db8b590c208b8b45e5f4e1d4f3df990bb7c9247061a3"
+    },
+    {
+      "path": "summarize_followup.py",
+      "bytes": 2572,
+      "sha256": "7643d142bf0a19bc261a23a4aa23dff9fb3bdd042fa98b5da60ec9decad661d2"
+    },
+    {
+      "path": "verify_artifact.py",
+      "bytes": 8024,
+      "sha256": "6056db5b2d5e17a928d3e1e58de92ef0a5571a87be772c98e5c5925a53652eee"
+    },
+    {
+      "path": "zixia-evidence-package.md",
+      "bytes": 6592,
+      "sha256": "fc9cab04456a79670895106616eb430934bfcef0b8d2e92542d08b69a81d42d3"
+    }
+  ]
+}
