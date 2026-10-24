@@ -1,0 +1,40 @@
+{
+  "content_sha256": "10c231d3440367ae0a11f70e0d32013498778ad1a5f3f811eca86eb12fe8a076",
+  "exported_at_utc": "2026-10-24T09:12:29.859733+00:00",
+  "files": {
+    "conversations.zh-CN.md": "359768eced958896aef3bbd77bea143cb0793047567a040e56f9785b0851ce65",
+    "records.json": "10c231d3440367ae0a11f70e0d32013498778ad1a5f3f811eca86eb12fe8a076"
+  },
+  "observation_date": "2026-10-23",
+  "revision": "r001",
+  "schema_version": 1,
+  "scope": "Selected records only; hashes establish copy consistency, not deployment authenticity or complete coverage.",
+  "sources": {
+    "group": {
+      "bytes": 3947,
+      "coverage": "not_attested",
+      "snapshot_sha256": "5991d744bd23a88a9df094a799f14e7a9f29ba0d8e4931c68cf6cb55655e8de4",
+      "status": "available"
+    },
+    "host_private": {
+      "bytes": 1890,
+      "coverage": "not_attested",
+      "snapshot_sha256": "ee8a1c618c36a1edab4ea35e60b75784f52708adeddc8177cd5e75725786b581",
+      "status": "available"
+    },
+    "operations": {
+      "bytes": 2802,
+      "coverage": "not_attested",
+      "snapshot_sha256": "c3638b2d16dbeafb8f3a9d56f2b61cabd20747be40bd633c3204811b440205b3",
+      "status": "available"
+    },
+    "peer_private": {
+      "bytes": 40469,
+      "coverage": "not_attested",
+      "snapshot_sha256": "5088224c54437602cbc4870be20117a354c72613559e1d97e9a9444c31fb3ffb",
+      "status": "available"
+    }
+  },
+  "supersedes": null,
+  "timezone": "America/Los_Angeles"
+}
