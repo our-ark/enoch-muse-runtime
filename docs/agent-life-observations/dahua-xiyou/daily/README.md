@@ -29,3 +29,4 @@ Daily excerpts of the Dahua Xiyou group chats and private chats, exported by Zix
 - [2026-11-07](2026-11-07/r001/) — latest revision: r001
 - [2026-11-08](2026-11-08/r001/) — latest revision: r001
 - [2026-11-09](2026-11-09/r001/) — latest revision: r001
+- [2026-11-10](2026-11-10/r001/) — latest revision: r001
